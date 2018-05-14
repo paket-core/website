@@ -1,29 +1,29 @@
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/cerabasic-regular-webfont.woff") format("woff"), url("/fonts/cerabasic-regular-webfont.ttf") format("truetype"), url("/fonts/cerabasic-regular-webfont.eot?") format("eot"), url("/fonts/cerabasic-regular-webfont.svg#Samplino") format("svg");
+  src: url("/fonts/proxima-nova-regular-webfont.woff") format("woff"), url("/fonts/proxima-nova-regular-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-regular-webfont.eot?") format("eot"), url("/fonts/proxima-nova-regular-webfont.svg#Samplino") format("svg");
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/cerabasic-bold-webfont.woff") format("woff"), url("/fonts/cerabasic-bold-webfont.ttf") format("truetype"), url("/fonts/cerabasic-bold-webfont.eot?") format("eot"), url("/fonts/cerabasic-bold-webfont.svg#Samplino") format("svg");
+  src: url("/fonts/proxima-nova-bold-webfont.woff") format("woff"), url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"), url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg");
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/cerabasic-bold-webfont.woff") format("woff"), url("/fonts/cerabasic-bold-webfont.ttf") format("truetype"), url("/fonts/cerabasic-bold-webfont.eot?") format("eot"), url("/fonts/cerabasic-bold-webfont.svg#Samplino") format("svg");
+  src: url("/fonts/proxima-nova-bold-webfont.woff") format("woff"), url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"), url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg");
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: italic;
   font-weight: normal;
-  src: url("/fonts/cerabasic-regularitalic-webfont.woff") format("woff"), url("/fonts/cerabasic-regularitalic-webfont.ttf") format("truetype"), url("/fonts/cerabasic-regularitalic-webfont.eot?") format("eot"), url("/fonts/cerabasic-regularitalic-webfont.svg#Samplino") format("svg");
+  src: url("/fonts/proxima-nova-thin-webfont.woff") format("woff"), url("/fonts/proxima-nova-thin-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-thin-webfont.eot?") format("eot"), url("/fonts/proxima-nova-thin-webfont.svg#Samplino") format("svg");
 }
 
 @font-face {

@@ -73,14 +73,14 @@
         crossorigin="anonymous"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116534685-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+{{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116534685-1"></script>--}}
+{{--<script>--}}
+    {{--window.dataLayer = window.dataLayer || [];--}}
+    {{--function gtag(){dataLayer.push(arguments);}--}}
+    {{--gtag('js', new Date());--}}
 
-    gtag('config', 'UA-116534685-1');
-</script>
+    {{--gtag('config', 'UA-116534685-1');--}}
+{{--</script>--}}
 
 <script>
     WebFont.load({
@@ -88,7 +88,7 @@
             families: ['Open Sans:regular:cyrillic']
         },
         custom: {
-            families: ['Cera Basic', 'icomoon'],
+            families: ['Proxima Nova', 'icomoon'],
             urls: ['{{mix('/fonts/fonts.css')}}']
         },
         fontloading: function (familyName, fvd) {

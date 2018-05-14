@@ -6,31 +6,31 @@
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: normal;
-  @include font-files('cerabasic-regular-webfont');
+  @include font-files('proxima-nova-regular-webfont');
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 900;
-  @include font-files('cerabasic-bold-webfont');
+  @include font-files('proxima-nova-bold-webfont');
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: bold;
-  @include font-files('cerabasic-bold-webfont');
+  @include font-files('proxima-nova-bold-webfont');
 }
 
 @font-face {
-  font-family: "Cera Basic";
+  font-family: "Proxima Nova";
   font-style: italic;
   font-weight: normal;
-  @include font-files('cerabasic-regularitalic-webfont');
+  @include font-files('proxima-nova-thin-webfont');
 }
 
 @font-face {

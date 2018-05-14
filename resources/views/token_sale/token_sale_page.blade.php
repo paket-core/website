@@ -8,14 +8,7 @@
     <?php $path = '/'?>
     <div class="page-content token-page">
         @include('partials.header')
-        @include('token_sale.token_top_section')
-        @include('token_sale.token_bonus')
-        @include('token_sale.token_eth_address')
-        @include('token_sale.token_exchange_rates')
-        @include('token_sale.token_plan')
-        {{--@include('partials.contact_us')--}}
-        @include('token_sale.team')
-        @include('token_sale.token_join_social')
+        @include('token_sale.token_down_section')
         @include('partials.footer')
         @include('auth.login_template', [
             'back_button' => true

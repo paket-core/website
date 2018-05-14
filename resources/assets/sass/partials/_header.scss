@@ -2,9 +2,9 @@
 
   .logo, .logo img, .navbar-header {
     display: inline-block;
-    $s: 20px;
-    max-height: $s;
-    height: $s;
+    //$s: 20px;
+    //max-height: $s;
+    //height: $s;
   }
   .logo img {
     margin-top: 8px;
@@ -82,7 +82,9 @@ header {
   top: 0;
   width: 100%;
   z-index: 5;
-  &.filled {
+  border-bottom: solid $colorPaketBlue 2px;
+  background-color: $colorWhite;
+  //&.filled {
     .navbar {
       li a {
         color: $colorBlue;
@@ -98,7 +100,7 @@ header {
         }
       }
       .header .navbar-collapse {
-        border-bottom: none;
+        //border-bottom: none;
       }
       .white {
         display: none;
@@ -113,7 +115,7 @@ header {
     .navbar-toggle {
       background-color: $colorBlue;
     }
-  }
+  //}
   .navbar-toggle {
     position: absolute;
     right: 0;
@@ -130,7 +132,7 @@ header {
     @include transition(all 500ms);
     .header .navbar-collapse {
       padding-bottom: 24px;
-      border-bottom: solid $colorInputBorder 1px;
+      //border-bottom: solid $colorInputBorder 1px;
     }
   }
 }
@@ -139,8 +141,8 @@ header {
   header {
     &.filled {
       .navbar {
-        background-color: $colorWhite;
-        border-bottom: solid $colorInputBorder 1px;
+        //background-color: $colorWhite;
+        //border-bottom: solid $colorInputBorder 1px;
       }
       .header {
         padding-bottom: 0;

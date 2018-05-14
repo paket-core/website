@@ -8,8 +8,9 @@
                 <div class="navbar-header">
                     <div class="inner">
                         <a class="logo" href="{{$path}}">
-                            <img src="/images/logo/white_new.svg?v=qht21" class="white">
-                            <img src="/images/logo/color_new.svg?v=qht21" class="color">
+                            <img src="/images/logo/paket-logo.png"
+                                 srcset="/images/logo/paket-logo@2x.png 2x,/images/logo/paket-logo@3x.png 3x"
+                                 class="paket-logo">
                         </a>
                     </div>
                 </div>
@@ -18,12 +19,12 @@
                         @if (!Auth::guest())
                             <li>
                                 <a data-scroll href="/">
-                                    @lang('home.token_sale')
+                                    @lang('home.header_token_sale')
                                 </a>
                             </li>
                             <li>
                                 <a data-scroll href="{{route('my-account')}}">
-                                    @lang('home.my_account')
+                                    @lang('home.header_my_account')
                                 </a>
                             </li>
                             <li>
@@ -34,18 +35,23 @@
                             </li>
                         @else
                             <li>
-                                <a data-scroll href="{{$path}}#bonuses">
-                                    @lang('home.presale_bonuses')
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll href="{{$path}}#plan">
-                                    @lang('home.plan')
+                                <a data-scroll href="{{$path}}#product">
+                                    @lang('home.header_product_info')
                                 </a>
                             </li>
                             <li>
                                 <a data-scroll href="{{$path}}#team">
-                                    @lang('home.team')
+                                    @lang('home.header_our_team')
+                                </a>
+                            </li>
+                            <li>
+                                <a data-scroll href="{{$path}}#token-sale">
+                                    @lang('home.header_token_sale')
+                                </a>
+                            </li>
+                            <li>
+                                <a data-scroll href="{{$path}}#developers">
+                                    @lang('home.header_for_developers')
                                 </a>
                             </li>
                             <li>
