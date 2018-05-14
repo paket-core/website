@@ -1,14 +1,14 @@
 $rows: 1;
 .language-select-wrapper {
   margin-left: 0;
-  $size: 80px;
+  $size: 40px;
   height: $size;
   width: $size;
   position: relative;
   .language-select {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 0;
+    top: 0;
     padding: 0;
     max-width: $size;
   }

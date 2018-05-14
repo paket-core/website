@@ -14,6 +14,14 @@
                         </a>
                     </div>
                 </div>
+                @if (Auth::guest())
+                    <div class="language-wrapper">
+                        @include('partials.language')
+                    </div>
+                    <div class="social-wrapper">
+                        @include('partials.social')
+                    </div>
+                @endif
                 <div class="collapse navbar-collapse" id="topNav">
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())

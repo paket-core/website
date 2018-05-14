@@ -9,6 +9,13 @@
     <div class="page-content token-page">
         @include('partials.header')
         @include('token_sale.token_top_section')
+        @include('token_sale.token_media')
+        @include('token_sale.token_about')
+        @include('token_sale.token_project')
+        @include('token_sale.token_ecosystem')
+        @include('token_sale.token_partners')
+        @include('token_sale.token_team')
+        @include('token_sale.token_road_map')
         @include('token_sale.token_down_section')
         @include('partials.footer')
         @include('auth.login_template', [
