@@ -3,7 +3,7 @@
     <nav class="navbar">
         <div class="container header">
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
 
                 <div class="navbar-header">
                     <div class="inner">
@@ -56,7 +56,7 @@
                             </li>
                             <li>
                                 <a href="{{route('login')}}">
-                                    @lang('home.login')
+                                    @lang('home.header_login')
                                 </a>
                             </li>
                         @endif

@@ -1,9 +1,9 @@
 <section class="token-down-section down-section center">
     <div class="container">
-        <div class="col-md-10 col-md-offset-1 center">
+        <div class="col-md-12 center">
             <h1 class="token-title">@lang('tokens.pre_sale_title')</h1>
         </div>
-        <div class="col-md-10 col-md-offset-1 center">
+        <div class="col-md-12 center">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div id="countdown">

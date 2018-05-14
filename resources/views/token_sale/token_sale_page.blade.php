@@ -8,6 +8,7 @@
     <?php $path = '/'?>
     <div class="page-content token-page">
         @include('partials.header')
+        @include('token_sale.token_top_section')
         @include('token_sale.token_down_section')
         @include('partials.footer')
         @include('auth.login_template', [
