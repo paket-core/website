@@ -1,7 +1,4 @@
 <section class="token-down-section down-section center">
-    <div class="logos">
-        {{--<img class="logo-big logo-big-1" src="/images/logos/logo_simple_gray.svg"/>--}}
-    </div>
     <div class="container">
         <div class="col-md-10 col-md-offset-1 center">
             <h1 class="token-title">@lang('tokens.pre_sale_title')</h1>
@@ -35,39 +32,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn-with-shadow">
-                        <div class="btn join-click">@lang('home.join_ico')</div>
-                        <span class="shadow"></span>
-                    </div>
                 </div>
             </div>
-            <div class="token-sale-dates-border"></div>
-            <div class="token-sale-dates">
-                <div class="dates">
-                    <div class="item">
-                        <div class="title">@lang('tokens.presale_begins')</div>
-                        <div class="date">@lang('tokens.presale_begins_date')</div>
-                    </div>
-                    <div class="item">
-                        <div class="title">@lang('tokens.presale_ends')</div>
-                        <div class="date">@lang('tokens.presale_ends_date')</div>
-                    </div>
-                </div>
-                <div class="cap">
-                    <div class="item">
-                        <div class="title">@lang('tokens.presale_per_eth')</div>
-                        <div class="date">@lang('tokens.presale_per_eth_value')</div>
-                    </div>
-                    <div class="item">
-                        <div class="title">@lang('tokens.presale_hard_cap')</div>
-                        <div class="date">@lang('tokens.presale_hard_cap_value')</div>
-                    </div>
-                </div>
-                <div class="min">
-                    <div class="item">
-                        <div class="title">@lang('tokens.presale_min')</div>
-                        <div class="date">@lang('tokens.presale_min_value')</div>
-                    </div>
+        </div>
+    </div>
+    <div class="token-sale-updates">
+        <div class="token-sale-update token-sale-update-1">
+            <div class="title">@lang('tokens.pre_sale_learn_title')</div>
+            <div class="desc">@lang('tokens.pre_sale_learn_desc')</div>
+            <div class="btn btn-update-1">@lang('tokens.pre_sale_learn_btn')</div>
+        </div>
+        <div class="token-sale-update token-sale-update-2">
+            <div class="title">@lang('tokens.pre_sale_updates_title')</div>
+            <div class="desc">@lang('tokens.pre_sale_updates_desc')</div>
+            <div class="input">
+                {!! \TokenChef\IcoTemplate\Services\WidgetService::get_newsletter_form([
+      'newsletter_email' => trans('tokens.pre_sale_updates_input')
+      ]) !!}
+                <div class="btn-wrapper">
+                    <button class="sub-btn btn subscribe-button newsletter-join-form-btn">
+                        >
+                    </button>
                 </div>
             </div>
         </div>

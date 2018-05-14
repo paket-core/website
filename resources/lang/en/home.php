@@ -28,5 +28,7 @@ return [
     'my_account' => 'My Account',
     'token_sale' => 'Token Sale',
     'login' => 'Login',
-    'logout' => 'Logout'
+    'logout' => 'Logout',
+
+    'footer_follow_title' => "FOLLOW US",
 ];

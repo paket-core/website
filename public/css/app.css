@@ -384,13 +384,13 @@ strong {
 
 .btn.btn-dark {
   font-weight: bold;
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
   color: #fff;
 }
 
 .btn.btn-dark:hover {
-  background-color: #0d2254;
+  background-color: #565555;
 }
 
 .btn.btn-outline {
@@ -458,7 +458,7 @@ strong {
 }
 
 .dark-background {
-  background-color: #061028;
+  background-color: #3c3c3c;
 }
 
 .title-line {
@@ -781,7 +781,7 @@ strong {
   .menu .section-wrapper {
     display: inline-block;
     width: 100%;
-    background-color: rgba(6, 16, 40, 0.8);
+    background-color: rgba(60, 60, 60, 0.8);
     position: fixed;
     height: 100%;
     left: 0;
@@ -813,17 +813,23 @@ strong {
 }
 
 #countdown .item .counter {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 43px;
-  text-align: center;
+  font-size: 79.9px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
 #countdown .item .title {
-  font-size: 12px;
+  font-size: 14.7px;
   font-weight: bold;
-  line-height: 14px;
-  text-align: center;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
 #countdown .item .dot {
@@ -943,7 +949,7 @@ strong {
 
 .document-modal.document-page .black-top-section {
   padding: 30px;
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
   text-align: center;
 }
@@ -970,7 +976,7 @@ strong {
 
 .document-modal.document-page .modal-footer {
   display: inherit;
-  background-color: #061028;
+  background-color: #3c3c3c;
   text-align: center;
 }
 
@@ -1009,15 +1015,15 @@ strong {
   width: 40px;
   line-height: 40px;
   text-align: center;
-  border: solid #061028 2px;
+  border: solid #3c3c3c 2px;
 }
 
 .home-modals .scroll-down .icon-arrow_down:before {
-  color: #061028;
+  color: #3c3c3c;
 }
 
 .home-modals .scroll-down:hover {
-  background-color: #061028;
+  background-color: #3c3c3c;
 }
 
 .home-modals .scroll-down:hover .icon-arrow_down:before {
@@ -1048,7 +1054,7 @@ strong {
   z-index: 30;
   bottom: 20px;
   right: 20px;
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
   width: 300px;
   min-height: 100px;
@@ -1377,19 +1383,31 @@ header .navbar .header .navbar-collapse {
 }
 
 footer {
-  background-color: #061028;
+  background-color: #3c3c3c;
   text-align: left;
   padding-bottom: 30px;
   padding-top: 69px;
 }
 
 footer ul {
+  margin-top: 20px;
+  margin-bottom: 50px;
   list-style: none;
   padding-left: 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul li:nth-last-child(1) {
+  margin-right: 0;
 }
 
 footer ul li a {
-  color: #fff;
+  color: #27b9ee;
   display: inline-block;
   width: 100%;
   font-size: 16px;
@@ -1401,79 +1419,56 @@ footer ul li a:hover {
   color: #2190F5;
 }
 
-footer .img {
-  cursor: pointer;
-  position: relative;
-  width: 92px;
+footer .title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
 }
 
-footer .img img {
-  -webkit-transition: opacity 500ms;
-  transition: opacity 500ms;
+footer .social {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-footer .img .color {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 92px;
+footer .social a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  text-align: center;
+  background-color: #fff;
+  padding: 9px;
+  margin-right: 10px;
 }
 
-footer .img:hover .white {
-  opacity: 0;
+footer .social a:nth-last-child(1) {
+  margin-right: 0;
 }
 
-footer .img:hover .color {
-  opacity: 1;
+footer .social a span {
+  font-size: 20px;
 }
 
 footer .copyright {
-  color: #00EE87;
+  text-align: center;
+  color: #6e6e6e;
   font-size: 16px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.footer-light footer {
-  background-color: #fff;
-}
-
-.footer-light footer .img .white {
-  display: none !important;
-}
-
-.footer-light footer .img .color {
-  opacity: 1;
-}
-
-.footer-light footer .img .color:hover {
-  opacity: 0.8;
-}
-
-.footer-light footer ul li a {
-  color: #2190F5;
-}
-
-.footer-light footer ul li a:hover {
-  color: #52a8f7;
-}
-
-.footer-light footer .copyright {
-  color: #00EE87;
-}
-
-@media (max-width: 480px) {
-  footer .img {
-    margin-bottom: 30px;
-  }
-
-  footer .copyright {
-    margin-top: 30px;
-  }
+footer .documents {
+  color: #27b9ee;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 .down-section.token-down-section {
+  position: relative;
   background-color: #fff;
   padding-top: 80px;
   color: #000;
@@ -1491,8 +1486,60 @@ footer .copyright {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
+}
+
+.down-section.token-down-section .token-sale-update {
+  width: 304px;
+  height: 245px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px -6px 27px 0 rgba(0, 0, 0, 0.22);
+          box-shadow: 0px -6px 27px 0 rgba(0, 0, 0, 0.22);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.down-section.token-down-section .token-sale-update.token-sale-update-1 {
+  margin-left: -352px;
+}
+
+.down-section.token-down-section .token-sale-update.token-sale-update-2 {
+  margin-left: 48px;
+}
+
+.down-section.token-down-section .token-sale-update .title {
+  font-size: 19.4px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+.down-section.token-down-section .token-sale-update .desc {
+  font-size: 17.1px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+}
+
+.down-section.token-down-section .token-sale-update .btn-update-1 {
+  width: 234px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #2ac3ff;
+  color: #fff;
 }
 
 .auth-page {
@@ -1779,12 +1826,12 @@ footer .copyright {
 
 .btn.btn-dark.register-form-btn {
   font-weight: bold;
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
 }
 
 .btn.btn-dark.register-form-btn:hover {
-  background-color: #0d2254;
+  background-color: #565555;
 }
 
 #toast-container {
@@ -1809,7 +1856,7 @@ footer .copyright {
 }
 
 .login-page .sign-up-info {
-  color: #061028;
+  color: #3c3c3c;
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
@@ -1825,7 +1872,7 @@ footer .copyright {
 .login-page .sign-up-link .sign-up-button {
   border: 1px solid #2190F5;
   border-radius: 2px;
-  background-color: #061028;
+  background-color: #3c3c3c;
   font-weight: bold;
   min-width: 68px;
   padding: 0 10px;
@@ -1853,7 +1900,7 @@ footer .copyright {
 .join-page .login-up-link .login-up-button {
   border: 1px solid #2190F5;
   border-radius: 2px;
-  background-color: #061028;
+  background-color: #3c3c3c;
   font-weight: bold;
   min-width: 68px;
   padding: 0 10px;
@@ -1861,11 +1908,11 @@ footer .copyright {
 }
 
 .join-page.auth-page .section-left {
-  background-color: #061028;
+  background-color: #3c3c3c;
 }
 
 .my-account.top {
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
   padding-top: 120px;
   padding-bottom: 40px;
@@ -2098,7 +2145,7 @@ footer .copyright {
 
 .my-account .payments li > div {
   padding: 16px;
-  border: solid #061028 2px;
+  border: solid #3c3c3c 2px;
   width: 20%;
   float: left;
   border-right-width: 0;
@@ -2290,8 +2337,8 @@ footer .copyright {
 }
 
 .nice-table table.dataTable thead {
-  background-image: -webkit-gradient(linear, left top, right top, from(#061028), to(#0d2254));
-  background-image: linear-gradient(90deg, #061028 0%, #0d2254 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3c3c3c), to(#565555));
+  background-image: linear-gradient(90deg, #3c3c3c 0%, #565555 100%);
 }
 
 .nice-table table.dataTable thead th {
@@ -2578,7 +2625,7 @@ footer .copyright {
 .document-page .black-top-section {
   padding-top: 180px;
   padding-bottom: 40px;
-  background-color: #061028;
+  background-color: #3c3c3c;
   color: #fff;
 }
 
