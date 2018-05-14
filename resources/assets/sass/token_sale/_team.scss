@@ -1,0 +1,143 @@
+.team {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .team-title {
+    color: $colorFont;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .team-member {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    @include box-shadow(0 2px 34px 0 $colorShadowTeam);
+    .flip-container {
+      background-color: $colorWhite;
+      z-index: 2;
+      position: relative;
+      .flipper {
+        .front, .back {
+          padding: 19px 5px;
+        }
+      }
+    }
+    .shadow {
+      border-radius: 10%;
+      width: 80%;
+      left: 10%;
+      height: 20px;
+      @include box-shadow(0px 15px 15px 0px $colorShadowTeam);
+      position: absolute;
+      bottom: 10px;
+      z-index: 1;
+    }
+    .img {
+      box-sizing: border-box;
+      $size: 104px;
+      height: $size;
+      width: $size;
+      border: 2px solid $colorBlue;
+      border-radius: $size/2;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      display: inline-block;
+      margin: auto;
+      margin-bottom: 12px;
+      -webkit-filter: grayscale(100%) brightness(110%);
+      filter: grayscale(100%) brightness(110%);
+    }
+    .name {
+      color: $colorFont;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .role {
+      color: $colorFont;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .linkedin-logo {
+      $size: 20px;
+      width: $size;
+      position: absolute;
+      bottom: 19px;
+      left: 50%;
+      z-index: 3;
+      margin-left: -$size/2;
+    }
+    .back .desc {
+      text-align: left;
+      padding: 0 10px;
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}
+
+.flip-section {
+  $SIZE: 290px;
+  /* entire container, keeps perspective */
+  .flip-container {
+    perspective: 1000px;
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    width: 100%;
+    height: $SIZE;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    @include transform(rotateY(0deg));
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    @include transform(rotateY(180deg));
+  }
+}
+
+@media (max-width: $sizeExtraSmall) {
+  .team {
+    padding-top: 100px;
+    padding-bottom: 42px;
+  }
+  .flip-section {
+    $SIZE: 320px;
+    .flip-container, .front, .back {
+      height: $SIZE;
+    }
+  }
+}

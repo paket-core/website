@@ -1,0 +1,55 @@
+#changeLanguageModal {
+  position: fixed;
+  z-index: 30;
+  bottom: 20px;
+  right: 20px;
+  background-color: $colorDarkBackground;
+  color: $colorWhite;
+  width: 300px;
+  min-height: 100px;
+  border: solid $colorWhite 1px;
+  padding: 20px 10px;
+  cursor: inherit;
+  .info {
+    line-height: 20px;
+    text-align: left;
+    font-size: 13px;
+    float: left;
+    padding-left: 10px;
+    width: 210px;
+  }
+  .flag {
+    border: solid $colorWhite 2px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-top: 0;
+    $flags: en, de, fr, es, pt;
+    @include flags($flags);
+  }
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    &:hover {
+      &:before {
+        color: $colorBlue;
+      }
+    }
+  }
+  .change {
+    font-weight: 800;
+    cursor: pointer;
+  }
+}
+
+cloudflare-app[app="back-to-top-button"][visibility="visible"] {
+  pointer-events: all;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}

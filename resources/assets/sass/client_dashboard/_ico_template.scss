@@ -1,0 +1,33 @@
+@import "table";
+@import "language_selector";
+@import "documents";
+@import "deposit_wizard";
+
+.referral-code-form {
+  label {
+    line-height: 36px;
+  }
+  .refresh-icon {
+    margin-top: 8px;
+    cursor: pointer;
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+}
+
+#my-codes {
+  #referrals {
+    padding: 20px;
+  }
+  a {
+    color: $colorBlue;
+    margin-right: 10px;
+  }
+  i {
+    cursor: pointer;
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+}

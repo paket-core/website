@@ -1,0 +1,25 @@
+#countdown {
+  .item {
+    color: $colorWhite;
+    .counter {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 43px;
+      text-align: center;
+    }
+    .title {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 14px;
+      text-align: center;
+    }
+    .dot {
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      background-color: $colorDot;
+      display: block;
+      margin: 5px auto;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<div class="message admin-message">{{$message}}</div>

@@ -1,0 +1,52 @@
+.referrals-chart-wrapper {
+  .select-period {
+    float: right;
+  }
+  .select2, .select-wrapper {
+    min-width: 150px;
+    display: inline-block;
+  }
+  .select-code {
+    float: left;
+  }
+  .select2-container--default {
+    text-align: left;
+    .select2-selection--single {
+      outline: none !important;
+    }
+  }
+  .select-boxes {
+    margin-bottom: 20px;
+    .select2-results li {
+      text-align: left;
+    }
+  }
+}
+
+.referrals-statistic {
+  .icon-wrapper {
+    text-align: center;
+  }
+  .fa {
+    font-size: 30px;
+  }
+  .sum-wrapper {
+    text-align: center;
+    font-size: 30px;
+    color: $colorBlue;
+    padding-top: 5px;
+  }
+}
+
+.simple-referral {
+  .select-code {
+    display: none;
+  }
+  .copy-address-wrapper {
+    display: inline-block;
+    margin-bottom: 30px;
+    input {
+      min-width: 280px;
+    }
+  }
+}

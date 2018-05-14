@@ -1,0 +1,22 @@
+.animated-hover {
+  &:before, &:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: $colorWhite;
+    @include transition(width 400ms ease-in-out)
+  }
+  &:after {
+    right: 0;
+  }
+  &:before {
+    left: 0;
+  }
+  &:hover, &:focus {
+    &:before, &:after {
+      width: 50%
+    }
+  }
+}

@@ -1,0 +1,180 @@
+@import "../../../../node_modules/compass-mixins/lib/compass";
+
+@mixin linear-gradient-b($args...) {
+  background-image: -o-linear-gradient($args);
+  background-image: -moz-linear-gradient($args);
+  background-image: -webkit-linear-gradient($args);
+  background-image: linear-gradient($args);
+}
+
+@mixin radial-gradient-b($args...) {
+  background-image: -o-radial-gradient($args);
+  background-image: -moz-radial-gradient($args);
+  background-image: -webkit-radial-gradient($args);
+  background-image: radial-gradient($args);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin flags($icons) {
+  @each $icon in $icons {
+    $version: 'sf32fk';
+    &.#{$icon} {
+      background-image: url('/images/flags/#{$icon}.png?' + $version);
+    }
+  }
+}
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+// rotate
+
+@mixin border-top-radius($radius: $default-border-radius) {
+  @include border-top-left-radius($radius);
+  @include border-top-right-radius($radius);
+}
+
+@mixin button($color) {
+  font-weight: bold;
+  background-color: $color;
+  color: $colorWhite;
+  &:hover {
+    background-color: lighten($color, 10);
+  }
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -ms-transform: rotate($degrees); // IE9 only
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin; // IE9 only
+  transform-origin: $origin;
+}
+
+@mixin box-shadow-custom($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin filter($filter) {
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -o-filter: $filter;
+  -ms-filter: $filter;
+  filter: $filter;
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin pulsingAnimation($name, $color) {
+
+  background: rgba($color, 0.8);
+  box-shadow: 0 0 0 rgba($color, 0.4);
+
+  animation: #{$name} 2500ms infinite;
+
+  @include keyframes($name) {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba($color, 0.4);
+      box-shadow: 0 0 0 0 rgba($color, 0.4);
+    }
+    70% {
+      -moz-box-shadow: 0 0 0 26px rgba($color, 0);
+      box-shadow: 0 0 0 26px rgba($color, 0);
+    }
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba($color, 0);
+      box-shadow: 0 0 0 0 rgba($color, 0);
+    }
+  }
+}
+
+@mixin oval_circles() {
+  $size: 460px;
+  $margin: 60px;
+  .main-title {
+    margin-top: 288px;
+  }
+  .oval-circles {
+    position: absolute;
+    left: 50%;
+    margin-left: -$size/2;
+    top: 152px;
+    .oval-1 {
+      height: $size;
+      width: $size;
+    }
+    @for $i from 2 to 7 {
+      .oval-#{$i} {
+        width: $size + $margin - $i*$margin;
+        height: $size + $margin - $i*$margin;
+        margin-left: ($i - 1)*$margin/2;
+        margin-top: ($i - 1)*$margin/2;
+      }
+    }
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }
+}

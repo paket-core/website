@@ -1,0 +1,231 @@
+.header {
+
+  .logo, .logo img, .navbar-header {
+    display: inline-block;
+    $s: 20px;
+    max-height: $s;
+    height: $s;
+  }
+  .logo img {
+    margin-top: 8px;
+  }
+
+  &.container > div {
+    padding-top: 24px;
+  }
+
+  .logo .color {
+    display: none;
+  }
+
+  &.container > div {
+    @include transition(all 500ms);
+  }
+
+  .token-sale {
+    display: none;
+  }
+
+  .navbar-nav {
+    float: right;
+  }
+
+  ul {
+    $paddingTop: 15px;
+    padding-top: $paddingTop;
+    padding-left: 70px;
+    li {
+      a {
+        color: $colorWhite;
+        padding: 0;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 14px;
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+          color: $colorBlue;
+        }
+      }
+      margin-left: 35px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+
+    .token-sale a {
+      margin-top: -8px;
+    }
+
+    li.token-sale a, &.navbar-right .sign-up a {
+      border: solid $colorWhite 1px;
+      border-radius: 2px;
+      padding: 8px 13px;
+      &:hover, &:focus, &:active {
+        background-color: $colorGray;
+        color: $colorFont;
+      }
+    }
+    &.navbar-right {
+      padding-top: 7px;
+      li a {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 13px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  &.filled {
+    .navbar {
+      li a {
+        color: $colorBlue;
+        &:hover {
+          color: darken($colorBlue, 10);
+        }
+      }
+      .sign-up a, li.token-sale a {
+        border-color: $colorBlue;
+        &:hover, &:focus, &:active {
+          background-color: $colorGrey;
+          color: $colorFont;
+        }
+      }
+      .header .navbar-collapse {
+        border-bottom: none;
+      }
+      .white {
+        display: none;
+      }
+      .color {
+        display: inherit;
+      }
+    }
+    li.token-sale {
+      display: inherit;
+    }
+    .navbar-toggle {
+      background-color: $colorBlue;
+    }
+  }
+  .navbar-toggle {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    padding: 0;
+    margin: 0;
+    img {
+      max-width: 30px;
+    }
+  }
+  .navbar {
+    margin-bottom: 0;
+    border: none;
+    @include transition(all 500ms);
+    .header .navbar-collapse {
+      padding-bottom: 24px;
+      border-bottom: solid $colorInputBorder 1px;
+    }
+  }
+}
+
+@media (min-width: $sizeExtraSmall+1) {
+  header {
+    &.filled {
+      .navbar {
+        background-color: $colorWhite;
+        border-bottom: solid $colorInputBorder 1px;
+      }
+      .header {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeLarge) {
+  header {
+    .header ul {
+      padding-left: 40px;
+      &.navbar-right {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeExtraSmall) {
+  header {
+    &.filled {
+      .navbar {
+        .container > div {
+          background-color: $colorWhite;
+          border-bottom: solid $colorInputBorder 1px;
+        }
+      }
+    }
+  }
+  .container.header {
+    padding: 0;
+    overflow: hidden;
+    & > div {
+      padding: 0 15px;
+      display: flex;
+      width: 100%;
+      .navbar-header {
+        width: 100%;
+        display: inline-block;
+        max-height: inherit;
+        height: inherit;
+        overflow: hidden;
+        .inner {
+          position: relative;
+          padding: 25px 0;
+          border-bottom: solid $colorInputBorder 1px;
+        }
+        .big-icon {
+          position: absolute;
+          left: 50%;
+          $size: 614px;
+          width: $size;
+          margin-left: -$size/2;
+          margin-top: 18px;
+        }
+      }
+    }
+    .navbar-collapse, .navbar-collapse.collapse {
+      background-color: $colorWhite;
+      padding: 0;
+      margin: 0;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      top: 80px;
+      z-index: 6;
+      .navbar-nav {
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          width: 100%;
+          padding: 10px 20px;
+          margin: 0;
+          a {
+            border: none;
+            color: $colorBlue;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 71px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.token-plan {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .plan-details {
+    overflow: hidden;
+    position: relative;
+  }
+  .title {
+    margin-bottom: 40px;
+    color: $colorFont;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 50px;
+  }
+  .plan-item {
+    z-index: 2;
+    padding: 15px 20px;
+    position: relative;
+    background-color: $colorWhite;
+    color: $colorFont;
+    @include box-shadow(0 2px 24px 0 rgba(221, 221, 221, 0.5));
+    margin-bottom: 60px;
+    border-radius: 4px;
+    .border {
+      width: 16px;
+      background-color: $colorBlue;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .step-number {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+    .step-date {
+      color: $colorFont;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      margin-bottom: 5px;
+    }
+    .step-desc {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+  $w: 14px;
+  .line {
+    position: absolute;
+    width: 3px;
+    background-color: $colorBlue;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+  }
+  .oval-line {
+    z-index: 2;
+    top: 50%;
+    $h: 2px;
+    position: absolute;
+    height: $h;
+    margin-top: -$h/2;
+    width: $w;
+    background-color: $colorBlue;
+  }
+  .oval {
+    z-index: 3;
+    top: 50%;
+    $size: 13px;
+    position: absolute;
+    width: $size;
+    height: $size;
+    background-color: $colorFont;
+    border-radius: $size;
+    margin-top: -$size/2;
+    .oval-small {
+      position: absolute;
+      background-color: $colorWhite;
+      $size2: 7px;
+      $margin: #{(($size - $size2)/2 )};
+      width: $size2;
+      height: $size2;
+      left: $margin;
+      top: $margin;
+      border-radius: $size2;
+    }
+  }
+  .plan-right {
+    padding-top: 57px;
+    .border {
+      right: inherit;
+      left: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .plan-item {
+      padding-left: 31px;
+    }
+    .oval {
+      left: -21px;
+    }
+    .oval-line {
+      left: -$w;
+    }
+    .hidden-step {
+      display: none;
+    }
+  }
+  .plan-left {
+    padding-top: 178px;
+    padding-bottom: 20px;
+    .border {
+      border-radius: 0 4px 4px 0;
+    }
+    .oval {
+      right: -21px;
+    }
+    .oval-line {
+      right: -$w;
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .token-plan {
+    .title {
+      text-align: center;
+    }
+    .line {
+      left: 0;
+      margin-left: 15px;
+    }
+    $w: 14px;
+    .plan-right {
+      padding-left: 31px;
+      padding-top: 0;
+      .hidden-step {
+        display: inherit;
+      }
+    }
+    .plan-left {
+      display: none;
+    }
+  }
+}

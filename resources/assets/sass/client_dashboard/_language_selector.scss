@@ -1,0 +1,85 @@
+$rows: 1;
+.language-select-wrapper {
+  margin-left: 0;
+  $size: 80px;
+  height: $size;
+  width: $size;
+  position: relative;
+  .language-select {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 0;
+    max-width: $size;
+  }
+  &.open {
+    .language-select {
+      max-width: inherit;
+    }
+  }
+}
+
+.language-select {
+  list-style: none;
+  overflow: hidden;
+  cursor: pointer;
+  /*Animate*/
+  @include transition(all 150ms ease-in-out);
+  li {
+    float: right;
+    margin-left: 12px;
+    display: none;
+    &.active {
+      display: inherit;
+    }
+    span {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .img {
+      border: solid $colorBlue 2px;
+      $size: 36px;
+      width: $size;
+      height: $size;
+      vertical-align: middle;
+      display: inline-block;
+      border-radius: 100%;
+      background-size: cover;
+      background-position: center;
+      $flags: bg, br, en, fil, hr, ua, ru, de, hu, fr, ee, cz, se, he, lt, es, it, cn, tw, us, arb, pk, nl, vn, no, id, in, gr, pl, pt;
+      @include flags($flags);
+    }
+  }
+}
+
+$marginTop: 68px;
+
+.open .language-select {
+  position: absolute;
+  height: initial;
+  margin-top: $marginTop;
+  padding-top: 10px;
+  overflow: visible;
+  li {
+    display: inherit;
+    margin-bottom: 10px;
+  }
+  .active {
+    position: absolute;
+    top: -$marginTop;
+    right: 0;
+  }
+}
+
+.language-select li.active {
+  order: 1;
+  pointer-events: none;
+}
+
+/* Medium Devices, Desktops */
+@media (max-width: $sizeSmall) {
+  .language-select li .img {
+    width: 26px;
+    height: 26px;
+  }
+}

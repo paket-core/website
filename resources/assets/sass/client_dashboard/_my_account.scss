@@ -1,0 +1,292 @@
+.my-account {
+  &.top {
+    background-color: $colorDarkBackground;
+    color: $colorWhite;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  &.down {
+    padding-bottom: 120px;
+  }
+  .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: transparent;
+    border-bottom: solid $colorGreen 1px;
+  }
+  .nav-pills li a {
+    padding: 0;
+    border-radius: 0;
+    margin-right: 40px;
+    display: inline-block;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      border-bottom: solid $colorGreen 1px;
+    }
+  }
+  .register-section {
+    padding-left: 0;
+  }
+  a {
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  .hello {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+  .tab-pane {
+    padding-top: 42px;
+  }
+  .icon {
+    width: 118.89px;
+    top: 80px;
+    position: absolute;
+    right: 5px;
+  }
+  .eth-address-bar {
+    .buttons {
+      display: inline-block;
+      margin: auto;
+    }
+    border: 1px solid $colorInputBorder;
+    padding: 40px;
+    &.eth-bar {
+      display: inline-block;
+      width: 100%;
+      margin-top: 76px;
+    }
+    .eth-address-input {
+      min-width: 275px;
+      float: left;
+    }
+    .btn-with-shadow {
+      float: left;
+      min-width: 155px;
+      width: 155px;
+      .btn {
+        min-width: 100%;
+        background-color: $colorGreen;
+        @include transition(all 500ms);
+      }
+      .shadow {
+        bottom: 10px;
+      }
+      &:hover {
+        .btn {
+          background-color: darken($colorGreen, 10);
+        }
+      }
+    }
+    .buttons {
+      margin-bottom: 30px;
+    }
+  }
+  .form-wrapper {
+    max-width: 450px;
+    padding: 30px 0;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .label {
+    color: $colorFont;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    line-height: 20px;
+  }
+  .refresh-deposit-status {
+    i {
+      margin-left: 10px;
+    }
+  }
+  .form-wrapper .refresh-deposit-status-wrapper {
+    display: inline-block;
+    .btn {
+      width: 50%;
+      float: left;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  }
+  .thanks-investing {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    strong {
+      margin-top: 30px;
+    }
+    .balance {
+      color: $colorGreen;
+      margin-top: 20px;
+      border: solid $colorGreen 2px;
+      padding: 10px 25px;
+      float: left;
+      font-size: 24px;
+    }
+  }
+  .payment-status {
+    &.veryfing {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    &.paid {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.my-account {
+  .form-wrapper {
+    background-color: $colorWhite;
+    .btn {
+      margin-top: 0;
+    }
+  }
+  .create-deposit-form .help {
+    margin-bottom: 30px;
+  }
+  .create-deposit-section.form-wrapper {
+    max-width: 600px;
+  }
+  .send-from {
+    color: $colorRed;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+.my-account {
+  .payments {
+    list-style: none;
+    text-align: center;
+    .payment-header {
+      font-weight: bold;
+      background-color: #a2ccc5;
+      & > div {
+        min-height: 74px;
+      }
+      .bonus {
+        background-color: transparent;
+      }
+    }
+    li {
+      display: inline-block;
+      width: 100%;
+      float: left;
+      &:nth-last-child(1) > div {
+        border-bottom-width: 2px;
+      }
+      & > div {
+        padding: 16px;
+        border: solid $colorDarkBackground 2px;
+        width: 20%;
+        float: left;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        line-height: 20px;
+        min-height: 80px;
+        &:nth-last-child(1) {
+          border-right-width: 2px;
+        }
+      }
+    }
+  }
+  .no-transactions {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+  }
+}
+
+.identification-file {
+  img {
+    float: left;
+    display: inline-block;
+    max-width: 300px;
+  }
+}
+
+.send-invitation-wrapper {
+  padding-top: 30px;
+  .invitation-title {
+    margin-bottom: 30px;
+  }
+  #invitationForm {
+    .invitation-wrapper {
+      border-bottom: solid $colorGrey 1px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .invitation-wrapper:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+}
+
+.copy-address-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  input {
+    border: solid $colorGreen 1px;
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    line-height: 19px;
+    min-width: 260px;
+  }
+  .btn-copy {
+    cursor: pointer;
+    float: left;
+    background-color: $colorGreen;
+    color: $colorWhite;
+    padding: 12px 10px;
+    @include transition(background 500ms);
+    &:hover {
+      background-color: darken($colorGreen, 10);
+    }
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: $sizeMedium) {
+  .my-account {
+    .title {
+      text-align: center;
+    }
+    .icon {
+      display: none;
+    }
+    .buttons {
+      input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .btn-with-shadow {
+        width: 100%;
+      }
+    }
+    .container {
+      padding: 0;
+    }
+  }
+}

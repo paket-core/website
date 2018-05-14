@@ -1,0 +1,24 @@
+.token-page .header {
+  ul {
+    li {
+      a {
+        color: $colorBlue;
+        &:hover {
+          cursor: darken($colorBlue, 10);
+        }
+      }
+    }
+    .sign-up a {
+      border-color: $colorBlue;
+      background-color: $colorTokenPageSignUp;
+    }
+  }
+  .logo {
+    .white {
+      display: none;
+    }
+    .color {
+      display: inherit;
+    }
+  }
+}
