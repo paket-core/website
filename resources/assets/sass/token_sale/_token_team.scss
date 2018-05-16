@@ -30,10 +30,28 @@
       }
     }
   }
+  .team-carousel-wrapper {
+    display: none;
+    .member {
+      margin: auto;
+      max-width: 170px;
+      .img {
+        $size: 170px;
+        height: $size;
+        width: $size;
+      }
+    }
+  }
 }
 
 @media (max-width: $sizeSmall) {
-  .token-section {
+  .token-section.token-team {
+    .team-members-wrapper {
+      display: none;
+    }
+    .team-carousel-wrapper {
+      display: inherit;
+    }
     &.token-team {
       padding-top: 20px;
     }

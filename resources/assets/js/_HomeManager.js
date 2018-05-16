@@ -57,6 +57,46 @@ var HomeManager = (function () {
             item.toggleClass('active')
         });
 
+        var owlEcosystem = $(".eco-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            autoplayTimeout: 15000,
+            loop: true,
+            stagePadding: 40,
+            items: 1
+        });
+
+        $('.owlEcosystemNextBtn').click(function () {
+            owlEcosystem.trigger('next.owl.carousel');
+        });
+
+// Go to the previous item
+        $('.owlEcosystemPrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owlEcosystem.trigger('prev.owl.carousel', [300]);
+        });
+
+        var owlTeam = $(".team-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            autoplayTimeout: 15000,
+            loop: true,
+            stagePadding: 70,
+            items: 1
+        });
+
+        $('.owlTeamNextBtn').click(function () {
+            owlTeam.trigger('next.owl.carousel');
+        });
+
+// Go to the previous item
+        $('.owlTeamPrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owlTeam.trigger('prev.owl.carousel', [300]);
+        });
+
     }
 
     return {

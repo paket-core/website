@@ -1,1 +1,114 @@
-@font-face{font-family:Proxima Nova;font-style:normal;font-weight:400;src:url("/fonts/proxima-nova-regular-webfont.woff") format("woff"),url("/fonts/proxima-nova-regular-webfont.ttf") format("truetype"),url("/fonts/proxima-nova-regular-webfont.eot?") format("eot"),url("/fonts/proxima-nova-regular-webfont.svg#Samplino") format("svg")}@font-face{font-family:Proxima Nova;font-style:normal;font-weight:900;src:url("/fonts/proxima-nova-bold-webfont.woff") format("woff"),url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"),url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"),url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg")}@font-face{font-family:Proxima Nova;font-style:normal;font-weight:700;src:url("/fonts/proxima-nova-bold-webfont.woff") format("woff"),url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"),url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"),url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg")}@font-face{font-family:Proxima Nova;font-style:italic;font-weight:400;src:url("/fonts/proxima-nova-thin-webfont.woff") format("woff"),url("/fonts/proxima-nova-thin-webfont.ttf") format("truetype"),url("/fonts/proxima-nova-thin-webfont.eot?") format("eot"),url("/fonts/proxima-nova-thin-webfont.svg#Samplino") format("svg")}@font-face{font-family:icomoon;src:url("/fonts/icomoon.eot?vlv6hc");src:url("/fonts/icomoon.eot?vlv6hc#iefix") format("embedded-opentype"),url("/fonts/icomoon.ttf?vlv6hc") format("truetype"),url("/fonts/icomoon.woff?vlv6hc") format("woff"),url("/fonts/icomoon.svg?vlv6hc#icomoon") format("svg");font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\E900";color:#2190f5}.icon-social:before{content:"\E901";color:#fff}.icon-arrow_left:before{content:"\E902";color:#d1d1d1}.icon-arrow_right:before{content:"\E903";color:#d1d1d1}.icon-download:before{content:"\E904";color:#fff}.icon-close:before{content:"\E905";color:#fff}.icon-play:before{content:"\E906";color:#4c93f3}.icon-arrow_down:before{content:"\E907";color:#fff}.icon-telegram:before{content:"\E908";color:#2ca5e0}.icon-medium:before{content:"\E909"}.icon-fb:before{content:"\E90A";color:#2190f5}.icon-twitter:before{content:"\E90B";color:#2190f5}.icon-instagram:before{content:"\EA92"}
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/proxima-nova-regular-webfont.woff") format("woff"), url("/fonts/proxima-nova-regular-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-regular-webfont.eot?") format("eot"), url("/fonts/proxima-nova-regular-webfont.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/proxima-nova-bold-webfont.woff") format("woff"), url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"), url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/proxima-nova-bold-webfont.woff") format("woff"), url("/fonts/proxima-nova-bold-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-bold-webfont.eot?") format("eot"), url("/fonts/proxima-nova-bold-webfont.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/proxima-nova-thin-webfont.woff") format("woff"), url("/fonts/proxima-nova-thin-webfont.ttf") format("truetype"), url("/fonts/proxima-nova-thin-webfont.eot?") format("eot"), url("/fonts/proxima-nova-thin-webfont.svg#Samplino") format("svg");
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?vlv6hc");
+  src: url("/fonts/icomoon.eot?vlv6hc#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?vlv6hc") format("truetype"), url("/fonts/icomoon.woff?vlv6hc") format("woff"), url("/fonts/icomoon.svg?vlv6hc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\E900";
+  color: #2190f5;
+}
+
+.icon-social:before {
+  content: "\E901";
+  color: #fff;
+}
+
+.icon-arrow_left:before {
+  content: "\E902";
+  color: #d1d1d1;
+}
+
+.icon-arrow_right:before {
+  content: "\E903";
+  color: #d1d1d1;
+}
+
+.icon-download:before {
+  content: "\E904";
+  color: #fff;
+}
+
+.icon-close:before {
+  content: "\E905";
+  color: #fff;
+}
+
+.icon-play:before {
+  content: "\E906";
+  color: #4c93f3;
+}
+
+.icon-arrow_down:before {
+  content: "\E907";
+  color: #fff;
+}
+
+.icon-telegram:before {
+  content: "\E908";
+  color: #2ca5e0;
+}
+
+.icon-medium:before {
+  content: "\E909";
+}
+
+.icon-fb:before {
+  content: "\E90A";
+  color: #2190f5;
+}
+
+.icon-twitter:before {
+  content: "\E90B";
+  color: #2190f5;
+}
+
+.icon-instagram:before {
+  content: "\EA92";
+}
+

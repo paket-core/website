@@ -1,4 +1,4 @@
-.token-section {
+.token-section.token-ecosystem {
   .graph {
     min-height: 800px;
     margin-top: 30px;
@@ -129,6 +129,66 @@
           display: inherit;
         }
       }
+    }
+  }
+  .eco-carousel-wrapper {
+    display: none;
+  }
+  .eco-carousel {
+    .item {
+      margin-right: 5px;
+      margin-left: 5px;
+      text-align: center;
+      .graph-icon {
+        z-index: 3;
+        display: block;
+        margin: auto;
+        $s: 90px;
+        width: $s;
+        height: $s;
+        border-radius: $s/2;
+        background-color: $colorWhite;
+        padding: 0;
+        img {
+          margin-top: 20px;
+          display: inline-block;
+          max-height: 50px;
+          max-width: 50px;
+          width: auto;
+          height: auto;
+        }
+      }
+      .graph-title {
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .graph-desc {
+        color: rgb(102, 102, 102);
+        font-size: 13px;
+        line-height: 17px;
+        text-align: justify;
+        margin-top: 20px;
+      }
+      .graph-wrapper {
+        z-index: 2;
+        background-color: $colorWhite;
+        margin-top: -60px;
+        padding: 20px;
+        padding-top: 50px;
+        min-height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .token-section.token-ecosystem {
+    .eco-carousel-wrapper {
+      display: inherit;
+    }
+    .graph {
+      display: none;
     }
   }
 }
