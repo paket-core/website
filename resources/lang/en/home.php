@@ -43,6 +43,34 @@ We’re creating a network that will allow everyone to take part in a global pac
     'project_6_title' => 'P2P deliveries',
     'project_6_desc' => 'Millions of people worldwide are members of online marketplaces that allow the exchange of goods between participants. A key problem for these communities is transporting the goods between participants, and the lack of trust between strangers is a huge obstacle for real P2P trade. Small online retailers face similar challenges as they lack the means to compete with industry giants in terms of logistics. With the PaKeT platform, these problems can become a thing of the past.',
 
+    'ecosystem_title' => 'Token ecosystem',
+    'ecosystem_desc' => 'The participants',
+    'ecosystem_graph_title_1' => 'Professional courier',
+    'ecosystem_graph_desc_1' => 'travelling from one city to another every morning? Maybe weekly visits to the north? Once we have full visibility of travelling packages, we are all opportunistic couriers potentially earning BUL’s while keeping our daily routine',
+
+    'ecosystem_graph_title_2' => 'Opportunistic courier',
+    'ecosystem_graph_desc_2' => '',
+
+    'ecosystem_graph_title_3' => 'Satellite service',
+    'ecosystem_graph_desc_3' => '',
+
+    'ecosystem_graph_title_4' => 'Opportunistic hub',
+    'ecosystem_graph_desc_4' => '',
+
+    'ecosystem_graph_title_5' => 'Professional hub operator',
+    'ecosystem_graph_desc_5' => '',
+
+    'ecosystem_graph_title_6' => 'Sender and recipient',
+    'ecosystem_graph_desc_6' => '',
+
+    'partners_title' => 'Partners',
+    'partners_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
+
+    'team_title' => 'Our Team',
+    'team_desc' => 'Many people support the project in different ways. Team members listed are only those that The PaKeT Project is their main occupation. Advisors listed are only those who are contractually committed to help the project.',
+
+    'road_map_title' => 'Road Map',
+
     'top_title' => 'PAKET',
     'top_desc' => 'The open package delivery protocol, where international, local, and individual couriers can cooperate',
     'play_video' => 'Play Video',
@@ -57,17 +85,6 @@ We’re creating a network that will allow everyone to take part in a global pac
     'pre_sale_updates_title' => 'GET UPDATED',
     'pre_sale_updates_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
     'pre_sale_updates_input' => 'Enter your email',
-
-    'road_map_title' => 'Road Map',
-
-    'partners_title' => 'Partners',
-    'partners_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
-
-    'team_title' => 'Our Team',
-    'team_desc' => 'Many people support the project in different ways. Team members listed are only those that The PaKeT Project is their main occupation. Advisors listed are only those who are contractually committed to help the project.',
-
-    'ecosystem_title' => 'Token ecosystem',
-    'ecosystem_desc' => 'The participants',
 
     'footer_follow_title' => "FOLLOW US",
     'footer_privacy_policy' => 'Privacy Policy',
