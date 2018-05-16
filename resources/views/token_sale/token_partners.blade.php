@@ -7,8 +7,12 @@
             <p class="title-desc">@lang('home.partners_desc')</p>
         </div>
         <div class="col-md-12 center">
-            <div class="row">
-                <img src="/images/screens/partners.png"/>
+            <div class="partners">
+                @foreach($partners as $partner)
+                    <div class="partner">
+                        <img src="/images/partners/{{$partner->image}}">
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

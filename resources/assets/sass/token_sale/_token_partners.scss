@@ -3,6 +3,20 @@
     .title-desc {
       margin-bottom: 50px;
     }
+    .partners {
+      .partner {
+        display: inline-block;
+        max-width: 25%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+        img {
+          display: inline-block;
+          max-width: auto;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 

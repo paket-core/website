@@ -140,8 +140,11 @@
 
 @media (max-width: $sizeSmall) {
   .down-section.token-down-section {
-    min-height: 744px;
+    min-height: 694px;
     padding-bottom: 0;
+    .token-title {
+      font-size: 34px;
+    }
     .token-sale-updates {
       margin-top: 40px;
     }
