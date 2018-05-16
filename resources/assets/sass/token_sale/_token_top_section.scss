@@ -99,5 +99,52 @@
     margin-top: 20px;
     font-size: 23.1px;
     font-weight: 500;
+    display: inline-block;
+  }
+  .top-actions {
+    display: inline-block;
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .token-top-section {
+    padding-top: 100px;
+    min-height: inherit;
+    .top-map-image {
+      max-width: 90%;
+      margin-left: auto;
+    }
+    .play, .top-title {
+      display: none;
+    }
+    .top-desc {
+      text-align: center;
+    }
+    .top-actions {
+      margin-top: 30px;
+      padding: 0 5px;
+    }
+    .btn-top-action {
+      width: auto;
+      padding-left: 35px;
+      padding-right: 10px;
+      img {
+        left: 10px;
+      }
+    }
+    .btn-top-action.btn-top-action-1 {
+      max-width: inherit;
+      margin-right: 10px;
+    }
+    .btn-top-action.btn-top-action-2 {
+      max-width: inherit;
+      img {
+        left: 8px;
+      }
+    }
+    .btn-join {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
 }

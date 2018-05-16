@@ -22,6 +22,12 @@
                         @include('partials.social')
                     </div>
                 @endif
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="topNav">
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())

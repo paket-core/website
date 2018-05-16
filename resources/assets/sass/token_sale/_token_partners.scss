@@ -5,3 +5,14 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .token-section {
+    &.token-partners {
+      img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+  }
+}

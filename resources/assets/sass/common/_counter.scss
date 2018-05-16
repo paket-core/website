@@ -21,3 +21,13 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  #countdown {
+    .item {
+      .counter {
+        font-size: 40px;
+      }
+    }
+  }
+}

@@ -31,3 +31,11 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .token-section {
+    &.token-team {
+      padding-top: 20px;
+    }
+  }
+}

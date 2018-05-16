@@ -1,8 +1,14 @@
 <section class="token-top-section top-section center">
     <div class="container">
-        <div class="col-md-12 center">
+        <div class="center">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-push-6">
+                    <img src="/images/custom/token-sale/vector-smart-object.png"
+                         srcset="/images/custom/token-sale/vector-smart-object@2x.png 2x,
+             /images/custom/token-sale/vector-smart-object@3x.png 3x"
+                         class="top-map-image">
+                </div>
+                <div class="col-md-6 col-md-pull-6">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="top-title">@lang('home.top_title')</div>
@@ -44,12 +50,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="/images/custom/token-sale/vector-smart-object.png"
-                         srcset="/images/custom/token-sale/vector-smart-object@2x.png 2x,
-             /images/custom/token-sale/vector-smart-object@3x.png 3x"
-                         class="top-map-image">
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@
       font-weight: bold;
       text-align: left;
       color: #262626;
+      word-wrap: break-word;
     }
     .desc {
       font-size: 17.1px;
@@ -23,6 +24,17 @@
       &:nth-last-child(1) {
         border-bottom: none;
         padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .token-section {
+    &.token-project {
+      img {
+        max-width: 90%;
+        margin-top: 20px;
       }
     }
   }

@@ -139,5 +139,27 @@
 }
 
 @media (max-width: $sizeSmall) {
-
+  .down-section.token-down-section {
+    min-height: 744px;
+    padding-bottom: 0;
+    .token-sale-updates {
+      margin-top: 40px;
+    }
+    .token-sale-update {
+      position: inherit;
+      left: inherit;
+      top: inherit;
+      bottom: inherit;
+      text-align: center;
+      display: inline-block;
+      &.token-sale-update-1, &.token-sale-update-2 {
+        margin-left: auto;
+      }
+      &.token-sale-update-2 {
+        border-radius: 0;
+        box-shadow: none;
+        border-top: solid rgba(0, 0, 0, 0.22) 1px;
+      }
+    }
+  }
 }

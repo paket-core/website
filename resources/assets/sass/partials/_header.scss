@@ -180,6 +180,29 @@ header {
   }
 }
 
+@media (max-width: $sizeSmall) {
+  .container.header {
+    .social-wrapper {
+      display: none;
+    }
+    .language-wrapper {
+      display: none;
+    }
+    & > div .navbar-header .inner {
+      padding: 10px 0;
+    }
+  }
+  .header .navbar-toggle {
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    background-color: #fff;
+    .icon-bar {
+      background-color: $colorPaketBlue;
+    }
+  }
+}
+
 @media (max-width: $sizeExtraSmall) {
   header {
     &.filled {
@@ -206,8 +229,8 @@ header {
         overflow: hidden;
         .inner {
           position: relative;
-          padding: 25px 0;
-          border-bottom: solid $colorInputBorder 1px;
+          //padding: 25px 0;
+          //border-bottom: solid $colorInputBorder 1px;
         }
         .big-icon {
           position: absolute;
@@ -226,7 +249,7 @@ header {
       position: fixed;
       left: 0;
       width: 100%;
-      top: 80px;
+      top: 72px;
       z-index: 6;
       .navbar-nav {
         padding: 0;
