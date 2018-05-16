@@ -28,6 +28,13 @@
             <div class="col-md-6 center">
                 <h1 class="title">@lang('home.project_3_title')</h1>
                 <p class="desc">@lang('home.project_3_desc')</p>
+                <ul>
+                    <li><div class="dot"></div>@lang('home.project_3_li_0')</li>
+                    <li><div class="dot"></div>@lang('home.project_3_li_1')</li>
+                    <li><div class="dot"></div>@lang('home.project_3_li_2')</li>
+                    <li><div class="dot"></div>@lang('home.project_3_li_3')</li>
+                    <li><div class="dot"></div>@lang('home.project_3_li_4')</li>
+                </ul>
             </div>
             <div class="col-md-6 center">
                 <img src="/images/custom/token-sale/layers.png"

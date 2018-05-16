@@ -100,6 +100,7 @@
     font-size: 23.1px;
     font-weight: 500;
     display: inline-block;
+    float: left;
   }
   .top-actions {
     display: inline-block;
@@ -145,6 +146,7 @@
     .btn-join {
       font-size: 18px;
       margin-bottom: 30px;
+      float: none;
     }
   }
 }

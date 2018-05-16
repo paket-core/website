@@ -28,17 +28,14 @@ We’re creating a network that will allow everyone to take part in a global pac
     'project_2_title' => 'Why we chose Stellar',
     'project_2_desc' => 'Because the Stellar platform, which connects payments systems and people, can move value quickly, reliably, securely, and at almost no cost. It is a perfect match for our need for a low friction transactional layer. We chose Stellar as our initial consensus layer for its level-headedness, its blazingly fast transaction rate, and its extremely low fees. From all the mature blockchain platforms currently active in the market, Stellar was the obvious decision for us. Read more about Stellar here.',
     'project_3_title' => 'Open and Free Protocol',
-    'project_3_desc' => 'The PaKeT protocol establishes trust and enables the cooperation of multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:
-● L0 (Trust) – 
-establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus.
-● L1 (Token) – 
-defines the cryptographic token and the smart contracts which govern its behaviour.
-● L2 (Route) – 
-matches requirements of senders with capacity and cost of couriers, while providing a detailed and highly contextualized view into the supply and demand of the market.
-● L3 (Application) – 
-consolidates tools and applications that allow simple and intuitive usage of the network.
-● L4 (Organization) – 
-builds organizations and services that thrive in the PaKeT ecosystem and enrich it.',
+    'project_3_desc' => 'The PaKeT protocol establishes trust and enables the cooperation of multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:',
+
+    'project_3_li_0' => '<strong>L0 (Trust) – </strong><br/>establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus.',
+    'project_3_li_1' => '<strong>L1 (Token) – </strong><br/>defines the cryptographic token and the smart contracts which govern its behaviour.',
+    'project_3_li_2' => '<strong>L2 (Route) – </strong><br/>matches requirements of senders with capacity and cost of couriers, while providing a detailed and highly contextualized view into the supply and demand of the market',
+    'project_3_li_3' => '<strong>L3 (Application) – </strong><br/>consolidates tools and applications that allow simple and intuitive usage of the network.',
+    'project_3_li_4' => '<strong>L4 (Organization) – </strong><br/>builds organizations and services that thrive in the PaKeT ecosystem and enrich it.',
+
     'project_4_title' => 'Sharing Economy',
     'project_4_desc' => 'Uber and Airbnb are disrupting entire industries. The collaborative, on-demand, peer-to-peer economy is spreading, and changing the way we do business. The PaKeT platform brings the sharing economy into the delivery industry by exposing worldwide supply and demand. Real-time data communication and tracking, delivery insurance and advanced routing techniques are just a small part of what this platform has to offer.',
     'project_5_title' => 'Environmentally Friendly',
