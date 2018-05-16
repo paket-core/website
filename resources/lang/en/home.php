@@ -44,24 +44,24 @@ We’re creating a network that will allow everyone to take part in a global pac
     'project_6_desc' => 'Millions of people worldwide are members of online marketplaces that allow the exchange of goods between participants. A key problem for these communities is transporting the goods between participants, and the lack of trust between strangers is a huge obstacle for real P2P trade. Small online retailers face similar challenges as they lack the means to compete with industry giants in terms of logistics. With the PaKeT platform, these problems can become a thing of the past.',
 
     'ecosystem_title' => 'Token ecosystem',
-    'ecosystem_desc' => 'The participants',
+    'ecosystem_desc' => 'The PaKeT platform is open and free. Have an improvement, or even an entirely new market that you want to target with your delivery app? Dive into our github project and add, clone and take part in the ecosystem. If your app supplies a needed service you can even charge for it.',
     'ecosystem_graph_title_1' => 'Professional courier',
-    'ecosystem_graph_desc_1' => 'travelling from one city to another every morning? Maybe weekly visits to the north? Once we have full visibility of travelling packages, we are all opportunistic couriers potentially earning BUL’s while keeping our daily routine',
+    'ecosystem_graph_desc_1' => 'international freight companies such as UPS and FedEx,  local enterprises like the Japanese Yamato, Gett Taxi, and even your local, bike-riding courier companies. The protocol lets all participants cooperate, with each of them providing only that leg of the route which they can provide most efficiently.',
 
     'ecosystem_graph_title_2' => 'Opportunistic courier',
-    'ecosystem_graph_desc_2' => '',
+    'ecosystem_graph_desc_2' => 'travelling from one city to another every morning? Weekly visits to the north? Even a one time journey: once the routes and requirements of every packages becomes fully visible, we are all opportunistic couriers that can earn BUL’s while keeping to our daily routine.',
 
     'ecosystem_graph_title_3' => 'Satellite service',
-    'ecosystem_graph_desc_3' => '',
+    'ecosystem_graph_desc_3' => 'the open network is a base for amazing opportunity to establish a thriving delivery based economy. Insurance providers, routing specialists',
 
     'ecosystem_graph_title_4' => 'Opportunistic hub',
-    'ecosystem_graph_desc_4' => '',
+    'ecosystem_graph_desc_4' => 'leveraging your daily routine of sitting in the office / home / favourite coffee place, hosting packages as they exchange hands and earning BUL’s for their safekeeping. Everyone can become an opportunistic hub!',
 
     'ecosystem_graph_title_5' => 'Professional hub operator',
-    'ecosystem_graph_desc_5' => '',
+    'ecosystem_graph_desc_5' => 'Let’s say you identified a high demand for package delivery in a certain area, residential, industrial, rural,  you can build a business or use this demand as means to draw potential customer to your shop',
 
     'ecosystem_graph_title_6' => 'Sender and recipient',
-    'ecosystem_graph_desc_6' => '',
+    'ecosystem_graph_desc_6' => 'the people who wish to have a goods and packages transported from one place to another and are willing to pay for it, either using blockchain technology and smart contracts or good old fashioned fiat moneys',
 
     'partners_title' => 'Partners',
     'partners_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
