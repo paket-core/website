@@ -261,3 +261,9 @@ strong {
   width: 96px;
   margin-top: 50px;
 }
+
+.owl-carousel
+{
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
