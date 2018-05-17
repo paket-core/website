@@ -262,8 +262,12 @@ strong {
   margin-top: 50px;
 }
 
-.owl-carousel
-{
+.owl-carousel {
   -ms-touch-action: pan-x;
   touch-action: pan-x;
+}
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto;
+  touch-action: auto;
 }
