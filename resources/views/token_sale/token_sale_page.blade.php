@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="/plugins/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"
           integrity="sha384-HIipfSYbpCkh5/1V87AWAeR5SUrNiewznrUrtNz1ux4uneLhsAKzv/0FnMbj3m6g" crossorigin="anonymous">
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_css() !!}
@@ -45,7 +45,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"
             integrity="sha384-wY5mZB78h34xgHx+XQJ3oDUnPd94gz2cg5QpoOVQo0KQ+2EWVieu1QdsNhZb5GEV"
             crossorigin="anonymous"></script>
-    <script data-cfasync="false" src="/plugins/owl/owl.carousel.min.js"></script>
+    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_app_js() !!}
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_js() !!}
 @endsection
