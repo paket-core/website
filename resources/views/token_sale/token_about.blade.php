@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-md-12 center">
-            <div class="video">
+            <div class="video play-button">
                 <img src="/images/screens/about_video.png">
             </div>
         </div>
@@ -20,7 +20,9 @@
         </div>
         <div class="col-md-12 center">
             <div class="desc">
-                <div class="btn btn-join">@lang('home.about_btn')</div>
+                <a href="https://identity.paket.global/" target="_blank">
+                    <div class="btn btn-join">@lang('home.about_btn')</div>
+                </a>
             </div>
         </div>
     </div>

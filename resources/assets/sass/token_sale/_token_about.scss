@@ -11,15 +11,19 @@
     .video {
       margin-top: 30px;
       margin-bottom: 30px;
+      cursor: pointer;
     }
     .btn-join {
       min-width: 221px;
       line-height: 39px;
       padding: 0 20px;
       border-radius: 24.5px;
-      background-color: #2ac4ff;
+      background-color: $colorPaketBlue;
       color: $colorWhite;
       margin-top: 40px;
+      &:hover {
+        background-color: $colorPaketBlueDarken;
+      }
     }
   }
 }

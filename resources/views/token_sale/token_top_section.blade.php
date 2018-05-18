@@ -12,8 +12,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="top-title">@lang('home.top_title')</div>
-                            <div class="play play-button" data-video="https://www.youtube.com/embed/Qbu_FRg8vuU"
-                                 data-video-src="Qbu_FRg8vuU"
+                            <div class="play play-button" data-video-src="Qbu_FRg8vuU"
                                  data-target="#videoModal"
                                  id="playVideoButton">
                                 <div class="play-left">
