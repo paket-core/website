@@ -10,7 +10,6 @@
                 </div>
                 <div class="col-md-3 col-md-offset-2">
                     <a @if(!$back) href="{{route('home')}}" @endif class="close-link animated-hover">
-                        <img src="/images/custom/icon/arrow_back.svg">
                         <p>@lang('auth.back')</p></a>
                 </div>
             </div>

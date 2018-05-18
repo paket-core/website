@@ -1,4 +1,4 @@
-<section class="token-section token-team center">
+<section class="token-section token-team center" id="team">
     <div class="container">
         <div class="col-md-12 center">
             <h1 class="title">@lang('home.team_title')</h1>

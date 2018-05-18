@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="graph-item graph-item-2">
+            <div class="graph-item graph-item-2 active">
                 <div class="graph-icon">
                     <img src="/images/custom/token-sale/suitcase-icon.png"
                          srcset="/images/custom/token-sale/suitcase-icon@2x.png 2x,

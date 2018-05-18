@@ -1,4 +1,4 @@
-<section class="token-section token-project center">
+<section class="token-section token-project center" id="product">
     <div class="container">
         <div class="project-items-wrapper">
             <div class="project-item row">

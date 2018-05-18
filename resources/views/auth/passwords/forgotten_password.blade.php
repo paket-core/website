@@ -22,7 +22,6 @@
                         </div>
                         <div class="col-md-3 col-md-offset-2">
                             <a href="{{route('home')}}" class="close-link animated-hover">
-                                <img src="/images/custom/icon/arrow_back.svg">
                                 <p>@lang('auth.back')</p></a>
                         </div>
                     </div>

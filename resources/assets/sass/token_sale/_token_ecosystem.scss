@@ -1,6 +1,6 @@
 .token-section.token-ecosystem {
   .graph {
-    min-height: 800px;
+    min-height: 890px;
     margin-top: 30px;
   }
   .icon {
@@ -21,24 +21,24 @@
       margin-left: -$s/2;
     }
     &.graph-item-2 {
-      margin-left: 200px;
+      margin-left: 230px;
       margin-top: 160px;
     }
     &.graph-item-3 {
-      margin-left: 200px;
-      margin-top: 480px;
+      margin-left: 230px;
+      margin-top: 500px;
     }
     &.graph-item-4 {
       margin-left: -$s/2;
-      margin-top: 620px;
+      margin-top: 630px;
     }
     &.graph-item-5 {
-      margin-left: -650px;
+      margin-left: -680px;
       margin-top: 160px;
     }
     &.graph-item-6 {
-      margin-left: -650px;
-      margin-top: 480px;
+      margin-left: -680px;
+      margin-top: 500px;
     }
     .graph-title {
       font-size: 18.4px;
@@ -46,7 +46,7 @@
       text-align: left;
       color: #262626;
       text-transform: uppercase;
-      line-height: 40px;
+      line-height: 24px;
       padding-top: 38px;
     }
     .graph-icon {
@@ -91,7 +91,7 @@
       padding: 20px;
       background-color: $colorWhite;
       position: absolute;
-      left: 120px;
+      left: 100px;
       top: 90px;
       z-index: 3;
       border-radius: 20px;
@@ -100,8 +100,23 @@
       line-height: 1.67;
       letter-spacing: 0.3px;
       color: #666666;
-      width: 350px;
+      width: 300px;
       display: none;
+    }
+    &.graph-item-1, &.graph-item-4 {
+      .graph-desc {
+        left: -150px;
+        width: 420px;
+        margin-top: 40px;
+      }
+    }
+    &.graph-item-1 {
+      .graph-desc {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 15px;
+        margin-top: 25px;
+      }
     }
     &.inverted {
       .graph-title {
@@ -115,6 +130,10 @@
       .graph-btn {
         right: 94px;
         left: initial;
+      }
+      .graph-desc {
+        left: initial;
+        right: 100px;
       }
     }
     &.active {

@@ -30,11 +30,14 @@
     float: left;
     margin-left: 30px;
     position: relative;
+    min-width: 240px;
+    min-height: 75px;
+    cursor: pointer;
     .play-left {
       $s: 74px;
       width: $s;
       height: $s;
-      background-color: #2ac4ff;
+      background-color: $colorPaketBlue;
       text-align: center;
       border-radius: $s/2;
       padding: 24px 0 0 4px;
@@ -58,9 +61,26 @@
       min-height: 50px;
       line-height: 50px;
     }
+    &:hover {
+      .play-left {
+        background-color: $colorPaketBlueDarken;
+      }
+      .play-right {
+        color: $colorPaketBlueDarken;
+        border-color: $colorPaketBlueDarken;
+      }
+    }
   }
   .top-actions {
     margin-top: 60px;
+    a {
+      margin-right: 20px;
+      display: inline-block;
+      float: left;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
   }
   .btn-top-action {
     width: 100%;
@@ -68,30 +88,32 @@
     height: 43px;
     border-radius: 20px;
     float: left;
-    margin-right: 20px;
     border: solid 1px rgba(0, 0, 0, 0.25);
     line-height: 43px;
     position: relative;
-    &:nth-last-child(1) {
-      margin-right: 0;
+    color: $colorFont;
+    &:hover {
+      color: $colorPaketBlue;
+      border-color: $colorPaketBlue;
     }
     padding-left: 50px;
     padding-right: 30px;
     img {
       position: absolute;
-      left: 30px;
+      left: 20px;
       top: 10px;
     }
     &.btn-top-action-2 {
       max-width: 220px;
       img {
+        margin-top: 2px;
         left: 15px;
       }
     }
   }
   .btn-join {
     border-radius: 30px;
-    background-color: #2ac4ff;
+    background-color: $colorPaketBlue;
     max-width: 400px;
     width: 100%;
     color: $colorWhite;
@@ -101,6 +123,9 @@
     font-weight: 500;
     display: inline-block;
     float: left;
+    &:hover {
+      background-color: $colorPaketBlueDarken;
+    }
   }
   .top-actions {
     display: inline-block;

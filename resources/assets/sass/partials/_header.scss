@@ -108,7 +108,7 @@ header {
       text-align: left;
       color: $c;
       &:hover {
-        color: darken($c, 10);
+        color: darken($colorPaketBlue, 10);
       }
     }
     .sign-up a, li.token-sale a {
@@ -199,6 +199,11 @@ header {
     background-color: #fff;
     .icon-bar {
       background-color: $colorPaketBlue;
+    }
+    &:hover {
+      .icon-bar {
+        background-color: $colorPaketBlueDarken;
+      }
     }
   }
 }

@@ -9,7 +9,7 @@
     <div class="page-content token-page">
         @include('partials.header')
         @include('token_sale.token_top_section')
-        @include('token_sale.token_media')
+{{--        @include('token_sale.token_media')--}}
         @include('token_sale.token_about')
         @include('token_sale.token_project')
         @include('token_sale.token_ecosystem')
@@ -24,6 +24,7 @@
         @include('auth.join_template',  [
             'back_button' => true
         ])
+        @include('modals.video')
     </div>
 @endsection
 
@@ -45,7 +46,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"
             integrity="sha384-wY5mZB78h34xgHx+XQJ3oDUnPd94gz2cg5QpoOVQo0KQ+2EWVieu1QdsNhZb5GEV"
             crossorigin="anonymous"></script>
-    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script data-cfasync="false"
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_app_js() !!}
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_js() !!}
 @endsection

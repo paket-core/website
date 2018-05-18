@@ -11,15 +11,17 @@
   .token-title {
     font-size: 40.6px;
     font-weight: bold;
-    color: #ffffff;
     margin-top: 70px;
+    //TODO change color
+    //color: #ffffff;
+    color: $colorGrayTokenSale;
   }
 
   .token-sale-update {
     $s: 304px;
     $m: 200px;
     width: $s;
-    height: 245px;
+    height: 275px;
     background-color: #ffffff;
     box-shadow: 0px -6px 27px 0 rgba(0, 0, 0, 0.22);
     position: absolute;
@@ -30,6 +32,12 @@
     border-radius: 20px 20px 0 0;
     &.token-sale-update-1 {
       margin-left: #{-$s/2 - $m};
+      .desc {
+        margin-bottom: 10px;
+      }
+      .btn {
+        margin-bottom: 20px;
+      }
     }
     &.token-sale-update-2 {
       margin-left: #{-$s/2 + $m};
@@ -59,8 +67,12 @@
       width: 234px;
       height: 39px;
       border-radius: 19.5px;
-      background-color: #2ac3ff;
+      $c: #2ac3ff;
+      background-color: $c;
       color: $colorWhite;
+      &:hover {
+        background-color: darken($c, 10);
+      }
     }
     .input {
       position: relative;
@@ -140,7 +152,7 @@
 
 @media (max-width: $sizeSmall) {
   .down-section.token-down-section {
-    min-height: 694px;
+    min-height: 754px;
     padding-bottom: 0;
     .token-title {
       font-size: 34px;
@@ -157,11 +169,26 @@
       display: inline-block;
       &.token-sale-update-1, &.token-sale-update-2 {
         margin-left: auto;
+        min-width: 390px;
+        max-width: 80%;
       }
       &.token-sale-update-2 {
         border-radius: 0;
         box-shadow: none;
         border-top: solid rgba(0, 0, 0, 0.22) 1px;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeExtraSmall) {
+  .down-section.token-down-section {
+    .token-sale-update {
+      &.token-sale-update-1, &.token-sale-update-2 {
+        margin-left: auto;
+        min-width: inherit;
+        max-width: 90%;
+        width: 100%;
       }
     }
   }

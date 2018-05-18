@@ -10,6 +10,7 @@ $colorYellowBar: #FFB450;
 $colorOrange: #FF9800;
 $colorOrangeBar: #FF7070;
 $colorGray: #bfbfbf;
+$colorBlack: #000;
 
 $colorFont: #000;
 $colorFontLight: #222222;
@@ -41,3 +42,6 @@ $colorPaketGradient2: darken(#2ac8ff, 0);
 $colorPaketGradient3: darken(#338bff, 0);
 $colorPaketFooterGray: #6e6e6e;
 $colorPaketFooterBlue: #27b9ee;
+
+$colorPaketBlueDarken: darken($colorPaketBlue, 10);
+$colorGrayTokenSale: #828282;

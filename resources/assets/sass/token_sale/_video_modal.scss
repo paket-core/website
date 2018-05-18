@@ -1,0 +1,30 @@
+.video-modal{
+  .modal-dialog, .modal-content, .modal-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $colorBlack;
+  }
+  .modal-body {
+    height: 95%;
+    .close {
+      $size: 40px;
+      font-size: 30px;
+      opacity: 1;
+      color: $colorWhite;
+      text-shadow: none;
+      border: solid $colorWhite 2px;
+      width: $size;
+      height: $size;
+      line-height: $size;
+      border-radius: 100%;
+      &:hover {
+        color: $colorPaketBlue;
+        border-color: $colorPaketBlue;
+      }
+    }
+  }
+}

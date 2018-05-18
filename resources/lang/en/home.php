@@ -57,7 +57,7 @@ We’re creating a network that will allow everyone to take part in a global pac
     'ecosystem_graph_title_4' => 'Opportunistic hub',
     'ecosystem_graph_desc_4' => 'leveraging your daily routine of sitting in the office / home / favourite coffee place, hosting packages as they exchange hands and earning BUL’s for their safekeeping. Everyone can become an opportunistic hub!',
 
-    'ecosystem_graph_title_5' => 'Professional hub operator',
+    'ecosystem_graph_title_5' => 'Professional hub <br/>operator',
     'ecosystem_graph_desc_5' => 'Let’s say you identified a high demand for package delivery in a certain area, residential, industrial, rural,  you can build a business or use this demand as means to draw potential customer to your shop',
 
     'ecosystem_graph_title_6' => 'Sender and recipient',
@@ -80,10 +80,12 @@ We’re creating a network that will allow everyone to take part in a global pac
 
     'pre_sale_title' => 'PUBLIC PRE-SALE',
     'pre_sale_learn_title' => 'LEARN MORE',
-    'pre_sale_learn_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
-    'pre_sale_learn_btn' => 'Download White Paper',
-    'pre_sale_updates_title' => 'GET UPDATED',
-    'pre_sale_updates_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
+    'pre_sale_learn_desc' => 'For a brief intro into the PaKeT way of doing things',
+    'pre_sale_learn_btn' => 'Read our Light-Paper',
+    'pre_sale_learn_desc_2' => 'For an in depth description of the PaKeT open protocol',
+    'pre_sale_learn_btn_2' => 'Read our White-Paper',
+    'pre_sale_updates_title' => 'STAY INFORMED',
+    'pre_sale_updates_desc' => ' Register your Email address to receive regular updates about the PaKeT project',
     'pre_sale_updates_input' => 'Enter your email',
 
     'footer_follow_title' => "FOLLOW US",

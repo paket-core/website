@@ -33,6 +33,23 @@
     #companiesCarousel {
       display: none;
     }
+    .view-more {
+      $c: #2cbdff;
+      $h: darken($c, 20);
+      display: inline-block;
+      font-size: 17.6px;
+      line-height: 20px;
+      font-weight: 500;
+      color: $c;
+      margin-top: 40px;
+      padding-bottom: 4px;
+      border-bottom: solid $c 1px;
+      cursor: pointer;
+      &:hover {
+        color: $h;
+        border-bottom-color: $h;
+      }
+    }
   }
 }
 
