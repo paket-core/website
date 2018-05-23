@@ -5,73 +5,6 @@ var HomeManager = (function () {
     var VideoManager = require('./_VideoManager');
     var LoginPageEmbedded = require('./_LoginPageEmbedded');
 
-    function initVideo() {
-        var player;
-
-        function loadVideo(play) {
-
-            if (!player) {
-                // 2. This code loads the IFrame Player API code asynchronously.
-                var tag = document.createElement('script');
-
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                var videoSrc = $('#playVideoButton').attr("data-video-src");
-
-                // 3. This function creates an <iframe> (and YouTube player)
-                //    after the API code downloads.
-                window.onYouTubeIframeAPIReady = function () {
-                    player = new YT.Player('player', {
-                        width: '100%',
-                        height: '100%',
-                        playerVars: {
-                            modestbranding: 1,
-                            rel: 0,
-                            showinfo: 0,
-                            controls: 1,
-                            html5: 1
-                        },
-                        events: {
-                            'onReady': onPlayerReady
-                        },
-                        videoId: videoSrc
-                    });
-                };
-
-                // 4. The API will call this function when the video player is ready.
-                function onPlayerReady() {
-                    play && player.playVideo();
-                }
-            } else {
-                play && player.playVideo();
-            }
-        }
-
-        $(".play-button").click(function () {
-            var theModal = $(this).data("target");
-            $(theModal + ' button.close').off('click').click(function () {
-                stopVideo();
-            });
-
-            if (player) {
-                player.playVideo();
-            } else {
-                loadVideo(true);
-            }
-
-            function stopVideo() {
-                player && player.stopVideo();
-            }
-
-        });
-
-        setTimeout(function () {
-            loadVideo();
-        }, 2000);
-    }
-
     function init() {
         RevealManager.init({
             bars: true
@@ -248,7 +181,6 @@ var HomeManager = (function () {
         }
 
         initCompanies();
-        initVideo();
 
     }
 

@@ -85,6 +85,18 @@
                          class="p2p">
                 </div>
             </div>
+            <div class="project-item row">
+                <div class="col-md-6 center">
+                    <h1 class="title">@lang('home.project_7_title')</h1>
+                    <p class="desc">@lang('home.project_7_desc')</p>
+                </div>
+                <div class="col-md-6 center">
+                    <img src="/images/custom/token-sale/majority.png"
+                         srcset="/images/custom/token-sale/majority@2x.png 2x,
+             /images/custom/token-sale/majority@3x.png 3x"
+                         class="majority">
+                </div>
+            </div>
         </div>
         <div class="project-items-carousel-wrapper">
 
@@ -148,6 +160,14 @@
              /images/custom/token-sale/p-2-p@3x.png 3x"
                                                   class="p2p"></div>
                     <p class="desc">@lang('home.project_6_desc')</p>
+                </div>
+                <div class="project-item">
+                    <h1 class="title">@lang('home.project_7_title')</h1>
+                    <div class="img-wrapper"><img src="/images/custom/token-sale/majority.png"
+                                                  srcset="/images/custom/token-sale/majority@2x.png 2x,
+             /images/custom/token-sale/majority@3x.png 3x"
+                                                  class="p2p"></div>
+                    <p class="desc">@lang('home.project_7_desc')</p>
                 </div>
             </div>
 
