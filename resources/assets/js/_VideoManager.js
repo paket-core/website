@@ -46,7 +46,9 @@ var CountDownManager = (function () {
 
         function runVideo() {
             var modal = $('#videoModal');
-            modal.modal('show').on('shown.bs.modal', function () {
+            modal.modal('show').on('hidden.bs.modal', function () {
+                stopVideo();
+            }).on('shown.bs.modal', function () {
                 $('.video-link').removeClass('video-animated');
             }).find('button.close').off('click').click(function () {
                 stopVideo();
