@@ -316,6 +316,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function developers()
+    {
+        return view('developers.developers_page', [
+            'road_maps' => TokenService::get_road_maps(),
+        ]);
+    }
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Il`luminate\View\View
      */

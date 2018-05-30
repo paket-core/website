@@ -51,6 +51,8 @@
     margin-top: 80px;
     display: inline-block;
     width: 100%;
+    position: relative;
+    margin-bottom: 50px;
     .app-item {
       max-width: 520px;
       min-height: 340px;
@@ -94,6 +96,21 @@
       left: 50%;
       top: -$s/2;
       margin-left: -$s/2;
+    }
+  }
+  .images {
+    position: absolute;
+    width: 100%;
+    img{
+      position: absolute;
+      top: 0;
+    }
+    .smartphone{
+      left: -170px;
+    }
+    .stellar{
+      right: -120px;
+      margin-top: 40px;
     }
   }
 }

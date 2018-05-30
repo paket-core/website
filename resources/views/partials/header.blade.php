@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a data-scroll href="{{$path}}#developers">
+                                <a href="{{ route('developers') }}">
                                     @lang('home.header_for_developers')
                                 </a>
                             </li>

@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@home_page')->name('home');
 Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
+Route::get('/developers', 'HomeController@developers')->name('developers');
 Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
 Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
 

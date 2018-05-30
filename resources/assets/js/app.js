@@ -36,6 +36,9 @@ $(document).ready(function () {
         case 'token-sale':
             TokenPageManager.init();
             break;
+        case 'developers':
+            TokenPageManager.init();
+            break;
         case 'my-account':
             MyAccountManager.init();
             break;
