@@ -95,3 +95,42 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .token-top-section {
+    padding-top: 60px;
+    .coin {
+      position: absolute;
+      &.coin-1 {
+        width: 64px;
+        height: 64px;
+        left: -30px;
+        top: -10px;
+      }
+      &.coin-2 {
+        width: 42px;
+        height: 42px;
+        left: 20px;
+        top: -8px;
+      }
+      &.coin-3 {
+        width: 68px;
+        height: 68px;
+        right: 24px;
+        top: -20px;
+      }
+      &.coin-4 {
+        width: 36px;
+        height: 36px;
+        right: -44px;
+        top: 20px;
+      }
+    }
+    .title {
+      font-size: 20px;
+    }
+    .desc-1.desc{
+      margin-top: 20px;
+    }
+  }
+}

@@ -84,3 +84,49 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .token-price {
+    padding-top: 20px;
+    padding-bottom: 0;
+    .cost {
+      padding-top: 0;
+    }
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+    h3, .cost h3 {
+      margin-top: 30px;
+      font-size: 17px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+    }
+    .cost .table {
+      padding: 10px;
+      .table-row, .header {
+        & > div {
+          padding: 10px 2px;
+          &:nth-child(1) {
+            min-width: 23%;
+          }
+          &:nth-child(2) {
+            min-width: 40%;
+          }
+          &:nth-child(2) {
+            min-width: 37%;
+          }
+        }
+      }
+      .header {
+        font-size: 11px;
+      }
+      .table-row {
+        font-size: 9px;
+      }
+    }
+  }
+}

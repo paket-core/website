@@ -41,3 +41,15 @@
     color: #000000;
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .token-funds {
+    padding-top: 20px;
+    padding-bottom: 0;
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+}

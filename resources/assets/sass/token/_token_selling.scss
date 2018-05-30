@@ -101,16 +101,59 @@
   .images {
     position: absolute;
     width: 100%;
-    img{
+    img {
       position: absolute;
       top: 0;
     }
-    .smartphone{
+    .smartphone {
       left: -170px;
     }
-    .stellar{
+    .stellar {
       right: -120px;
       margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .token-selling {
+    padding-top: 20px;
+    padding-bottom: 0;
+    h2 {
+      font-size: 19px;
+      text-align: center;
+    }
+    .how {
+      h2 {
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 240px;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+      .line{
+        margin-bottom: 30px;
+      }
+    }
+    .apps {
+      margin-bottom: 0;
+      .app-item {
+        margin-bottom: 60px;
+        padding: 20px;
+        padding-top: 60px;
+        .number {
+          $s: 60px;
+          width: $s;
+          height: $s;
+          border-radius: $s/2;
+          line-height: $s;
+          font-size: 30px;
+          top: -$s/2;
+          margin-left: -$s/2;
+        }
+      }
     }
   }
 }
