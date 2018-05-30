@@ -218,7 +218,7 @@ class WidgetService
     {
         return view('ico-template::auth.reset_password_form', [
             'password_fields' => ICOSettingsService::get_reset_password_fields(),
-            'token' => $token,
+            'tokens' => $token,
             'config' => $config
         ]);
     }

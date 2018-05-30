@@ -31,7 +31,7 @@ We’re creating a network that will allow everyone to take part in a global pac
     'project_3_desc' => 'The PaKeT protocol establishes trust and enables the cooperation of multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:',
 
     'project_3_li_0' => '<strong>L0 (Trust) – </strong><br/>establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus.',
-    'project_3_li_1' => '<strong>L1 (Token) – </strong><br/>defines the cryptographic token and the smart contracts which govern its behaviour.',
+    'project_3_li_1' => '<strong>L1 (Token) – </strong><br/>defines the cryptographic tokens and the smart contracts which govern its behaviour.',
     'project_3_li_2' => '<strong>L2 (Route) – </strong><br/>matches requirements of senders with capacity and cost of couriers, while providing a detailed and highly contextualized view into the supply and demand of the market',
     'project_3_li_3' => '<strong>L3 (Application) – </strong><br/>consolidates tools and applications that allow simple and intuitive usage of the network.',
     'project_3_li_4' => '<strong>L4 (Organization) – </strong><br/>builds organizations and services that thrive in the PaKeT ecosystem and enrich it.',

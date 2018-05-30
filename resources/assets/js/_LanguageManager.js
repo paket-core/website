@@ -26,7 +26,7 @@ var LanguageManager = (function () {
     }
 
     function changeLanguage(language, reload) {
-        FormManager.sendPost('/token-chef/api/language', {
+        FormManager.sendPost('/tokens-chef/api/language', {
             lang: language
         }, function (response) {
             if (response.status === 'success') {
@@ -44,7 +44,7 @@ var LanguageManager = (function () {
         var name_modal = 'detected_language_modal';
         var cookie = Cookies.get(name);
         if (!cookie) {
-            FormManager.sendPost('/token-chef/api/language/detect', {}, function (response) {
+            FormManager.sendPost('/tokens-chef/api/language/detect', {}, function (response) {
                 if (response.status === 'success') {
                     var data = response.data;
                     Cookies.set(name, data.detected, {expires: 7});

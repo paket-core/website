@@ -1,0 +1,97 @@
+.token-top-section {
+  min-height: 661px;
+  padding-top: 130px;
+  background-image: linear-gradient(to top, #ffffff, #d7eeff);
+  border-bottom: solid #e9e9e9 1px;
+  .coin {
+    position: absolute;
+    &.coin-1 {
+      width: 154px;
+      height: 154px;
+      left: 0;
+      z-index: 3;
+      top: 30px;
+    }
+    &.coin-2 {
+      width: 96px;
+      height: 96px;
+      left: 110px;
+      z-index: 2;
+    }
+    &.coin-3 {
+      width: 106px;
+      height: 106px;
+      right: 120px;
+      z-index: 2;
+      top: -110px;
+    }
+    &.coin-4 {
+      width: 71px;
+      height: 71px;
+      right: 10px
+    }
+  }
+  .coins {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: -15px;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  .title {
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    color: #262626;
+    margin-top: 50px;
+  }
+  .desc {
+    display: block;
+    margin: auto;
+    max-width: 911px;
+    font-size: 17.1px;
+    font-weight: 300;
+    line-height: 26.3px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    &.desc-1 {
+      margin-top: 42px;
+      margin-bottom: 30px;
+    }
+  }
+  .counter-section {
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 59px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    h1 {
+      font-size: 30.9px;
+      font-weight: bold;
+      text-align: center;
+      color: #2bcbff;
+      margin-top: 0;
+    }
+    .countdown {
+      .item {
+        .counter {
+          font-size: 61px;
+          font-weight: 100;
+          color: #2bcbff;
+        }
+        .title {
+          font-size: 11px;
+          line-height: 14px;
+          font-weight: 100;
+          color: #2bcbff;
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

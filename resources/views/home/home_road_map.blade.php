@@ -1,42 +1,82 @@
-<section class="road-map changeHeaderOnScroll" id="roadmap" data-header-color="blue">
+<section class="home-section home-road-map center">
     <div class="container">
-        <div class="col-md-12">
-            <h2 class="title">@lang('home.our_road_map')</h2>
-            <div class="title-line"></div>
+        <div class="col-md-12 center">
+            <h1 class="title">@lang('home.road_map_title')</h1>
         </div>
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12 center">
             <div class="row">
-                <div class="plan-details">
-                    <div class="col-md-6 plan-left">
-                        @foreach([2,4,6] as $step)
-                            <div class="plan-item plan-item-{{$step}} revealOnScroll" data-animation="fadeInLeft">
-                                <p class="step-number">@lang('home.road_map_step_'.$step)</p>
-                                <p class="step-date">@lang('home.road_map_step_date_'.$step)</p>
-                                <p class="step-desc">@lang('home.road_map_step_desc_'.$step)</p>
-                                <div class="border"></div>
-                                <div class="oval">
-                                    <div class="oval-small"></div>
+
+                <div class="road-map-wrapper">
+                    <div class="owl-carousel road-map-carousel-2">
+                        @foreach($road_maps as $item)
+                            <div class="road-map-item">
+                                <div class="ellipsis ellipsis-1"></div>
+                                <div class="ellipsis ellipsis-2"></div>
+                                <div class="ellipsis-line"></div>
+                                <div class="road-map-date">{!! $item->date !!}</div>
+                                <div class="road-map-image">
+                                    <img src="/images/custom/mobile/location/locationIcon.png"
+                                         srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
+             /images/custom/mobile/location/locationIcon@3x.png 3x"
+                                         class="">
                                 </div>
-                                <div class="oval-line"></div>
+                                <div class="road-map-title">{!! $item->title!!}</div>
+                                <div class="road-map-desc">{!! $item->desc!!}</div>
                             </div>
                         @endforeach
                     </div>
-                    <div class="col-md-6 plan-right">
-                        @foreach([1,2,3,4,5,6, 7] as $step)
-                            <div class="plan-item plan-item-{{$step}} @if($step%2===0) hidden-step @endif revealOnScroll"
-                                 data-animation="{{$step%2 ? 'fadeInRight' : 'fadeInLeft'}}">
-                                <p class="step-number">@lang('home.road_map_step_'.$step)</p>
-                                <p class="step-date">@lang('home.road_map_step_date_'.$step)</p>
-                                <p class="step-desc">@lang('home.road_map_step_desc_'.$step)</p>
-                                <div class="border"></div>
-                                <div class="oval">
-                                    <div class="oval-small"></div>
+
+                    <div class="owl-carousel-buttons nice-carousel-buttons">
+                        <div class="line"></div>
+                        <div class="owlRoadMap2PrevBtn">
+                            <img src="/images/custom/mobile/arrow_left/arrow.png"
+                                 srcset="/images/custom/mobile/arrow_left/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_left/arrow@3x.png 3x"
+                                 class="diamond">
+                        </div>
+                        <div class="owlRoadMap2NextBtn">
+                            <img src="/images/custom/mobile/arrow_right/arrow.png"
+                                 srcset="/images/custom/mobile/arrow_right/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_right/arrow@3x.png 3x"
+                                 class="diamond">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="road-map-carousel-wrapper">
+
+                    <div class="owl-carousel road-map-carousel-1">
+                        @foreach($road_maps as $item)
+                            <div class="road-map-item">
+                                <div class="road-map-date">{!! $item->date !!}</div>
+                                <div class="road-map-image">
+                                    <img src="/images/custom/mobile/location/locationIcon.png"
+                                         srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
+             /images/custom/mobile/location/locationIcon@3x.png 3x"
+                                         class="">
                                 </div>
-                                <div class="oval-line"></div>
+                                <div class="road-map-title">{!! $item->title!!}</div>
+                                <div class="road-map-desc">{!! $item->desc!!}</div>
                             </div>
                         @endforeach
                     </div>
-                    <div class="line"></div>
+
+                    <div class="owl-carousel-buttons nice-carousel-buttons">
+                        <div class="line"></div>
+                        <div class="owlRoadMapPrevBtn">
+                            <img src="/images/custom/mobile/arrow_left/arrow.png"
+                                 srcset="/images/custom/mobile/arrow_left/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_left/arrow@3x.png 3x"
+                                 class="diamond">
+                        </div>
+                        <div class="owlRoadMapNextBtn">
+                            <img src="/images/custom/mobile/arrow_right/arrow.png"
+                                 srcset="/images/custom/mobile/arrow_right/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_right/arrow@3x.png 3x"
+                                 class="diamond">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

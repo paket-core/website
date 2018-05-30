@@ -1,0 +1,41 @@
+.home-section {
+  &.home-about {
+    .desc {
+      font-size: 17.1px;
+      font-weight: 300;
+      line-height: 1.54;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: #000000;
+    }
+    .video {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+    .btn-join {
+      min-width: 221px;
+      line-height: 39px;
+      padding: 0 20px;
+      border-radius: 24.5px;
+      background-color: $colorPaketBlue;
+      color: $colorWhite;
+      margin-top: 40px;
+      &:hover {
+        background-color: $colorPaketBlueDarken;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-section {
+    &.home-about {
+      .video {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

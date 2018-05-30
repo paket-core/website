@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'HomeController@token_sale')->name('home');
-//Route::get('/token-sale', 'HomeController@token_sale')->name('token-sale');
+Route::get('/', 'HomeController@home_page')->name('home');
+Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
 Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
 Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
 
@@ -20,7 +20,7 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/login', 'HomeController@login')->name('login');
     Route::get('/sign-up', 'HomeController@join')->name('sign-up');
     Route::get('/password', 'ForgotPasswordController@forgotten_password')->name('forgotten_password');
-    Route::get('/reset-password/{token}', 'ForgotPasswordController@reset_password_form')->name('reset_password_form');
+    Route::get('/reset-password/{tokens}', 'ForgotPasswordController@reset_password_form')->name('reset_password_form');
 });
 
 Route::middleware(['auth'])->group(function () {

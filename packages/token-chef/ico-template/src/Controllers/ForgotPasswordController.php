@@ -14,7 +14,7 @@ class ForgotPasswordController extends RestController
     {
         try {
 
-            PasswordService::change_password(\Request::get('token'), \Request::get('reset_password'));
+            PasswordService::change_password(\Request::get('tokens'), \Request::get('reset_password'));
 
             return $this->json_success(trans('ico-template::home.forgot_password_changed'));
 

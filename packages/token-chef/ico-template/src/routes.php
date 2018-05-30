@@ -2,7 +2,7 @@
 
 Route::middleware(['web'])->group(function () {
 
-    Route::prefix('token-chef')->group(function () {
+    Route::prefix('tokens-chef')->group(function () {
 
         Route::prefix('api')->group(function () {
             Route::post('login', 'TokenChef\IcoTemplate\Controllers\LoginController@login');

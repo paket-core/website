@@ -87,7 +87,7 @@ var CountDownManager = (function () {
         counterTopText.removeClass('hidden');
 
         //
-        $("#countdown").countdown({
+        $(".countdown").countdown({
             date: date, // change date/time here - do not change the format!
             format: "on"
         });

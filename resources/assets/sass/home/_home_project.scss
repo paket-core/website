@@ -1,0 +1,129 @@
+.home-section {
+  &.home-project {
+    .title {
+      font-size: 40.6px;
+      font-weight: bold;
+      text-align: left;
+      color: #262626;
+      word-wrap: break-word;
+    }
+    .desc, ul {
+      font-size: 17.1px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #666666;
+    }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        padding-left: 14px;
+        .dot {
+          float: left;
+          $s: 8px;
+          width: $s;
+          height: $s;
+          border-radius: $s/2;
+          background-color: #666666;
+          line-height: 30px;
+          position: absolute;
+          left: 0;
+          top: 9px;
+        }
+      }
+    }
+    .project-item {
+      margin-bottom: 50px;
+      padding-bottom: 45px;
+      border-bottom: solid rgba(#c5c5c5, 0.7) 1px;
+      &:nth-last-child(1) {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .project-items-carousel-wrapper {
+    position: relative;
+    display: none;
+    .title {
+      font-size: 23px;
+      text-align: center;
+      max-width: 280px;
+      display: block;
+      margin: auto;
+    }
+    img {
+      max-width: 220px;
+      display: block;
+      margin: auto;
+      max-height: 200px;
+      width: auto;
+      height: auto;
+    }
+    .img-wrapper {
+      display: inline-block;
+      width: 100%;
+      min-height: 160px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .desc, ul li {
+      text-align: justify;
+      font-size: 13px;
+      line-height: 17px;
+    }
+    .desc {
+      padding: 0 20px;
+    }
+    ul li {
+      padding-left: 30px;
+    }
+    .project-item {
+      margin-bottom: 0;
+    }
+  }
+  .project-items-carousel-buttons {
+    & > div {
+      position: absolute;
+      top: 140px;
+      z-index: 5;
+      background-color: $colorPaketBlue;
+      $s: 74px;
+      width: $s;
+      height: $s;
+      border-radius: $s/2;
+      img {
+        margin-top: 30px;
+      }
+    }
+    $m: -40px;
+    $p: 38px;
+    .owlProjectPrevBtn {
+      left: $m;
+      img {
+        margin-left: $p;
+      }
+    }
+    .owlProjectNextBtn {
+      right: $m;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-section {
+    &.home-project {
+      .project-items-wrapper {
+        display: none;
+      }
+      .project-items-carousel-wrapper {
+        display: inherit;
+      }
+    }
+  }
+}

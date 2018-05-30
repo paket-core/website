@@ -1,0 +1,99 @@
+.token-selling {
+  background-color: #f3f9ff;
+  h2 {
+    font-size: 46.5px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: left;
+    color: #262626;
+    text-transform: uppercase;
+  }
+  .desc-selling {
+    .desc {
+      font-size: 17.1px;
+      font-weight: 300;
+      line-height: 26.3px;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #000000;
+      &.desc-1 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .how {
+    padding-top: 50px;
+    .line {
+      width: 108px;
+      height: 3px;
+      background-color: #2ac8ff;
+      display: block;
+      margin: auto;
+      margin-bottom: 55px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 46.5px;
+      font-weight: bold;
+      color: #262626;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    .desc {
+      max-width: 570px;
+      display: inline-block;
+      margin: auto;
+      line-height: 26px;
+    }
+  }
+  .apps {
+    text-align: center;
+    margin-top: 80px;
+    display: inline-block;
+    width: 100%;
+    .app-item {
+      max-width: 520px;
+      min-height: 340px;
+      display: block;
+      margin: auto;
+      padding: 70px 40px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 3px 59px 0 rgba(0, 0, 0, 0.06);
+      position: relative;
+    }
+    h3 {
+      margin-bottom: 20px;
+      font-size: 22.2px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+    p {
+      font-size: 14.1px;
+      font-weight: 300;
+      line-height: 20.2px;
+      letter-spacing: 0.3px;
+      text-align: justify;
+      color: #000000;
+      &.desc-2 {
+        text-align: center;
+      }
+    }
+    .number {
+      $s: 88px;
+      width: $s;
+      height: $s;
+      border-radius: $s/2;
+      line-height: $s;
+      text-align: center;
+      background-color: #2ac8ff;
+      font-size: 56.9px;
+      font-weight: 900;
+      color: #ffffff;
+      position: absolute;
+      left: 50%;
+      top: -$s/2;
+      margin-left: -$s/2;
+    }
+  }
+}

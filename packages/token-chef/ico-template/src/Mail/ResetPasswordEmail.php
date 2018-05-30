@@ -36,7 +36,7 @@ class ResetPasswordEmail extends SecureMail
         $data = [
             'name' => $this->user->name,
             'link' => route('reset_password_form', [
-                'token' => $this->user->password_reset_token
+                'tokens' => $this->user->password_reset_token
             ]),
             'subject' => $subject,
         ];

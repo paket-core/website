@@ -1,0 +1,38 @@
+.home-section {
+  &.home-partners {
+    .title-desc {
+      margin-bottom: 50px;
+    }
+    .partners {
+      .partner {
+        display: inline-block;
+        max-width: 25%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+        img {
+          display: inline-block;
+          max-width: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-section {
+    &.home-partners {
+      img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+      .partners {
+        .partner {
+          display: inline-block;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}

@@ -75,17 +75,17 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116534685-1"></script>--}}
 {{--<script>--}}
-    {{--window.dataLayer = window.dataLayer || [];--}}
-    {{--function gtag(){dataLayer.push(arguments);}--}}
-    {{--gtag('js', new Date());--}}
+{{--window.dataLayer = window.dataLayer || [];--}}
+{{--function gtag(){dataLayer.push(arguments);}--}}
+{{--gtag('js', new Date());--}}
 
-    {{--gtag('config', 'UA-116534685-1');--}}
+{{--gtag('config', 'UA-116534685-1');--}}
 {{--</script>--}}
 
 <script>
     WebFont.load({
         google: {
-            families: ['Open Sans:regular:cyrillic']
+            families: ['Open Sans:regular:cyrillic', 'Roboto']
         },
         custom: {
             families: ['Proxima Nova', 'icomoon'],

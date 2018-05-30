@@ -1,4 +1,4 @@
-#countdown {
+.countdown {
   .item {
     color: $colorWhite;
     .counter {
@@ -20,13 +20,15 @@
       margin: 5px auto;
     }
     .title, .counter {
-      color: $colorGrayTokenSale;
+      //TODO change color
+      color: #ffffff;
+      //color: $colorGrayTokenSale;
     }
   }
 }
 
 @media (max-width: $sizeSmall) {
-  #countdown {
+  .countdown {
     .item {
       .counter {
         font-size: 40px;

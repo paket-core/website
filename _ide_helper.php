@@ -1477,7 +1477,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Create a token based authentication guard.
+         * Create a tokens based authentication guard.
          *
          * @param string $name
          * @param array $config
@@ -8458,7 +8458,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Get the bearer token from the request headers.
+         * Get the bearer tokens from the request headers.
          *
          * @return string|null 
          * @static 
@@ -10459,7 +10459,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Get the CSRF token value.
+         * Get the CSRF tokens value.
          *
          * @return string 
          * @static 
@@ -10470,7 +10470,7 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
-         * Regenerate the CSRF token value.
+         * Regenerate the CSRF tokens value.
          *
          * @return void 
          * @static 

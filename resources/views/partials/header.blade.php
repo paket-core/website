@@ -59,7 +59,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a data-scroll href="{{$path}}#token-sale">
+                                <a href="{{ route('token-sale') }}">
                                     @lang('home.header_token_sale')
                                 </a>
                             </li>

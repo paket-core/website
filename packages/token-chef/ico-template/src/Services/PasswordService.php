@@ -10,7 +10,7 @@ use TokenChef\IcoTemplate\Models\User;
 class PasswordService
 {
     /**
-     * Get reset password token
+     * Get reset password tokens
      *
      * @return string
      */

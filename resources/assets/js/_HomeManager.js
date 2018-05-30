@@ -5,6 +5,63 @@ var HomeManager = (function () {
     var VideoManager = require('./_VideoManager');
     var LoginPageEmbedded = require('./_LoginPageEmbedded');
 
+    var owlPublications;
+
+    function initRoadMap() {
+        var owlRoadMap = $(".road-map-carousel-1").owlCarousel({
+            items: 1
+        });
+
+        $('.owlRoadMapNextBtn').click(function () {
+            owlRoadMap.trigger('next.owl.carousel');
+        });
+
+// Go to the previous item
+        $('.owlRoadMapPrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owlRoadMap.trigger('prev.owl.carousel', [300]);
+        });
+
+        var owlRoadMap2 = $(".road-map-carousel-2").owlCarousel({
+            items: 4
+        });
+
+        $('.owlRoadMap2NextBtn').click(function () {
+            owlRoadMap2.trigger('next.owl.carousel');
+        });
+
+// Go to the previous item
+        $('.owlRoadMap2PrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owlRoadMap2.trigger('prev.owl.carousel', [300]);
+        });
+    }
+
+    function initCompanies() {
+
+        if (owlPublications) {
+            owlPublications.owlCarousel('destroy')
+        }
+
+        var width = $(window).width();
+        var items = 3;
+        if (width < 500) {
+            items = 1;
+        } else if (width < 600) {
+            items = 2;
+        }
+
+        $('.owl-carousel-companies-mobile').owlCarousel({
+            items: items,
+            autoplay: true,
+            smartSpeed: 1000,
+            autoplayTimeout: 3000,
+            dots: false
+        });
+    }
+
     function init() {
         RevealManager.init({
             bars: true
@@ -117,35 +174,7 @@ var HomeManager = (function () {
             owlProject.trigger('prev.owl.carousel', [300]);
         });
 
-        var owlRoadMap = $(".road-map-carousel-1").owlCarousel({
-            items: 1
-        });
 
-        $('.owlRoadMapNextBtn').click(function () {
-            owlRoadMap.trigger('next.owl.carousel');
-        });
-
-// Go to the previous item
-        $('.owlRoadMapPrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owlRoadMap.trigger('prev.owl.carousel', [300]);
-        });
-
-        var owlRoadMap2 = $(".road-map-carousel-2").owlCarousel({
-            items: 4
-        });
-
-        $('.owlRoadMap2NextBtn').click(function () {
-            owlRoadMap2.trigger('next.owl.carousel');
-        });
-
-// Go to the previous item
-        $('.owlRoadMap2PrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owlRoadMap2.trigger('prev.owl.carousel', [300]);
-        });
 
         $('#viewMoreCompanies').click(function () {
             $('.company-row.additional').removeClass('additional');
@@ -155,37 +184,19 @@ var HomeManager = (function () {
             initCompanies()
         });
 
-        var owlPublications;
-
-        function initCompanies() {
-
-            if (owlPublications) {
-                owlPublications.owlCarousel('destroy')
-            }
-
-            var width = $(window).width();
-            var items = 3;
-            if (width < 500) {
-                items = 1;
-            } else if (width < 600) {
-                items = 2;
-            }
-
-            $('.owl-carousel-companies-mobile').owlCarousel({
-                items: items,
-                autoplay: true,
-                smartSpeed: 1000,
-                autoplayTimeout: 3000,
-                dots: false
-            });
-        }
-
+        initRoadMap();
         initCompanies();
 
     }
 
+    function initTokenSale() {
+        initRoadMap();
+        CountDownManager.init();
+    }
+
     return {
-        init: init
+        init: init,
+        initTokenSale: initTokenSale
     }
 })();
 
