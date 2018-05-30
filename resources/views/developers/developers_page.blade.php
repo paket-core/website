@@ -10,15 +10,8 @@
         @include('partials.header')
         @include('developers.developers_top_section')
         @include('developers.developers_down_section')
-        @include('home.home_road_map')
         @include('home.home_down_section')
         @include('partials.footer')
-        @include('auth.login_template', [
-            'back_button' => true
-        ])
-        @include('auth.join_template',  [
-            'back_button' => true
-        ])
         @include('modals.video')
     </div>
 @endsection

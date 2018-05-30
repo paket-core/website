@@ -7,9 +7,9 @@
                     <p class="desc">@lang('home.project_1_desc')</p>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="/images/custom/token-sale-new/01-decentralized_box.jpg"
-                         srcset="/images/custom/token-sale-new/01-decentralized_box.jpg 2x,
-             /images/custom/token-sale-new/01-decentralized_box.jpg 3x"
+                    <img src="/images/custom/token-sale-new/01-decentralized_box.png"
+                         srcset="/images/custom/token-sale-new/01-decentralized_box.png 2x,
+             /images/custom/token-sale-new/01-decentralized_box.png 3x"
                          >
                 </div>
             </div>
@@ -19,9 +19,9 @@
                     <p class="desc">@lang('home.project_2_desc')</p>
                 </div>
                 <div class="col-md-6 col-md-pull-6 center">
-                    <img src="/images/custom/token-sale-new/02-stellar.jpg"
-                         srcset="/images/custom/token-sale-new/02-stellar.jpg 2x,
-             /images/custom/token-sale-new/02-stellar.jpg 3x"
+                    <img src="/images/custom/token-sale-new/02-stellar.png"
+                         srcset="/images/custom/token-sale-new/02-stellar.png 2x,
+             /images/custom/token-sale-new/02-stellar.png 3x"
                          >
                 </div>
             </div>
@@ -29,23 +29,23 @@
                 <div class="col-md-6 center">
                     <h1 class="title">@lang('home.project_3_title')</h1>
                     <p class="desc">@lang('home.project_3_desc')</p>
-                    <ul>
+                    <ul class="dotted-list">
                         <li>
-                            <div class="dot"></div>@lang('home.project_3_li_0')</li>
+                            <span class="dot"></span>@lang('home.project_3_li_0')</li>
                         <li>
-                            <div class="dot"></div>@lang('home.project_3_li_1')</li>
+                            <span class="dot"></span>@lang('home.project_3_li_1')</li>
                         <li>
-                            <div class="dot"></div>@lang('home.project_3_li_2')</li>
+                            <span class="dot"></span>@lang('home.project_3_li_2')</li>
                         <li>
-                            <div class="dot"></div>@lang('home.project_3_li_3')</li>
+                            <span class="dot"></span>@lang('home.project_3_li_3')</li>
                         <li>
-                            <div class="dot"></div>@lang('home.project_3_li_4')</li>
+                            <span class="dot"></span>@lang('home.project_3_li_4')</li>
                     </ul>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="/images/custom/token-sale-new/03-protocol.jpg"
-                         srcset="/images/custom/token-sale-new/03-protocol.jpg 2x,
-             /images/custom/token-sale-new/03-protocol.jpg 3x"
+                    <img src="/images/custom/token-sale-new/03-protocol.png"
+                         srcset="/images/custom/token-sale-new/03-protocol.png 2x,
+             /images/custom/token-sale-new/03-protocol.png 3x"
                          >
                 </div>
             </div>
@@ -55,10 +55,10 @@
                     <p class="desc">@lang('home.project_4_desc')</p>
                 </div>
                 <div class="col-md-6 col-md-pull-6 center">
-                    <img src="/images/custom/token-sale/sharing.png"
-                         srcset="/images/custom/token-sale/sharing@2x.png 2x,
-             /images/custom/token-sale/sharing@3x.png 3x"
-                         class="sharing">
+                    <img src="/images/custom/token-sale-new/04-sharing-economy.png"
+                         srcset="/images/custom/token-sale-new/04-sharing-economy.png 2x,
+             /images/custom/token-sale-new/04-sharing-economy.png 3x"
+                         class="enviorment">
                 </div>
             </div>
             <div class="project-item row">
@@ -67,9 +67,9 @@
                     <p class="desc">@lang('home.project_5_desc')</p>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="/images/custom/token-sale/enviorment.png"
-                         srcset="/images/custom/token-sale/enviorment@2x.png 2x,
-             /images/custom/token-sale/enviorment@3x.png 3x"
+                    <img src="/images/custom/token-sale-new/05-environmentally.png"
+                         srcset="/images/custom/token-sale-new/05-environmentally.png 2x,
+             /images/custom/token-sale-new/05-environmentally.png 3x"
                          class="enviorment">
                 </div>
             </div>
@@ -79,9 +79,9 @@
                     <p class="desc">@lang('home.project_6_desc')</p>
                 </div>
                 <div class="col-md-6 col-md-pull-6 center">
-                    <img src="/images/custom/token-sale-new/06-p2p-deliveris.jpg"
-                         srcset="/images/custom/token-sale-new/06-p2p-deliveris.jpg 2x,
-             /images/custom/token-sale-new/06-p2p-deliveris.jpg 3x"
+                    <img src="/images/custom/token-sale-new/06-p2p-deliveris.png"
+                         srcset="/images/custom/token-sale-new/06-p2p-deliveris.png 2x,
+             /images/custom/token-sale-new/06-p2p-deliveris.png 3x"
                          >
                 </div>
             </div>
@@ -91,9 +91,9 @@
                     <p class="desc">@lang('home.project_7_desc')</p>
                 </div>
                 <div class="col-md-6 center">
-                    <img src="/images/custom/token-sale-new/07-un-commerced-majority.jpg"
-                         srcset="/images/custom/token-sale-new/07-un-commerced-majority.jpg 2x,
-             /images/custom/token-sale-new/07-un-commerced-majority.jpg 3x"
+                    <img src="/images/custom/token-sale-new/07-un-commerced-majority.png"
+                         srcset="/images/custom/token-sale-new/07-un-commerced-majority.png 2x,
+             /images/custom/token-sale-new/07-un-commerced-majority.png 3x"
                          >
                 </div>
             </div>

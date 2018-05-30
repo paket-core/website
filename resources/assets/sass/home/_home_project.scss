@@ -17,25 +17,6 @@
       text-align: left;
       color: #666666;
     }
-    ul {
-      list-style: none;
-      li {
-        position: relative;
-        padding-left: 14px;
-        .dot {
-          float: left;
-          $s: 8px;
-          width: $s;
-          height: $s;
-          border-radius: $s/2;
-          background-color: #666666;
-          line-height: 30px;
-          position: absolute;
-          left: 0;
-          top: 9px;
-        }
-      }
-    }
     .project-item {
       margin-bottom: 50px;
       padding-bottom: 45px;
@@ -111,6 +92,26 @@
     .owlProjectNextBtn {
       right: $m;
       margin-right: 10px;
+    }
+  }
+}
+
+ul.dotted-list {
+  list-style: none;
+  li {
+    position: relative;
+    padding-left: 14px;
+    .dot {
+      float: left;
+      $s: 8px;
+      width: $s;
+      height: $s;
+      border-radius: $s/2;
+      background-color: #666666;
+      line-height: 30px;
+      position: absolute;
+      left: 0;
+      top: 9px;
     }
   }
 }
