@@ -29,14 +29,19 @@ class TokenService
                 'desc' => 'Layer 2 routing system Robust hub management application',
             ],
             (object)[
-                'title' => 'TODO Title',
+                'title' => 'Facilitate an economic solution within a country',
                 'date' => 'Q1-2019',
-                'desc' => 'TODO Desc',
+                'desc' => '',
             ],
             (object)[
-                'title' => 'TODO Title',
+                'title' => 'Facilitate an economic solution in a single continent',
                 'date' => 'Q2-2019',
-                'desc' => 'TODO Desc',
+                'desc' => 'Switch entirely to a decentralized identity authority',
+            ],
+            (object)[
+                'title' => 'Facilitate an economic solution in across continents',
+                'date' => 'Q3-2019',
+                'desc' => 'Decentralized routing - removing dependency on a central routing service.',
             ]
         ];
 
