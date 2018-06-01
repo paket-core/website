@@ -41,7 +41,7 @@ class HomeController extends Controller
             ],
             (object)[
                 'name' => 'Sebastian Stupurac',
-                'role' => 'Core Product at Wings.ai'
+                'role' => 'Co-Founder at Wings.ai'
             ],
             (object)[
                 'name' => 'Stas Oskin',
