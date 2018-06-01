@@ -24,7 +24,7 @@ class ForgotPasswordController extends RestController
     public function reset_password_form($token)
     {
         return view('auth.passwords.reset_password', [
-            'tokens' => $this->secure_data($token)
+            'token' => $this->secure_data($token)
         ]);
     }
 
