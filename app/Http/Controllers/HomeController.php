@@ -37,27 +37,27 @@ class HomeController extends Controller
         $endorsements = [
             (object)[
                 'name' => 'Yariv Gilat',
-                'role' => 'Developer'
+                'role' => 'Chairman at Simplex.com'
             ],
             (object)[
                 'name' => 'Sebastian Stupurac',
-                'role' => 'Developer'
+                'role' => 'Core Product at Wings.ai'
             ],
             (object)[
                 'name' => 'Stas Oskin',
-                'role' => 'Developer'
+                'role' => 'Core Dev at Wings.ai'
             ],
             (object)[
                 'name' => 'Ofer Rotem',
-                'role' => 'Developer'
+                'role' => 'Investor'
             ],
             (object)[
                 'name' => 'Guy Corem',
-                'role' => 'Developer'
+                'role' => 'President at DAGlabs'
             ],
             (object)[
                 'name' => 'Ido Sadeh',
-                'role' => 'Developer'
+                'role' => 'Founder at Saga Foundation'
             ]
         ];
 
