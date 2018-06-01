@@ -71,6 +71,10 @@ We’re creating a network that will allow everyone to take part in a global pac
     'team_title' => 'Our Team',
     'team_desc' => 'Many people support the project in different ways. Team members listed are only those that The PaKeT Project is their main occupation. Advisors listed are only those who are contractually committed to help the project.',
 
+    'endorsements_title' => 'Endorsements',
+    'endorsements_desc' => 'We don’t list many respected individuals who help and support us along the way, and don’t see the need for a photo of a dog with the title “security expert” either. However, we are lucky enough to positive endorsement from some industry figures, as you can see here.',
+    'endorsements_link' => 'View More',
+
     'road_map_title' => 'Road Map',
 
     'top_title' => 'PAKET',

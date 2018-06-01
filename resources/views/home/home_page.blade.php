@@ -13,8 +13,9 @@
         @include('home.home_about')
         @include('home.home_project')
         @include('home.home_ecosystem')
-        @include('home.home_partners')
+        {{--@include('home.home_partners')--}}
         @include('home.home_team')
+        @include('home.home_endorsements')
         @include('home.home_road_map')
         {{--@include('home.home_down_section')--}}
         @include('partials.footer')

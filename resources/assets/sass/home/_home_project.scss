@@ -26,6 +26,10 @@
         padding-bottom: 0;
       }
     }
+    img {
+      display: inline-block;
+      max-width: 100%;
+    }
   }
   .project-items-carousel-wrapper {
     position: relative;
