@@ -8,13 +8,13 @@
                 @lang('home.about_desc_1')
             </div>
         </div>
+        {{--<div class="col-md-12 center">--}}
+            {{--<div class="video play-button">--}}
+                {{--<img src="/images/screens/about_video.png">--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <div class="col-md-12 center">
-            <div class="video play-button">
-                <img src="/images/screens/about_video.png">
-            </div>
-        </div>
-        <div class="col-md-12 center">
-            <div class="desc">
+            <div class="desc desc-2">
                 @lang('home.about_desc_2')
             </div>
         </div>

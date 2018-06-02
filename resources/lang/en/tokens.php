@@ -28,7 +28,7 @@ You can already download a beta version of applications using our platform. With
     'tokens_price_title' => 'BULs selling',
 
     'tokens_price_sub_1_title' => 'How much are you raising?',
-    'tokens_price_sub_1_p_desc_1' => 'We are planning on raising 8 Million EUROs. We believe that this will me enough funding to implement our platform, and build a sustainable network made of international participants.',
+    'tokens_price_sub_1_p_desc_1' => 'We are planning on raising 8 Million EUROs. We believe that this will be enough funding to implement our platform, and build a sustainable network made of international participants.',
     'tokens_price_sub_1_p_desc_2' => 'We are locking 200,000,000 BULs for six years. If in 6 years we’ll need more funds we’ll be able to use them to raise more funding.',
     'tokens_price_sub_2_title' => 'How many BULs are being sold?',
     'tokens_price_sub_2_p_desc_1' => 'We are selling 500 million BULs. That’s half of the entire supply of bulls. Note that 20% of the BULs are frozen for 6 years.',

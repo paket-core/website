@@ -6,10 +6,10 @@
         <div class="col-md-12 center">
             <h1 class="title-desc">@lang('home.team_desc')</h1>
         </div>
-        <div class="col-md-12 center team-members-wrapper">
+        <div class="col-md-8 col-md-offset-2 center team-members-wrapper">
             <div class="row team-members">
                 @foreach($members as $member)
-                    <div class="member col-md-3">
+                    <div class="member col-md-6">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}.jpg?ver=1ax31')">
                         </div>

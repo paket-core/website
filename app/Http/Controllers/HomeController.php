@@ -31,6 +31,11 @@ class HomeController extends Controller
                 'name' => 'Chen Barak',
                 'role' => 'VP Business Development',
                 'image' => 'chen',
+            ],
+            (object)[
+                'name' => 'Yura Sherman',
+                'role' => 'Community Manager',
+                'image' => 'yura',
             ]
         ];
 
