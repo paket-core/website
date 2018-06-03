@@ -76,7 +76,9 @@
   }
   .social-wrapper {
     float: right;
-    padding-top: 14px;
+    margin: 0;
+    padding: 0;
+    padding-top: 13px;
     margin-left: 30px;
     a, a span:before {
       color: #031a51;
@@ -150,21 +152,6 @@ header {
     @include transition(all 500ms);
     .header .navbar-collapse {
       padding-bottom: 21px;
-      //border-bottom: solid $colorInputBorder 1px;
-    }
-  }
-}
-
-@media (min-width: $sizeExtraSmall+1) {
-  header {
-    &.filled {
-      .navbar {
-        //background-color: $colorWhite;
-        //border-bottom: solid $colorInputBorder 1px;
-      }
-      .header {
-        padding-bottom: 0;
-      }
     }
   }
 }
@@ -172,7 +159,7 @@ header {
 @media (max-width: $sizeLarge) {
   header {
     .header ul {
-      padding-left: 40px;
+      padding-left: 20px;
       &.navbar-right {
         padding-left: 0;
       }
@@ -180,10 +167,51 @@ header {
   }
 }
 
+@media (max-width: $sizeMedium) {
+  header {
+    .header {
+      padding-bottom: 0;
+      width: 96%;
+      ul {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        li {
+          margin-left: 15px;
+          float: none;
+          display: inline-block;
+          a {
+            font-size: 13px;
+            padding: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $sizeSmall) {
   .container.header {
+    & > div {
+      padding-top: 0px;
+    }
+    ul {
+      padding-bottom: 90px;
+    }
     .social-wrapper {
-      display: none;
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      left: 0;
+      margin: 0;
+      text-align: center;
+      .social-icons a {
+        margin-right: 30px;
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
     }
     .language-wrapper {
       display: none;
@@ -214,7 +242,6 @@ header {
       .navbar {
         .container > div {
           background-color: $colorWhite;
-          border-bottom: solid $colorInputBorder 1px;
         }
       }
     }
@@ -234,8 +261,6 @@ header {
         overflow: hidden;
         .inner {
           position: relative;
-          //padding: 25px 0;
-          //border-bottom: solid $colorInputBorder 1px;
         }
         .big-icon {
           position: absolute;
@@ -253,9 +278,11 @@ header {
       margin: 0;
       position: fixed;
       left: 0;
+      bottom: 0;
       width: 100%;
-      top: 72px;
+      top: 70px;
       z-index: 6;
+      padding-bottom: 70px;
       .navbar-nav {
         padding: 0;
         margin: 0;
@@ -269,7 +296,7 @@ header {
             color: $colorBlue;
             font-size: 24px;
             font-weight: bold;
-            line-height: 71px;
+            line-height: 61px;
             text-align: center;
           }
         }

@@ -14,14 +14,6 @@
                         </a>
                     </div>
                 </div>
-                @if (Auth::guest())
-                    <div class="language-wrapper">
-                        @include('partials.language')
-                    </div>
-                    <div class="social-wrapper">
-                        @include('partials.social')
-                    </div>
-                @endif
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNav">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -29,6 +21,14 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="topNav">
+                    @if (Auth::guest())
+                        <div class="language-wrapper">
+                            @include('partials.language')
+                        </div>
+                        <div class="social-wrapper">
+                            @include('partials.social')
+                        </div>
+                    @endif
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())
                             <li>

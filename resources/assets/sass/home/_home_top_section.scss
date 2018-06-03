@@ -160,7 +160,7 @@
   }
 }
 
-@media (max-width: $sizeSmall) {
+@media (max-width: $sizeMedium) {
   .home-top-section {
     @include linear-gradient-b(#d7eeff 0, #d7eeff 30%, #ffffff 31%, #ffffff 100%);
     min-height: inherit;
@@ -185,6 +185,8 @@
     .top-desc {
       text-align: center;
       margin-top: 0;
+      width: 100%;
+      max-width: 100%;
     }
     .top-actions {
       margin-top: 30px;

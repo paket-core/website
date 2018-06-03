@@ -50,7 +50,7 @@ class HomeController extends Controller
             ],
             (object)[
                 'name' => 'Stas Oskin',
-                'role' => 'Core Dev at Wings.ai'
+                'role' => 'Co-Founder at Wings.ai'
             ],
             (object)[
                 'name' => 'Ofer Rotem',
@@ -58,11 +58,11 @@ class HomeController extends Controller
             ],
             (object)[
                 'name' => 'Guy Corem',
-                'role' => 'President at DAGlabs'
+                'role' => 'President of DAGlabs'
             ],
             (object)[
                 'name' => 'Ido Sadeh',
-                'role' => 'Founder at Saga Foundation'
+                'role' => 'Founder of Saga Foundation'
             ]
         ];
 

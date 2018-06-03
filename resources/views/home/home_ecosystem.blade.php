@@ -18,14 +18,14 @@
                          class="plan-icon">
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_1')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_1')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_1')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
                 </div>
             </div>
 
-            <div class="graph-item graph-item-2 active">
+            <div class="graph-item graph-item-2">
                 <div class="graph-icon">
                     <img src="/images/custom/token-sale/suitcase-icon.png"
                          srcset="/images/custom/token-sale/suitcase-icon@2x.png 2x,
@@ -33,7 +33,7 @@
                          class="suitcase-icon">
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_2')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_2')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_2')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
@@ -48,7 +48,7 @@
                          class="rocket-icon">
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_3')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_3')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_3')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
@@ -64,7 +64,7 @@
                          class="diamond">
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_4')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_4')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_4')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
@@ -80,7 +80,7 @@
 
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_5')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_5')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_5')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
@@ -95,7 +95,7 @@
                          class="group-icon">
                 </div>
                 <div class="graph-title">@lang('home.ecosystem_graph_title_6')</div>
-                <div class="graph-desc">@lang('home.ecosystem_graph_desc_6')</div>
+                <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_6')</div>
                 <div class="graph-btn">
                     <div class="plus">+</div>
                     <div class="minus">-</div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_1')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_1')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_1')</div>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_2')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_2')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_2')</div>
                     </div>
                 </div>
 
@@ -143,7 +143,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_3')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_3')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_3')</div>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_4')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_4')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_4')</div>
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_5')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_5')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_5')</div>
                     </div>
                 </div>
 
@@ -184,7 +184,7 @@
                     </div>
                     <div class="graph-wrapper">
                         <div class="graph-title">@lang('home.ecosystem_graph_title_6')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_6')</div>
+                        <div class="graph-desc animated">@lang('home.ecosystem_graph_desc_6')</div>
                     </div>
                 </div>
 

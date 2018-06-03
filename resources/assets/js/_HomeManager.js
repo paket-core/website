@@ -109,10 +109,28 @@ var HomeManager = (function () {
 
         });
 
-        $('.graph-btn').click(function () {
+        var graphButtons = $('.graph-btn');
+
+        graphButtons.click(function () {
             var item = $(this).parents('.graph-item');
-            item.toggleClass('active')
+            item.find('.graph-desc').toggleClass('flipInX');
+            item.toggleClass('active');
         });
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        var item;
+
+        setInterval(function () {
+            item = getRandomInt(0, graphButtons.length);
+            graphButtons.eq(item).click();
+        }, 3000);
+
+        graphButtons.eq(1).click();
+        graphButtons.eq(2).click();
+        graphButtons.eq(0).click();
 
         var owlEcosystem = $(".eco-carousel").owlCarousel({
             autoplay: true,
@@ -173,7 +191,6 @@ var HomeManager = (function () {
             // Parameters has to be in square bracket '[]'
             owlProject.trigger('prev.owl.carousel', [300]);
         });
-
 
 
         $('#viewMoreCompanies').click(function () {

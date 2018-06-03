@@ -8,9 +8,9 @@ return [
     */
 
     'tokens_title' => "BUL: our digital tokens",
-    'tokens_sub' => "The BUL token is a digital token used to pay for deliveries on the PaKeT platform.",
+    'tokens_sub' => "The BUL token is a digital token used to pay for deliveries on the PAKET platform.",
     'tokens_sub_2' => "On May 1st one billion tokens were issued on the stellar platform, and the issuer was canceled, so no additional tokens can ever be created. You can see the issuance code on Github, and audit the issuance yourself on the stellar network.
-Anyone who holds BUL tokens can use them to pay for deliveries or commit them as collateral if she wants to deliver a package herself. Holding a BUL token also means holding a part of the entire PaKeT economy. Staying true to creating a decentralized platform, we never gave any shares or equity in the project to anyone.
+Anyone who holds BUL tokens can use them to pay for deliveries or commit them as collateral if she wants to deliver a package herself. Holding a BUL token also means holding a part of the entire PAKET economy. Staying true to creating a decentralized platform, we never gave any shares or equity in the project to anyone.
 You can already download a beta version of applications using our platform. With these applications, you can already use BULs to perform package transfer operations.",
     'counter_title' => "Public Pre-Sale",
     'tokens_selling' => "Why we’re selling tokens?",
