@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-12 center">
             <div class="desc">
-                <a href="https://identity.paket.global/" target="_blank">
+                <a href="{{route('token-sale')}}" target="_blank">
                     <div class="btn btn-join">@lang('home.about_btn')</div>
                 </a>
             </div>

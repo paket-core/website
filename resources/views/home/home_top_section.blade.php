@@ -55,7 +55,7 @@
                         </a>
                     </div>
                     <div class="col-md-12">
-                        <a href="https://identity.paket.global/" target="_blank">
+                        <a href="{{route('token-sale')}}" target="_blank">
                             <div class="btn-join">
                                 @lang('home.top_join_now')
                             </div>
