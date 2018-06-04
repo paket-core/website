@@ -21,7 +21,7 @@ return [
     'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people. We believe technology can help the global community to organize and cooperate without central authorities.
 We’re creating a network that will allow everyone to take part in a global package delivery network that has no central authority.',
     'about_desc_2' => 'Bitcoin revolutionized the payment industry by making it decentralized. PAKET was born to answer a similar need - transferring goods without a central entity. We see this is an opportunity to solve a “real world” problem using the blockchain technology in its decentralized, purest form.  A genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
-    'about_btn' => 'Join ICO now',
+    'about_btn' => 'Token Sale Info',
 
     'project_1_title' => 'Truly Decentralized and Open',
     'project_1_desc' => 'Because an efficient system is one that lets every part do what it does best, and everybody stands to win from a more efficient way of transporting goods. The PAKET platform is open to everybody, doesn\'t take any commission, is fully transparent, and the organization does not raise funds by selling any equity or shares. The only way to support the system is by using the network and becoming a part of it, by buying, using, and earning BUL tokens.',
@@ -80,7 +80,7 @@ We’re creating a network that will allow everyone to take part in a global pac
     'top_title' => 'PAKET',
     'top_desc' => 'The open package delivery protocol, where international, local, and individual couriers can cooperate',
     'play_video' => 'Play Video',
-    'top_join_now' => 'Join ICO Now',
+    'top_join_now' => 'Token Sale Info',
     'top_action_wp' => 'White Paper',
     'top_action_telegram' => 'Join Our Telegram',
 

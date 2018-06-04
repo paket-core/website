@@ -6,64 +6,91 @@
 
 $(document).ready(function () {
 
-    var HomeManager = require('./_HomeManager');
-    var TokenPageManager = require('./_TokenPageManager');
-    var MyAccountManager = require('./_MyAccountManager');
-    var AuthPageManager = require('./_AuthPageManager');
-    var VerificationManager = require('./_VerificationManager');
-    var ToastrManager = require('./_ToastrManager');
-    var LanguageManager = require('./_LanguageManager');
+    function run() {
 
-    function stripQueryStringAndHashFromPath(url) {
-        return url.split("?")[0].split("#")[0];
-    }
-
-    var fullUrl = stripQueryStringAndHashFromPath(window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, ""));
-    var url = fullUrl.toLowerCase();
-
-    ToastrManager.init();
-    LanguageManager.init();
-
-    if (['en', 'de', 'es', 'fr', 'pt'].indexOf(url) >= 0) {
-        HomeManager.init();
-        return false;
-    }
-
-    switch (url) {
-        case '':
-            HomeManager.init();
-            break;
-        case 'token-sale':
-            TokenPageManager.init();
-            break;
-        case 'developers':
-            TokenPageManager.init();
-            break;
-        case 'my-account':
-            MyAccountManager.init();
-            break;
-        case 'password':
-            AuthPageManager.init();
-            break;
-        case 'login':
-            AuthPageManager.init();
-            break;
-        case 'sign-up':
-            AuthPageManager.init();
-            break;
-        case 'terms-and-conditions':
-            AuthPageManager.init();
-            break;
-        case 'privacy-policy':
-            AuthPageManager.init();
-            break;
-        default:
-            if (url.substr(0, 15) === 'reset-password/') {
-                AuthPageManager.init();
-            } else if (url.substr(0, 13) === 'verification/') {
-                AuthPageManager.init();
-                VerificationManager.init();
+        WebFont.load({
+            google: {
+                families: ['Open Sans:regular:cyrillic', 'Roboto']
+            },
+            custom: {
+                families: ['Proxima Nova', 'icomoon'],
+                urls: [$('#fontPath').attr('data-font-path')]
+            },
+            fontloading: function (familyName, fvd) {
+                if (familyName === 'icomoon') {
+                    $('.fa-svg').addClass('visible');
+                }
             }
-            break;
+        });
+
+        var HomeManager = require('./_HomeManager');
+        var TokenPageManager = require('./_TokenPageManager');
+        var MyAccountManager = require('./_MyAccountManager');
+        var AuthPageManager = require('./_AuthPageManager');
+        var VerificationManager = require('./_VerificationManager');
+        var ToastrManager = require('./_ToastrManager');
+        var LanguageManager = require('./_LanguageManager');
+
+        function stripQueryStringAndHashFromPath(url) {
+            return url.split("?")[0].split("#")[0];
+        }
+
+        var fullUrl = stripQueryStringAndHashFromPath(window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, ""));
+        var url = fullUrl.toLowerCase();
+
+        ToastrManager.init();
+        LanguageManager.init();
+
+        if (['en', 'de', 'es', 'fr', 'pt'].indexOf(url) >= 0) {
+            HomeManager.init();
+            return false;
+        }
+
+        switch (url) {
+            case '':
+                HomeManager.init();
+                break;
+            case 'token-sale':
+                TokenPageManager.init();
+                break;
+            case 'developers':
+                TokenPageManager.init();
+                break;
+            case 'my-account':
+                MyAccountManager.init();
+                break;
+            case 'password':
+                AuthPageManager.init();
+                break;
+            case 'login':
+                AuthPageManager.init();
+                break;
+            case 'sign-up':
+                AuthPageManager.init();
+                break;
+            case 'terms-and-conditions':
+                AuthPageManager.init();
+                break;
+            case 'privacy-policy':
+                AuthPageManager.init();
+                break;
+            default:
+                if (url.substr(0, 15) === 'reset-password/') {
+                    AuthPageManager.init();
+                } else if (url.substr(0, 13) === 'verification/') {
+                    AuthPageManager.init();
+                    VerificationManager.init();
+                }
+                break;
+        }
+    }
+
+    if (typeof(Raven) === 'undefined') {
+        run();
+    } else {
+        Raven.config('https://6dfaa9dccdcb4a5783c91b96f79818e7@sentry.io/1219139').install();
+        Raven.context(function () {
+            run();
+        });
     }
 });

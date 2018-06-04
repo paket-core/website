@@ -47,6 +47,7 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link href="{{ mix('css/app.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ mix('css/app.css')}}" rel="stylesheet" type="text/css"/>
     @yield('styles')
 
 </head>
@@ -66,6 +67,11 @@
         crossorigin="anonymous"></script>
 @yield('scripts')
 
+@if (env('APP_ENV') !== 'local')
+    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" crossorigin="anonymous"></script>
+@endif
+<div class="hidden" id="fontPath" data-font-path="{{mix('/fonts/fonts.css')}}"></div>
+
 <script data-cfasync="false" type="text/javascript" src="{{ mix('js/app.js')}}"></script>
 
 <script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
@@ -81,23 +87,6 @@
 
 {{--gtag('config', 'UA-116534685-1');--}}
 {{--</script>--}}
-
-<script>
-    WebFont.load({
-        google: {
-            families: ['Open Sans:regular:cyrillic', 'Roboto']
-        },
-        custom: {
-            families: ['Proxima Nova', 'icomoon'],
-            urls: ['{{mix('/fonts/fonts.css')}}']
-        },
-        fontloading: function (familyName, fvd) {
-            if (familyName === 'icomoon') {
-                $('.fa-svg').addClass('visible');
-            }
-        }
-    });
-</script>
 
 @if (env('APP_ENV') !== 'local')
     <script type='text/javascript'>
