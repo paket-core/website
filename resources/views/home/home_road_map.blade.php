@@ -9,16 +9,17 @@
                 <div class="road-map-wrapper">
                     <div class="owl-carousel road-map-carousel-2">
                         @foreach($road_maps as $item)
-                            <div class="road-map-item">
+                            <div class="road-map-item {{$item->finished ? 'finished' : ''}}">
                                 <div class="ellipsis ellipsis-1"></div>
                                 <div class="ellipsis ellipsis-2"></div>
                                 <div class="ellipsis-line"></div>
                                 <div class="road-map-date">{!! $item->date !!}</div>
                                 <div class="road-map-image">
+                                    <div class="completed"><img src="/images/custom/token-sale/completed.png"></div>
                                     <img src="/images/custom/mobile/location/locationIcon.png"
                                          srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
              /images/custom/mobile/location/locationIcon@3x.png 3x"
-                                         class="">
+                                         class="location">
                                 </div>
                                 <div class="road-map-title">{!! $item->title!!}</div>
                                 <div class="road-map-desc">{!! $item->desc!!}</div>
@@ -48,13 +49,14 @@
 
                     <div class="owl-carousel road-map-carousel-1">
                         @foreach($road_maps as $item)
-                            <div class="road-map-item">
+                            <div class="road-map-item {{$item->finished ? 'finished' : ''}}">
                                 <div class="road-map-date">{!! $item->date !!}</div>
                                 <div class="road-map-image">
+                                    <div class="completed"><img src="/images/custom/token-sale/completed.png"></div>
                                     <img src="/images/custom/mobile/location/locationIcon.png"
                                          srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
              /images/custom/mobile/location/locationIcon@3x.png 3x"
-                                         class="">
+                                         class="location">
                                 </div>
                                 <div class="road-map-title">{!! $item->title!!}</div>
                                 <div class="road-map-desc">{!! $item->desc!!}</div>

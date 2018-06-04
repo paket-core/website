@@ -38,6 +38,33 @@
       }
     }
 
+    .road-map-item {
+      .completed {
+        display: none;
+      }
+      &.finished {
+        .road-map-date {
+          font-weight: bold;
+        }
+        .completed {
+          display: inherit;
+        }
+        .location {
+          display: none;
+        }
+      }
+    }
+
+    .road-map-item .road-map-image .completed {
+      img {
+        margin-top: 5px;
+        max-width: 40px;
+      }
+      .location {
+        display: none;
+      }
+    }
+
     .road-map-wrapper {
       margin-bottom: 40px;
       $m: -4%;

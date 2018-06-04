@@ -12,36 +12,43 @@ class TokenService
                 'title' => 'Private sale',
                 'date' => 'Q1-2018',
                 'desc' => 'Development of base protocol - a trusted transfer of valuables between couriers and hubs',
+                'finished' => true
             ],
             (object)[
                 'title' => 'Token generation<br/>Public sale Market Making:',
                 'date' => 'Q2-2018',
                 'desc' => 'Open source application(s) - enabling end user usage of the base protocol',
+                'finished' => false
             ],
             (object)[
                 'title' => 'Facilitate worldwide creation of local hubs Creation of an example hub:',
                 'date' => 'Q3-2018',
                 'desc' => 'Global and local overview supply/demand',
+                'finished' => false
             ],
             (object)[
                 'title' => 'Sign an international courier for global deliveries between hubs',
                 'date' => 'Q4-2018',
                 'desc' => 'Layer 2 routing system Robust hub management application',
+                'finished' => false
             ],
             (object)[
                 'title' => 'Facilitate an economic solution within a country',
                 'date' => 'Q1-2019',
                 'desc' => '',
+                'finished' => false
             ],
             (object)[
                 'title' => 'Facilitate an economic solution in a single continent',
                 'date' => 'Q2-2019',
                 'desc' => 'Switch entirely to a decentralized identity authority',
+                'finished' => false
             ],
             (object)[
                 'title' => 'Facilitate an economic solution in across continents',
                 'date' => 'Q3-2019',
                 'desc' => 'Decentralized routing - removing dependency on a central routing service.',
+                'finished' => false
             ]
         ];
 
