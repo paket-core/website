@@ -99,7 +99,7 @@
     });
 </script>
 
-@if (env('APP_ENV') === 'local')
+@if (env('APP_ENV') !== 'local')
     <script type='text/javascript'>
         //some default pre init
         var Countly = Countly || {};
