@@ -28,6 +28,16 @@
       a {
         text-decoration: underline;
       }
+      &.protocol-item {
+        .desc, ul {
+          font-size: 14px;
+          line-height: 17px;
+          li{
+            line-height: 19px;
+            margin-top: 5px;
+          }
+        }
+      }
     }
     img {
       display: inline-block;
@@ -118,7 +128,7 @@ ul.dotted-list {
       line-height: 30px;
       position: absolute;
       left: 0;
-      top: 9px;
+      top: 4px;
     }
   }
 }

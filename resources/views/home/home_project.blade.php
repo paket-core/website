@@ -25,21 +25,21 @@
                          >
                 </div>
             </div>
-            <div class="project-item row">
+            <div class="project-item row protocol-item">
                 <div class="col-md-6 center">
                     <h1 class="title">@lang('home.project_3_title')</h1>
                     <p class="desc">@lang('home.project_3_desc')</p>
                     <ul class="dotted-list">
                         <li>
-                            <span class="dot"></span>@lang('home.project_3_li_0')</li>
+                            <span class="dot"></span><span>@lang('home.project_3_li_0')</span></li>
                         <li>
-                            <span class="dot"></span>@lang('home.project_3_li_1')</li>
+                            <span class="dot"></span><span>@lang('home.project_3_li_1')</span></li>
                         <li>
-                            <span class="dot"></span>@lang('home.project_3_li_2')</li>
+                            <span class="dot"></span><span>@lang('home.project_3_li_2')</span></li>
                         <li>
-                            <span class="dot"></span>@lang('home.project_3_li_3')</li>
+                            <span class="dot"></span><span>@lang('home.project_3_li_3')</span></li>
                         <li>
-                            <span class="dot"></span>@lang('home.project_3_li_4')</li>
+                            <span class="dot"></span><span>@lang('home.project_3_li_4')</span></li>
                     </ul>
                 </div>
                 <div class="col-md-6 center">
