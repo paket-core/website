@@ -117,20 +117,7 @@ var HomeManager = (function () {
             item.toggleClass('active');
         });
 
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        var item;
-
-        setInterval(function () {
-            item = getRandomInt(0, graphButtons.length);
-            graphButtons.eq(item).click();
-        }, 3000);
-
-        graphButtons.eq(1).click();
-        graphButtons.eq(2).click();
-        graphButtons.eq(0).click();
+        graphButtons.click();
 
         var owlEcosystem = $(".eco-carousel").owlCarousel({
             autoplay: true,
