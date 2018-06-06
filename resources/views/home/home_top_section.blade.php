@@ -4,9 +4,9 @@
             <div class="col-md-7 col-md-push-5 video-wrapper">
                 <div class="video">
                     <video loop muted autoplay poster="/video/paket_header.jpg">
-                        <source src="/video/paket_header.mp4" type="video/mp4">
-                        <source src="/video/paket_header.ogv" type="video/ogg">
-                        <source src="/video/paket_header.webm" type="video/webm">
+                        <source src="/video/paket_header_2.mp4" type="video/mp4">
+                        <source src="/video/paket_header_2.ogv" type="video/ogg">
+                        <source src="/video/paket_header_2.webm" type="video/webm">
                     </video>
                 </div>
             </div>
