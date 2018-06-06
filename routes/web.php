@@ -28,5 +28,18 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/my-account', 'ClientController@my_account')->name('my-account');
 });
 
+Route::get('sitemap', function () {
+    // create new sitemap object
+    $sitemap = App::make('sitemap');
+    $sitemap->setCache('laravel.sitemap', 60);
+    if (!$sitemap->isCached()) {
+        // add item to the sitemap (url, date, priority, freq)
+        $sitemap->add(URL::to('home'), \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(URL::to('token-sale'), \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(URL::to('developers'), \Carbon\Carbon::now(), '1.0', 'daily');
+    }
+    return $sitemap->render('xml');
+});
+
 //Route::get('/terms-and-conditions', 'DocumentsController@terms_and_conditions')->name('terms-and-conditions');
 //Route::get('/privacy-policy', 'DocumentsController@privacy_policy')->name('privacy-policy');

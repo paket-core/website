@@ -18,7 +18,7 @@ return [
     'media_view_more' => 'View more',
 
     'about_title' => 'WE ARE PAKET',
-    'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people.<br/>We believe technology can help the global community to organize and cooperate without central authorities.We’re creating a network that will allow everyone to take part in a global package delivery network that has no central authority.',
+    'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people.<br/>We believe technology can help the global community to organize and cooperate without central authorities.<br/>We’re creating a network that will allow everyone to take part in a global package delivery network that has no central authority.',
     'about_desc_2' => 'Bitcoin revolutionized the payment industry by making it decentralized. PAKET was born to answer a similar need - transferring goods without a central entity. We see this is an opportunity to solve a “real world” problem using the blockchain technology in its decentralized, purest form.  A genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
     'about_btn' => 'Token Sale Info',
 
