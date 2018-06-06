@@ -13,6 +13,7 @@ class DocumentsController extends RestController
 
     public function privacy_policy()
     {
+        abort(404);
         return view('documents.privacy_policy');
     }
 

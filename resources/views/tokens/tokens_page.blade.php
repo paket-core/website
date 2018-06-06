@@ -12,10 +12,10 @@
         @include('tokens.tokens_selling')
         @include('tokens.tokens_price')
         {{--@include('tokens.tokens_smart')--}}
-        @include('tokens.tokens_distribution')
+{{--        @include('tokens.tokens_distribution')--}}
         @include('tokens.tokens_funds')
         @include('home.home_road_map')
-        @include('home.home_down_section')
+        {{--@include('home.home_down_section')--}}
         @include('partials.footer')
         @include('auth.login_template', [
             'back_button' => true

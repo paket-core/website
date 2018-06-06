@@ -1,18 +1,16 @@
 <section class="home-top-section top-section center">
-    <img src="/video/preview_mobile.jpg"
-         srcset="/video/preview_mobile.jpg,
-             /video/preview_mobile.jpg"
-         class="img-video-top">
-    <div class="video-bg">
-        <video loop muted autoplay poster="/video/preview_header.jpg" class="video-bg_video">
-            <source src="/video/paket_header.mp4" type="video/mp4">
-            <source src="/video/paket_header.ogv" type="video/ogg">
-            <source src="/video/paket_header.webm" type="video/webm">
-        </video>
-    </div>
     <div class="container center">
-        <div class="row home-top-content">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-7 col-md-push-5 video-wrapper">
+                <div class="video">
+                    <video loop muted autoplay poster="/video/paket_header.jpg">
+                        <source src="/video/paket_header.mp4" type="video/mp4">
+                        <source src="/video/paket_header.ogv" type="video/ogg">
+                        <source src="/video/paket_header.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="top-title">@lang('home.top_title')</div>
@@ -57,7 +55,13 @@
                     <div class="col-md-12">
                         <a href="{{route('token-sale')}}" target="_blank">
                             <div class="btn-join">
-                                @lang('home.top_join_now')
+                                <div class="inner">
+                                    <span class="img"><img src="/images/custom/token-sale/join-ico-icon.png"
+                                                           srcset="/images/custom/token-sale/join-ico-icon@2x.png 2x,
+             /images/custom/token-sale/join-ico-icon@3x.png 3x"
+                                                           class="join-ico-icon"></span>
+                                    <span>@lang('home.top_join_now')</span>
+                                </div>
                             </div>
                         </a>
                     </div>

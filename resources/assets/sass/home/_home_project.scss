@@ -28,11 +28,14 @@
       a {
         text-decoration: underline;
       }
+      .protocol-img {
+        margin-top: 50px;
+      }
       &.protocol-item {
         .desc, ul {
           font-size: 14px;
           line-height: 17px;
-          li{
+          li {
             line-height: 19px;
             margin-top: 5px;
           }

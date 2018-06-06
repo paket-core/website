@@ -42,7 +42,7 @@
                             <span class="dot"></span><span>@lang('home.project_3_li_4')</span></li>
                     </ul>
                 </div>
-                <div class="col-md-6 center">
+                <div class="col-md-6 center protocol-img">
                     <img src="/images/custom/token-sale-new/03-protocol.png"
                          srcset="/images/custom/token-sale-new/03-protocol.png 2x,
              /images/custom/token-sale-new/03-protocol.png 3x"

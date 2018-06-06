@@ -28,5 +28,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/my-account', 'ClientController@my_account')->name('my-account');
 });
 
-Route::get('/terms-and-conditions', 'DocumentsController@terms_and_conditions')->name('terms-and-conditions');
-Route::get('/privacy-policy', 'DocumentsController@privacy_policy')->name('privacy-policy');
+//Route::get('/terms-and-conditions', 'DocumentsController@terms_and_conditions')->name('terms-and-conditions');
+//Route::get('/privacy-policy', 'DocumentsController@privacy_policy')->name('privacy-policy');

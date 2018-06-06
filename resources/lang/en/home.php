@@ -10,7 +10,7 @@ return [
     'header_product_info' => "Product Info",
     'header_our_team' => "Our Team",
     'header_token_sale' => "Token Sale",
-    'header_for_developers' => "For Developers",
+    'header_for_developers' => "Developers",
     'header_my_account' => 'My Account',
     'header_login' => 'Login',
 
@@ -18,8 +18,7 @@ return [
     'media_view_more' => 'View more',
 
     'about_title' => 'WE ARE PAKET',
-    'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people. We believe technology can help the global community to organize and cooperate without central authorities.
-We’re creating a network that will allow everyone to take part in a global package delivery network that has no central authority.',
+    'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people.<br/>We believe technology can help the global community to organize and cooperate without central authorities.We’re creating a network that will allow everyone to take part in a global package delivery network that has no central authority.',
     'about_desc_2' => 'Bitcoin revolutionized the payment industry by making it decentralized. PAKET was born to answer a similar need - transferring goods without a central entity. We see this is an opportunity to solve a “real world” problem using the blockchain technology in its decentralized, purest form.  A genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
     'about_btn' => 'Token Sale Info',
 
@@ -73,7 +72,7 @@ We’re creating a network that will allow everyone to take part in a global pac
 
     'endorsements_title' => 'Endorsements',
     'endorsements_desc' => 'We don’t list many respected individuals who help and support us along the way. However, we are lucky enough to positive endorsement from some industry figures, as you can see here.',
-    'endorsements_link' => 'Read the full endorsement here',
+    'endorsements_link' => 'Read the full endorsement',
 
     'road_map_title' => 'Road Map',
 
@@ -97,5 +96,5 @@ We’re creating a network that will allow everyone to take part in a global pac
     'footer_follow_title' => "FOLLOW US",
     'footer_privacy_policy' => 'Privacy Policy',
     'footer_terms_of_sale' => 'Terms of Sale',
-    'footer_copyright' => 'PAKET Project Ltd',
+    'footer_copyright' => '2017-2018 Paket Project LTD',
 ];

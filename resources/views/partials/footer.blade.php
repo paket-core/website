@@ -14,13 +14,8 @@
                 <div class="col-md-12 documents">
                     <ul>
                         <li>
-                            <a href="/privacy-policy">
+                            <a href="#">
                                 @lang('home.footer_privacy_policy')
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/terms-of-sale">
-                                @lang('home.footer_terms_of_sale')
                             </a>
                         </li>
                     </ul>

@@ -5,14 +5,14 @@
     @if (isset($custom_meta) && $custom_meta)
         @yield('custom_meta')
     @else
-        <title>{{isset($title) ? $title : env('APP_NAME')}}</title>
+        <title>{{isset($title) ? $title : env('APP_NAME')}} - {{env('APP_DESC')}}</title>
         <meta content="{{env('APP_NAME')}}" name="title"/>
-        <meta content="" name="description"/>
-        <meta property="og:title" content=""/>
-        <meta property="og:description" content=""/>
+        <meta content="{{env('APP_DESC')}}" name="description"/>
+        <meta property="og:title" content="{{env('APP_NAME')}}}}"/>
+        <meta property="og:description" content="{{env('APP_DESC')}}"/>
         <meta property="og:url" content="{{URL::to('/')}}"/>
     @endif
-    <meta property="fb:app_id" content="1680572791984199"/>
+    <meta property="fb:app_id" content=""/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content=""/>
     <meta property="og:image:secure_url" content=""/>
@@ -60,7 +60,9 @@
         integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts"
         crossorigin="anonymous"></script>
 
-<script data-cfasync="false" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
 
 <script data-cfasync="false" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -68,9 +70,10 @@
 @yield('scripts')
 
 @if (env('APP_ENV') !== 'local')
-    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" integrity="sha384-uJpQSthHz+xMxNKkViI4LAy8DBoNDjeaE06Ga+fIE7GJ0KB2ElxHk5q5ED9Z6+jZ" crossorigin="anonymous"></script>
 @endif
 <div class="hidden" id="fontPath" data-font-path="{{mix('/fonts/fonts.css')}}"></div>
+<div class="hidden" id="appEnv" data-env="{{env('APP_ENV')}}"></div>
 
 <script data-cfasync="false" type="text/javascript" src="{{ mix('js/app.js')}}"></script>
 
@@ -87,41 +90,6 @@
 
 {{--gtag('config', 'UA-116534685-1');--}}
 {{--</script>--}}
-
-@if (env('APP_ENV') !== 'local')
-    <script type='text/javascript'>
-        //some default pre init
-        var Countly = Countly || {};
-        Countly.q = Countly.q || [];
-
-        //provide countly initialization parameters
-        Countly.app_key = 'b442c665697cc1996665ebeee2a35e649c156ec3';
-        Countly.url = 'https://c.paket.global/';
-
-        Countly.q.push(['track_sessions']);
-        Countly.q.push(['track_pageview']);
-        Countly.q.push(['track_clicks']);
-        Countly.q.push(['track_scrolls']);
-        Countly.q.push(['track_errors']);
-        Countly.q.push(['track_links']);
-        Countly.q.push(['track_forms']);
-        Countly.q.push(['collect_from_forms']);
-
-        //load countly script asynchronously
-        (function () {
-            var cly = document.createElement('script');
-            cly.type = 'text/javascript';
-            cly.async = true;
-            //enter url of script here
-            cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.1.0/countly.min.js';
-            cly.onload = function () {
-                Countly.init()
-            };
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(cly, s);
-        })();
-    </script>
-@endif
 
 </body>
 </html>

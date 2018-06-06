@@ -8,6 +8,36 @@ $(document).ready(function () {
 
     function run() {
 
+        if ($('#appEnv').attr('data-env') !== 'local'){
+            //some default pre init
+            var Countly = Countly || {};
+            Countly.q = Countly.q || [];
+
+            //provide countly initialization parameters
+            Countly.app_key = 'b442c665697cc1996665ebeee2a35e649c156ec3';
+            Countly.url = 'https://c.paket.global/';
+
+            Countly.q.push(['track_sessions']);
+            Countly.q.push(['track_pageview']);
+            Countly.q.push(['track_clicks']);
+            Countly.q.push(['track_scrolls']);
+            Countly.q.push(['track_errors']);
+            Countly.q.push(['track_links']);
+            Countly.q.push(['track_forms']);
+            Countly.q.push(['collect_from_forms']);
+
+            var cly = document.createElement('script');
+            cly.type = 'text/javascript';
+            cly.async = true;
+            //enter url of script here
+            cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.1.0/countly.min.js';
+            cly.onload = function () {
+                Countly.init()
+            };
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(cly, s);
+        }
+
         WebFont.load({
             google: {
                 families: ['Open Sans:regular:cyrillic', 'Roboto']

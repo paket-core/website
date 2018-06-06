@@ -6,6 +6,17 @@
       font-weight: bold;
       color: #262626;
     }
+    .btn {
+      min-width: 270px;
+      line-height: 39px;
+      padding: 0 40px;
+      border-radius: 24.5px;
+      background-color: $colorPaketBlue;
+      color: $colorWhite;
+      &:hover {
+        background-color: $colorPaketBlueDarken;
+      }
+    }
     .desc {
       font-size: 17.1px;
       font-weight: 300;
@@ -20,14 +31,6 @@
     }
     .link {
       margin-top: 30px;
-      a {
-        font-size: 17.6px;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-        color: #2cbdff;
-        display: inline-block;
-        border-bottom: solid #2cbdff 2px;
-      }
     }
     .endorsement {
       text-align: center;

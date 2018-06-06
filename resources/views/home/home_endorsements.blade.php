@@ -17,7 +17,11 @@
             <p class="desc">@lang('home.endorsements_desc')</p>
         </div>
         <div class="col-md-12 center link">
-            <a href="/pdf/endorsement.pdf" target="_blank">@lang('home.endorsements_link')</a>
+            <a href="/pdf/endorsement.pdf" target="_blank">
+                <button class="btn btn-blue">
+                    @lang('home.endorsements_link')
+                </button>
+            </a>
         </div>
     </div>
 </section>

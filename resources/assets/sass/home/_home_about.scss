@@ -7,6 +7,9 @@
       letter-spacing: 0.3px;
       text-align: center;
       color: #000000;
+      max-width: 880px;
+      display: block;
+      margin: auto;
       &.desc-2 {
         margin-top: 30px;
       }

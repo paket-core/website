@@ -1,9 +1,9 @@
 .home-top-section {
-  margin-top: 60px;
-  min-height: 601px;
+  margin-top: 92px;
+  //min-height: 601px;
   //background-image: linear-gradient(to top, #ffffff, #d7eeff);
   //background-color: #d7eeff;
-  @include linear-gradient-b(#d7eeff 0, #d7eeff 50%, #ffffff 51%, #ffffff 100%);
+  @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
   border-bottom: solid #e9e9e9 1px;
   position: relative;
   .home-top-content {
@@ -32,6 +32,7 @@
     color: $colorFont;
     text-align: left;
     float: left;
+    margin-top: 60px;
   }
   .play {
     float: left;
@@ -131,6 +132,18 @@
     font-weight: 500;
     display: inline-block;
     float: left;
+    height: 54px;
+    .inner {
+      display: inline-block;
+      margin: auto;
+    }
+    span {
+      float: left;
+    }
+    .img {
+      padding-top: 8px;
+      margin-right: 10px;
+    }
     &:hover {
       background-color: $colorPaketBlueDarken;
     }
@@ -139,21 +152,9 @@
     display: inline-block;
   }
 
-  .video-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-  }
-
-  .video-bg_video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .video video {
+    display: inline-block;
+    max-width: 100%;
   }
   .img-video-top {
     display: none;
@@ -162,8 +163,18 @@
 
 @media (max-width: $sizeMedium) {
   .home-top-section {
-    @include linear-gradient-b(#d7eeff 0, #d7eeff 30%, #ffffff 31%, #ffffff 100%);
+    background-color: $colorWhite;
+    background-image: none;
     min-height: inherit;
+    margin-top: 60px;
+    .container {
+      max-width: inherit;
+      width: 100%;
+    }
+    .video-wrapper {
+      @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
+      width: 100%;
+    }
     .video-bg {
       display: none;
     }
@@ -184,9 +195,9 @@
     }
     .top-desc {
       text-align: center;
-      margin-top: 0;
       width: 100%;
       max-width: 100%;
+      margin-top: -40px;
     }
     .top-actions {
       margin-top: 30px;
