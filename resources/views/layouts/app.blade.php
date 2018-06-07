@@ -8,7 +8,7 @@
         <title>{{isset($title) ? $title : env('APP_NAME')}} - {{env('APP_DESC')}}</title>
         <meta content="{{env('APP_NAME')}}" name="title"/>
         <meta content="{{env('APP_DESC')}}" name="description"/>
-        <meta property="og:title" content="{{env('APP_NAME')}}}}"/>
+        <meta property="og:title" content="{{env('APP_NAME')}}"/>
         <meta property="og:description" content="{{env('APP_DESC')}}"/>
         <meta property="og:url" content="{{URL::to('/')}}"/>
     @endif
