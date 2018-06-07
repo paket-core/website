@@ -8,6 +8,37 @@
     color: #262626;
     text-transform: uppercase;
   }
+  h3 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #262626;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .desc-down {
+    ul {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      .dot {
+        margin-top: 5px;
+      }
+    }
+    li{
+      padding-left: 18px;
+    }
+  }
+  .desc-down-p {
+    font-size: 17.1px;
+    font-weight: 300;
+    line-height: 26.3px;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    color: #000000;
+  }
   .desc-selling {
     .desc {
       font-size: 17.1px;
@@ -133,7 +164,7 @@
         margin: auto;
         margin-bottom: 30px;
       }
-      .line{
+      .line {
         margin-bottom: 30px;
       }
     }

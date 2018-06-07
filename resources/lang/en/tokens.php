@@ -10,14 +10,21 @@ return [
     'tokens_title' => "BUL: our digital tokens",
     'tokens_sub' => "The BUL token is a digital token used to pay for deliveries on the PAKET platform.",
     'tokens_sub_2' => "On June one billion tokens were issued on the stellar platform. And the issuer will be canceled, so no additional tokens can ever be created. You can see the issuance code on GitHub, and audit the issuance yourself on the stellar network.
-Anyone who holds BUL tokens can use them to pay for deliveries or commit them as collateral if she wants to deliver a package herself. Holding a BUL token also means holding a part of the entire PAKET economy. Staying true to creating a decentralized platform, we never gave any shares or equity in the project to anyone.
-With these applications, you can already use BULs to perform package transfer operations.",
+Anyone who holds BUL tokens can use them to pay for deliveries or commit them as collateral if she wants to deliver a package herself. Holding a BUL token also means holding a part of the entire PAKET economy. Staying true to creating a decentralized platform, we never gave any shares or equity in the project to anyone. You can already download a beta version of applications using our platform. With these applications, you can already use BULs to perform package transfer operations.",
     'counter_title' => "Public Pre-Sale",
     'tokens_selling' => "Why we’re selling tokens?",
     'tokens_selling_desc_1' => "We sell most of our tokens and use the proceeds to fund our platform. The proceeds cover the development of many software components including the core platform, marketing the platform, creating alliances with partners, and facilitating a global network of hubs and couriers.",
     'tokens_selling_desc_2' => "When you purchase a BUL token, you are contributing to the continued development of the platform and its ecosystem, and to making the world less centralized.",
     'tokens_selling_how' => 'How to purchase BUL tokens?',
     'tokens_selling_how_desc' => 'You can purchase BUL by sending BTC, ETH or XLM to an address we will provide you. Once you send your payment you will receive the BULs. No need to wait to the end of the sale.',
+
+    'tokens_selling_info_title' => 'Can anyone participate?',
+    'tokens_selling_info_desc_1' => 'Almost. Considering the regulatory uncertainty in the US, we do not allow US citizens to purchase token, not use our application. In addition, we employ several KYC/AML processes, for the participation in in the sale. At minimum you’ll have to provide your full name, home address, and your email address. We are verifying any participant against many sanction lists, including, but not limited to:',
+    'tokens_selling_info_li_1' => 'BIS’s Denied Persons List',
+    'tokens_selling_info_li_2' => 'OFAC’s Specially Designated Nationals List',
+    'tokens_selling_info_li_3' => 'Arms Export Control Act (AECA)',
+    'tokens_selling_info_desc_2' => 'Funds received from an individual who are flagged by our KYC/AML processes will be rejected. At the completion of the sale we will return any funds submitted by such individual back to the original sending address, minus up to 15% processing fee.',
+
     'tokens_app_item_1_num' => '1',
     'tokens_app_item_1_title' => 'Using an app',
     'tokens_app_item_1_desc_1' => 'The easiest way is to download one of the apps developed on our platform, and going to the Token Sale page. There you will get a funding address. Once you send funds to it, you will get your BULs tokens and you will see them in the application. You can keep them in the application, send them to other users, or to your own separate stellar wallet.',
