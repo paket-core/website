@@ -25,9 +25,9 @@ return [
     'project_1_title' => 'Truly Decentralized and Open',
     'project_1_desc' => 'Because an efficient system is one that lets every part do what it does best, and everybody stands to win from a more efficient way of transporting goods. The PAKET platform is open to everybody, doesn\'t take any commission, is fully transparent, and the organization does not raise funds by selling any equity or shares. The only way to support the system is by using the network and becoming a part of it, by buying, using, and earning BUL tokens.',
     'project_2_title' => 'Why we chose Stellar',
-    'project_2_desc' => 'Because the Stellar platform, which connects payments systems and people, can move value quickly, reliably, securely, and at almost no cost. It is a perfect match for our need for a low friction transactional layer. We chose Stellar as our initial consensus layer for its level-headedness, its blazingly fast transaction rate, and its extremely low fees. From all the mature blockchain platforms currently active in the market, Stellar was the obvious decision for us. Read more about Stellar <a href="https://www.stellar.org/" target="_blank">here<a/>.',
+    'project_2_desc' => 'Because the Stellar platform, which connects payments, systems and people, can move value quickly, reliably, securely, and at almost no cost. It is a perfect match for our need for a low friction transactional layer. We chose Stellar as our initial consensus layer for its level-headedness, its blazingly fast transaction rate, and its extremely low fees. From all the mature blockchain platforms currently active in the market, Stellar was the obvious decision for us. Read more about Stellar <a href="https://www.stellar.org/" target="_blank">here<a/>.',
     'project_3_title' => 'Open and Free Protocol',
-    'project_3_desc' => 'The PAKET protocol establishes trust and enables the cooperation of multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:',
+    'project_3_desc' => 'The PAKET protocol establishes trust and enables the cooperation of multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:', 
 
     'project_3_li_0' => '<strong>L0 (Trust) – </strong>establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus.',
     'project_3_li_1' => '<strong>L1 (Token) – </strong>defines the cryptographic tokens and the smart contracts which govern its behaviour.',
@@ -71,7 +71,7 @@ return [
     'team_desc' => 'Many people support the project in different ways. Team members listed are only those that The PAKET Project is their main occupation.',
 
     'endorsements_title' => 'Endorsements',
-    'endorsements_desc' => 'We don’t list many respected individuals who help and support us along the way. However, we are lucky enough to positive endorsement from some industry figures, as you can see here.',
+    'endorsements_desc' => 'We don’t list many respected individuals who help and support us along the way. However, we are lucky enough to obtain positive endorsement from some industry figures, as you can see here.',
     'endorsements_link' => 'Read the full endorsement',
 
     'road_map_title' => 'Road Map',
