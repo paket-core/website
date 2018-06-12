@@ -9,45 +9,45 @@ class TokenService
     {
         $road_maps = [
             (object)[
-                'title' => 'Private sale',
-                'date' => 'Q1-2018',
-                'desc' => 'Development of base protocol - a trusted transfer of valuables between couriers and hubs',
+                'title' => trans('roadmap.roadmap_title_1'),
+                'date' => trans('roadmap.roadmap_date_1'),
+                'desc' => trans('roadmap.roadmap_desc_1'),
                 'finished' => true
             ],
             (object)[
-                'title' => 'Token generation<br/>Public sale Market Making:',
-                'date' => 'Q2-2018',
-                'desc' => 'Open source application(s) - enabling end user usage of the base protocol',
+                'title' => trans('roadmap.roadmap_title_2'),
+                'date' => trans('roadmap.roadmap_date_2'),
+                'desc' => trans('roadmap.roadmap_desc_2'),
                 'finished' => false
             ],
             (object)[
-                'title' => 'Facilitate worldwide creation of local hubs Creation of an example hub:',
-                'date' => 'Q3-2018',
-                'desc' => 'Global and local overview supply/demand',
+                'title' => trans('roadmap.roadmap_title_3'),
+                'date' => trans('roadmap.roadmap_date_3'),
+                'desc' => trans('roadmap.roadmap_desc_3'),
                 'finished' => false
             ],
             (object)[
-                'title' => 'Sign an international courier for global deliveries between hubs',
-                'date' => 'Q4-2018',
-                'desc' => 'Layer 2 routing system Robust hub management application',
+                'title' => trans('roadmap.roadmap_title_4'),
+                'date' => trans('roadmap.roadmap_date_4'),
+                'desc' => trans('roadmap.roadmap_desc_4'),
                 'finished' => false
             ],
             (object)[
-                'title' => 'Facilitate an economic solution within a country',
-                'date' => 'Q1-2019',
-                'desc' => '',
+                'title' => trans('roadmap.roadmap_title_5'),
+                'date' => trans('roadmap.roadmap_date_5'),
+                'desc' => trans('roadmap.roadmap_desc_5'),
                 'finished' => false
             ],
             (object)[
-                'title' => 'Facilitate an economic solution in a single continent',
-                'date' => 'Q2-2019',
-                'desc' => 'Switch entirely to a decentralized identity authority',
+                'title' => trans('roadmap.roadmap_title_6'),
+                'date' => trans('roadmap.roadmap_date_6'),
+                'desc' => trans('roadmap.roadmap_desc_6'),
                 'finished' => false
             ],
             (object)[
-                'title' => 'Facilitate an economic solution in across continents',
-                'date' => 'Q3-2019',
-                'desc' => 'Decentralized routing - removing dependency on a central routing service.',
+                'title' => trans('roadmap.roadmap_title_7'),
+                'date' => trans('roadmap.roadmap_date_7'),
+                'desc' => trans('roadmap.roadmap_desc_7'),
                 'finished' => false
             ]
         ];
