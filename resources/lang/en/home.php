@@ -19,7 +19,7 @@ return [
 
     'about_title' => 'WE ARE PAKET',
     'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people.<br/>We believe technology can organize the global community and lead to cooperation without any central authority.<br/>We created an open protocol through which everyone can take part in a fully decentralized and global package delivery network.',
-    'about_desc_2' => '< Bitcoin revolutionized the payment industry by decentralizing it. PAKET<br/> answers a similar need - transferring goods in a decentralized manner.<br/> We see this as an opportunity to solve a real-world problem using<br/> the principals of blockchain technology in their purest form: a genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
+    'about_desc_2' => 'Bitcoin revolutionized the payment industry by decentralizing it. PAKET<br/> answers a similar need - transferring goods in a decentralized manner.<br/> We see this as an opportunity to solve a real-world problem using<br/> the principals of blockchain technology in their purest form: a genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
     'about_btn' => 'Token Sale Info',
 
     'project_1_title' => 'Truly Decentralized and Open',
