@@ -1,6 +1,6 @@
 <section class="home-section home-project developers-desc" id="product">
     <div class="container">
-        <div class="project-items-wrapper">
+        <div class="project-items-wrapper col-md-12">
             <div class="project-item row" id="developers_4">
                 <div class="col-md-12">
                     <h1 class="title">@lang('developers.section_title_1')</h1>
