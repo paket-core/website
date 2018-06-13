@@ -10,6 +10,7 @@
         @include('partials.header')
         @include('developers.developers_top_section')
         @include('developers.developers_down_section')
+        @include('developers.developers_desc')
         {{--@include('home.home_down_section')--}}
         @include('partials.footer')
         @include('modals.video')
