@@ -318,8 +318,31 @@ class HomeController extends Controller
 
     public function developers()
     {
+        $list = (object)[
+            (object)[
+                'id' => '1',
+                'value' => 'quick-start',
+            ],
+            (object)[
+                'id' => '2',
+                'value' => 'api',
+            ],
+            (object)[
+                'id' => '3',
+                'value' => 'architecture',
+            ],
+            (object)[
+                'id' => '4',
+                'value' => 'community',
+            ],
+            (object)[
+                'id' => '5',
+                'value' => 'source-code',
+            ]
+        ];
         return view('developers.developers_page', [
             'road_maps' => TokenService::get_road_maps(),
+            'list' => $list
         ]);
     }
 

@@ -9,10 +9,17 @@ return [
     'top_title' => "For Developers",
     'list_title' => 'General',
     'list_desc' => 'As a project that revolves around decentralization, PAKET uses and produces free, libre and open-source software. Out protocol is open, our network if fully transparent, and everyone stands to profit from more and more players joining the ecosystem and enriching it. We, therefore, wish to make it as easy and simple as possible to hop on the wagon and join in on the ride.',
-    'list_item_1' => 'wanna read the code and see how things work? You are welcomed to view our different projects (contracts, bridge servers, and mobile apps) on our github page. And while you are at it, check out what other projects that connect to the PAKET network, and maybe even add your own project to the list.',
-    'list_item_2' => 'wanna talk to other developers? Get help? Seek advice? Join our dev community on Telegram, IRC, or on GalacticTalk.',
-    'list_item_3' => 'wanna understand how things work? Read about our architecture.',
-    'list_item_4' => 'wanna get your hands dirty? Just dive in and write some code? Follow our quickstart guide and set up the basic environment to participate in the PAKET network.',
+    'list_item_1' => '– wanna read the code and see how things work? You are welcomed to view our different projects (contracts, bridge servers, and mobile apps) on our github page. And while you are at it, check out what other projects that connect to the PAKET network, and maybe even add your own project to the list.',
+    'list_item_2' => '– wanna play around with a sandbox environment? Check out our API page, full of deliciously documented API calls you can try right off your browser.',
+    'list_item_3' => '– wanna understand how things work? Read about our architecture.',
+    'list_item_4' => '– wanna read the code and see how things work? You are welcomed to view our different projects (contracts, bridge servers, and mobile apps) on our github page. And while you are at it, check out what other projects that connect to the PAKET network, and maybe even add your own project to the list.',
+    'list_item_5' => '– wanna talk to other developers? Get help? Seek advice? Join our dev community on Telegram, IRC, or on GalacticTalk.',
+
+    'list_item_title_1' => 'Quickstart',
+    'list_item_title_2' => 'Experiment',
+    'list_item_title_3' => 'Architecture',
+    'list_item_title_4' => 'Code',
+    'list_item_title_5' => 'Community',
 
     'code_item_title_1' => 'Code',
     'code_item_title_2' => 'Community',
@@ -36,6 +43,7 @@ return [
     'section_desc_2_p_2' => 'Github',
     'section_desc_2_p_3' => 'Galactic Talk',
 
+    'section_desc_3_top_desc' => 'The PAKET protocol establishes trust and enables the cooperation between multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:',
     'section_desc_3_h_1' => 'Layer 0 - Trust',
     'section_desc_3_p_1' => 'This layer establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus. Our current L0 is Stellar, so it is advised that you familiarize yourself with its basic workings. Especially Assets and the different Signer Types.',
     'section_desc_3_h_2' => 'Layer 1 - Token',
@@ -55,7 +63,8 @@ return [
     'section_desc_3_p_5' => 'This layer builds organizations and services that thrive in the PAKET ecosystem and enrich it. We have some interesting plans regarding it, but no current implementations.',
 
 
-    'section_desc_4_p_1' => 'Our API server - functioning as a bridge between Stellar horizon servers and user applications.',
+    'section_desc_4_p_1' => 'Our API server - functioning as a bridge between :LINK servers and user applications.',
+    'section_desc_4_p_1_link' => 'Stellar horizon',
     'section_desc_4_p_2' => 'Our funding server - providing tokens to those who wish to use them.',
     'section_desc_4_p_3' => 'The first mobile app - enabling simple decentralized deliveries.',
     'section_desc_4_a_4' => 'Our branch of the stellar-core Python package',

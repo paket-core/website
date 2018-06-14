@@ -54,6 +54,7 @@ $(document).ready(function () {
 
         var HomeManager = require('./_HomeManager');
         var TokenPageManager = require('./_TokenPageManager');
+        var DevelopersPageManager = require('./_DevelopersPageManager');
         var MyAccountManager = require('./_MyAccountManager');
         var AuthPageManager = require('./_AuthPageManager');
         var VerificationManager = require('./_VerificationManager');
@@ -83,7 +84,7 @@ $(document).ready(function () {
                 TokenPageManager.init();
                 break;
             case 'developers':
-                TokenPageManager.init();
+                DevelopersPageManager.init();
                 break;
             case 'my-account':
                 MyAccountManager.init();
