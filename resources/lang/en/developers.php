@@ -7,12 +7,12 @@ return [
     |
     */
     'top_title' => "For Developers",
-    'list_desc' => 'As a project that revolves around decentralization, PAKET uses and produces free, libre and open-source software. Out protocol is open, our network if fully transparent, and everyone stands to profit from more and more players joining the ecosystem and enriching it. We, therefore, wish to make it as easy and simple as possible to hop on the wagon and join in on the ride.',
-    'list_item_1' => '– wanna read the code and see how things work? You are welcomed to view our different projects (contracts, bridge servers, and mobile apps) on our github page. And while you are at it, check out what other projects that connect to the PAKET network, and maybe even add your own project to the list.',
-    'list_item_2' => '– wanna play around with a sandbox environment? Check out our API page, full of deliciously documented API calls you can try right off your browser.',
-    'list_item_3' => '– wanna understand how things work? Read about our architecture.',
-    'list_item_4' => '– wanna read the code and see how things work? You are welcomed to view our different projects (contracts, bridge servers, and mobile apps) on our github page. And while you are at it, check out what other projects that connect to the PAKET network, and maybe even add your own project to the list.',
-    'list_item_5' => '– wanna talk to other developers? Get help? Seek advice? Join our dev community on Telegram, IRC, or on GalacticTalk.',
+    'list_desc' => 'As a project that revolves around decentralization, PAKET uses and produces free, libre and open-source software. The PAKET protocol is open and the PAKET network if fully transparent. We believe that everyone stands to profit from more and more players joining the ecosystem and enriching it, so we wish to make it as easy and simple as possible to hop on the wagon and join in on the ride.',
+    'list_item_1' => '– Wanna get your hands dirty? Just dive in and write some code? Follow our quickstart guide and set up the basic environment to participate in the PAKET network.',
+    'list_item_2' => '– Wanna play around with a sandbox environment? Check out our API page, full of deliciously documented API calls you can try right off your browser.',
+    'list_item_3' => '– Wanna understand how things work? Read about our architecture.',
+    'list_item_4' => '– Wanna see how things work for yourself? View our different projects (contracts, bridge servers, and mobile apps) on our github page, as well as other projects that connect to the PAKET network, and maybe even contribute some code and add your own project to the list.',
+    'list_item_5' => '– Wanna talk to other developers? Get help? Seek advice? Join our dev community on Telegram, IRC, or on GalacticTalk.',
 
     'list_item_title_1' => 'Quickstart',
     'list_item_title_2' => 'Experiment',
@@ -30,13 +30,13 @@ return [
     'section_title_3' => 'Architecture',
     'section_title_4' => 'Source code',
 
-    'section_desc_1' => 'The PAKET protocol is fully decentralized and open, and you can use it directly over the Stellar public network. If you are familiar with Stellar and wish to take that route, simply head over to the Working with Stellar section. Most developers, however, prefer to develop on a higher level. That\'s where the PAKET API server comes in.',
+    'section_desc_1' => 'The PAKET protocol is fully decentralized and open, and you can use it directly over the Stellar(https://www.stellar.org/) public network. If you are familiar with Stellar and wish to take that route, simply head over to the Working with Stellar documentation(https://github.com/paket-core/paket-stellar/blob/master/README.md). Most developers, however, prefer to develop on a higher level. That\'s where the PAKET API server comes in.',
     'section_desc_1_h_1' => 'Using the API',
-    'section_desc_1_p_1' => 'The PAKET API server is a bridge, constructed from HTTP and JSON, between applications and the underlying PAKET protocol. To run your own instance of the PAKET API server just follow the instructions on `README.db`. To use the API, you need to meet the following requirements:',
-    'section_desc_1_p_1_li_1' => 'A funded Stellar account (test network accounts can be created and funded with the Stellar account creator https://www.stellar.org/laboratory/#account-creator).',
-    'section_desc_1_p_1_li_2' => 'A way to create a Stellar compatible ed25519 keypairs (we use the stellar-base Python package).',
+    'section_desc_1_p_1' => 'The PAKET API server(https://github.com/paket-core/api/) is a bridge, constructed from HTTP and JSON, between applications and the underlying PAKET protocol. To run your own instance of the PAKET API server just follow the instructions on the README page. To use the API you will need to meet the following requirements:',
+    'section_desc_1_p_1_li_1' => 'A funded Stellar account. Test network accounts can be created and funded with the Stellar account creator(https://www.stellar.org/laboratory/#account-creator).',
+    'section_desc_1_p_1_li_2' => 'A way to create a Stellar compatible ed25519(https://ed25519.cr.yp.to/) keypairs (we use the stellar-base(https://github.com/StellarCN/py-stellar-base) Python package).',
     'section_desc_1_p_1_li_3' => 'A way to sign transactions and string data with such keypairs (we use the stellar-base Python package).',
-    'section_desc_1_p_2' => 'Once you meet these three requirements, you can examine and test our endpoints from our live API page. Just make sure you understand the authentication process. And to get right down to business and launch a package, just follow the walkthrough.',
+    'section_desc_1_p_2' => 'Once you meet these three requirements, you can examine and test our endpoints from our live API page(http://api.paket.global/). To get right down to business and launch a package, just follow the walkthrough (pay close attention to the authentication process).',
 
     'section_desc_2_p_1' => 'Telegram',
     'section_desc_2_p_2' => 'Github',
