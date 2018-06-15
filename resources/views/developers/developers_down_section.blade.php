@@ -1,7 +1,6 @@
 <section class="developers-down-section home-section center">
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
-            <h2>@lang('developers.list_title')</h2>
             <p class="desc">@lang('developers.list_desc')</p>
             <ul class="dotted-list">
                 @foreach($list as $item)

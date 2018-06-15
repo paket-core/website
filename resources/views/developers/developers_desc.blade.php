@@ -7,7 +7,8 @@
                     <p class="desc">@lang('developers.section_desc_1')</p>
                 </div>
                 <div class="col-md-6 col-md-pull-6">
-                    <img src="/images/developers/developers_4.png">
+                    <img src="/images/developers/developers_4_s.png"
+                         srcset="/images/developers/developers_4_b.png 2x, /images/developers/developers_4.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
                     <div class="title-wrapper center">
@@ -28,7 +29,8 @@
                     <p class="desc">@lang('developers.section_desc_3_top_desc')</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="/images/developers/developers_3.png">
+                    <img src="/images/developers/developers_3_s.png"
+                         srcset="/images/developers/developers_3_b.png 2x, /images/developers/developers_3.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
                     <div class="title-wrapper center" id="api">
@@ -65,12 +67,16 @@
             <div class="project-item row" id="community">
                 <div class="col-md-6 col-md-push-6">
                     <h1 class="title">@lang('developers.section_title_2')</h1>
-                    <p class="desc"><a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw" target="_blank">@lang('developers.section_desc_2_p_1')</a></p>
-                    <p class="desc"><a href="https://www.github.com/paket-core" target="_blank">@lang('developers.section_desc_2_p_2')</a></p>
-                    <p class="desc"><a href="https://galactictalk.org" target="_blank">@lang('developers.section_desc_2_p_3')</a></p>
+                    <p class="desc"><a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw"
+                                       target="_blank">@lang('developers.section_desc_2_p_1')</a></p>
+                    <p class="desc"><a href="https://www.github.com/paket-core"
+                                       target="_blank">@lang('developers.section_desc_2_p_2')</a></p>
+                    <p class="desc"><a href="https://galactictalk.org"
+                                       target="_blank">@lang('developers.section_desc_2_p_3')</a></p>
                 </div>
                 <div class="col-md-6 col-md-pull-6">
-                    <img src="/images/developers/developers_2.png">
+                    <img src="/images/developers/developers_2_s.png"
+                         srcset="/images/developers/developers_2_b.png 2x, /images/developers/developers_2.png 3x">
                 </div>
             </div>
             <div class="project-item row source-code" id="source-code">
@@ -79,11 +85,13 @@
                     <p class="desc">@lang('developers.section_desc_4_p_1',['LINK' => '<a href="https://www.stellar.org/developers/guides/get-started/index.html">'.trans('developers.section_desc_4_p_1_link').'</a>'])</p>
                     <p class="desc">@lang('developers.section_desc_4_p_2')</p>
                     <p class="desc">@lang('developers.section_desc_4_p_3')</p>
-                    <p class="desc"><a href="https://github.com/paket-core/py-stellar-base" target="_blank">@lang('developers.section_desc_4_a_4')</a> @lang('developers.section_desc_4_p_4')
+                    <p class="desc"><a href="https://github.com/paket-core/py-stellar-base"
+                                       target="_blank">@lang('developers.section_desc_4_a_4')</a> @lang('developers.section_desc_4_p_4')
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="/images/developers/developers_1.png">
+                    <img src="/images/developers/developers_1_s.png"
+                         srcset="/images/developers/developers_1_b.png 2x, /images/developers/developers_1.png 3x">
                 </div>
             </div>
         </div>

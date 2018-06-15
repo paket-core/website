@@ -81,47 +81,6 @@
   }
 }
 
-.home-project.developers-desc.home-section {
-  padding-top: 0;
-  .project-item {
-    padding-top: 30px;
-    margin-bottom: 20px;
-    &.source-code p{
-      text-align: left;
-    }
-    .subtitle {
-      color: $colorPaketBlue;
-      font-size: 18px;
-      margin-top: 20px;
-    }
-    .dotted-list {
-      .dot {
-        margin-top: 6px;
-      }
-      li {
-        text-align: left;
-      }
-    }
-    p {
-      margin-bottom: 10px;
-    }
-    .center-section {
-      h2 {
-        display: inline-block;
-        margin: auto;
-        text-align: center;
-        font-size: 20px;
-        border-bottom: solid $colorPaketBlue 2px;
-        padding: 0 40px;
-        margin-top: 30px;
-      }
-      .title-wrapper {
-        margin-bottom: 30px;
-      }
-    }
-  }
-}
-
 @media (max-width: $sizeSmall) {
   .developers-down-section {
     padding-top: 20px;
