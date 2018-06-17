@@ -9,21 +9,21 @@ return [
 
     'tokens_title' => "BUL: our digital token",
     'tokens_sub' => "The BUL token is a cryptograhic, digital token, used to pay for deliveries on the PAKET platform.",
-    'tokens_sub_2' => "On June, one billion tokens were issued on the stellar platform, with the master key revoked, to ensure no additional tokens can ever be created. You can see the issuance code on GitHub and audit the issuance yourself on the stellar network.
-Anyone can use BUL tokens to pay for deliveries and insure them, and anyone can accept BUL tokens for delivering packages. Holding a BUL token also means holding a part of the PAKET economy. Staying true to the decentralized nature of the platform, we never offer any shares or equity in the project to anyone, and holding BUL tokens is all there is. You can already download a beta version of one mobile applications that uses our platform, which you can use today to send and deliver packages.",
+    'tokens_sub_2' => "In June, one billion tokens were issued on the Stellar platform, with the master key revoked, to ensure no additional tokens can ever be created. You can see the issuance code on GitHub and audit the issuance yourself on the Stellar network.
+Anyone can use BUL tokens to pay for deliveries and insure them, and anyone can accept BUL tokens for delivering packages. Holding a BUL token also means holding a part of the PAKET economy. Staying true to the decentralized nature of the platform, we never offer any shares or equity in the project to anyone, and holding BUL tokens is all there is. You can already download a beta version of one mobile application that uses our platform, which you can use today to send and deliver packages.",
     'counter_title' => "Public Pre-Sale",
     'tokens_selling' => "Why we’re selling tokens?",
     'tokens_selling_desc_1' => "Tokens have to be distributed to the public to be useful, and we are using proceeds to fund the continued development of our platform. The proceeds cover the development of many software components including the core platform, marketing the platform, creating alliances with partners, and facilitating a global network of hubs and couriers.",
     'tokens_selling_desc_2' => "When you purchase a BUL token, you are contributing to the ecosystem, to the continued development of the platform, and to making the world a less centralized place.",
     'tokens_selling_how' => 'How to purchase BUL tokens?',
-    'tokens_selling_how_desc' => 'You can purchase BUL by sending BTC, ETH or XLM to an address we will provide you. Once you send your payment you will receive the BULs. No need to wait to the end of the sale.',
+    'tokens_selling_how_desc' => 'You can purchase BUL by sending BTC, ETH or XLM to an address we will provide you. Once you send your payment you will receive the BULs. No need to wait for the end of the sale.',
 
     'tokens_selling_info_title' => 'Can anyone participate?',
-    'tokens_selling_info_desc_1' => 'Almost. Considering the regulatory uncertainty in the US, we do not sell tokens to US citizens, nor allow the use of our application. In addition, we employ several KYC/AML processes, just for the participation in the sale. At minimum you’ll have to provide your full name, home address, and your email address. We are verifying any participant against many sanction lists, including, but not limited to:',
+    'tokens_selling_info_desc_1' => 'Almost. Considering the regulatory uncertainty in the US, we do not sell tokens to US citizens, nor allow the use of our application. In addition, we employ several KYC/AML processes, just for the participation in the sale. The minimum details you’ll have to provide are your full name, home address, and your email address. We are verifying any participant against many sanction lists, including, but not limited to:',
     'tokens_selling_info_li_1' => 'BIS’s Denied Persons List',
     'tokens_selling_info_li_2' => 'OFAC’s Specially Designated Nationals List',
     'tokens_selling_info_li_3' => 'Arms Export Control Act (AECA)',
-    'tokens_selling_info_desc_2' => 'Funds received from an individual who flagged by our KYC/AML processes will be rejected. At the completion of the sale we will return any funds submitted by such individuals back to the original sending address, minus up to 15% processing fee.',
+    'tokens_selling_info_desc_2' => 'Funds received from an individual who is flagged by our KYC/AML processes will be rejected. At the completion of the sale we will return any funds submitted by such individuals back to the original sending address, minus up to 15% processing fee.',
 
     'tokens_app_item_1_num' => '1',
     'tokens_app_item_1_title' => 'Using an app',
@@ -31,7 +31,7 @@ Anyone can use BUL tokens to pay for deliveries and insure them, and anyone can 
     'tokens_app_item_1_desc_2' => 'They are yours...',
     'tokens_app_item_2_num' => '2',
     'tokens_app_item_2_title' => 'Using your own Stellar wallet',
-    'tokens_app_item_2_desc_1' => 'The other option is to use your own stellar wallet. You must ensure that your account extends a trustline to the BUL token. In order to participate in the Early Sale you must go through a simple KYC process, filling out a simple form with your name, email address, and living address. If you plan on buying more than 5000 EUR, you will also need to provide a scan of some ID documentation. Once the KYC process is done you will receive the funding address, and once you fund it you will get your BULs directly to your wallet.',
+    'tokens_app_item_2_desc_1' => 'The other option is to use your own Stellar wallet. You must ensure that your account extends a trustline to the BUL token. In order to participate in the Early Sale you must go through a simple KYC process, filling out a simple form with your name, email address, and home address. If you plan on buying more than 5000 EUR, you will also need to provide a scan of some ID documentation. Once the KYC process is done you will receive the funding address, and once you fund it you will get your BULs directly to your wallet.',
     'tokens_price_title' => 'BULs selling',
 
     'tokens_price_sub_1_title' => 'How much are we raising?',

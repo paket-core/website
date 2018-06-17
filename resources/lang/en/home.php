@@ -40,7 +40,7 @@ return [
     'project_5_title' => 'Environmentally Friendly',
     'project_5_desc' => 'Optimizing delivery routes will significantly reduce the amount of energy spent < and of fossil fuels burned. We can significantly reduce the global carbon footprint just by moving last mile deliveries from fleets of trucks to local couriers on bicycles, or even to people carrying packages on the way, as part of their daily routine.',
     'project_6_title' => 'P2P deliveries',
-    'project_6_desc' => 'Millions of people worldwide are members of online marketplaces for the exchange of goods between participants. A key problem for these communities is transporting the goods transporting the goods, and the lack of trust between strangers is a huge obstacle for real P2P trade. Small online retailers face similar challenges as they lack the means to compete with industry giants in terms of logistics. With the PAKET platform, these problems become a thing of the past.',
+    'project_6_desc' => 'Millions of people worldwide are members of online marketplaces for the exchange of goods between participants. A key problem for these communities is transporting the goods, and the lack of trust between strangers is a huge obstacle for real P2P trade. Small online retailers face similar challenges as they lack the means to compete with industry giants in terms of logistics. With the PAKET platform, these problems become a thing of the past.',
     'project_7_title' => 'The Un-Commerced Majority',
     'project_7_desc' => 'Citizens of the first world often complain about the inefficiencies, limitations, and high cost of modern deliveries, but often forget that in most of the world reliable deliveries are not even an option. The PAKET ecosystem changes all that, providing global coverage wherever demand exists, solving a very real problem for a huge number of people, and finally providing a reliable trusted delivery service to an untapped market of staggering proportions.',
 
@@ -50,7 +50,7 @@ return [
     'ecosystem_graph_desc_1' => 'International freight companies such as UPS and FedEx,  local enterprises like the Japanese Yamato, Gett Taxi, and even your local, bike-riding courier companies - the protocol lets all participants cooperate, with each of them providing only that leg of the route which they can provide most efficiently.',
 
     'ecosystem_graph_title_2' => 'Opportunistic courier',
-    'ecosystem_graph_desc_2' => 'Travelling from one city to another every morning? Weekly visits to the north? Even a one time trip: once the routes and requirements of every packages becomes fully visible, we are all opportunistic couriers that can earn BULs while keeping to our daily routine.',
+    'ecosystem_graph_desc_2' => 'Travelling from one city to another every morning? Weekly visits to the north? Even a one time trip: once the routes and requirements of every packages become fully visible, we are all opportunistic couriers that can earn BULs while keeping to our daily routine.',
 
     'ecosystem_graph_title_3' => 'Satellite service',
     'ecosystem_graph_desc_3' => 'An open delivery network is fertile ground for supporting services which can thrive within this new economy: insurance providers, courier co-ops, routing specialists, data scientists and analysers, and many more.',
@@ -59,16 +59,16 @@ return [
     'ecosystem_graph_desc_4' => 'Leverage your daily routine of sitting in your office / home / favourite coffee place, earning BULs for keeping an eye on packages as they exchange hands. Everyone can become an opportunistic hub!',
 
     'ecosystem_graph_title_5' => 'Professional hub <br/>operator',
-    'ecosystem_graph_desc_5' => 'On a fully transparent and analyzable network it is trivial to identity a high demand for package delivery in a certain area. Professional operators can satisfy this demand either by building dedicated hubs, or by opening another kind of business that also functions as a hub, using this demand as means to draw potential customer to their shops.',
+    'ecosystem_graph_desc_5' => 'On a fully transparent and analyzable network it is trivial to identify a high demand for package delivery in a certain area. Professional operators can satisfy this demand either by building dedicated hubs, or by opening another kind of business that also functions as a hub, using this demand as means to draw potential customer to their shops.',
 
     'ecosystem_graph_title_6' => 'Sender and recipient',
-    'ecosystem_graph_desc_6' => 'The people who wish to have a goods and packages transported from one place to another and are willing to pay for it, either using blockchain technology and smart contracts or good old fashioned fiat moneys',
+    'ecosystem_graph_desc_6' => 'The people who wish to have goods and packages transported from one place to another and are willing to pay for it, either using blockchain technology and smart contracts or good old fashioned fiat money',
 
     'partners_title' => 'Partners',
     'partners_desc' => ' has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at',
 
     'team_title' => 'Our Team',
-    'team_desc' => 'Many people support the project in different ways. Team members listed are only those that The PAKET Project is their main occupation.',
+    'team_desc' => 'Many people support the project in different ways. The team members listed are only those that have The PAKET Project as their main occupation.',
 
     'endorsements_title' => 'Endorsements',
     'endorsements_desc' => 'While we are very grateful to the many respected individuals that helped us along the way, we are particularly grateful to the following industry leaders for signing an official endorsement of the PAKET Project.',
