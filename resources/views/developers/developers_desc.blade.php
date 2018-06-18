@@ -14,7 +14,7 @@
                          srcset="/images/developers/developers_4_b.png 2x, /images/developers/developers_4.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
-                    <div class="title-wrapper center">
+                    <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_1_h_1')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_1_p_1',[
@@ -40,16 +40,16 @@
                     <h1 class="title">@lang('developers.section_title_3')</h1>
                     <p class="desc">@lang('developers.section_desc_3_top_desc')</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="/images/developers/developers_3_s.png"
-                         srcset="/images/developers/developers_3_b.png 2x, /images/developers/developers_3.png 3x">
+                <div class="col-md-6 center">
+                    <img src="/images/developers/developers_03_s.png"
+                         srcset="/images/developers/developers_03_b.png 2x, /images/developers/developers_03.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
-                    <div class="title-wrapper center" id="api">
+                    <div class="title-wrapper" id="api">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_1')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_3_p_1')</p>
-                    <div class="title-wrapper center">
+                    <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_2')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_3_p_2_1')</p>
@@ -57,12 +57,12 @@
                     <p class="desc">@lang('developers.section_desc_3_p_2_3')</p>
                     <p class="desc">@lang('developers.section_desc_3_p_2_4')</p>
                     <p class="desc">@lang('developers.section_desc_3_p_2_5')</p>
-                    <div class="title-wrapper center">
+                    <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_3')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_3_p_3_1')</p>
                     <p class="desc">@lang('developers.section_desc_3_p_3_2')</p>
-                    <div class="title-wrapper center">
+                    <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_4')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_3_p_4')</p>
@@ -70,7 +70,7 @@
                         <li><span class="dot"></span><span>@lang('developers.section_desc_3_p_4_li_1')</span></li>
                         <li><span class="dot"></span><span>@lang('developers.section_desc_3_p_4_li_2')</span></li>
                     </ul>
-                    <div class="title-wrapper center">
+                    <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_5')</h2>
                     </div>
                     <p class="desc">@lang('developers.section_desc_3_p_5')</p>

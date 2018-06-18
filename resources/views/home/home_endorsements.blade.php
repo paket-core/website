@@ -6,7 +6,7 @@
         <div class="col-md-12 center">
             <div class="endorsements">
                 @foreach($endorsements as $endorsement)
-                    <div class="endorsement col-md-3">
+                    <div class="endorsement col-md-4">
                         <h3>{{$endorsement->name}}</h3>
                         <p class="role">{{$endorsement->role}}</p>
                     </div>

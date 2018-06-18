@@ -43,7 +43,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6 center protocol-img">
-                    <img src="/images/custom/token-sale-new/03-protocol.png">
+                    <img src="/images/custom/token-sale-new/03-protocol_s.png">
                 </div>
             </div>
             <div class="project-item row">

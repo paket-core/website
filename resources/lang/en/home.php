@@ -7,7 +7,7 @@ return [
     |
     */
 
-    'header_product_info' => "Product Info",
+    'header_product_info' => "Platform Info",
     'header_our_team' => "Our Team",
     'header_token_sale' => "Token Sale",
     'header_for_developers' => "Developers",
@@ -74,7 +74,7 @@ return [
 
     'endorsements_title' => 'Endorsements',
     'endorsements_desc' => 'While we are very grateful to the many respected individuals that helped us along the way, we are particularly grateful to the following industry leaders for signing an official endorsement of the PAKET Project.',
-    'endorsements_link' => 'Read it here',
+    'endorsements_link' => 'Read the full endorsement here',
 
     'road_map_title' => 'Road Map',
 

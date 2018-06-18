@@ -7,6 +7,7 @@ return [
     |
     */
     'top_title' => "For Developers",
+    'top_title_down' => "Introduction",
     'list_desc' => 'As a project that revolves around decentralization, PAKET uses and produces free, libre and open-source software. The PAKET protocol is open and the PAKET network if fully transparent. We believe that everyone stands to profit from more and more players joining the ecosystem and enriching it, so we wish to make it as easy and simple as possible to hop on the wagon and join in on the ride.',
     'list_item_1' => '– Wanna get your hands dirty? Just dive in and write some code? Follow our quickstart guide and set up the basic environment to participate in the PAKET network.',
     'list_item_2' => '– Wanna play around with a sandbox environment? Check out our API page, full of deliciously documented API calls you can try right off your browser.',
