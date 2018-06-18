@@ -18,12 +18,14 @@ return [
     'media_view_more' => 'View more',
 
     'about_title' => 'WE ARE PAKET',
-    'about_desc_1' => 'We believe in breaking up monopolies and giving power to the people.<br/>We believe technology can organize the global community and lead to cooperation without any central authority.<br/>We created an open protocol through which everyone can take part in a fully decentralized and global package delivery network.',
-    'about_desc_2' => 'Bitcoin revolutionized the payment industry by decentralizing it. PAKET<br/> answers a similar need - transferring goods in a decentralized manner.<br/> We see this as an opportunity to solve a real-world problem using<br/> the principals of blockchain technology in their purest form: a genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
+    'about_desc_1_li_1' => 'We believe in breaking up monopolies and giving power to the people.',
+    'about_desc_1_li_2' => 'We believe technology can organize the global community and lead to cooperation without any central authority.',
+    'about_desc_1_li_3' => 'We created an open protocol through which everyone can take part in a fully decentralized and global package delivery network.',
+    'about_desc_2' => 'Bitcoin revolutionized the payment industry by decentralizing it. PAKET answers a similar need - transferring goods in a decentralized manner. We see this as an opportunity to solve a real-world problem using the principals of blockchain technology in their purest form: a genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
     'about_btn' => 'Token Sale Info',
 
     'project_1_title' => 'Truly Decentralized and Open',
-    'project_1_desc' => 'Because an efficient system is one that lets every part do what it does best, and because everybody stands to win from a more efficient way of transporting goods. The PAKET platform is open to everybody, doesn\'t take any commission, and is fully transparent. The PAKET Project does not raise funds by selling equity or shares, and the only way to support the system is by using the network and becoming a part of it - buying, using, and earning BUL tokens. (note that this is the first time mentioning the AMB)',
+    'project_1_desc' => 'Because an efficient system is one that lets every part do what it does best, and because everybody stands to win from a more efficient way of transporting goods. The PAKET platform is open to everybody, doesn\'t take any commission, and is fully transparent. The PAKET Project does not raise funds by selling equity or shares, and the only way to support the system is by using the network and becoming a part of it - buying, using, and earning BUL tokens.',
     'project_2_title' => 'Why we chose Stellar',
     'project_2_desc' => 'Because the Stellar platform, which connects payments systems, and people, can move value quickly, reliably, securely, and at almost no cost. It is a perfect match for our need for a low friction transactional layer. We chose Stellar as our initial consensus layer for its level-headedness, its blazingly fast transaction rate, and its extremely low fees. From all the mature distributed ledger platforms currently active in the market, Stellar was the obvious decision for us. Read more about Stellar <a href="https://www.stellar.org/" target="_blank">here<a/>.',
     'project_3_title' => 'Open and Free Protocol',

@@ -5,13 +5,13 @@
       font-weight: 300;
       line-height: 1.54;
       letter-spacing: 0.3px;
-      text-align: center;
+      text-align: justify;
       color: #000000;
       max-width: 880px;
       display: block;
       margin: auto;
       &.desc-2 {
-        margin-top: 30px;
+        margin-bottom: 30px;
       }
     }
     .video {
@@ -29,6 +29,11 @@
       margin-top: 40px;
       &:hover {
         background-color: $colorPaketBlueDarken;
+      }
+    }
+    .dotted-list {
+      .dot {
+        margin-top: 7px;
       }
     }
   }
