@@ -76,9 +76,9 @@
                     <p class="desc">@lang('home.project_6_desc')</p>
                 </div>
                 <div class="col-md-6 col-md-pull-6 center">
-                    <img src="/images/custom/token-sale-new/06-p2p-deliveris.png"
-                         srcset="/images/custom/token-sale-new/06-p2p-deliveris.png 2x,
-             /images/custom/token-sale-new/06-p2p-deliveris.png 3x"
+                    <img src="/images/custom/token-sale-new/06-p2p-delivers.png"
+                         srcset="/images/custom/token-sale-new/06-p2p-delivers.png 2x,
+             /images/custom/token-sale-new/06-p2p-delivers.png 3x"
                          >
                 </div>
             </div>
