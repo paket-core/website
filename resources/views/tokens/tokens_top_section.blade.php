@@ -1,12 +1,7 @@
 <section class="token-top-section home-section center">
+    <div class="back"></div>
     <div class="container">
         <div class="col-md-12 center">
-            <div class="coins">
-                @include('tokens.tokens_coin',['cl' => 'coin-1'])
-                @include('tokens.tokens_coin',['cl' => 'coin-2'])
-                @include('tokens.tokens_coin',['cl' => 'coin-3'])
-                @include('tokens.tokens_coin',['cl' => 'coin-4'])
-            </div>
             <div class="row content">
                 <h1 class="title">@lang('tokens.tokens_title')</h1>
                 <p class="desc desc-1">@lang('tokens.tokens_sub')</p>

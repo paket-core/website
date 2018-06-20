@@ -94,7 +94,7 @@
             <div class="project-item row" id="community">
                 <div class="col-md-6">
                     <h1 class="title">@lang('developers.section_title_2')</h1>
-                    <p class="desc"><a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw"
+                    <p class="desc"><a href="{{\TokenChef\IcoTemplate\Services\StaticArray::TELEGRAM_URL}}"
                                        target="_blank">@lang('developers.section_desc_2_p_1')</a></p>
                     <p class="desc"><a href="https://www.github.com/paket-core"
                                        target="_blank">@lang('developers.section_desc_2_p_2')</a></p>

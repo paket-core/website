@@ -33,7 +33,7 @@
                         <div class="top-desc">@lang('home.top_desc')</div>
                     </div>
                     <div class="col-md-12 top-actions">
-                        <a href="/documents/wp/en.pdf" target="_blank">
+                        <a href="/documents/wp/en.pdf?v=1.0.1" target="_blank">
                             <div class="btn-top-action btn-top-action-1">
                                 <img src="/images/custom/token-sale/pdf-icon.png"
                                      srcset="/images/custom/token-sale/pdf-icon@2x.png 2x,
@@ -42,7 +42,7 @@
                                 @lang('home.top_action_wp')
                             </div>
                         </a>
-                        <a href="https://t.me/PaketCommunity" target="_blank">
+                        <a href="{{\TokenChef\IcoTemplate\Services\StaticArray::TELEGRAM_URL}}" target="_blank">
                             <div class="btn-top-action btn-top-action-2">
                                 <img src="/images/custom/token-sale/logo-copy.png"
                                      srcset="/images/custom/token-sale/logo-copy@2x.png 2x,

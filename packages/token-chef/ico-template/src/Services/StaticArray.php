@@ -311,4 +311,6 @@ class StaticArray
     const TOKEN_SALE_KIND_PUBLIC = 0;
     const TOKEN_SALE_KIND_PRIVATE = 1;
 
+    const TELEGRAM_URL = 'https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw';
+
 }

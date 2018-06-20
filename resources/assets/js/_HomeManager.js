@@ -62,6 +62,95 @@ var HomeManager = (function () {
         });
     }
 
+    function initEcosystemGraph() {
+        var ecoGraph = $('#ecoGraph');
+        var playing = true;
+        var cl;
+
+        var items = ecoGraph.find('.graph-item');
+        var wrapper = ecoGraph.find('.graph-items');
+        var ecoDesc = $('#ecoGraphDesc');
+
+        var title = ecoDesc.find('h2');
+        var desc = ecoDesc.find('p');
+        var index = 0;
+        var animating = false;
+        var autoAnimation = true;
+
+        function runAnimation(playing) {
+            cl = playing ? 'running' : 'paused';
+            items.css("-webkit-animation-play-state", cl);
+            wrapper.css("-webkit-animation-play-state", cl);
+        }
+
+        function animateGraph() {
+            if (autoAnimation) {
+                playing = !playing;
+                runAnimation(playing);
+                if (!playing) {
+                    index++;
+                    if (index >= 6) {
+                        index = 0;
+                    }
+                    selectOption(index);
+                    ecoDesc.removeClass('fadeOut').addClass('fadeIn');
+                    setTimeout(function () {
+                        if (autoAnimation) {
+                            items.removeClass('active');
+                            ecoDesc.removeClass('fadeIn').addClass('fadeOut');
+                            setTimeout(function () {
+                                animateGraph();
+                            }, 1500)
+                        }
+                    }, 5000);
+                } else {
+                    setTimeout(animateGraph, 1000);
+                }
+            }
+        }
+
+        function selectItem(el, newIndex) {
+            el.click(function () {
+                if (!animating) {
+                    animating = true;
+                    autoAnimation = false;
+                    ecoDesc.removeClass('fadeIn').addClass('fadeOut');
+                    items.removeClass('active');
+                    var diff = newIndex - index;
+                    selectOption(newIndex);
+                    if (diff < 0) {
+                        diff = diff + 6;
+                    }
+                    setTimeout(function () {
+                        items.css("animation-duration", '4800ms');
+                        wrapper.css("animation-duration", '4800ms');
+                        runAnimation(true);
+                        setTimeout(function () {
+                            animating = false;
+                            runAnimation(false);
+                            ecoDesc.removeClass('fadeOut').addClass('fadeIn');
+                        }, diff * 800);
+                    }, 800)
+                }
+            })
+        }
+
+        items.each(function (index) {
+            selectItem($(this), index);
+        });
+
+        function selectOption(newIndex) {
+            index = newIndex;
+            var item = items.eq(index);
+            title.html(item.find('.graph-title').html());
+            desc.html(item.find('.graph-desc').html());
+            item.addClass('active');
+        }
+
+        animateGraph();
+        ecoGraph.addClass('animated');
+    }
+
     function init() {
         RevealManager.init({
             bars: true
@@ -109,15 +198,7 @@ var HomeManager = (function () {
 
         });
 
-        var graphButtons = $('.graph-btn');
-
-        graphButtons.click(function () {
-            var item = $(this).parents('.graph-item');
-            item.find('.graph-desc').toggleClass('flipInX');
-            item.toggleClass('active');
-        });
-
-        graphButtons.click();
+        initEcosystemGraph();
 
         var owlEcosystem = $(".eco-carousel").owlCarousel({
             autoplay: true,

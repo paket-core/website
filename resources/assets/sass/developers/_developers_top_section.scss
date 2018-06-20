@@ -5,19 +5,15 @@
   padding: 0;
   overflow: hidden;
   position: relative;
-  $h: 500px;
+  $h: 300px;
   z-index: 2;
   height: $h;
-  img {
-    margin-top: 160px;
-    max-width: 240px;
-  }
   h2 {
     font-size: 46.5px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 120px;
     margin-bottom: 40px;
     text-transform: uppercase;
   }
