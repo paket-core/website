@@ -76,6 +76,7 @@ var HomeManager = (function () {
         var index = 0;
         var animating = false;
         var autoAnimation = true;
+        var timeout_1, timeout_2, timeout_3, timeout_4;
 
         function runAnimation(playing) {
             cl = playing ? 'running' : 'paused';
@@ -94,7 +95,7 @@ var HomeManager = (function () {
                     }
                     selectOption(index);
                     ecoDesc.removeClass('fadeOut').addClass('fadeIn');
-                    setTimeout(function () {
+                    timeout_1 = setTimeout(function () {
                         if (autoAnimation) {
                             items.removeClass('active');
                             ecoDesc.removeClass('fadeIn').addClass('fadeOut');
@@ -104,7 +105,7 @@ var HomeManager = (function () {
                         }
                     }, 5000);
                 } else {
-                    setTimeout(animateGraph, 1000);
+                    timeout_2 = setTimeout(animateGraph, 1000);
                 }
             }
         }
@@ -121,11 +122,11 @@ var HomeManager = (function () {
                     if (diff < 0) {
                         diff = diff + 6;
                     }
-                    setTimeout(function () {
+                    timeout_3 = setTimeout(function () {
                         items.css("animation-duration", '4800ms');
                         wrapper.css("animation-duration", '4800ms');
                         runAnimation(true);
-                        setTimeout(function () {
+                        timeout_4 = setTimeout(function () {
                             animating = false;
                             runAnimation(false);
                             ecoDesc.removeClass('fadeOut').addClass('fadeIn');
@@ -147,8 +148,37 @@ var HomeManager = (function () {
             item.addClass('active');
         }
 
-        animateGraph();
-        ecoGraph.addClass('animated');
+        var showed = false;
+        var win = $(window);
+
+        function checkSize() {
+            if (win.width() >= 1200) {
+                if (!showed) {
+                    showed = true;
+                    playing = true;
+                    index = 0;
+                    items.removeClass('active');
+                    clearTimeout(timeout_1);
+                    clearTimeout(timeout_2);
+                    clearTimeout(timeout_3);
+                    clearTimeout(timeout_4);
+                    animating = false;
+                    ecoGraph.addClass('animated');
+                    animateGraph();
+                }
+            } else {
+                if (showed) {
+                    showed = false;
+                    ecoGraph.removeClass('animated');
+                }
+            }
+        }
+
+        win.on('resize', function () {
+            checkSize();
+        });
+
+        checkSize();
     }
 
     function init() {

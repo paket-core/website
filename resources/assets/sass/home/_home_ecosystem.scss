@@ -6,6 +6,13 @@
   .title-desc {
     margin-bottom: 50px;
   }
+
+  @include keyframes('spin') {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
   .eco-graph {
     $b: 700px;
     width: $b;
@@ -15,10 +22,10 @@
     position: relative;
     &.animated {
       .graph-items {
-        animation: spin 6s linear infinite reverse;
+        @include animation(spin 6s linear infinite reverse);
       }
       .graph-item {
-        animation: spin 6s linear infinite;
+        @include animation(spin 6s linear infinite);
       }
     }
     .graph-items {
@@ -35,11 +42,6 @@
       left: $m;
       width: $s;
       position: absolute;
-    }
-    @keyframes spin {
-      100% {
-        transform: rotate(1turn);
-      }
     }
     .graph-item {
       text-align: center;

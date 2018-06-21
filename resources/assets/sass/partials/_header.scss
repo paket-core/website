@@ -22,6 +22,7 @@
 
   .navbar-nav {
     float: right;
+    min-width: 600px;
   }
 
   ul {
@@ -172,6 +173,9 @@ header {
     .header {
       padding-bottom: 0;
       width: 96%;
+      .navbar-nav {
+        min-width: 100%;
+      }
       ul {
         padding-left: 0;
         width: 100%;
