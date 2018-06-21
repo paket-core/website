@@ -177,7 +177,6 @@ var HomeManager = (function () {
         if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
             wrapper.css("-webkit-animation-direction", 'alternate-reverse');
             wrapper.css("animation-direction", 'alternate-reverse');
-
         } else {
             wrapper.addClass('reversed');
         }
