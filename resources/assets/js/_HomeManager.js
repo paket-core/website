@@ -174,6 +174,12 @@ var HomeManager = (function () {
             }
         }
 
+        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+            items.css("-webkit-animation-direction", 'alternate');
+        } else {
+            wrapper.addClass('reversed');
+        }
+
         win.on('resize', function () {
             checkSize();
         });

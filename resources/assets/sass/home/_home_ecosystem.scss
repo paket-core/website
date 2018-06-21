@@ -22,7 +22,14 @@
     position: relative;
     &.animated {
       .graph-items {
-        @include animation(spin 6s linear infinite reverse);
+        @include animation(spin 6s linear infinite);
+        &.reversed {
+          -webkit-animation-direction: normal;
+          -moz-animation-direction: reverse;
+          -ms-animation-direction: reverse;
+          -o-animation-direction: reverse;
+          animation-direction: reverse;
+        }
       }
       .graph-item {
         @include animation(spin 6s linear infinite);
