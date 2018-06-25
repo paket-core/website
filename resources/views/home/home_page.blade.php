@@ -6,6 +6,7 @@
 
 @section('content')
     <?php $path = '/'?>
+    <?php $lang_reload = true;?>
     <div class="page-content token-page">
         @include('partials.header')
         @include('home.home_top_section')

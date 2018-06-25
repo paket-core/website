@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Services\TokenService;
+use TokenChef\IcoTemplate\Services\LocaleService;
+use TokenChef\IcoTemplate\Services\StaticArray;
 
 /**
  * Class HomeController
@@ -10,10 +12,34 @@ use App\Services\TokenService;
  */
 class HomeController extends Controller
 {
+
+    /**
+     * @param $lang
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+    public function home_language($lang)
+    {
+        $lang = strtolower($lang);
+        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES) && $lang !== 'en') {
+            return \Redirect::to('/');
+        }
+        LocaleService::save_language($lang, true);
+        return $this->render_home();
+    }
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function home_page()
+    public function home()
+    {
+        \App::setLocale('en');
+        return $this->render_home();
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function render_home()
     {
 
         $members = [

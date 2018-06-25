@@ -1,0 +1,65 @@
+<?php
+
+return [
+
+    /*
+    | Translations for landing page
+    |
+    */
+
+    'tokens_title' => 'BUL：我们的数字代币',
+    'tokens_sub' => 'BUL代币是在PAKET平台上用于支付包裹运送的数字代币。',
+    'tokens_sub_2' => '我们正在恒星平台上发行10亿个代币。届时，发行方将被取消，因此无法生成额外代币。您可以在GitHub上查看我们的发行代码，并在恒星网络上自行审核发行。持有BUL代币的任何人员均可使用代币来支付包裹运送费用；或者，对于想自行运送包裹的用户，BUL代币可用作抵押品。持有BUL代币还意味着拥有整个PAKET经济的一部分。始终秉持创建一个去中心化平台的理念，我们从未向任何人员提供任何项目股份或股权。您可以使用我们的平台下载APP的内部测试版。通过这些APP，您可以使用BUL执行包裹运输操作。',
+    'counter_title' => '公开预售',
+    'tokens_selling' => '我们为何销售代币？',
+    'tokens_selling_desc_1' => '我们销售大部分代币，使用销售收益来资助我们的平台。收益涵盖了诸多软件要素的开发，包括核心平台、营销平台、与合作伙伴建立联盟关系，以及促进枢纽与快递公司的全球网络。',
+    'tokens_selling_desc_2' => '购买BUL代币时，您在为平台及其生态系统的持续发展做出贡献，让世界摆脱中心化。',
+    'tokens_selling_how' => '如何购买BUL代币？',
+    'tokens_selling_how_desc' => '您可以将您的比特币、以太坊、恒星币发送到我们为您提供的地址，然后购买BUL。在成功付款后，您将收到BUL代币。无需等待销售结束。',
+    'tokens_selling_info_title' => '谁可以参与？',
+    'tokens_selling_info_desc_1' => '几乎所有人。考虑到美国监管制度的不确定性，美国公民不得购买代币，不得使用我们的APP。此外，在您参加销售的过程中，我们采用多项KYC/AML流程。您至少必须提供全名、家庭住址和电邮地址。我们正在通过多个制裁名单验证所有投资者，包括但不限于：',
+    'tokens_selling_info_li_1' => '国际清算银行被拒人员名单',
+    'tokens_selling_info_li_2' => '美国海外资产控制办公室特别指定国民名单',
+    'tokens_selling_info_li_3' => '武器出口管制法案（AECA）',
+    'tokens_selling_info_desc_2' => '若投资者在我们的KYC/AML流程中被标记，其资金将被拒绝。在完成销售后，我们将把该种人员提交的任何资金退回原始发送地址，减去最高百分之十五（15％）的手续费。',
+    'tokens_app_item_1_num' => '1',
+    'tokens_app_item_1_title' => '使用APP',
+    'tokens_app_item_1_desc_1' => '最简单的方法是下载我们平台上开发的一款APP，然后进入“代币销售（ Token Sale）”页面。您会获取一个资金筹集地址。在成功发送了资金后，您将获得您的BUL代币，并将在APP中查看代币数额。另外，您可将代币保存在APP中，将代币发送给其他用户，或发送给您自己的独立恒星钱包。',
+    'tokens_app_item_1_desc_2' => '这些都是您的...',
+    'tokens_app_item_2_num' => '2',
+    'tokens_app_item_2_title' => '使用您自己的恒星钱包',
+    'tokens_app_item_2_desc_1' => '另外，您可以使用自己的恒星钱包。您必须确保自己信任BUL代币。为了参与早期销售，您必须通过一个简单的KYC验证流程。在这个单独的页面上，您可以填写自己的姓名、电邮地址和住址。如果购买金额超过五千欧元，您还应提供身份证件。一旦完成KYC流程，您将收到资金筹集地址。一旦将资金发送到该地址，您将在自己的恒星钱包中收到BUL代币。',
+    'tokens_price_title' => 'BUL代币销售',
+    'tokens_price_sub_1_title' => '我们要募集多少资金？',
+    'tokens_price_sub_1_p_desc_1' => '我们计划筹集800万欧元的资金。我们相信该笔资金将足以资助实施我们的平台，并建立一个由国际投资者组成的可持续网络。',
+    'tokens_price_sub_1_p_desc_2' => '我们锁定了200,000,000 个BUL代币，锁定期为6年。在6年内，如需更多资金，我们将能使用这些代币来筹集。',
+    'tokens_price_sub_2_title' => '正在销售多少BUL代币？',
+    'tokens_price_sub_2_p_desc_1' => '我们正在销售5亿个BUL代币。这是BUL代币供应总量的一半。请注意，20％的BUL代币将被冻结6年。',
+    'tokens_price_sub_3_title' => 'BUL的价格是多少？',
+    'tokens_price_sub_3_p_desc_1' => 'BUL的价格为每个BUL代币1欧元。在早期销售结束后，我们将为收到的每1欧元转换40个BUL代币，直到分配完所有的5亿个BUL代币。',
+    'tokens_price_sub_3_p_desc_2' => '在早期销售阶段，我们为每1欧元提供更多的BUL代币，初始价为每欧元70个BUL代币。在销售期间，我们将降低BUL代币的数量，直到达到每欧元48个BUL代币的价格。',
+    'tokens_price_sub_3_p_desc_3' => '在早期销售结束后，若剩余任何BUL代币，我们将以每欧元40个BUL代币的常规价格将其出售。',
+    'tokens_price_sub_3_p_desc_4' => '您可以使用比特币、以太坊、恒星币付款。由于BUL代币有现货，您可在付款后立即收到BUL代币。',
+    'tokens_price_sub_4_title' => '当前价格',
+    'tokens_price_sub_4_p_desc_1' => '请注意，下方代表BUL的当前价格',
+    'tokens_price_table_title_1' => '货币',
+    'tokens_price_table_title_2' => 'BUL价格',
+    'tokens_price_table_title_3' => '1000 个BUL的价格',
+    'tokens_price_table_row_1_t_1' => '欧元',
+    'tokens_price_table_row_1_t_2' => '1欧元= 50个BUL',
+    'tokens_price_table_row_1_t_3' => '20欧元',
+    'tokens_price_table_row_2_t_1' => '欧元',
+    'tokens_price_table_row_2_t_2' => '1 以太币 = 365482个 BUL',
+    'tokens_price_table_row_2_t_3' => '0.000273611 个以太币',
+    'tokens_price_table_row_3_t_1' => '欧元',
+    'tokens_price_table_row_3_t_2' => '1 个以太币 = 365482 个BUL',
+    'tokens_price_table_row_3_t_3' => '0.273611285 mBTC',
+    'tokens_price_table_row_4_t_1' => '欧元',
+    'tokens_price_table_row_4_t_2' => '1 以太坊 = 25886 个BUL',
+    'tokens_price_table_row_4_t_3' => '0.03863092 个以太坊',
+    'tokens_smart_title' => '智能合约',
+    'tokens_smart_desc' => '请登录，以查看智能合约',
+    'tokens_smart_btn' => '立即加入ICO',
+
+
+];

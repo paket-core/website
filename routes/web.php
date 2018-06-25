@@ -11,22 +11,27 @@
 |
 */
 
-Route::get('/', 'HomeController@home_page')->name('home');
-Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
-Route::get('/developers', 'HomeController@developers')->name('developers');
-Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
-Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
+Route::middleware(['session_locale'])->group(function () {
+    Route::get('/', 'HomeController@home')->name('home');
+    Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
+    Route::get('/developers', 'HomeController@developers')->name('developers');
+    Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
+    Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
+});
 
-Route::middleware(['guest'])->group(function () {
+Route::middleware(['guest', 'session_locale'])->group(function () {
     Route::get('/login', 'HomeController@login')->name('login');
     Route::get('/sign-up', 'HomeController@join')->name('sign-up');
     Route::get('/password', 'ForgotPasswordController@forgotten_password')->name('forgotten_password');
     Route::get('/reset-password/{tokens}', 'ForgotPasswordController@reset_password_form')->name('reset_password_form');
 });
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'session_locale'])->group(function () {
     Route::get('/my-account', 'ClientController@my_account')->name('my-account');
 });
+
+Route::get('/{lang}', 'HomeController@home_language');
+Route::get('/{lang}/', 'HomeController@home_language');
 
 Route::get('sitemap', function () {
     // create new sitemap object
