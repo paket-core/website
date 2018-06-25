@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <?php $path = '/'?>
+    <?php $path = App::getLocale() === 'en' ? '/' : '/' . App::getLocale()?>
     <div class="page-content token-page">
         @include('partials.header')
         @include('tokens.tokens_top_section')

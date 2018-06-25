@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <?php $path = '/'?>
+    <?php $path = App::getLocale() === 'en' ? '/' : '/' . App::getLocale()?>
     <div class="page-content developers-page">
         @include('partials.header')
         @include('developers.developers_top_section')
