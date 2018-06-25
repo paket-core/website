@@ -20,15 +20,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <div class="language-wrapper">
+                    @include('partials.language')
+                </div>
                 <div class="collapse navbar-collapse" id="topNav">
-                    @if (Auth::guest())
-                        <div class="language-wrapper">
-                            @include('partials.language')
-                        </div>
-                        <div class="social-wrapper">
-                            @include('partials.social')
-                        </div>
-                    @endif
+                    <div class="social-wrapper">
+                        @include('partials.social')
+                    </div>
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())
                             <li>
