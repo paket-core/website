@@ -11,7 +11,7 @@
                 @foreach($members as $member)
                     <div class="member col-md-6">
                         <div class="img"
-                             style="background-image: url('/images/team/{{$member->image}}.jpg?ver=1ax31')">
+                             style="background-image: url('/images/team/{{$member->image}}_m.jpg?ver=1ax31')">
                         </div>
                         <div class="name">{{$member->name}}</div>
                         <div class="role">{{$member->role}}</div>
@@ -26,7 +26,7 @@
                 @foreach($members as $member)
                     <div class="member">
                         <div class="img"
-                             style="background-image: url('/images/team/{{$member->image}}.jpg?ver=1ax31')">
+                             style="background-image: url('/images/team/{{$member->image}}_s.jpg?ver=1bx21')">
                         </div>
                         <div class="name">{{$member->name}}</div>
                         <div class="role">{{$member->role}}</div>

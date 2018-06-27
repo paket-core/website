@@ -1,4 +1,4 @@
-<section class="home-top-section top-section center">
+<section class="home-top-section top-section center {{App::getLocale()}}">
     <div class="container center">
         <div class="row">
             <div class="col-md-7 col-md-push-5 video-wrapper">

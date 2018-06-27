@@ -151,20 +151,24 @@ var HomeManager = (function () {
         var showed = false;
         var win = $(window);
 
+        function reset() {
+            showed = true;
+            playing = true;
+            index = 0;
+            items.removeClass('active');
+            clearTimeout(timeout_1);
+            clearTimeout(timeout_2);
+            clearTimeout(timeout_3);
+            clearTimeout(timeout_4);
+            animating = false;
+            ecoGraph.addClass('animated');
+            animateGraph();
+        }
+
         function checkSize() {
             if (win.width() >= 1200) {
                 if (!showed) {
-                    showed = true;
-                    playing = true;
-                    index = 0;
-                    items.removeClass('active');
-                    clearTimeout(timeout_1);
-                    clearTimeout(timeout_2);
-                    clearTimeout(timeout_3);
-                    clearTimeout(timeout_4);
-                    animating = false;
-                    ecoGraph.addClass('animated');
-                    animateGraph();
+                    reset();
                 }
             } else {
                 if (showed) {
@@ -186,6 +190,16 @@ var HomeManager = (function () {
         });
 
         checkSize();
+
+        $(window).blur(function () {
+            showed = false;
+            ecoGraph.removeClass('animated');
+        });
+
+        $(window).focus(function () {
+            reset();
+        });
+
     }
 
     function init() {

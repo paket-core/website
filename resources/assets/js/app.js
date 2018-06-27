@@ -71,7 +71,7 @@ $(document).ready(function () {
         ToastrManager.init();
         LanguageManager.init();
 
-        if (['en', 'de', 'es', 'fr', 'pt', 'cn'].indexOf(url) >= 0) {
+        if (['en', 'de', 'es', 'fr', 'pt', 'cn', 'ru'].indexOf(url) >= 0) {
             HomeManager.init();
             return false;
         }

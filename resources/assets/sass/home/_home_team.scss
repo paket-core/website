@@ -15,8 +15,8 @@
       }
       .img {
         box-sizing: border-box;
-        $size: 310px;
-        height: $size;
+        $size: 340px;
+        height: $size *1.2;
         width: $size;
         //border-radius: $size/2;
         overflow: hidden;
@@ -38,7 +38,7 @@
       max-width: 170px;
       .img {
         $size: 170px;
-        height: $size;
+        height: $size  *1.2;
         width: $size;
       }
     }
