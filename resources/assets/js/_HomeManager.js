@@ -94,11 +94,11 @@ var HomeManager = (function () {
                         index = 0;
                     }
                     selectOption(index);
-                    ecoDesc.removeClass('fadeOut').addClass('fadeIn');
+                    // ecoDesc.removeClass('fadeOut').addClass('fadeIn');
                     timeout_1 = setTimeout(function () {
                         if (autoAnimation) {
                             items.removeClass('active');
-                            ecoDesc.removeClass('fadeIn').addClass('fadeOut');
+                            // ecoDesc.removeClass('fadeIn').addClass('fadeOut');
                             setTimeout(function () {
                                 animateGraph();
                             }, 1500)
@@ -115,7 +115,7 @@ var HomeManager = (function () {
                 if (!animating) {
                     animating = true;
                     autoAnimation = false;
-                    ecoDesc.removeClass('fadeIn').addClass('fadeOut');
+                    // ecoDesc.removeClass('fadeIn').addClass('fadeOut');
                     items.removeClass('active');
                     var diff = newIndex - index;
                     selectOption(newIndex);
@@ -129,7 +129,7 @@ var HomeManager = (function () {
                         timeout_4 = setTimeout(function () {
                             animating = false;
                             runAnimation(false);
-                            ecoDesc.removeClass('fadeOut').addClass('fadeIn');
+                            // ecoDesc.removeClass('fadeOut').addClass('fadeIn');
                         }, diff * 800);
                     }, 800)
                 }
