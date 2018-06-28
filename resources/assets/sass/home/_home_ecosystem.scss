@@ -78,44 +78,44 @@
         @include box-shadow(rgba($colorGray, 0.2) 0px 0px 10px)
       }
 
-      $l: 70px;
-      $l2: 370px;
+      //$l: 70px;
+      //$l2: 370px;
+      //
+      //$l3: -90px;
+      //$l4: 510px;
+      //
+      //$t1: -50px;
+      //$t2: 210px;
+      //$t3: 480px;
 
-      $l3: -90px;
-      $l4: 510px;
-
-      $t1: -50px;
-      $t2: 210px;
-      $t3: 480px;
-
-      &.graph-item-1 {
-        left: $l2;
-        top: $t1;
-      }
-
-      &.graph-item-6 {
-        left: $l;
-        top: $t1;
-      }
-
-      &.graph-item-5 {
-        left: $l3;
-        top: $t2;
-      }
-
-      &.graph-item-2 {
-        left: $l4;
-        top: $t2;
-      }
-
-      &.graph-item-4 {
-        left: $l;
-        top: $t3;
-      }
-      &.graph-item-3 {
-        left: $l2;
-        top: $t3;
-      }
+      //&.graph-item-1 {
+      //  left: $l2;
+      //  top: $t1;
+      //}
+      //
+      //&.graph-item-6 {
+      //  left: $l;
+      //  top: $t1;
+      //}
+      //
+      //&.graph-item-5 {
+      //  left: $l3;
+      //  top: $t2;
+      //}
+      //
+      //&.graph-item-2 {
+      //  left: $l4;
+      //  top: $t2;
+      //}
+      //
+      //&.graph-item-4 {
+      //  left: $l;
+      //  top: $t3;
+      //}
+      //&.graph-item-3 {
+      //  left: $l2;
+      //  top: $t3;
+      //}
       img {
         display: inline-block;
         max-height: 80px;

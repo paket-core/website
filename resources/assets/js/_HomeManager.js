@@ -66,66 +66,86 @@ var HomeManager = (function () {
         var ecoGraph = $('#ecoGraph');
 
         var items = ecoGraph.find('.graph-item');
-        var icons = $(ecoGraph.find('.graph-icon img'));
         var ecoDesc = $('#ecoGraphDesc');
         var ecoInner = ecoDesc.find('h2,p');
 
         var title = ecoDesc.find('h2');
         var desc = ecoDesc.find('p');
 
-        var rotate = 0;
-        var index = 0;
+        var rotate = 2;
 
-        function animate() {
-            icons = icons.clone();
-            rotate++;
-            if (rotate >= 6) {
-                rotate = 0;
+        var arc_params;
+        var radius = 300;
+
+        function driveTo(item, rotate, active) {
+
+            var current = parseInt(item.attr('data-start'));
+            var newValue = parseInt(current + rotate);
+
+            var diff = current - newValue;
+            diff = diff < 0 ? diff * -1 : diff;
+            var duration = parseInt(diff / 60);
+            duration = duration < 2 ? 2 : duration;
+
+            arc_params = {
+                center: [radius - 90, radius - 90],
+                radius: radius,
+                start: current,
+                end: newValue,
+                dir: current < newValue ? 1 : -1
+            };
+
+            if (active) {
+                selectOption(item)
             }
-            selectOption(rotate);
-            items.each(function (index) {
-                var newIndex = rotate + index;
-                if (newIndex >= 6) {
-                    newIndex = newIndex - 6;
+
+            item.animate({path: new $.path.arc(arc_params)}, duration * 500, function () {
+                item.attr('data-start', newValue);
+                if (active) {
+                    item.addClass('active');
                 }
-                showNewIcon($(this).find('.inner'), icons.eq(newIndex), newIndex);
-            })
+            });
         }
 
-        function showNewIcon(el, icon, index) {
-            var iconWrapper = el.find('.graph-icon');
-            iconWrapper.removeClass('fadeIn').addClass('animated fadeOut');
-            setTimeout(function () {
-                iconWrapper.html(icon);
-                iconWrapper.removeClass('fadeOut').addClass('fadeIn');
-                el.parent().attr('data-icon', index);
-            }, 1000);
-        }
+        function animate(angle) {
 
-        function selectOption(newIndex) {
-            index = newIndex;
-            var item = items.eq(index);
             ecoInner.removeClass('fadeIn').addClass('animated fadeOut');
             setTimeout(function () {
-                title.html(item.find('.graph-title').html());
-                desc.html(item.find('.graph-desc').html());
-                ecoInner.removeClass('fadeOut').addClass('fadeIn');
-            }, 1000);
+                // icons = icons.clone();
+                rotate--;
+                if (rotate < 0) {
+                    rotate = 5;
+                }
+                items.removeClass('active');
+                items.each(function (index) {
+                    var el = $(this);
+                    driveTo(el, angle, index === rotate);
+                })
+            }, 500);
         }
 
-        animate();
+        function selectOption(item) {
+            title.html(item.find('.graph-title').html());
+            desc.html(item.find('.graph-desc').html());
+            ecoInner.removeClass('fadeOut').addClass('fadeIn');
+        }
 
-        items.each(function () {
+        items.each(function (index) {
+            $(this).attr('data-start', 30 + index * 60);
             $(this).click(function () {
-                rotate = parseInt($(this).attr('data-icon')) - 1;
-                animate();
-                clearInterval(interval);
+                var diff = rotate - index;
+                rotate = index + 1;
+                animate(diff * 60);
+                // clearInterval(interval);
+                // animate(360 - currentAngle % 360);
             });
         });
 
-        var interval = setInterval(function () {
-            animate();
-        }, 10000);
+        animate(60);
+
+        // var interval = setInterval(function () {
+        //     animate(60);
+        // }, 5000);
 
 
     }

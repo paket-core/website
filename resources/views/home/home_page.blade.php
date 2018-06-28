@@ -42,6 +42,7 @@
 
 @section('scripts')
     <script data-cfasync="false" src="/plugins/smooth-scroll.min.js"></script>
+    <script data-cfasync="false" src="/plugins/jquery.path.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"
             integrity="sha384-xMX6VHK1HYyCMM8zHAVkLHgg2rIDhN01+z4rI70RV2dwzzVlHP95uaDOc5ds7Pow"
             crossorigin="anonymous"></script>
