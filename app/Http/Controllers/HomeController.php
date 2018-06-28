@@ -47,25 +47,29 @@ class HomeController extends Controller
                 'name' => 'Oren Gampel',
                 'role' => 'CEO',
                 'image' => 'oren_new',
-                'linkedin' => 'https://www.linkedin.com/in/orengampel/'
+                'linkedin' => 'https://www.linkedin.com/in/orengampel/',
+                'github' => null
             ],
             (object)[
                 'name' => 'Israel Levin',
                 'role' => 'CTO',
                 'image' => 'israel_new',
-                'linkedin' => 'https://github.com/israellevin'
+                'linkedin' => null,
+                'github' => 'https://github.com/israellevin'
             ],
             (object)[
                 'name' => 'Chen Barak',
                 'role' => 'VP Business Development',
                 'image' => 'chen_new',
-                'linkedin' => 'https://www.linkedin.com/in/chen-barak-8547964/'
+                'linkedin' => 'https://www.linkedin.com/in/chen-barak-8547964/',
+                'github' => null
             ],
             (object)[
                 'name' => 'Yura Sherman',
                 'role' => 'Community Manager',
                 'image' => 'yura_new',
-                'linkedin' => 'https://www.linkedin.com/in/yurra/'
+                'linkedin' => 'https://www.linkedin.com/in/yurra/',
+                'github' => null
             ]
         ];
 

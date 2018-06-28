@@ -54,6 +54,11 @@
         position: absolute;
         right: 20px;
         top: 350px;
+        &.icon-github{
+          .icon{
+            font-size: 20px;
+          }
+        }
       }
     }
   }
@@ -98,6 +103,11 @@
           height: $s;
           line-height: $s - 4;
           border-radius: $s/2;
+        }
+        &.icon-github{
+          .icon{
+            font-size: 16px;
+          }
         }
       }
     }

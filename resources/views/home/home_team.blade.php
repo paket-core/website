@@ -12,8 +12,10 @@
                     <div class="member col-sm-6">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}_m.jpg?ver=1ax31')">
-                            <a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
-                                        class="icon icon-linkedin"></i></a>
+                            @if ($member->linkedin)<a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
+                                        class="icon icon-linkedin"></i></a>@endif
+                            @if ($member->github)<a class="icon-wrapper icon-github" href="{{$member->github}}" target="_blank"><i
+                                        class="icon icon-git"></i></a>@endif
                         </div>
                         <div class="name">{{$member->name}}</div>
                         <div class="role">
@@ -29,10 +31,11 @@
             <div class="owl-carousel team-carousel">
                 @foreach($members as $member)
                     <div class="member">
-                        <div class="img"
-                             style="background-image: url('/images/team/{{$member->image}}_s.jpg?ver=1bx21')">
-                            <a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
-                                        class="icon icon-linkedin"></i></a>
+                        <div class="img" style="background-image: url('/images/team/{{$member->image}}_s.jpg?ver=1bx21')">
+                            @if ($member->linkedin)<a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
+                                        class="icon icon-linkedin"></i></a>@endif
+                            @if ($member->github)<a class="icon-wrapper icon-github" href="{{$member->github}}" target="_blank"><i
+                                        class="icon icon-git"></i></a>@endif
                         </div>
                         <div class="name">{{$member->name}}</div>
                         <div class="role">
