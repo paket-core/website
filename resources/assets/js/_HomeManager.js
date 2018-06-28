@@ -64,141 +64,69 @@ var HomeManager = (function () {
 
     function initEcosystemGraph() {
         var ecoGraph = $('#ecoGraph');
-        var playing = true;
-        var cl;
 
         var items = ecoGraph.find('.graph-item');
-        var wrapper = ecoGraph.find('.graph-items');
+        var icons = $(ecoGraph.find('.graph-icon img'));
         var ecoDesc = $('#ecoGraphDesc');
+        var ecoInner = ecoDesc.find('h2,p');
 
         var title = ecoDesc.find('h2');
         var desc = ecoDesc.find('p');
+
+        var rotate = 0;
         var index = 0;
-        var animating = false;
-        var autoAnimation = true;
-        var timeout_1, timeout_2, timeout_3, timeout_4;
 
-        function runAnimation(playing) {
-            cl = playing ? 'running' : 'paused';
-            items.css("-webkit-animation-play-state", cl);
-            wrapper.css("-webkit-animation-play-state", cl);
-        }
-
-        function animateGraph() {
-            if (autoAnimation) {
-                playing = !playing;
-                runAnimation(playing);
-                if (!playing) {
-                    index++;
-                    if (index >= 6) {
-                        index = 0;
-                    }
-                    selectOption(index);
-                    // ecoDesc.removeClass('fadeOut').addClass('fadeIn');
-                    timeout_1 = setTimeout(function () {
-                        if (autoAnimation) {
-                            items.removeClass('active');
-                            // ecoDesc.removeClass('fadeIn').addClass('fadeOut');
-                            setTimeout(function () {
-                                animateGraph();
-                            }, 1500)
-                        }
-                    }, 5000);
-                } else {
-                    timeout_2 = setTimeout(animateGraph, 1000);
-                }
+        function animate() {
+            icons = icons.clone();
+            rotate++;
+            if (rotate >= 6) {
+                rotate = 0;
             }
-        }
-
-        function selectItem(el, newIndex) {
-            el.click(function () {
-                if (!animating) {
-                    animating = true;
-                    autoAnimation = false;
-                    // ecoDesc.removeClass('fadeIn').addClass('fadeOut');
-                    items.removeClass('active');
-                    var diff = newIndex - index;
-                    selectOption(newIndex);
-                    if (diff < 0) {
-                        diff = diff + 6;
-                    }
-                    timeout_3 = setTimeout(function () {
-                        items.css("animation-duration", '4800ms');
-                        wrapper.css("animation-duration", '4800ms');
-                        runAnimation(true);
-                        timeout_4 = setTimeout(function () {
-                            animating = false;
-                            runAnimation(false);
-                            // ecoDesc.removeClass('fadeOut').addClass('fadeIn');
-                        }, diff * 800);
-                    }, 800)
+            selectOption(rotate);
+            items.each(function (index) {
+                var newIndex = rotate + index;
+                if (newIndex >= 6) {
+                    newIndex = newIndex - 6;
                 }
+                showNewIcon($(this).find('.inner'), icons.eq(newIndex), newIndex);
             })
         }
 
-        items.each(function (index) {
-            selectItem($(this), index);
-        });
+        function showNewIcon(el, icon, index) {
+            var iconWrapper = el.find('.graph-icon');
+            iconWrapper.removeClass('fadeIn').addClass('animated fadeOut');
+            setTimeout(function () {
+                iconWrapper.html(icon);
+                iconWrapper.removeClass('fadeOut').addClass('fadeIn');
+                el.parent().attr('data-icon', index);
+            }, 1000);
+        }
 
         function selectOption(newIndex) {
             index = newIndex;
             var item = items.eq(index);
-            title.html(item.find('.graph-title').html());
-            desc.html(item.find('.graph-desc').html());
-            item.addClass('active');
+            ecoInner.removeClass('fadeIn').addClass('animated fadeOut');
+            setTimeout(function () {
+                title.html(item.find('.graph-title').html());
+                desc.html(item.find('.graph-desc').html());
+                ecoInner.removeClass('fadeOut').addClass('fadeIn');
+            }, 1000);
         }
 
-        var showed = false;
-        var win = $(window);
+        animate();
 
-        function reset() {
-            showed = true;
-            playing = true;
-            index = 0;
-            items.removeClass('active');
-            clearTimeout(timeout_1);
-            clearTimeout(timeout_2);
-            clearTimeout(timeout_3);
-            clearTimeout(timeout_4);
-            animating = false;
-            ecoGraph.addClass('animated');
-            animateGraph();
-        }
-
-        function checkSize() {
-            if (win.width() >= 1200) {
-                if (!showed) {
-                    reset();
-                }
-            } else {
-                if (showed) {
-                    showed = false;
-                    ecoGraph.removeClass('animated');
-                }
-            }
-        }
-
-        if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
-            wrapper.css("-webkit-animation-direction", 'alternate-reverse');
-            wrapper.css("animation-direction", 'alternate-reverse');
-        } else {
-            wrapper.addClass('reversed');
-        }
-
-        win.on('resize', function () {
-            checkSize();
+        items.each(function () {
+            $(this).click(function () {
+                rotate = parseInt($(this).attr('data-icon')) - 1;
+                animate();
+                clearInterval(interval);
+            });
         });
 
-        checkSize();
+        var interval = setInterval(function () {
+            animate();
+        }, 10000);
 
-        $(window).blur(function () {
-            showed = false;
-            ecoGraph.removeClass('animated');
-        });
-
-        $(window).focus(function () {
-            reset();
-        });
 
     }
 

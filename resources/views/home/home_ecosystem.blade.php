@@ -14,7 +14,7 @@
                     <img src="/images/logo/icon.svg" class="img-center-icon">
                 </div>
                 <div class="graph-items">
-                    <div class="graph-item graph-item-1">
+                    <div class="graph-item graph-item-1 active">
                         <div class="inner">
                             <div class="graph-icon">
                                 <img src="/images/ecosystem/professional_courier.png"
@@ -67,26 +67,26 @@
                         <div class="graph-desc">@lang('home.ecosystem_graph_desc_4')</div>
                     </div>
 
-                    <div class="graph-item graph-item-5 inverted">
-                        <div class="inner">
-                            <div class="graph-icon">
-                                <img src="/images/ecosystem/sender.png"
-                                     srcset="/images/ecosystem/sender@2x.png 2x,
-             /images/ecosystem/sender@3x.png 3x"
-                                     class="hub">
-                            </div>
-                        </div>
-                        <div class="graph-title">@lang('home.ecosystem_graph_title_5')</div>
-                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_5')</div>
-                    </div>
-
-                    <div class="graph-item graph-item-6 inverted">
+                    <div class="graph-item graph-item-5">
                         <div class="inner">
                             <div class="graph-icon">
                                 <img src="/images/ecosystem/professional_hub_operator.png"
                                      srcset="/images/ecosystem/professional_hub_operator@2x.png 2x,
              /images/ecosystem/professional_hub_operator@3x.png 3x"
                                      class="group-icon">
+                            </div>
+                        </div>
+                        <div class="graph-title">@lang('home.ecosystem_graph_title_5')</div>
+                        <div class="graph-desc">@lang('home.ecosystem_graph_desc_5')</div>
+                    </div>
+
+                    <div class="graph-item graph-item-6">
+                        <div class="inner">
+                            <div class="graph-icon">
+                                <img src="/images/ecosystem/sender.png"
+                                     srcset="/images/ecosystem/sender@2x.png 2x,
+             /images/ecosystem/sender@3x.png 3x"
+                                     class="hub">
                             </div>
                         </div>
                         <div class="graph-title">@lang('home.ecosystem_graph_title_6')</div>

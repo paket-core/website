@@ -26,8 +26,34 @@
         display: inline-block;
         margin: auto;
         margin-bottom: 27px;
+        position: relative;
         //-webkit-filter: grayscale(100%) brightness(110%);
         //filter: grayscale(100%) brightness(110%);
+      }
+      .icon {
+        margin-left: 10px;
+        background-color: $colorPaketBlue;
+        display: inline-block;
+        $s: 40px;
+        font-size: 16px;
+        width: $s;
+        height: $s;
+        line-height: $s - 4;
+        border-radius: $s/2;
+        border: solid $colorWhite 2px;
+        @include transition(all 500ms);
+        cursor: pointer;
+        &:before {
+          color: $colorWhite;
+        }
+        &:hover {
+          background-color: darken($colorPaketBlue, 20);
+        }
+      }
+      .icon-wrapper {
+        position: absolute;
+        right: 20px;
+        top: 350px;
       }
     }
   }
@@ -55,6 +81,25 @@
     }
     &.home-team {
       padding-top: 20px;
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-section.home-team {
+    .member{
+      .icon-wrapper {
+        top: 165px;
+        right: 10px;
+        .icon{
+          $s: 30px;
+          font-size: 12px;
+          width: $s;
+          height: $s;
+          line-height: $s - 4;
+          border-radius: $s/2;
+        }
+      }
     }
   }
 }

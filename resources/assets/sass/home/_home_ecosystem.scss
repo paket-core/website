@@ -20,21 +20,21 @@
     $m: 50px;
     $s: 600px;
     position: relative;
-    &.animated {
-      .graph-items {
-        @include animation(spin 6s linear infinite);
-        &.reversed {
-          -webkit-animation-direction: normal;
-          -moz-animation-direction: reverse;
-          -ms-animation-direction: reverse;
-          -o-animation-direction: reverse;
-          animation-direction: reverse;
-        }
-      }
-      .graph-item {
-        @include animation(spin 6s linear infinite);
-      }
-    }
+    //&.animated {
+    //  .graph-items {
+    //    //@include animation(spin 6s linear infinite);
+    //    &.reversed {
+    //      -webkit-animation-direction: normal;
+    //      -moz-animation-direction: reverse;
+    //      -ms-animation-direction: reverse;
+    //      -o-animation-direction: reverse;
+    //      animation-direction: reverse;
+    //    }
+    //  }
+    //  .graph-item {
+    //    //@include animation(spin 6s linear infinite);
+    //  }
+    //}
     .graph-items {
       top: $m;
       left: $m;
@@ -66,6 +66,9 @@
         border-color: $colorPaketBlue;
         background-color: $colorPaketGradient1;
       }
+      &:hover {
+        border-color: darken($colorPaketBlue, 10);
+      }
       .inner {
         padding-top: 40px;
         background-color: $colorWhite;
@@ -86,28 +89,30 @@
       $t3: 480px;
 
       &.graph-item-1 {
-        left: $l;
-        top: $t1;
-      }
-      &.graph-item-2 {
         left: $l2;
         top: $t1;
       }
 
       &.graph-item-6 {
+        left: $l;
+        top: $t1;
+      }
+
+      &.graph-item-5 {
         left: $l3;
         top: $t2;
       }
-      &.graph-item-3 {
+
+      &.graph-item-2 {
         left: $l4;
         top: $t2;
       }
 
-      &.graph-item-5 {
+      &.graph-item-4 {
         left: $l;
         top: $t3;
       }
-      &.graph-item-4 {
+      &.graph-item-3 {
         left: $l2;
         top: $t3;
       }

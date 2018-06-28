@@ -6,15 +6,19 @@
         <div class="col-md-12 center">
             <h1 class="title-desc">@lang('home.team_desc')</h1>
         </div>
-        <div class="col-md-8 col-md-offset-2 center team-members-wrapper">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12 col-sm-offset-0 center team-members-wrapper">
             <div class="row team-members">
                 @foreach($members as $member)
-                    <div class="member col-md-6">
+                    <div class="member col-sm-6">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}_m.jpg?ver=1ax31')">
+                            <a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
+                                        class="icon icon-linkedin"></i></a>
                         </div>
                         <div class="name">{{$member->name}}</div>
-                        <div class="role">{{$member->role}}</div>
+                        <div class="role">
+                            {{$member->role}}
+                        </div>
                     </div>
                 @endforeach
             </div>
@@ -27,9 +31,13 @@
                     <div class="member">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}_s.jpg?ver=1bx21')">
+                            <a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
+                                        class="icon icon-linkedin"></i></a>
                         </div>
                         <div class="name">{{$member->name}}</div>
-                        <div class="role">{{$member->role}}</div>
+                        <div class="role">
+                            {{$member->role}}
+                        </div>
                     </div>
                 @endforeach
             </div>
