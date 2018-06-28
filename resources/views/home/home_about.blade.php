@@ -9,6 +9,11 @@
             </div>
         </div>
         <div class="col-md-12 center">
+            <div class="video play-button" data-video-src="GXI9KRIznsY">
+                <img src="/images/screens/about_video.png">
+            </div>
+        </div>
+        <div class="col-md-12 center">
             <div class="desc">
                 <ul class="dotted-list">
                     <li>
@@ -20,11 +25,6 @@
                 </ul>
             </div>
         </div>
-        {{--<div class="col-md-12 center">--}}
-        {{--<div class="video play-button">--}}
-        {{--<img src="/images/screens/about_video.png">--}}
-        {{--</div>--}}
-        {{--</div>--}}
         <div class="col-md-12 center">
             <div class="buttons">
                 <a href="{{route('token-sale')}}" target="_blank">
