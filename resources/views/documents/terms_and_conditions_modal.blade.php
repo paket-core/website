@@ -8,7 +8,7 @@
     <div class="col-md-12">
         <div class="black-top-section">
             <div class="container">
-                <h1>TRILLIANT <strong>“TRIL TOKEN”</strong> TERMS AND CONDITIONS</h1>
+                <h1>PAKET - TERMS AND CONDITIONS</h1>
             </div>
             <span class="modal-close icon-close" data-dismiss="modal" aria-label="Close"></span>
         </div>

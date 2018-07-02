@@ -11,6 +11,7 @@
                 </div>
                 <div class="col-md-6 col-md-pull-6">
                     <img src="/images/developers/developers_4_s.png"
+                         alt="@lang('developers.section_title_1')"
                          srcset="/images/developers/developers_4_b.png 2x, /images/developers/developers_4.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
@@ -42,6 +43,7 @@
                 </div>
                 <div class="col-md-6 center">
                     <img src="/images/developers/developers_03_s.png"
+                         alt="@lang('developers.section_title_3')"
                          srcset="/images/developers/developers_03_b.png 2x, /images/developers/developers_03.png 3x">
                 </div>
                 <div class="col-md-12 center-section">
@@ -88,6 +90,7 @@
                 </div>
                 <div class="col-md-6 col-md-pull-6">
                     <img src="/images/developers/developers_1_s.png"
+                         alt="@lang('developers.section_title_4')"
                          srcset="/images/developers/developers_1_b.png 2x, /images/developers/developers_1.png 3x">
                 </div>
             </div>
@@ -103,6 +106,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="/images/developers/developers_2_s.png"
+                         alt="@lang('developers.section_title_2')"
                          srcset="/images/developers/developers_2_b.png 2x, /images/developers/developers_2.png 3x">
                 </div>
             </div>

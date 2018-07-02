@@ -9,7 +9,7 @@
     <div class="video-top">
         <div class="container">
             <div class="col-md-12 center">
-                <h1 class="token-title">@lang('home.pre_sale_title')</h1>
+                <h2 class="token-title">@lang('home.pre_sale_title')</h2>
             </div>
             <div class="col-md-12 center">
                 <div class="row">

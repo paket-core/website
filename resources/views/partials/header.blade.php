@@ -10,6 +10,7 @@
                         <a class="logo" href="{{$path}}">
                             <img src="/images/logo/paket-logo.png"
                                  srcset="/images/logo/paket-logo@2x.png 2x,/images/logo/paket-logo@3x.png 3x"
+                                 alt="{{env('APP_NAME')}}"
                                  class="paket-logo">
                         </a>
                     </div>

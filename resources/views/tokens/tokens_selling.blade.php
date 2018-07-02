@@ -21,11 +21,13 @@
                 <img src="/images/custom/token-sale-new/smartphone-icon.png"
                      srcset="/images/custom/token-sale-new/smartphone-icon@2x.png 2x,
              /images/custom/token-sale-new/smartphone-icon@3x.png 3x"
+                     alt=">@lang('tokens.tokens_app_item_1_title')"
                      class="smartphone">
 
                 <img src="/images/custom/token-sale-new/stellar.png"
                      srcset="/images/custom/token-sale-new/stellar@2x.png 2x,
              /images/custom/token-sale-new/stellar@3x.png 3x"
+                     alt=">@lang('tokens.tokens_app_item_2_title')"
                      class="stellar">
             </div>
             <div class="col-md-6">

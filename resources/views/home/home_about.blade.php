@@ -1,7 +1,7 @@
 <section class="home-section home-about dark center">
     <div class="container">
         <div class="col-md-12 center">
-            <h1 class="title">@lang('home.about_title')</h1>
+            <h2 class="title">@lang('home.about_title')</h2>
         </div>
         <div class="col-md-12">
             <div class="desc desc-2">
@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-12 center">
             <div class="video play-button" data-video-src="GXI9KRIznsY">
-                <img src="/images/screens/about_video.png">
+                <img src="/images/screens/about_video.png" alt="@lang('home.about_title')">
             </div>
         </div>
         <div class="col-md-12 center">
@@ -28,7 +28,7 @@
         <div class="col-md-12 center">
             <div class="buttons">
                 <a href="{{route('token-sale')}}" target="_blank">
-                    <div class="btn btn-join">@lang('home.about_btn')</div>
+                    <div class="btn btn-join">@lang('home.play_video')</div>
                 </a>
             </div>
         </div>

@@ -19,12 +19,12 @@
     <meta property="og:image:width" content="869"/>
     <meta property="og:image:height" content="509"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no">
     <meta content="" name="author"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="_website" content="{{URL::to('/')}}"/>
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msappl\ication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     @yield('meta')

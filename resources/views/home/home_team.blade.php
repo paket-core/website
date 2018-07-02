@@ -1,10 +1,10 @@
 <section class="home-section home-team center" id="team">
     <div class="container">
         <div class="col-md-12 center">
-            <h1 class="title">@lang('home.team_title')</h1>
+            <h2 class="title">@lang('home.team_title')</h2>
         </div>
         <div class="col-md-12 center">
-            <h1 class="title-desc">@lang('home.team_desc')</h1>
+            <p class="title-desc">@lang('home.team_desc')</p>
         </div>
         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12 col-sm-offset-0 center team-members-wrapper">
             <div class="row team-members">
@@ -50,12 +50,14 @@
                     <img src="/images/custom/mobile/arrow_left/arrow.png"
                          srcset="/images/custom/mobile/arrow_left/arrow@2x.png 2x,
              /images/custom/mobile/arrow_left/arrow@3x.png 3x"
+                         alt="@lang('pagination.previous')"
                          class="diamond">
                 </div>
                 <div class="owlTeamNextBtn">
                     <img src="/images/custom/mobile/arrow_right/arrow.png"
                          srcset="/images/custom/mobile/arrow_right/arrow@2x.png 2x,
              /images/custom/mobile/arrow_right/arrow@3x.png 3x"
+                         alt="@lang('pagination.next')"
                          class="diamond">
                 </div>
             </div>

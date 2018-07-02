@@ -5,7 +5,7 @@
 @section('page_content')
     <div class="black-top-section">
         <div class="container">
-            <h1>Block51 Privacy Policy & Data Protection</h1>
+            <h1>Paket Privacy Policy & Data Protection</h1>
         </div>
     </div>
     <div class="page-down-section terms-document">

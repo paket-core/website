@@ -12,7 +12,7 @@
                        accept="image/*"
                        name="{{$user_field}}"/>
             </div>
-            <label for="{{$user_field}}" generated="true" class="error"></label>
+            <label for="{{$user_field}}" class="error"></label>
         </div>
         <div class="col-md-12">
             <img src="/images/auth/sample_id_img.png">

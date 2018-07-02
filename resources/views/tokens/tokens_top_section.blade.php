@@ -3,7 +3,7 @@
     <div class="container">
         <div class="col-md-12 center">
             <div class="row content">
-                <h1 class="title">@lang('tokens.tokens_title')</h1>
+                <h2 class="title">@lang('tokens.tokens_title')</h2>
                 <p class="desc desc-1">@lang('tokens.tokens_sub')</p>
                 <p class="desc desc-2">@lang('tokens.tokens_sub_2')</p>
             </div>

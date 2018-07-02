@@ -1,7 +1,7 @@
 <section class="home-section home-partners center">
     <div class="container">
         <div class="col-md-12 center">
-            <h1 class="title">@lang('home.partners_title')</h1>
+            <h2 class="title">@lang('home.partners_title')</h2>
         </div>
         <div class="col-md-12 center">
 {{--            <p class="title-desc">@lang('home.partners_desc')</p>--}}

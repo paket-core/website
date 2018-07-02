@@ -1,7 +1,7 @@
 <section class="home-section home-media center">
     <div class="container">
         <div class="col-md-12 center">
-            <h1 class="title">@lang('home.media_title')</h1>
+            <h2 class="title">@lang('home.media_title')</h2>
         </div>
         <div class="col-md-12 center">
 

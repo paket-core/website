@@ -13,7 +13,7 @@
             <div class="col-md-5 col-md-pull-7">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="top-title">@lang('home.top_title')</div>
+                        <h2 class="top-title">@lang('home.top_title')</h2>
                         <div class="play play-button" data-video-src="GXI9KRIznsY"
                              data-target="#videoModal"
                              id="playVideoButton">
@@ -21,6 +21,7 @@
                                 <img src="/images/custom/token-sale/play-icon.png"
                                      srcset="/images/custom/token-sale/play-icon@2x.png 2x,
              /images/custom/token-sale/play-icon@3x.png 3x"
+                                     alt="@lang('home.play_video')"
                                      class="play-icon">
                             </div>
                             <div class="play-right">
@@ -38,6 +39,7 @@
                                 <img src="/images/custom/token-sale/pdf-icon.png"
                                      srcset="/images/custom/token-sale/pdf-icon@2x.png 2x,
              /images/custom/token-sale/pdf-icon@3x.png 3x"
+                                     alt="@lang('home.top_action_wp')"
                                      class="pdf-icon">
                                 @lang('home.top_action_wp')
                             </div>
@@ -47,6 +49,7 @@
                                 <img src="/images/custom/token-sale/logo-copy.png"
                                      srcset="/images/custom/token-sale/logo-copy@2x.png 2x,
              /images/custom/token-sale/logo-copy@3x.png 3x"
+                                     alt="@lang('home.top_action_telegram')"
                                      class="logo-copy">
                                 @lang('home.top_action_telegram')
                             </div>
@@ -59,6 +62,7 @@
                                     <span class="img"><img src="/images/custom/token-sale/join-ico-icon.png"
                                                            srcset="/images/custom/token-sale/join-ico-icon@2x.png 2x,
              /images/custom/token-sale/join-ico-icon@3x.png 3x"
+                                                           alt="@lang('home.top_join_now')"
                                                            class="join-ico-icon"></span>
                                     <span>@lang('home.top_join_now')</span>
                                 </div>

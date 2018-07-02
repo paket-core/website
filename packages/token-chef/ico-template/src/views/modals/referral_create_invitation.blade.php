@@ -19,7 +19,7 @@
                                     <input class="form-control" type="text"
                                            name="name"
                                            placeholder="@lang('ico-template::home.create_referral_invitation_name')">
-                                    <label for="name" generated="true" class="error"></label>
+                                    <label for="name" class="error"></label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -27,7 +27,7 @@
                                     <input class="form-control"
                                            name="email"
                                            placeholder="@lang('ico-template::home.create_referral_invitation_email')">
-                                    <label for="email" generated="true" class="error"></label>
+                                    <label for="email" class="error"></label>
                                 </div>
                             </div>
                         </div>

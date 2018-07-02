@@ -1,7 +1,7 @@
 <section class="home-section home-endorsements center section-dark">
     <div class="container">
         <div class="col-md-12 center">
-            <h1 class="title">@lang('home.endorsements_title')</h1>
+            <h2 class="title">@lang('home.endorsements_title')</h2>
         </div>
         <div class="col-md-12 center">
             <div class="endorsements">
@@ -18,9 +18,9 @@
         </div>
         <div class="col-md-12 center link">
             <a href="/pdf/endorsement.pdf?v=1.0.1" target="_blank">
-                <button class="btn btn-blue">
+                <div class="btn btn-blue">
                     @lang('home.endorsements_link')
-                </button>
+                </div>
             </a>
         </div>
     </div>

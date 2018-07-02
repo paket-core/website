@@ -11,7 +11,8 @@
         @else
             @include('ico-template::auth.single_field', [
            'user_field' => $user_field,
-           'value' => isset($form[$user_field]) ? $form[$user_field] : null
+           'value' => isset($form[$user_field]) ? $form[$user_field] : null,
+           'field' => 'RegisterField'
        ])
         @endif
     @endforeach

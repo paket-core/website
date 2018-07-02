@@ -1,4 +1,5 @@
 <?php $kind = TokenChef\IcoTemplate\Services\ICOSettingsService::get_field_kind($user_field); ?>
+<?php $field = isset($field) ? $field : 'field' ?>
 <div class="form-group">
     @if (isset($config['labels']) && $config['labels'])
         <div class="input-label">
@@ -22,9 +23,10 @@
     @else
         <input class="form-control"
                type="{{$kind}}"
+               id="{{$user_field}}_{{$field}}"
                placeholder="{!!TokenChef\IcoTemplate\Services\ICOSettingsService::get_field_placeholder($user_field, isset($placeholder) ? $placeholder : null)!!}"
                @if(isset($value) && $value!== null) value="{{$value}}" @endif
                name="{{$user_field}}"/>
-        <label for="{{$user_field}}" generated="true" class="error"></label>
+        <label for="{{$user_field}}_{{$field}}" class="error"></label>
     @endif
 </div>
