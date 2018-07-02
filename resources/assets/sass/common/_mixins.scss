@@ -24,9 +24,9 @@
 
 @mixin flags($icons) {
   @each $icon in $icons {
-    $version: 'sf32fk';
+    $version: 'sf32fl';
     &.#{$icon} {
-      background-image: url('/images/flags/#{$icon}.png?' + $version);
+      background-image: url('/images/flags_s/#{$icon}.png?' + $version);
     }
   }
 }
@@ -39,6 +39,7 @@
   -webkit-transform: $transforms;
   transform: $transforms;
 }
+
 // rotate
 
 @mixin border-top-radius($radius: $default-border-radius) {

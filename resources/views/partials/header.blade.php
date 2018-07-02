@@ -67,11 +67,6 @@
                                     @lang('home.header_for_developers')
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{route('login')}}">
-                                    @lang('home.header_login')
-                                </a>
-                            </li>
                         @endif
                     </ul>
                 </div>

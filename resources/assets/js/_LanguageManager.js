@@ -5,6 +5,19 @@ var LanguageManager = (function () {
     function init() {
         enableMenu();
         detectLanguage();
+        // preload();
+    }
+
+    function preload() {
+        var imageObj = new Image(),
+            images = $('.preload-lang-images');
+        var version = 'sf32fl';
+
+        images.each(function () {
+            var lang = $(this).attr('data-lang');
+            imageObj.src = '/images/flags_s/' + lang + '.png?' + version;
+        });
+
     }
 
     function enableMenu() {
