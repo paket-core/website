@@ -18,9 +18,9 @@
                              data-target="#videoModal"
                              id="playVideoButton">
                             <div class="play-left">
-                                <img src="/images/custom/token-sale/play-icon.png"
-                                     srcset="/images/custom/token-sale/play-icon@2x.png 2x,
-             /images/custom/token-sale/play-icon@3x.png 3x"
+                                <img src="/images/custom/token-sale-new/play-icon.png"
+                                     srcset="/images/custom/token-sale-new/play-icon@2x.png 2x,
+             /images/custom/token-sale-new/play-icon@3x.png 3x"
                                      alt="@lang('home.play_video')"
                                      class="play-icon">
                             </div>
@@ -36,9 +36,9 @@
                     <div class="col-md-12 top-actions">
                         <a href="/documents/wp/en.pdf?v=1.0.1" target="_blank">
                             <div class="btn-top-action btn-top-action-1">
-                                <img src="/images/custom/token-sale/pdf-icon.png"
-                                     srcset="/images/custom/token-sale/pdf-icon@2x.png 2x,
-             /images/custom/token-sale/pdf-icon@3x.png 3x"
+                                <img src="/images/custom/token-sale-new/pdf-icon.png"
+                                     srcset="/images/custom/token-sale-new/pdf-icon@2x.png 2x,
+             /images/custom/token-sale-new/pdf-icon@3x.png 3x"
                                      alt="@lang('home.top_action_wp')"
                                      class="pdf-icon">
                                 @lang('home.top_action_wp')
@@ -46,9 +46,9 @@
                         </a>
                         <a href="{{\TokenChef\IcoTemplate\Services\StaticArray::TELEGRAM_URL}}" target="_blank">
                             <div class="btn-top-action btn-top-action-2">
-                                <img src="/images/custom/token-sale/logo-copy.png"
-                                     srcset="/images/custom/token-sale/logo-copy@2x.png 2x,
-             /images/custom/token-sale/logo-copy@3x.png 3x"
+                                <img src="/images/custom/token-sale-new/logo-copy.png"
+                                     srcset="/images/custom/token-sale-new/logo-copy@2x.png 2x,
+             /images/custom/token-sale-new/logo-copy@3x.png 3x"
                                      alt="@lang('home.top_action_telegram')"
                                      class="logo-copy">
                                 @lang('home.top_action_telegram')
@@ -59,9 +59,9 @@
                         <a href="{{route('token-sale')}}" target="_blank">
                             <div class="btn-join">
                                 <div class="inner">
-                                    <span class="img"><img src="/images/custom/token-sale/join-ico-icon.png"
-                                                           srcset="/images/custom/token-sale/join-ico-icon@2x.png 2x,
-             /images/custom/token-sale/join-ico-icon@3x.png 3x"
+                                    <span class="img"><img src="/images/custom/token-sale-new/join-ico-icon.png"
+                                                           srcset="/images/custom/token-sale-new/join-ico-icon@2x.png 2x,
+             /images/custom/token-sale-new/join-ico-icon@3x.png 3x"
                                                            alt="@lang('home.top_join_now')"
                                                            class="join-ico-icon"></span>
                                     <span>@lang('home.top_join_now')</span>

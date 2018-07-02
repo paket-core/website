@@ -15,7 +15,7 @@
                                 <div class="ellipsis-line"></div>
                                 <div class="road-map-date">{!! $item->date !!}</div>
                                 <div class="road-map-image">
-                                    <div class="completed"><img src="/images/custom/token-sale/completed.png" alt="{{$item->title}}"></div>
+                                    <div class="completed"><img src="/images/custom/token-sale-new/completed.png" alt="{{$item->title}}"></div>
                                     <img src="/images/custom/mobile/location/locationIcon.png"
                                          srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
              /images/custom/mobile/location/locationIcon@3x.png 3x"
@@ -55,7 +55,7 @@
                             <div class="road-map-item {{$item->finished ? 'finished' : ''}}">
                                 <div class="road-map-date">{!! $item->date !!}</div>
                                 <div class="road-map-image">
-                                    <div class="completed"><img src="/images/custom/token-sale/completed.png" alt="{{$item->title}}"></div>
+                                    <div class="completed"><img src="/images/custom/token-sale-new/completed.png" alt="{{$item->title}}"></div>
                                     <img src="/images/custom/mobile/location/locationIcon.png"
                                          srcset="/images/custom/mobile/location/locationIcon@2x.png 2x,
              /images/custom/mobile/location/locationIcon@3x.png 3x"

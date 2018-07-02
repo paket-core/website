@@ -41,9 +41,9 @@
           ]) !!}
                     <div class="btn-wrapper">
                         <button class="sub-btn btn subscribe-button newsletter-join-form-btn">
-                            <img src="/images/custom/token-sale/arrow.png"
-                                 srcset="/images/custom/token-sale/arrow@2x.png 2x,
-             /images/custom/token-sale/arrow@3x.png 3x"
+                            <img src="/images/custom/token-sale-new/arrow.png"
+                                 srcset="/images/custom/token-sale-new/arrow@2x.png 2x,
+             /images/custom/token-sale-new/arrow@3x.png 3x"
                                  class="arrow">
                         </button>
                     </div>
