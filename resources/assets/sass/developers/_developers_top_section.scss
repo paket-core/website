@@ -37,8 +37,11 @@
 @media (max-width: $sizeSmall) {
   .developers-top-section {
     margin-top: 70px;
-    $h: 250px;
+    $h: 160px;
     height: $h;
+    .top-content {
+      margin-top: 50px;
+    }
     img {
       margin-top: 90px;
       max-width: 120px;
