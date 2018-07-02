@@ -79,7 +79,7 @@ return [
     'road_map_title' => 'Road Map',
 
     'top_title' => 'PAKET',
-    'top_desc' => 'The open package delivery protocol, where international, local, and individual couriers can cooperate',
+    'top_desc' => 'The Decentralized Delivery Network',
     'play_video' => 'Play Video',
     'top_join_now' => 'Token Sale Info',
     'top_action_wp' => 'White Paper',

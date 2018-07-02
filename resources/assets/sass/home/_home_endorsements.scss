@@ -1,7 +1,7 @@
 .home-section {
   &.home-endorsements {
     background-color: #f3f9ff;
-    .title {
+    h2 {
       font-size: 40.6px;
       font-weight: bold;
       color: #262626;
@@ -56,8 +56,8 @@
 
 @media (max-width: $sizeSmall) {
   .home-section {
-    &.home-endorsements {
-
+    h2.title {
+      font-size: 32px;
     }
   }
 }

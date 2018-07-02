@@ -292,9 +292,12 @@ header.header {
             border: none;
             color: $colorBlue;
             font-size: 24px;
-            font-weight: bold;
             line-height: 41px;
             text-align: center;
+            @include transition(color 500ms);
+            &:hover {
+              color: darken($colorBlue, 10);
+            }
           }
         }
       }
