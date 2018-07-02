@@ -246,6 +246,10 @@ header.header {
   }
   .container.header {
     padding: 0;
+    z-index: 13;
+    .navbar-header, .navbar-toggle, .language-wrapper {
+      z-index: 13;
+    }
     & > div {
       padding: 0 15px;
       display: flex;
@@ -277,8 +281,10 @@ header.header {
       left: 0;
       bottom: 0;
       width: 100%;
-      top: 70px;
-      z-index: 6;
+      height: 100%;
+      top: 0;
+      padding-top: 70px;
+      z-index: 12;
       padding-bottom: 70px;
       .navbar-nav {
         padding: 0;

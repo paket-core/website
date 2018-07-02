@@ -14,7 +14,24 @@ var LanguageManager = (function () {
             if ($('.navbar-collapse').hasClass('collapse')) {
                 $('.navbar-toggle').click();
             }
+            enableScroll();
         })
+    }
+
+    $('.navbar-toggle').click(function () {
+        if (!$(this).hasClass('collapse')) {
+            disableScroll();
+        }else{
+            enableScroll();
+        }
+    });
+
+    function disableScroll() {
+        $("body").css("overflow", "hidden");
+    }
+
+    function enableScroll() {
+        $("body").css("overflow", "auto");
     }
 
     function preload() {
