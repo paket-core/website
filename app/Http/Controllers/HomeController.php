@@ -367,11 +367,11 @@ class HomeController extends Controller
             ],
             (object)[
                 'id' => '4',
-                'value' => 'community',
+                'value' => 'source-code',
             ],
             (object)[
                 'id' => '5',
-                'value' => 'source-code',
+                'value' => 'community',
             ]
         ];
         return view('developers.developers_page', [

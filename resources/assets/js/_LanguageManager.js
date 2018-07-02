@@ -19,9 +19,9 @@ var LanguageManager = (function () {
     }
 
     $('.navbar-toggle').click(function () {
-        if (!$(this).hasClass('collapse')) {
+        if ($(this).hasClass('collapsed')) {
             disableScroll();
-        }else{
+        } else {
             enableScroll();
         }
     });
