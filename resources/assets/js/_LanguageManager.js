@@ -5,7 +5,7 @@ var LanguageManager = (function () {
     function init() {
         enableMenu();
         detectLanguage();
-        // preload();
+        preload();
     }
 
     function preload() {
