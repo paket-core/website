@@ -6,14 +6,23 @@ var LanguageManager = (function () {
         enableMenu();
         detectLanguage();
         preload();
+        fixMenuOnMobile();
+    }
+
+    function fixMenuOnMobile() {
+        $('.navbar-nav li a').click(function () {
+            if ($('.navbar-collapse').hasClass('collapse')) {
+                $('.navbar-toggle').click();
+            }
+        })
     }
 
     function preload() {
-        var imageObj = new Image(),
-            images = $('.preload-lang-images');
+        var images = $('.preload-lang-images');
         var version = 'sf32fl';
 
         images.each(function () {
+            var imageObj = new Image();
             var lang = $(this).attr('data-lang');
             imageObj.src = '/images/flags_s/' + lang + '.png?' + version;
         });

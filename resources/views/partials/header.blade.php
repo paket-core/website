@@ -31,7 +31,7 @@
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())
                             <li>
-                                <a data-scroll href="/">
+                                <a href="{{route('token-sale')}}">
                                     @lang('home.header_token_sale')
                                 </a>
                             </li>

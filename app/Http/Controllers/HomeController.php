@@ -20,7 +20,7 @@ class HomeController extends Controller
     public function home_language($lang)
     {
         $lang = strtolower($lang);
-        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES) && $lang !== 'en') {
+        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES)) {
             return \Redirect::to('/');
         }
         LocaleService::save_language($lang, true);
