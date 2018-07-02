@@ -13,7 +13,7 @@
   }
 
   &.container > div {
-    @include transition(all 500ms);
+    @include transition(color 500ms);
   }
 
   .token-sale {
@@ -147,7 +147,7 @@ header.header {
   .navbar {
     margin-bottom: 0;
     border: none;
-    @include transition(all 500ms);
+    @include transition(color 500ms);
     .header .navbar-collapse {
       padding-bottom: 21px;
     }

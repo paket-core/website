@@ -11,6 +11,7 @@
     margin-left: -20%;
   }
   .top-desc {
+    display: inline-block;
     margin-top: 20px;
     font-size: 18.4px;
     font-weight: bold;
@@ -21,6 +22,7 @@
     color: $colorFont;
     text-align: left;
     max-width: 500px;
+    width: 100%;
   }
   .top-title {
     font-size: 60px;
@@ -30,11 +32,14 @@
     text-align: left;
     float: left;
     margin-top: 60px;
+    width: 100%;
+    padding-right: 200px;
   }
   .play {
-    float: left;
     margin-left: 20px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 10px;
     min-width: 240px;
     min-height: 75px;
     cursor: pointer;
@@ -163,6 +168,61 @@
   }
 }
 
+@media (max-width: $sizeLarge) {
+  .home-top-section {
+    .play {
+      margin-top: 20px;
+      margin-left: auto;
+      display: inline-block;
+      position: inherit;
+      max-width: 240px;
+      float: left;
+    }
+    .top-actions {
+      width: 100%;
+      margin-top: 20px;
+      a {
+        margin-right: 2px;
+        margin-bottom: 20px;
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .btn-join {
+      margin-bottom: 20px;
+    }
+    .down-actions {
+      max-width: 340px;
+      display: block;
+      margin: auto;
+    }
+    .video-text-wrapper {
+      margin-top: -120px;
+      padding-right: 0;
+      .top-actions, .down-actions {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-top-section {
+    .video-text-wrapper {
+      margin-top: -20px;
+      padding-right: 0;
+      .top-actions, .down-actions {
+        width: 100%;
+        padding: 0 30px;
+      }
+      .down-actions {
+        max-width: inherit;
+      }
+    }
+  }
+}
+
 @media (max-width: $sizeMedium) {
   .home-top-section {
     background-color: $colorWhite;
@@ -183,6 +243,9 @@
     .home-top-content {
       margin-top: 0;
     }
+    .play {
+      float: none;
+    }
     .video-bg {
       position: inherit;
       min-height: 180px;
@@ -197,15 +260,12 @@
       text-align: center;
     }
     .play, .top-title {
-      float: none;
+      //float: right;
+      width: 100%;
     }
     .top-title {
-      margin-top: -30px;
-    }
-    .play {
-      margin-top: 20px;
-      margin-left: auto;
-      display: inline-block;
+      margin-top: -50px;
+      padding-right: 0;
     }
     .top-desc {
       text-align: center;
@@ -247,15 +307,17 @@
       display: block;
       margin: auto;
     }
+    .top-actions a {
+      display: inline-block;
+      float: none;
+    }
     &.ru, &.en {
-      a, .btn-top-action.btn-top-action-1, .btn-top-action.btn-top-action-2 {
+      .btn-top-action.btn-top-action-2 {
         display: inline-block;
         margin: auto;
-        width: 90%;
         text-align: center;
       }
       a {
-        width: 100%;
         .btn-top-action {
           float: none;
         }
@@ -265,6 +327,19 @@
       }
       .btn-join {
         max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeExtraSmall) {
+  .home-top-section {
+    .top-actions a {
+      width: 100%;
+      margin-bottom: 0;
+      & > div {
+        width: 100%;
+        margin-bottom: 10px;
       }
     }
   }

@@ -10,10 +10,11 @@
                     </video>
                 </div>
             </div>
-            <div class="col-md-5 col-md-pull-7">
+            <div class="col-md-5 col-md-pull-7 video-text-wrapper">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="top-title">@lang('home.top_title')</h2>
+                        <div class="top-desc">@lang('home.top_desc')</div>
                         <div class="play play-button" data-video-src="GXI9KRIznsY"
                              data-target="#videoModal"
                              id="playVideoButton">
@@ -29,9 +30,6 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="top-desc">@lang('home.top_desc')</div>
                     </div>
                     <div class="col-md-12 top-actions">
                         <a href="/documents/wp/en.pdf?v=1.0.1" target="_blank">
@@ -55,8 +53,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-12">
-                        <a href="{{route('token-sale')}}" target="_blank">
+                    <div class="col-md-12 down-actions">
+                        <a href="{{route('token-sale')}}">
                             <div class="btn-join">
                                 <div class="inner">
                                     <span class="img"><img src="/images/custom/token-sale-new/join-ico-icon.png"
