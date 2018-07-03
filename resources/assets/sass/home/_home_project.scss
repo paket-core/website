@@ -1,5 +1,14 @@
 .home-section {
   &.home-project {
+    .project-items-carousel {
+      display: inherit;
+    }
+    .project-items-carousel-wrapper {
+      position: relative;
+    }
+    .owl-carousel-buttons {
+      display: none;
+    }
     .title {
       font-size: 32px;
       font-weight: bold;
@@ -47,47 +56,6 @@
       max-width: 100%;
     }
   }
-  .project-items-carousel-wrapper {
-    position: relative;
-    display: none;
-    .title {
-      font-size: 23px;
-      text-align: center;
-      max-width: 280px;
-      display: block;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-    img {
-      max-width: 220px;
-      display: block;
-      margin: auto;
-      max-height: 200px;
-      width: auto;
-      height: auto;
-    }
-    .img-wrapper {
-      display: inline-block;
-      width: 100%;
-      min-height: 160px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-    .desc, ul li {
-      text-align: justify;
-      font-size: 17px;
-      line-height: 1.54;
-    }
-    .desc {
-      padding: 0 20px;
-    }
-    ul li {
-      padding-left: 30px;
-    }
-    .project-item {
-      margin-bottom: 0;
-    }
-  }
   .project-items-carousel-buttons {
     & > div {
       position: absolute;
@@ -103,16 +71,14 @@
       }
     }
     $m: -40px;
-    $p: 38px;
+    $p: 26px;
     .owlProjectPrevBtn {
       left: $m;
-      img {
-        margin-left: $p;
-      }
+      padding-left: $p;
     }
     .owlProjectNextBtn {
       right: $m;
-      margin-right: 10px;
+      padding-right: $p;
     }
   }
 }
@@ -140,11 +106,52 @@ ul.dotted-list {
 @media (max-width: $sizeSmall) {
   .home-section {
     &.home-project {
-      .project-items-wrapper {
-        display: none;
+      padding-top: 40px;
+      .title {
+        margin-top: 40px;
       }
-      .project-items-carousel-wrapper {
+      .owl-carousel-buttons {
         display: inherit;
+      }
+      .project-items-carousel {
+        position: relative;
+        .title {
+          font-size: 23px;
+          text-align: center;
+          max-width: 280px;
+          display: block;
+          margin: auto;
+          margin-bottom: 30px;
+        }
+        img {
+          max-width: 220px;
+          display: block;
+          margin: auto;
+          max-height: 200px;
+          width: auto;
+          height: auto;
+        }
+        .img-wrapper {
+          display: inline-block;
+          width: 100%;
+          min-height: 160px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        .desc, ul li {
+          text-align: justify;
+          font-size: 17px;
+          line-height: 1.54;
+        }
+        .desc {
+          padding: 0 20px;
+        }
+        ul li {
+          padding-left: 30px;
+        }
+        .project-item {
+          margin-bottom: 0;
+        }
       }
     }
   }

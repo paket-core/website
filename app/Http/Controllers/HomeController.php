@@ -103,243 +103,28 @@ class HomeController extends Controller
         $partners = [
             (object)[
                 'image' => 'deloitte.png',
-            ],
-            (object)[
-                'image' => 'gkh.png',
-            ],
-            (object)[
-                'image' => 'rampart.png',
-            ],
-            (object)[
-                'image' => 'turicum.png',
-            ],
+            ]
         ];
 
         $companies = [
             [
                 'link' => '',
                 'image' => 'inc_black_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_telegraph_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'investopedia_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'vb.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cso.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cryptoinsider_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'forbes.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'tnw.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'investing_com.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cio_new.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'pc_mag.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cryptocompare.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'tech_worm.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'livebitcoinnews.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'finance_magnates.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'steemit_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'core_media.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'bitnewsbot.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'hackernoon.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_speaker.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_spot.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'token_tops.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'fork_log.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cryptovest.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'bitcoinist.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'zero_hedge.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'itsblockchain.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_schedule.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'townhall_finance.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_joker.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'data_conomy.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'the_bitcoin_news.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_idol.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'coin_fox.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'eco_27.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'bt_manager.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'technology_org.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'hacked.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'tech_in_asia.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'brave_new_coin.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'chipin.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'bitcoiner_today.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'security_now.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'crypto_potato.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'bit_coin_new_asia.png',
-            ],
-            [
-                'link' => '',
-                'image' => 'hacker_news.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'blockchain_news.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'best_vpn.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'news_btc_new.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'info_security.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'digitalj.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'yahoo_finance.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'thestreet.png'
-            ],
-            [
-                'link' => '',
-                'image' => 'cryptonews.png',
-            ],
+            ]
         ];
+
+        $graph_items = [
+            'professional_courier', 'opportunistic_courier', 'setellite', 'opportunistic_hub', 'professional_hub_operator', 'sender'
+        ];
+
 
         return view('home.home_page', [
             'companies' => $companies,
             'endorsements' => $endorsements,
             'members' => $members,
             'road_maps' => TokenService::get_road_maps(),
-            'partners' => $partners
+            'partners' => $partners,
+            'graph_items' => $graph_items
         ]);
     }
 

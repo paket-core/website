@@ -6,6 +6,8 @@ var HomeManager = (function () {
     var LoginPageEmbedded = require('./_LoginPageEmbedded');
 
     var owlPublications;
+    var ecoInterval;
+    var ecoAnimation = false;
 
     function initRoadMap() {
         var owlRoadMap = $(".road-map-carousel-1").owlCarousel({
@@ -41,6 +43,10 @@ var HomeManager = (function () {
 
     function initCompanies() {
 
+        $('#viewMoreCompanies').off('click').click(function () {
+            $('.company-row.additional').removeClass('additional');
+        });
+
         if (owlPublications) {
             owlPublications.owlCarousel('destroy')
         }
@@ -63,8 +69,8 @@ var HomeManager = (function () {
     }
 
     function initEcosystemGraph() {
-        var ecoGraph = $('#ecoGraph');
 
+        var ecoGraph = $('#ecoGraph');
         var items = ecoGraph.find('.graph-item');
         var ecoDesc = $('#ecoGraphDesc');
         var ecoInner = ecoDesc.find('h2,p');
@@ -77,7 +83,7 @@ var HomeManager = (function () {
         var arc_params;
         var radius = 300;
 
-        function driveTo(item, rotate, active) {
+        function goToItem(item, rotate, active) {
 
             var current = parseInt(item.attr('data-start'));
             var newValue = parseInt(current + rotate);
@@ -111,7 +117,6 @@ var HomeManager = (function () {
 
             ecoInner.removeClass('fadeIn').addClass('animated fadeOut');
             setTimeout(function () {
-                // icons = icons.clone();
                 rotate--;
                 if (rotate < 0) {
                     rotate = 5;
@@ -119,7 +124,7 @@ var HomeManager = (function () {
                 items.removeClass('active');
                 items.each(function (index) {
                     var el = $(this);
-                    driveTo(el, angle, index === rotate);
+                    goToItem(el, angle, index === rotate);
                 })
             }, 500);
         }
@@ -132,144 +137,172 @@ var HomeManager = (function () {
 
         items.each(function (index) {
             $(this).attr('data-start', 30 + index * 60);
-            $(this).click(function () {
+            $(this).off('click').click(function () {
+                clearInterval(ecoInterval);
                 var diff = rotate - index;
                 rotate = index + 1;
                 animate(diff * 60);
-                // clearInterval(interval);
-                // animate(360 - currentAngle % 360);
             });
         });
 
         animate(60);
 
-        // var interval = setInterval(function () {
-        //     animate(60);
-        // }, 5000);
-
-
+        ecoInterval = setInterval(function () {
+            animate(60);
+        }, 5000);
     }
 
     function init() {
+        var widthSmall = 767;
+        var widthLarge = 1200;
+        var win = $(window);
+        var owlProject, owlTeam, owlEcosystem;
+        var width = win.width();
+
         RevealManager.init({
             bars: true
         });
+
         CountDownManager.init();
         VideoManager.init();
         LoginPageEmbedded.init();
-        var modal = $('#mapModal');
-        $('#mapModalButton').click(function () {
-            modal.modal('show');
-        });
-        $('#closeMapModal').click(function () {
-            modal.modal('hide');
+
+        win.resize(function () {
+            width = $(this).width();
+            reloadItems();
         });
 
-
-        var modalCalculator = $('#calculatorModal');
-        $('#calculatorModalButton').click(function () {
-            modalCalculator.modal('show');
-        });
-        $('#closeCalculatorModal').click(function () {
-            modalCalculator.modal('hide');
-        });
-
-        $('.js-example-basic-single').select2({
-            minimumResultsForSearch: -1
-        });
-
-        $('html').mousemove(function (e) {
-
-            var wx = $(window).width();
-            var wy = $(window).height();
-
-            var x = e.pageX - this.offsetLeft;
-            var y = e.pageY - this.offsetTop;
-
-            var newx = x - wx / 2;
-            var newy = y - wy / 2;
-
-            $('#wrapper').find('div').each(function () {
-                var speed = $(this).attr('data-speed');
-                if ($(this).attr('data-revert')) speed *= -1;
-                TweenMax.to($(this), 1, {x: (1 - newx * speed), y: (1 - newy * speed)});
-            });
-
-        });
-
-        initEcosystemGraph();
-
-        var owlEcosystem = $(".eco-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 15000,
-            loop: true,
-            stagePadding: 40,
-            items: 1
-        });
-
-        $('.owlEcosystemNextBtn').click(function () {
-            owlEcosystem.trigger('next.owl.carousel');
-        });
-
-// Go to the previous item
-        $('.owlEcosystemPrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owlEcosystem.trigger('prev.owl.carousel', [300]);
-        });
-
-        var owlTeam = $(".team-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 15000,
-            loop: true,
-            stagePadding: 70,
-            items: 1
-        });
-
-        $('.owlTeamNextBtn').click(function () {
-            owlTeam.trigger('next.owl.carousel');
-        });
-
-// Go to the previous item
-        $('.owlTeamPrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owlTeam.trigger('prev.owl.carousel', [300]);
-        });
-
-        var owlProject = $(".project-items-carousel").owlCarousel({
-            autoHeight: true,
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 15000,
-            loop: true,
-            items: 1
-        });
-
-        $('.owlProjectNextBtn').click(function () {
-            owlProject.trigger('next.owl.carousel');
-        });
-
-// Go to the previous item
-        $('.owlProjectPrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owlProject.trigger('prev.owl.carousel', [300]);
-        });
-
-
-        $('#viewMoreCompanies').click(function () {
-            $('.company-row.additional').removeClass('additional');
-        });
-
-        $(window).resize(function () {
-            initCompanies()
-        });
+        function reloadItems() {
+            initProjects(width);
+            initEcoSystem(width);
+        }
 
         initRoadMap();
         initCompanies();
+        initTeam();
+        initAutoShow();
+        reloadItems();
+
+        function initAutoShow() {
+
+            $('html').mousemove(function (e) {
+
+                var wx = $(window).width();
+                var wy = $(window).height();
+
+                var x = e.pageX - this.offsetLeft;
+                var y = e.pageY - this.offsetTop;
+
+                var newx = x - wx / 2;
+                var newy = y - wy / 2;
+
+                $('#wrapper').find('div').each(function () {
+                    var speed = $(this).attr('data-speed');
+                    if ($(this).attr('data-revert')) speed *= -1;
+                    TweenMax.to($(this), 1, {x: (1 - newx * speed), y: (1 - newy * speed)});
+                });
+
+            });
+        }
+
+        function initEcoSystem(width) {
+
+            if (width < widthLarge) {
+
+                if (!owlEcosystem) {
+                    $('.graph-item').removeAttr('style');
+
+                    owlEcosystem = $(".eco-carousel").owlCarousel({
+                        autoplay: true,
+                        smartSpeed: 1000,
+                        autoplayTimeout: 15000,
+                        loop: true,
+                        stagePadding: 40,
+                        items: 1
+                    });
+
+                    $('.owlEcosystemNextBtn').off('click').click(function () {
+                        owlEcosystem.trigger('next.owl.carousel');
+                    });
+
+// Go to the previous item
+                    $('.owlEcosystemPrevBtn').off('click').click(function () {
+                        // With optional speed parameter
+                        // Parameters has to be in square bracket '[]'
+                        owlEcosystem.trigger('prev.owl.carousel', [300]);
+                    });
+
+                    ecoAnimation = false;
+                    clearInterval(ecoInterval);
+                }
+
+            } else {
+
+                if (owlEcosystem) {
+                    owlEcosystem.owlCarousel('destroy');
+                    owlEcosystem = null;
+                }
+
+                if (!ecoAnimation) {
+                    ecoAnimation = true;
+                    initEcosystemGraph();
+                }
+            }
+        }
+
+        function initProjects(width) {
+            if (width < widthSmall) {
+                if (!owlProject) {
+                    owlProject = $(".project-items-carousel").owlCarousel({
+                        autoHeight: true,
+                        autoplay: true,
+                        smartSpeed: 1000,
+                        autoplayTimeout: 15000,
+                        loop: true,
+                        items: 1
+                    });
+
+                    $('.owlProjectNextBtn').off('click').click(function () {
+                        owlProject.trigger('next.owl.carousel');
+                    });
+
+// Go to the previous item
+                    $('.owlProjectPrevBtn').off('click').click(function () {
+                        // With optional speed parameter
+                        // Parameters has to be in square bracket '[]'
+                        owlProject.trigger('prev.owl.carousel', [300]);
+                    });
+                }
+            } else {
+                if (owlProject) {
+                    owlProject.owlCarousel('destroy');
+                    owlProject = null;
+                }
+            }
+        }
+
+
+        function initTeam() {
+            owlTeam = $(".team-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                autoplayTimeout: 15000,
+                loop: true,
+                stagePadding: 70,
+                items: 1
+            });
+
+            $('.owlTeamNextBtn').off('click').click(function () {
+                owlTeam.trigger('next.owl.carousel');
+            });
+
+// Go to the previous item
+            $('.owlTeamPrevBtn').off('click').click(function () {
+                // With optional speed parameter
+                // Parameters has to be in square bracket '[]'
+                owlTeam.trigger('prev.owl.carousel', [300]);
+            });
+        }
 
     }
 

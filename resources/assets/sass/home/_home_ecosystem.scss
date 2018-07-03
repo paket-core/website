@@ -1,16 +1,8 @@
 .home-section.token-ecosystem {
   padding-bottom: 100px;
-  .eco-carousel-wrapper {
-    display: none;
-  }
+
   .title-desc {
     margin-bottom: 50px;
-  }
-
-  @include keyframes('spin') {
-    100% {
-      transform: rotate(1turn);
-    }
   }
 
   .eco-graph {
@@ -20,21 +12,6 @@
     $m: 50px;
     $s: 600px;
     position: relative;
-    //&.animated {
-    //  .graph-items {
-    //    //@include animation(spin 6s linear infinite);
-    //    &.reversed {
-    //      -webkit-animation-direction: normal;
-    //      -moz-animation-direction: reverse;
-    //      -ms-animation-direction: reverse;
-    //      -o-animation-direction: reverse;
-    //      animation-direction: reverse;
-    //    }
-    //  }
-    //  .graph-item {
-    //    //@include animation(spin 6s linear infinite);
-    //  }
-    //}
     .graph-items {
       top: $m;
       left: $m;
@@ -77,45 +54,6 @@
         height: $s2;
         @include box-shadow(rgba($colorGray, 0.2) 0px 0px 10px)
       }
-
-      //$l: 70px;
-      //$l2: 370px;
-      //
-      //$l3: -90px;
-      //$l4: 510px;
-      //
-      //$t1: -50px;
-      //$t2: 210px;
-      //$t3: 480px;
-
-      //&.graph-item-1 {
-      //  left: $l2;
-      //  top: $t1;
-      //}
-      //
-      //&.graph-item-6 {
-      //  left: $l;
-      //  top: $t1;
-      //}
-      //
-      //&.graph-item-5 {
-      //  left: $l3;
-      //  top: $t2;
-      //}
-      //
-      //&.graph-item-2 {
-      //  left: $l4;
-      //  top: $t2;
-      //}
-      //
-      //&.graph-item-4 {
-      //  left: $l;
-      //  top: $t3;
-      //}
-      //&.graph-item-3 {
-      //  left: $l2;
-      //  top: $t3;
-      //}
       img {
         display: inline-block;
         max-height: 80px;
@@ -134,7 +72,7 @@
   .eco-graph-text-section {
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 0;
     width: 360px;
     padding-left: 15px;
     .line-1 {
@@ -196,61 +134,102 @@
       position: absolute;
     }
   }
-  .eco-carousel {
-    .item {
-      margin-right: 5px;
-      margin-left: 5px;
-      text-align: center;
-      .graph-icon {
-        z-index: 3;
-        display: block;
-        margin: auto;
-        $s: 90px;
-        width: $s;
-        height: $s;
-        border-radius: $s/2;
-        background-color: $colorWhite;
-        padding: 0;
-        img {
-          margin-top: 20px;
-          display: inline-block;
-          max-height: 50px;
-          max-width: 50px;
-          width: auto;
-          height: auto;
-        }
-      }
-      .graph-title {
-        font-size: 17px;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-      .graph-desc {
-        color: rgb(102, 102, 102);
-        font-size: 17px;
-        line-height: 1.54;
-        text-align: justify;
-        margin-top: 20px;
-      }
-      .graph-wrapper {
-        z-index: 2;
-        background-color: $colorWhite;
-        margin-top: -60px;
-        padding: 20px;
-        padding-top: 50px;
-        min-height: 250px;
-      }
-    }
+
+  .owl-carousel {
+    display: inherit;
+  }
+  .owl-carousel-buttons {
+    display: none;
   }
 }
 
 @media (max-width: $sizeLarge) {
   .home-section.token-ecosystem {
-    .eco-carousel-wrapper {
+    padding-bottom: 50px;
+    .owl-carousel-buttons {
       display: inherit;
     }
-    .eco-graph-wrapper {
+    .graph-part {
       display: none;
+    }
+    .title-desc {
+      margin-bottom: 10px;
+    }
+    .eco-graph {
+      width: 100%;
+      height: inherit;
+      .graph-items {
+        position: inherit;
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .eco-carousel {
+      .graph-item {
+        position: inherit;
+        right: inherit;
+        left: inherit;
+        top: inherit;
+        .inner {
+          display: inline-block;
+          margin: auto;
+          box-shadow: none;
+          $s: 120px;
+          width: $s;
+          height: $s;
+        }
+      }
+      .graph-item {
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        border-radius: 0;
+        border-color: transparent !important;
+        .graph-icon {
+          z-index: 3;
+          display: block;
+          margin: auto;
+          $s: 90px;
+          width: $s;
+          height: $s;
+          border-radius: $s/2;
+          background-color: $colorWhite;
+          padding: 0;
+          img {
+            //margin-top: 20px;
+            display: inline-block;
+            $s: 70px;
+            max-height: $s;
+            max-width: $s;
+            width: auto;
+            height: auto;
+          }
+        }
+        .graph-title {
+          font-size: 17px;
+          font-weight: bold;
+          text-transform: uppercase;
+          display: inherit;
+        }
+        .graph-desc {
+          display: inherit;
+          color: rgb(102, 102, 102);
+          font-size: 17px;
+          line-height: 1.54;
+          text-align: justify;
+          margin-top: 20px;
+        }
+        .text-wrapper {
+          z-index: 2;
+          background-color: $colorWhite;
+          margin-top: -60px;
+          padding: 20px;
+          padding-top: 50px;
+          min-height: 250px;
+        }
+      }
     }
   }
 }
