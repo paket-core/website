@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-7 col-md-push-5 video-wrapper">
                 <div class="video">
-                    <video loop muted autoplay poster="/video/paket_header.jpg">
+                    <video loop muted autoplay poster="/video/paket_header.jpeg">
                         <source src="/video/paket_header_2.mp4" type="video/mp4">
                         <source src="/video/paket_header_2.ogv" type="video/ogg">
                         <source src="/video/paket_header_2.webm" type="video/webm">

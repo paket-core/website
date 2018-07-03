@@ -5,9 +5,9 @@
 
             <div class="project-item row">
                 <div class="col-md-6 col-md-push-6 center img-section">
-                    <img src="/images/custom/token-sale-new/01-decentralized_box.png"
-                         srcset="/images/custom/token-sale-new/01-decentralized_box.png 2x,
-             /images/custom/token-sale-new/01-decentralized_box.png 3x"
+                    <img src="/images/custom/token-sale-new/01_decentralized_box_s.jpeg"
+                         srcset="/images/custom/token-sale-new/01_decentralized_box_m.jpeg 2x,
+             /images/custom/token-sale-new/01_decentralized_box_b.jpeg 3x"
                          alt="@lang('home.project_1_title')"
                     >
                 </div>
@@ -19,9 +19,9 @@
 
             <div class="project-item row">
                 <div class="col-md-6 center img-section">
-                    <img src="/images/custom/token-sale-new/02-stellar.png"
-                         srcset="/images/custom/token-sale-new/02-stellar.png 2x,
-             /images/custom/token-sale-new/02-stellar.png 3x"
+                    <img src="/images/custom/token-sale-new/02_stellar_s.jpeg"
+                         srcset="/images/custom/token-sale-new/02_stellar_m.jpeg 2x,
+             /images/custom/token-sale-new/02_stellar_b.jpeg 3x"
                          alt="@lang('home.project_2_title')"
                     >
                 </div>
@@ -33,7 +33,10 @@
 
             <div class="project-item row protocol-item">
                 <div class="col-md-6 col-md-push-6 center protocol-img img-section">
-                    <img src="/images/custom/token-sale-new/03-protocol_s.png" alt="@lang('home.project_3_title')">
+                    <img src="/images/custom/token-sale-new/03_protocol_s.jpeg"
+                         srcset="/images/custom/token-sale-new/03_protocol_m.jpeg 2x,
+             /images/custom/token-sale-new/03_protocol_b.jpeg 3x"
+                         alt="@lang('home.project_3_title')">
                 </div>
                 <div class="col-md-6 col-md-pull-6 center text-section">
                     <p class="title">@lang('home.project_3_title')</p>
@@ -54,9 +57,9 @@
             </div>
             <div class="project-item row">
                 <div class="col-md-6 center img-section">
-                    <img src="/images/custom/token-sale-new/04-sharing-economy.png"
-                         srcset="/images/custom/token-sale-new/04-sharing-economy.png 2x,
-             /images/custom/token-sale-new/04-sharing-economy.png 3x"
+                    <img src="/images/custom/token-sale-new/04_sharing_economy_s.jpeg"
+                         srcset="/images/custom/token-sale-new/04_sharing_economy_m.jpeg 2x,
+             /images/custom/token-sale-new/04_sharing_economy_b.jpeg 3x"
                          alt="@lang('home.project_4_title')">
                 </div>
                 <div class="col-md-6 center text-section">
@@ -67,9 +70,9 @@
 
             <div class="project-item row">
                 <div class="col-md-6 col-md-push-6 center img-section">
-                    <img src="/images/custom/token-sale-new/05-environmentally.png"
-                         srcset="/images/custom/token-sale-new/05-environmentally.png 2x,
-             /images/custom/token-sale-new/05-environmentally.png 3x"
+                    <img src="/images/custom/token-sale-new/05_environmentally_s.jpeg"
+                         srcset="/images/custom/token-sale-new/05_environmentally_m.jpeg 2x,
+             /images/custom/token-sale-new/05_environmentally_b.jpeg 3x"
                          alt="@lang('home.project_5_title')">
                 </div>
                 <div class="col-md-6 col-md-pull-6 center text-section">
@@ -80,9 +83,9 @@
 
             <div class="project-item row">
                 <div class="col-md-6 center img-section">
-                    <img src="/images/custom/token-sale-new/06-p2p-delivers.png"
-                         srcset="/images/custom/token-sale-new/06-p2p-delivers.png 2x,
-             /images/custom/token-sale-new/06-p2p-delivers.png 3x"
+                    <img src="/images/custom/token-sale-new/06_p2p_delivers_s.jpeg"
+                         srcset="/images/custom/token-sale-new/06_p2p_delivers_m.jpeg 2x,
+             /images/custom/token-sale-new/06_p2p_delivers_b.jpeg 3x"
                          alt="@lang('home.project_6_title')"
                     >
                 </div>
@@ -93,9 +96,9 @@
             </div>
             <div class="project-item row">
                 <div class="col-md-6 col-md-push-6 center img-section">
-                    <img src="/images/custom/token-sale-new/07-un-commerced-majority.png"
-                         srcset="/images/custom/token-sale-new/07-un-commerced-majority.png 2x,
-             /images/custom/token-sale-new/07-un-commerced-majority.png 3x"
+                    <img src="/images/custom/token-sale-new/07_un_commerced_majority_s.jpeg"
+                         srcset="/images/custom/token-sale-new/07_un_commerced_majority_m.jpeg 2x,
+             /images/custom/token-sale-new/07_un_commerced_majority_b.jpeg 3x"
                          alt="@lang('home.project_7_title')"
                     >
                 </div>
