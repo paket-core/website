@@ -18,7 +18,6 @@
         $size: 340px;
         height: $size *1.2;
         width: $size;
-        //border-radius: $size/2;
         overflow: hidden;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -27,8 +26,6 @@
         margin: auto;
         margin-bottom: 27px;
         position: relative;
-        //-webkit-filter: grayscale(100%) brightness(110%);
-        //filter: grayscale(100%) brightness(110%);
       }
       .icon {
         margin-left: 10px;
@@ -54,49 +51,47 @@
         position: absolute;
         right: 20px;
         top: 350px;
-        &.icon-github{
-          .icon{
+        &.icon-github {
+          .icon {
             font-size: 20px;
           }
         }
       }
     }
   }
-  .team-carousel-wrapper {
+  .owl-carousel {
+    display: inherit;
+    margin: 0;
+  }
+  .owl-carousel-buttons {
     display: none;
-    .member {
-      margin: auto;
-      max-width: 170px;
-      .img {
-        $size: 170px;
-        height: $size  *1.2;
-        width: $size;
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .home-section.home-team {
+    padding-top: 20px;
+    .team-carousel-wrapper {
+      .member {
+        margin: auto;
+        max-width: 170px;
+        width: 100%;
+        padding: 0;
+        .img {
+          $size: 170px;
+          height: $size  *1.2;
+          width: $size;
+        }
       }
     }
-  }
-}
-
-@media (max-width: $sizeSmall) {
-  .home-section.home-team {
-    .team-members-wrapper {
-      display: none;
-    }
-    .team-carousel-wrapper {
+    .owl-carousel-buttons {
       display: inherit;
     }
-    &.home-team {
-      padding-top: 20px;
-    }
-  }
-}
-
-@media (max-width: $sizeSmall) {
-  .home-section.home-team {
-    .member{
+    .member {
       .icon-wrapper {
         top: 165px;
         right: 10px;
-        .icon{
+        .icon {
           $s: 30px;
           font-size: 12px;
           width: $s;
@@ -104,8 +99,8 @@
           line-height: $s - 4;
           border-radius: $s/2;
         }
-        &.icon-github{
-          .icon{
+        &.icon-github {
+          .icon {
             font-size: 16px;
           }
         }

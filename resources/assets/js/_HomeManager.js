@@ -146,7 +146,7 @@ var HomeManager = (function () {
         });
 
         animate(60);
-
+        clearInterval(ecoInterval);
         ecoInterval = setInterval(function () {
             animate(60);
         }, 5000);
@@ -175,11 +175,11 @@ var HomeManager = (function () {
         function reloadItems() {
             initProjects(width);
             initEcoSystem(width);
+            initTeam(width);
         }
 
         initRoadMap();
         initCompanies();
-        initTeam();
         initAutoShow();
         reloadItems();
 
@@ -203,6 +203,35 @@ var HomeManager = (function () {
                 });
 
             });
+        }
+
+        function initTeam(width) {
+            if (width < widthSmall) {
+                owlTeam = $(".team-carousel").owlCarousel({
+                    autoplay: true,
+                    smartSpeed: 1000,
+                    autoplayTimeout: 15000,
+                    loop: true,
+                    stagePadding: 70,
+                    items: 1
+                });
+
+                $('.owlTeamNextBtn').off('click').click(function () {
+                    owlTeam.trigger('next.owl.carousel');
+                });
+
+// Go to the previous item
+                $('.owlTeamPrevBtn').off('click').click(function () {
+                    // With optional speed parameter
+                    // Parameters has to be in square bracket '[]'
+                    owlTeam.trigger('prev.owl.carousel', [300]);
+                });
+            } else {
+                if (owlTeam) {
+                    owlTeam.owlCarousel('destroy');
+                    owlTeam = null;
+                }
+            }
         }
 
         function initEcoSystem(width) {
@@ -279,29 +308,6 @@ var HomeManager = (function () {
                     owlProject = null;
                 }
             }
-        }
-
-
-        function initTeam() {
-            owlTeam = $(".team-carousel").owlCarousel({
-                autoplay: true,
-                smartSpeed: 1000,
-                autoplayTimeout: 15000,
-                loop: true,
-                stagePadding: 70,
-                items: 1
-            });
-
-            $('.owlTeamNextBtn').off('click').click(function () {
-                owlTeam.trigger('next.owl.carousel');
-            });
-
-// Go to the previous item
-            $('.owlTeamPrevBtn').off('click').click(function () {
-                // With optional speed parameter
-                // Parameters has to be in square bracket '[]'
-                owlTeam.trigger('prev.owl.carousel', [300]);
-            });
         }
 
     }
