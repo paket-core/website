@@ -22,6 +22,11 @@ class ICOService
         return '/pdf/factsheet.pdf';
     }
 
+    public static function get_video_id()
+    {
+        return 'GXI9KRIznsY';
+    }
+
     /**
      * @return bool
      */

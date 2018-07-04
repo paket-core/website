@@ -9,6 +9,7 @@ $lang_reload = isset($lang_reload) && $lang_reload ? 'yes' : 'no' ?>
             </li>
         @endforeach
     </ul>
+    <div class="down-icon"><i class="icon-chevron-down"></i> </div>
 </div>
 @include('partials.language_modal',[
 'lang_reload' =>  $lang_reload

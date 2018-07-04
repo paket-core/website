@@ -10,8 +10,23 @@
       max-width: 880px;
       display: block;
       margin: auto;
+      padding: 20px 30px;
+      &.top-desc {
+        border: solid $colorPaketBlue 2px;
+        border-radius: 20px;
+        @include box-shadow(rgba($colorPaketBlue, 0.2) 7px 7px 20px);
+        margin-bottom: 30px;
+      }
       &.desc-2 {
         margin-bottom: 30px;
+      }
+      ul.dotted-list {
+        li {
+          padding-left: 20px;
+          .dot {
+            background-color: $colorPaketBlue;
+          }
+        }
       }
     }
     .video {

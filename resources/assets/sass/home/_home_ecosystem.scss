@@ -180,8 +180,7 @@
         }
       }
       .graph-item {
-        margin-right: 5px;
-        margin-left: 5px;
+        padding: 0 2px;
         text-align: center;
         width: inherit;
         height: inherit;
@@ -212,11 +211,12 @@
           font-weight: bold;
           text-transform: uppercase;
           display: inherit;
+          word-wrap: break-word;
         }
         .graph-desc {
           display: inherit;
           color: rgb(102, 102, 102);
-          font-size: 17px;
+          font-size: 16px;
           line-height: 1.54;
           text-align: justify;
           margin-top: 20px;
@@ -225,9 +225,9 @@
           z-index: 2;
           background-color: $colorWhite;
           margin-top: -60px;
-          padding: 20px;
+          padding: 10px;
           padding-top: 50px;
-          min-height: 250px;
+          min-height: 290px;
         }
       }
     }

@@ -15,13 +15,13 @@
                     <div class="col-md-12">
                         <h2 class="top-title">@lang('home.top_title')</h2>
                         <div class="top-desc">@lang('home.top_desc')</div>
-                        <div class="play play-button" data-video-src="GXI9KRIznsY"
+                        <div class="play play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}"
                              data-target="#videoModal"
                              id="playVideoButton">
                             <div class="play-left">
-                                <img src="/images/custom/token-sale-new/play-icon.png"
-                                     srcset="/images/custom/token-sale-new/play-icon@2x.png 2x,
-             /images/custom/token-sale-new/play-icon@3x.png 3x"
+                                <img src="/images/custom/token-sale-new/yt_s.png"
+                                     srcset="/images/custom/token-sale-new/yt_m.png 2x,
+             /images/custom/token-sale-new/yt_b.png 3x"
                                      alt="@lang('home.play_video')"
                                      class="play-icon">
                             </div>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-12 down-actions">
                         <a href="{{route('token-sale')}}">
-                            <div class="btn-join">
+                            <div class="btn-join sheen">
                                 <div class="inner">
                                     <span class="img"><img src="/images/custom/token-sale-new/join-ico-icon.png"
                                                            srcset="/images/custom/token-sale-new/join-ico-icon@2x.png 2x,

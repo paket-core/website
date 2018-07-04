@@ -1,3 +1,6 @@
+.icon-chevron-down {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90f;');
+}
 .icon-arrow_back {
   *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
 }
