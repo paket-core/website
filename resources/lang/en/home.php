@@ -78,7 +78,7 @@ return [
 
     'road_map_title' => 'Road Map',
 
-    'top_title' => 'PAKET',
+    'top_title' => 'WE ARE PAKET',
     'top_desc' => 'The Decentralized Delivery Network',
     'play_video' => 'Play Video',
     'top_join_now' => 'Token Sale Info',

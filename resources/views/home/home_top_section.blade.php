@@ -18,17 +18,11 @@
                         <div class="play play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}"
                              data-target="#videoModal"
                              id="playVideoButton">
-                            <div class="play-left">
-                                <img src="/images/custom/token-sale-new/yt_s.png"
-                                     srcset="/images/custom/token-sale-new/yt_m.png 2x,
+                            <img src="/images/custom/token-sale-new/yt_s.png"
+                                 srcset="/images/custom/token-sale-new/yt_m.png 2x,
              /images/custom/token-sale-new/yt_b.png 3x"
-                                     alt="@lang('home.play_video')"
-                                     class="play-icon">
-                            </div>
-                            <div class="play-right">
-                                @lang('home.play_video')
-                            </div>
-
+                                 alt="@lang('home.play_video')"
+                                 class="play-icon">
                         </div>
                     </div>
                     <div class="col-md-12 top-actions">

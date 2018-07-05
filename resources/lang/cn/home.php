@@ -57,7 +57,7 @@ return [
     'endorsements_desc' => '我们非常感谢一路上帮助我们的多位德高望重的人士，但我们特别感谢签署PAKET项目官方担保书的下列行业领袖。',
     'endorsements_link' => '在此处阅读',
     'road_map_title' => '路线图',
-    'top_title' => 'PAKET',
+    'top_title' => 'WE ARE PAKET',
     'top_desc' => '开放包裹运送协议，让国际、本地和个人快递公司通力合作',
     'play_video' => '播放视频',
     'top_join_now' => '代币销售信息',
