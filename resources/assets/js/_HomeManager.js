@@ -206,13 +206,13 @@ var HomeManager = (function () {
         }
 
         function initTeam(width) {
-            if (width < widthSmall) {
+            if (width <= widthSmall) {
                 owlTeam = $(".team-carousel").owlCarousel({
                     autoplay: true,
                     smartSpeed: 1000,
                     autoplayTimeout: 15000,
                     loop: true,
-                    stagePadding: 70,
+                    stagePadding: 30,
                     items: 1
                 });
 

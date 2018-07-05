@@ -18,6 +18,7 @@
         $size: 340px;
         height: $size *1.2;
         width: $size;
+        max-width: 100%;
         overflow: hidden;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -74,7 +75,8 @@
     .team-carousel-wrapper {
       .member {
         margin: auto;
-        max-width: 170px;
+        min-width: 170px;
+        max-width: inherit;
         width: 100%;
         padding: 0;
         .img {
@@ -103,6 +105,19 @@
           .icon {
             font-size: 16px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sizeExtraSmall) {
+  .home-section.home-team {
+    .team-carousel-wrapper {
+      .member {
+        .img {
+          width: 100%;
+          max-width: 170px;
         }
       }
     }

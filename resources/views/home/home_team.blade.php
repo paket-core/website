@@ -9,7 +9,7 @@
         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-sm-12 col-sm-offset-0 center team-members-wrapper team-carousel-wrapper">
             <div class="row team-members owl-carousel team-carousel">
                 @foreach($members as $member)
-                    <div class="member col-sm-6">
+                    <div class="member col-xs-6 col-sm-6">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}_m.jpeg?ver=1kx72')">
                             @if ($member->linkedin)<a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i

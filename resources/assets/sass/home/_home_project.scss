@@ -113,6 +113,9 @@ ul.dotted-list {
       .owl-carousel-buttons {
         display: inherit;
       }
+      .project-items-carousel-buttons > div {
+        top: 120px;
+      }
       .project-items-carousel {
         position: relative;
         .title {
@@ -130,6 +133,7 @@ ul.dotted-list {
           max-height: 200px;
           width: auto;
           height: auto;
+          margin-bottom: 20px;
         }
         .img-wrapper {
           display: inline-block;
