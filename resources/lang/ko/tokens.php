@@ -25,7 +25,7 @@ return [
     'tokens_app_item_1_num' => '1',
     'tokens_app_item_1_title' => '앱을 통한 참여',
     'tokens_app_item_1_desc_1' => '가장 쉬운 참가방법은 당사의 플랫폼에서 개발된 애플리케이션을 통한 참여방법입니다. 먼저 앱을 다운로드하고 토큰세일 섹션으로 이동하셔서 기재된 주소로 입금을 진행합니다. 입금 확인 후, BUL토큰이 지급되며 애플리케이션 상에서 보유 BUL토큰을 확인하실 수 있습니다. ',
-    'tokens_app_item_1_desc_2' => '*(I believe it is more natural not to translate this) LEVAE IT BLANK',
+    'tokens_app_item_1_desc_2' => '',
     'tokens_app_item_2_num' => '2',
     'tokens_app_item_2_title' => '개인 스텔라 지갑을 통한 참여',
     'tokens_app_item_2_desc_1' => '또 다른 옵션으로 개인소유의 스텔라 지갑을 통해서도 참가가 가능합니다. ',
