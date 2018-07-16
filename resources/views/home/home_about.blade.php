@@ -1,25 +1,19 @@
-<section class="home-section home-about dark center">
+<div class="home-section home-about dark center">
     <div class="container">
-        <div class="col-md-12 center">
-            <h2 class="title">@lang('home.about_title')</h2>
-        </div>
 
         <div class="col-md-12 center">
-            <div class="desc top-desc">
-                <ul class="dotted-list">
-                    <li>
-                        <span class="dot"></span><span>@lang('home.about_desc_1_li_1')</span></li>
-                    <li>
-                        <span class="dot"></span><span>@lang('home.about_desc_1_li_2')</span></li>
-                    <li>
-                        <span class="dot"></span><span>@lang('home.about_desc_1_li_3')</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md-12 center">
-            <div class="video play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}">
-                <img src="/images/screens/about_video.png" alt="@lang('home.about_title')">
+            <div id="playVideoButton" class="video play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}">
+                <img src="/images/home/video.png"
+                     srcset="/images/home/video@2x.png 2x,
+             /images/home/video@3x.png 3x"
+                     alt="@lang('home.about_title')
+                             ">
+                <img src="/images/home/you-tube.png"
+                     srcset="/images/home/you-tube@2x.png 2x,
+             /images/home/you-tube@3x.png 3x"
+                     alt="@lang('home.about_title')"
+                     class="youtube-img"
+                >
             </div>
         </div>
 
@@ -29,12 +23,5 @@
             </div>
         </div>
 
-        <div class="col-md-12 center">
-            <div class="buttons">
-                <a class="video play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}">
-                    <div class="btn btn-join">@lang('home.play_video')</div>
-                </a>
-            </div>
-        </div>
     </div>
-</section>
+</div>

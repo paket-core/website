@@ -1,303 +1,221 @@
 .home-top-section {
-  margin-top: 74px;
-  @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
-  border-bottom: solid #e9e9e9 1px;
+  margin-top: 50px;
   position: relative;
+  .video-wrapper {
+    overflow: hidden;
+    @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
+    video {
+      max-width: 100%;
+      margin-top: -50px;
+    }
+  }
   .home-top-content {
     margin-top: 120px;
-  }
-  .top-map-image {
-    max-width: 150%;
-    margin-left: -20%;
-  }
-  .top-desc {
-    display: inline-block;
-    font-size: 18.4px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.4px;
-    color: $colorFont;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
+    padding-bottom: 70px;
   }
   .top-title {
-    font-size: 52px;
+    font-size: 78px;
     line-height: 80px;
     letter-spacing: 0.4px;
-    color: $colorFont;
+    color: $colorFontLighter;
+    font-weight: bold;
     text-align: center;
     float: left;
     margin-top: 60px;
     width: 100%;
   }
-  .play {
-    margin: auto;
+  .top-desc {
     display: inline-block;
-    width: 90px;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 0;
-    position: relative;
-    img {
-      @include transition(opacity 500ms)
-    }
-    &:hover {
-      img {
-        opacity: 0.9;
-      }
-    }
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    color: $colorPaketBlue;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 10px;
   }
   .top-actions {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     a {
-      margin-right: 20px;
       display: inline-block;
+      margin-right: 30px;
       &:nth-last-child(1) {
         margin-right: 0;
       }
     }
   }
-  .down-actions a {
-    display: inline-block;
-    margin: auto;
-    min-width: 90%;
-  }
-  .btn-top-action {
-    width: 100%;
-    max-width: 200px;
-    height: 43px;
-    border-radius: 20px;
-    float: left;
-    border: solid 1px rgba(0, 0, 0, 0.25);
-    line-height: 43px;
+  .btn-home {
     position: relative;
-    color: $colorFont;
-    &:hover {
-      color: $colorPaketBlue;
-      border-color: $colorPaketBlue;
-    }
-    padding-left: 50px;
-    padding-right: 30px;
+    min-width: 160px;
+    height: inherit;
+    border-radius: 15px;
+    border: solid 1px $colorPaketBlue;
+    padding-left: 55px;
+    padding-right: 15px;
+    line-height: 32px;
     img {
       position: absolute;
-      left: 20px;
-      top: 10px;
+      left: 5px;
+      top: -12px;
     }
-    &.btn-top-action-2 {
-      max-width: 260px;
-      height: inherit;
-      padding: 0 30px;
-      padding-left: 50px;
-      img {
-        margin-top: 2px;
-        left: 15px;
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+      color: $colorPaketBlue;
+    }
+    &.btn-token-sale {
+      background-color: $colorPaketBlue;
+      span {
+        color: $colorWhite;
       }
     }
   }
-  .btn-join {
-    border-radius: 30px;
-    background-color: $colorPaketBlue;
-    max-width: 470px;
-    width: 100%;
-    color: $colorWhite;
-    line-height: 54px;
-    font-size: 23.1px;
-    font-weight: 500;
-    display: inline-block;
-    height: 54px;
-    .inner {
-      display: inline-block;
+  .believe-section {
+    padding-bottom: 60px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: -120px;
+    .icon {
+      display: block;
+      position: relative;
       margin: auto;
+      $s: 88px;
+      width: $s;
+      height: $s;
+      border: solid 2px $colorPaketBlue;
+      border-radius: $s/2;
+      .icon-people {
+        margin-top: 25px;
+      }
+      .icon-global {
+        margin-top: 20px;
+      }
+      .icon-decentralized {
+        margin-top: 15px;
+      }
     }
-    span {
-      float: left;
-      line-height: 54px;
-    }
-    .img {
-      padding-top: 8px;
-      margin-right: 10px;
-      height: 54px;
-    }
-    &:hover {
-      background-color: $colorPaketBlueDarken;
-    }
-  }
-  .top-actions {
-    display: inline-block;
-  }
-
-  .video video {
-    display: inline-block;
-    max-width: 100%;
-  }
-  .img-video-top {
-    display: none;
-  }
-  &.ru {
-    .btn-join {
+    .title {
       font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: $colorPaketBlue;
+      text-transform: uppercase;
+      margin: 20px auto;
+    }
+    .desc {
+      max-width: 240px;
+      display: block;
+      margin: auto;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+      text-align: center;
+      color: $colorFont3;
     }
   }
 }
 
 @media (max-width: $sizeLarge) {
   .home-top-section {
-    .top-title {
-      margin-top: 160px;
-    }
-    .play {
-      margin-left: auto;
-      display: inline-block;
-      position: inherit;
-      max-width: 240px;
-    }
-    .top-actions {
-      width: 100%;
-      a {
-        margin-right: 2px;
-        &:nth-last-child(1) {
-          margin-bottom: 0;
-        }
-      }
-    }
-    .down-actions a {
-      min-width: 380px;
-    }
-    .video-text-wrapper {
-      margin-top: -120px;
-      padding-right: 0;
-      .top-actions, .down-actions {
-        padding: 0;
-      }
-    }
+
   }
 }
 
 @media (max-width: $sizeMedium) {
   .home-top-section {
-    background-color: $colorWhite;
-    background-image: none;
-    min-height: inherit;
-    margin-top: 60px;
-    .container {
-      max-width: inherit;
+    margin-top: 90px;
+    .believe-section {
       width: 100%;
-    }
-    .video-wrapper {
-      @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
-      width: 100%;
-    }
-    .video-bg {
-      display: none;
-    }
-    .home-top-content {
-      margin-top: 0;
-    }
-    .play {
-      float: none;
-    }
-    .video-bg {
-      position: inherit;
-      min-height: 180px;
-      width: 100%;
-    }
-    .top-map-image {
-      max-width: 90%;
-      margin-left: auto;
-    }
-    .top-title {
-      width: 100%;
-      text-align: center;
-    }
-    .play, .top-title {
-      width: 100%;
-    }
-    .top-title {
-      margin-top: -50px;
-      padding-right: 0;
-    }
-    .top-desc {
-      text-align: center;
-      width: 100%;
-      max-width: 100%;
-    }
-    .top-actions {
-      padding: 0 5px;
-    }
-    .btn-top-action {
-      width: auto;
-      padding-left: 35px;
-      padding-right: 10px;
-      img {
-        left: 10px;
-      }
-    }
-    .btn-top-action.btn-top-action-1 {
-      max-width: inherit;
-      margin-right: 10px;
-    }
-    .btn-top-action.btn-top-action-2 {
-      max-width: inherit;
-      img {
-        left: 8px;
-      }
-    }
-    .btn-join {
-      font-size: 18px;
-      margin-bottom: 30px;
-      float: none;
-      max-width: 330px;
-      line-height: 46px;
-    }
-    .img-video-top {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: auto;
-    }
-    .top-actions a {
-      display: inline-block;
-      float: none;
-    }
-    &.ru, &.en {
-      .btn-top-action.btn-top-action-2 {
-        display: inline-block;
-        margin: auto;
-        text-align: center;
-      }
-      a {
-        .btn-top-action {
-          float: none;
-        }
-      }
-      .btn-join {
-        max-width: inherit;
-      }
     }
   }
 }
 
 @media (max-width: $sizeSmall) {
   .home-top-section {
+    margin-top: 40px;
     .top-title {
-      font-size: 40px;
-      margin-top: -30px;
+      font-size: 50px;
     }
-    .video-text-wrapper {
-      margin-top: -20px;
-      .top-actions, .down-actions {
-        width: 100%;
-        padding: 0 30px 0;
+    .top-desc {
+      font-size: 26px;
+    }
+    .video-wrapper {
+      video {
+        margin-top: 0;
       }
     }
-    &.ru {
-      .btn-join {
-        font-size: 14px;
+    .top-actions {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      a {
+        min-width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        &:nth-last-child(1) {
+          margin-right: auto;
+        }
+      }
+    }
+    .btn-home {
+      min-width: initial;
+      max-width: 260px;
+      width: 100%;
+      display: inline-block;
+      margin: auto;
+      line-height: 50px;
+      padding: 0 20px;
+      img {
+        position: initial;
+        float: left;
+        margin-top: 8px;
+      }
+    }
+    .believe-section {
+      margin-top: -30px;
+      .believe-item {
+        position: relative;
+        padding-left: 120px;
+        min-height: 90px;
+        margin-bottom: 30px;
+      }
+      .icon {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        $s: 60px;
+        width: $s;
+        height: $s;
+        img {
+          max-width: 70%;
+        }
+        .icon-people {
+          margin-top: 17px;
+        }
+        .icon-global {
+          margin-top: 15px;
+        }
+        .icon-decentralized {
+          margin-top: 8px;
+        }
+      }
+      .title, .desc {
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+      }
+      .title {
+        margin-bottom: 10px;
+      }
+      .desc {
+        max-width: initial;
       }
     }
   }
@@ -305,22 +223,46 @@
 
 @media (max-width: $sizeExtraSmall) {
   .home-top-section {
-    .video-text-wrapper {
-      padding: 0 10px;
+    .top-title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-top: 60px;
     }
-    .top-actions, .down-actions {
-      padding: 0 15px !important;
+    .top-desc {
+      font-size: 20px;
+      margin: 15px auto;
     }
-    .top-actions a {
-      width: 100%;
-      margin-bottom: 0;
-      & > div {
-        width: 100%;
-        margin-bottom: 20px;
+    .top-actions {
+      margin-top: 10px;
+    }
+    .believe-section {
+      .believe-item {
+        padding-left: 20px;
+        margin-bottom: 30px;
       }
-    }
-    .down-actions a {
-      min-width: 100%;
+      .icon {
+        position: initial;
+        display: inline-block;
+        left: initial;
+        float: left;
+      }
+      .top-wrapper {
+        display: inline-block;
+        margin: auto;
+      }
+      .title {
+        margin-top: 8px;
+        min-height: 60px;
+        max-width: 160px;
+        width: initial;
+        margin-left: 20px;
+        float: left;
+        text-align: center;
+      }
+      .desc {
+        padding: 0 20px;
+        text-align: center;
+      }
     }
   }
 }

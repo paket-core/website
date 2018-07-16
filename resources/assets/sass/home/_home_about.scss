@@ -1,50 +1,32 @@
 .home-section {
   &.home-about {
     .desc {
-      font-size: 17.1px;
-      font-weight: 300;
       line-height: 1.54;
       letter-spacing: 0.3px;
-      text-align: justify;
-      color: #000000;
-      max-width: 880px;
+      max-width: 815px;
       display: block;
       margin: auto;
       padding: 20px 30px;
-      &.top-desc {
-        border: solid $colorPaketBlue 2px;
-        border-radius: 20px;
-        @include box-shadow(rgba($colorPaketBlue, 0.2) 7px 7px 20px);
-        margin-bottom: 30px;
-      }
-      &.desc-2 {
-        margin-bottom: 30px;
-      }
-      ul.dotted-list {
-        li {
-          padding-left: 20px;
-          .dot {
-            background-color: $colorPaketBlue;
-          }
-        }
-      }
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      color: #262626;
     }
     .video {
       margin-top: 30px;
       margin-bottom: 30px;
       cursor: pointer;
-    }
-    .btn-join {
-      min-width: 221px;
-      line-height: 39px;
-      padding: 0 20px;
-      border-radius: 24.5px;
-      background-color: $colorPaketBlue;
-      color: $colorWhite;
-      margin-top: 40px;
-      &:hover {
-        background-color: $colorPaketBlueDarken;
+      position: relative;
+      &:hover{
+        opacity: 0.8;
       }
+    }
+    .youtube-img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -42px;
+      margin-top: -30px;
     }
     .dotted-list {
       .dot {
