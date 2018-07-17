@@ -138,8 +138,30 @@
   .owl-carousel {
     display: inherit;
   }
+
+  .eco-carousel-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
   .owl-carousel-buttons {
     display: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    $m: 15px;
+    .owlEcosystemPrevBtn {
+      margin-right: 0;
+      float: left;
+      margin-left: $m;
+    }
+    .owlEcosystemNextBtn {
+      float: right;
+      margin-right: $m;
+    }
   }
 }
 
@@ -155,6 +177,9 @@
     .title-desc {
       margin-bottom: 10px;
     }
+    .eco-graph-wrapper{
+      padding: 0;
+    }
     .eco-graph {
       width: 100%;
       height: inherit;
@@ -162,6 +187,9 @@
         position: inherit;
         width: inherit;
         height: inherit;
+        left: inherit;
+        top: inherit;
+        padding-top: 20px;
       }
     }
     .eco-carousel {

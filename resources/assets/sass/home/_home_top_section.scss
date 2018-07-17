@@ -236,9 +236,13 @@
       margin-top: 10px;
     }
     .believe-section {
+      padding-bottom: 35px;
       .believe-item {
         padding-left: 20px;
         margin-bottom: 30px;
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
       }
       .icon {
         position: initial;

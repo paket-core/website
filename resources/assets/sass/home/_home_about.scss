@@ -17,11 +17,11 @@
       margin-bottom: 30px;
       cursor: pointer;
       position: relative;
-      &:hover{
+      &:hover {
         opacity: 0.8;
       }
     }
-    .youtube-img{
+    .youtube-img {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -40,6 +40,8 @@
   .home-section {
     &.home-about {
       .video {
+        margin-top: 0;
+        margin-bottom: 15px;
         img {
           max-width: 100%;
         }
@@ -49,7 +51,7 @@
         box-shadow: none;
         padding: 0;
       }
-      .desc.desc-2{
+      .desc.desc-2 {
         padding: 0;
       }
     }

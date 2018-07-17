@@ -31,3 +31,10 @@
     }
   }
 }
+
+@media (max-width: $sizeSmall) {
+  .home-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}

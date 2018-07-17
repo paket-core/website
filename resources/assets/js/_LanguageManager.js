@@ -4,7 +4,7 @@ var LanguageManager = (function () {
 
     function init() {
         enableMenu();
-        detectLanguage();
+        // detectLanguage();
         preload();
         fixMenuOnMobile();
     }
