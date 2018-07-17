@@ -3,9 +3,9 @@
 
         <div class="col-md-12 center">
             <div id="playVideoButton" class="video play-button" data-video-src="{{\App\Services\ICOService::get_video_id()}}">
-                <img src="/images/home/video.png"
-                     srcset="/images/home/video@2x.png 2x,
-             /images/home/video@3x.png 3x"
+                <img src="/images/home/video.jpg"
+                     srcset="/images/home/video@2x.jpg 2x,
+             /images/home/video@3x.jpg 3x"
                      alt="@lang('home.about_title')
                              ">
                 <img src="/images/home/you-tube.png"
