@@ -36,6 +36,7 @@
                     <img src="/images/custom/token-sale-new/03_protocol_s.jpeg"
                          srcset="/images/custom/token-sale-new/03_protocol_m.jpeg 2x,
              /images/custom/token-sale-new/03_protocol_b.jpeg 3x"
+                         class="protocol-img"
                          alt="@lang('home.project_3_title')">
                 </div>
                 <div class="col-md-6 col-md-pull-6 center text-section">

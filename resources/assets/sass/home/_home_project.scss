@@ -37,16 +37,16 @@
       a {
         text-decoration: underline;
       }
-      .protocol-img {
-        margin-top: 50px;
+      img.protocol-img {
+        margin-top: 75px;
       }
       &.protocol-item {
         .desc, ul {
-          font-size: 14px;
-          line-height: 17px;
+          margin-top: 5px;
           li {
-            line-height: 19px;
-            margin-top: 5px;
+            font-size: 16px;
+            line-height: 1.54;
+            margin-bottom: 5px;
           }
         }
       }
@@ -99,6 +99,18 @@ ul.dotted-list {
       position: absolute;
       left: 0;
       top: 4px;
+    }
+  }
+}
+
+@media (max-width: $sizeMedium) {
+  .home-section {
+    &.home-project {
+      .project-item {
+        img.protocol-img {
+          margin-top: 0;
+        }
+      }
     }
   }
 }
