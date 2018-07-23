@@ -22,8 +22,8 @@ return [
     'about_desc_1_li_2_title' => 'Global community',
     'about_desc_1_li_3_title' => 'Decentralized network',
     'about_desc_1_li_1' => 'We believe in breaking up monopolies and giving power to the people.',
-    'about_desc_1_li_2' => 'We believe technology can organize the global community and lead to cooperation without any central authority.',
-    'about_desc_1_li_3' => 'We created an open protocol through which everyone can take part in a fully decentralized and global package delivery network.',
+    'about_desc_1_li_2' => 'We believe that technology can organize the global community and lead to cooperation without any central authority.',
+    'about_desc_1_li_3' => 'We have created an open protocol through which everyone can take part in a fully decentralized and global package delivery network.',
     'about_desc_2' => 'Bitcoin revolutionized the payment industry by decentralizing it.<br/>PAKET answers a similar need - transferring goods in a decentralized manner. We see this as an opportunity to solve a real-world problem using the principals of blockchain technology in their purest form: a genuine way to exchange physical value between people, without any central authority managing the process and taking a hefty commission.',
     'about_btn' => 'Token Sale Info',
 

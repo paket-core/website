@@ -24,7 +24,7 @@ class ICOService
 
     public static function get_video_id()
     {
-        return 'GXI9KRIznsY';
+        return 'SQPwNctnoYM';
     }
 
     /**

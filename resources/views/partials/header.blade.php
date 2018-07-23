@@ -52,7 +52,7 @@
                                     @lang('home.header_product_info')
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub-li">
                                 <a data-scroll href="{{$path}}#team">
                                     @lang('home.header_our_team')
                                 </a>

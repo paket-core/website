@@ -5,7 +5,7 @@
             <p class="desc">@lang('developers.list_desc')</p>
             <ul class="dotted-list">
                 @foreach($list as $item)
-                    <li><span class="dot"></span><span><a data-scroll href="#{{$item->value}}">@lang('developers.list_item_title_'.$item->id)</a></span><span>@lang('developers.list_item_'.$item->id)</span></li>
+                    <li><span class="dot"></span><span><a data-scroll href="#{{$item->value}}">@lang('developers.list_item_title_'.$item->id)</a> – </span><span>@lang('developers.list_item_'.$item->id)</span></li>
                 @endforeach
             </ul>
         </div>

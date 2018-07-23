@@ -27,7 +27,7 @@
                         <span>@lang('home.top_join_now')</span>
                     </div>
                 </a>
-                <a href="{{\TokenChef\IcoTemplate\Services\StaticArray::TELEGRAM_URL}}" target="_blank">
+                <a href="{{\TokenChef\IcoTemplate\Services\StaticArray::TELEGRAM_URL}}" target="_blank" class="telegram-btn-wrapper">
                     <div class="btn-home">
                         <img src="/images/home/icon-telegram.png"
                              srcset="/images/home/icon-telegram@2x.png 2x,
