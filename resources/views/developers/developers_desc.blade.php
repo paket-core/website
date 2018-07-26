@@ -58,7 +58,6 @@
                     <p class="desc">@lang('developers.section_desc_3_p_2_2')</p>
                     <p class="desc">@lang('developers.section_desc_3_p_2_3')</p>
                     <p class="desc">@lang('developers.section_desc_3_p_2_4')</p>
-                    <p class="desc">@lang('developers.section_desc_3_p_2_5')</p>
                     <div class="title-wrapper">
                         <h2 class="subtitle">@lang('developers.section_desc_3_h_3')</h2>
                     </div>
