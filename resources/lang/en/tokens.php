@@ -19,7 +19,7 @@ return [
     'tokens_selling_how_desc' => 'You can purchase BUL by sending BTC, ETH or XLM to an address we will provide you. Once you send your payment you will receive the BULs. No need to wait for the end of the sale.',
 
     'tokens_selling_info_title' => 'Can anyone participate?',
-    'tokens_selling_info_desc_1' => 'Almost. Considering the regulatory uncertainty in the US, we do not sell tokens to US citizens, nor allow the use of our application. In addition, we employ several KYC/AML processes, just for the participation in the sale. The minimum details you’ll have to provide are your full name, home address, and your email address. We are verifying any participant against many sanction lists, including, but not limited to:',
+    'tokens_selling_info_desc_1' => 'Almost. Considering the regulatory uncertainty in the US, we do not sell tokens to US citizens, nor allow the use of our application. We employ several KYC/AML processes for the participation in the sale. The only details you’ll have to provide are your full name, home address, and your email address. We are verifying any participant against many sanction lists, including, but not limited to:',
     'tokens_selling_info_li_1' => 'BIS’s Denied Persons List',
     'tokens_selling_info_li_2' => 'OFAC’s Specially Designated Nationals List',
     'tokens_selling_info_li_3' => 'Arms Export Control Act (AECA)',
@@ -27,16 +27,16 @@ return [
 
     'tokens_app_item_1_num' => '1',
     'tokens_app_item_1_title' => 'Using an app',
-    'tokens_app_item_1_desc_1' => 'The easiest way is to download one of the apps developed on our platform, and going to the Token Sale page. There you will get a funding address. Once you send funds to it, you will get your BULs tokens and you will see them in the application. You can keep them in the application, send them to other users, or to your own separate stellar wallet.',
+    'tokens_app_item_1_desc_1' => 'The easiest way is to download one of the apps developed on our platform, and going to the Token Sale page. There you will get a funding address. Once you send funds to it, you will get your BULs tokens and you will see them in the application. You can keep them in the application, send them to other users, or to your own separate Stellar wallet.',
     'tokens_app_item_1_desc_2' => 'They are yours...',
     'tokens_app_item_2_num' => '2',
     'tokens_app_item_2_title' => 'Using your own Stellar wallet',
-    'tokens_app_item_2_desc_1' => 'The other option is to use your own stellar wallet. You only have to ensure that you trust the BUL token, as you would any other token you would like to hold.',
+    'tokens_app_item_2_desc_1' => 'The other option is to use your own Stellar wallet. You only have to ensure that you trust the BUL token, as you would any other token you would like to hold.',
     'tokens_price_title' => 'BULs selling',
 
     'tokens_price_sub_1_title' => 'How much are we raising?',
-    'tokens_price_sub_1_p_desc_1' => 'We are planning on raising 8 Million EUR. We believe that this will be enough implement our platform and build a sustainable network of participants across the globe.',
-    'tokens_price_sub_1_p_desc_2' => 'We are also locking a reserve of 200 million BUL for a period of six years, After which we may use them to raise additional funding.',
+    'tokens_price_sub_1_p_desc_1' => 'We are planning on raising 10 Million EUR. We believe that this will be enough implement our platform and build a sustainable network of participants across the globe.',
+    'tokens_price_sub_1_p_desc_2' => 'We are also locking a reserve of 200 million BUL for a period of 6 years, after which we may use them to raise additional funding.',
     'tokens_price_sub_2_title' => 'How many BULs are being sold?',
     'tokens_price_sub_2_p_desc_1' => 'We are selling 500 million BUL. That’s half of the entire supply of bulls. Note that an additional 20% of the BULs are frozen for 6 years.',
     'tokens_price_sub_3_title' => 'What is the price of BUL?',
@@ -96,7 +96,7 @@ return [
     'token_distribution_down_desc_1' => '',
 
     'token_distribution_down_num_2' => '1%',
-    'token_distribution_down_title_2' => 'AIRDROR',
+    'token_distribution_down_title_2' => 'AIRDROP',
     'token_distribution_down_desc_2' => '',
 
     'token_distribution_down_num_3' => '1%',
