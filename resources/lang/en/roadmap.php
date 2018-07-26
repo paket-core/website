@@ -15,7 +15,7 @@ return [
     'roadmap_desc_4' => 'Layer 2 - routing system - Robust hub management application',
     'roadmap_title_5' => 'Facilitate an economic solution within a country',
     'roadmap_date_5' => 'Q1-2019',
-    'roadmap_desc_5' => 'Sign up an international courier for global deliveries between hubs',
+    'roadmap_desc_5' => 'Enter an agreement with an international courier for global deliveries between hubs',
     'roadmap_title_6' => 'Facilitate an economic solution in a single continent',
     'roadmap_date_6' => 'Q2-2019',
     'roadmap_desc_6' => 'Switch entirely to a decentralized identity authority',
