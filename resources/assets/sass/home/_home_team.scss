@@ -81,6 +81,7 @@
   .home-section.home-team {
     padding-top: 20px;
     .team-carousel-wrapper {
+      position: relative;
       .member {
         margin: auto;
         min-width: 170px;
@@ -97,6 +98,17 @@
     .owl-carousel-buttons {
       display: inherit;
       margin-bottom: 20px;
+      position: absolute;
+      top: 70px;
+      left: 2%;
+      width: 96%;
+      z-index: 4;
+      .owlTeamPrevBtn {
+        float: left;
+      }
+      .owlTeamNextBtn {
+        float: right;
+      }
     }
     .member {
       min-height: inherit;
