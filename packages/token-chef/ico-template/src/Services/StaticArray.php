@@ -189,7 +189,7 @@ class StaticArray
     const TOKENS_NAME = 'Tokens';
 
 //    const SUPPORTED_LANGUAGES = ['de', 'es', 'fr', 'pt', 'cn', 'jp','ru];
-    const SUPPORTED_LANGUAGES = ['cn', 'ko', 'ru'];
+    const SUPPORTED_LANGUAGES = ['cn', 'ko', 'pl', 'ru'];
     const WP_LANGUAGES = ['en'];
     const FS_LANGUAGES = ['en'];
 

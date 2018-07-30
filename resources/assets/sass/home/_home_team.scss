@@ -6,12 +6,20 @@
     .member {
       text-align: center;
       margin-bottom: 40px;
+      min-height: 650px;
       .name {
         font-size: 18.4px;
         font-weight: bold;
         color: #2ac4ff;
         text-transform: uppercase;
         margin-bottom: 20px;
+      }
+      .desc {
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 20px;
+        color: $colorFont3;
+        text-align: justify;
       }
       .img {
         box-sizing: border-box;

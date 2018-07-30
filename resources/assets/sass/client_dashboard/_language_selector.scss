@@ -46,7 +46,7 @@ $rows: 1;
       border-radius: 100%;
       background-size: cover;
       background-position: center;
-      $flags: en, ru, cn, ko;
+      $flags: en, ru, cn, ko, pl;
       @include flags($flags);
     }
   }

@@ -63,7 +63,7 @@ return [
     'ecosystem_graph_title_4' => 'Opportunistic hub',
     'ecosystem_graph_desc_4' => 'Leverage your daily routine of sitting in your office / home / favourite coffee place, earning BULs for keeping an eye on packages as they exchange hands. Everyone can become an opportunistic hub!',
 
-    'ecosystem_graph_title_5' => 'Professional hub <br/>operator',
+    'ecosystem_graph_title_5' => 'Professional hub operator',
     'ecosystem_graph_desc_5' => 'On a fully transparent and analyzable network it is trivial to identify a high demand for package delivery in a certain area. Professional operators can satisfy this demand either by building dedicated hubs, or by opening another kind of business that also functions as a hub, using this demand as means to draw potential customer to their .',
 
     'ecosystem_graph_title_6' => 'Sender and recipient',

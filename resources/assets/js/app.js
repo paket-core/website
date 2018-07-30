@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     function run() {
 
-        if ($('#appEnv').attr('data-env') !== 'local'){
+        if ($('#appEnv').attr('data-env') !== 'local') {
             var cly = document.createElement('script');
             cly.type = 'text/javascript';
             cly.async = true;
@@ -71,7 +71,7 @@ $(document).ready(function () {
         ToastrManager.init();
         LanguageManager.init();
 
-        if (['en', 'de', 'es', 'fr', 'pt', 'cn', 'ru', 'ko'].indexOf(url) >= 0) {
+        if (['en', 'de', 'es', 'fr', 'pt', 'cn', 'ru', 'ko', 'pl'].indexOf(url) >= 0) {
             HomeManager.init();
             return false;
         }

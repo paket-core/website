@@ -44,32 +44,39 @@ class HomeController extends Controller
 
         $members = [
             (object)[
-                'name' => 'Oren Gampel',
-                'role' => 'CEO',
-                'image' => 'oren_new',
+                'image' => 'oren',
                 'linkedin' => 'https://www.linkedin.com/in/orengampel/',
                 'github' => null
             ],
             (object)[
-                'name' => 'Israel Levin',
-                'role' => 'CTO',
-                'image' => 'israel_new',
+                'image' => 'israel',
                 'linkedin' => null,
                 'github' => 'https://github.com/israellevin'
             ],
             (object)[
-                'name' => 'Chen Barak',
-                'role' => 'VP Business Development',
-                'image' => 'chen_new',
+                'image' => 'chen',
                 'linkedin' => 'https://www.linkedin.com/in/chen-barak-8547964/',
                 'github' => null
             ],
             (object)[
-                'name' => 'Yura Sherman',
-                'role' => 'Community Manager',
-                'image' => 'yura_new',
+                'image' => 'yura',
                 'linkedin' => 'https://www.linkedin.com/in/yurra/',
                 'github' => null
+            ],
+            (object)[
+                'image' => 'ori',
+                'linkedin' => 'https://www.linkedin.com/in/leviori/',
+                'github' => null
+            ],
+            (object)[
+                'image' => 'carmit',
+                'linkedin' => 'https://www.linkedin.com/in/carmitglik/',
+                'github' => null,
+            ],
+            (object)[
+                'image' => 'ayelet',
+                'linkedin' => 'https://www.linkedin.com/in/ayeletturtel/',
+                'github' => null,
             ]
         ];
 
