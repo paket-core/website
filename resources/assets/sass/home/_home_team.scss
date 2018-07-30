@@ -96,8 +96,13 @@
     }
     .owl-carousel-buttons {
       display: inherit;
+      margin-bottom: 20px;
     }
     .member {
+      min-height: inherit;
+      .desc {
+        padding: 0 10px;
+      }
       .icon-wrapper {
         top: 165px;
         right: 10px;

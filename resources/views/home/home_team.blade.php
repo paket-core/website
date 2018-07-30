@@ -7,6 +7,24 @@
             <p class="title-desc">@lang('home.team_desc')</p>
         </div>
         <div class="col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 center team-members-wrapper team-carousel-wrapper">
+
+            <div class="owl-carousel-buttons nice-carousel-buttons">
+                <div class="owlTeamPrevBtn">
+                    <img src="/images/custom/mobile/arrow_left/arrow.png"
+                         srcset="/images/custom/mobile/arrow_left/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_left/arrow@3x.png 3x"
+                         alt="@lang('pagination.previous')"
+                         class="diamond">
+                </div>
+                <div class="owlTeamNextBtn">
+                    <img src="/images/custom/mobile/arrow_right/arrow.png"
+                         srcset="/images/custom/mobile/arrow_right/arrow@2x.png 2x,
+             /images/custom/mobile/arrow_right/arrow@3x.png 3x"
+                         alt="@lang('pagination.next')"
+                         class="diamond">
+                </div>
+            </div>
+
             <div class="row team-members owl-carousel team-carousel">
                 @foreach($members as $member)
                     <div class="member col-xs-6 col-sm-4">
@@ -27,23 +45,6 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
-
-            <div class="owl-carousel-buttons nice-carousel-buttons">
-                <div class="owlTeamPrevBtn">
-                    <img src="/images/custom/mobile/arrow_left/arrow.png"
-                         srcset="/images/custom/mobile/arrow_left/arrow@2x.png 2x,
-             /images/custom/mobile/arrow_left/arrow@3x.png 3x"
-                         alt="@lang('pagination.previous')"
-                         class="diamond">
-                </div>
-                <div class="owlTeamNextBtn">
-                    <img src="/images/custom/mobile/arrow_right/arrow.png"
-                         srcset="/images/custom/mobile/arrow_right/arrow@2x.png 2x,
-             /images/custom/mobile/arrow_right/arrow@3x.png 3x"
-                         alt="@lang('pagination.next')"
-                         class="diamond">
-                </div>
             </div>
         </div>
     </div>

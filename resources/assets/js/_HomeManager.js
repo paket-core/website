@@ -212,7 +212,8 @@ var HomeManager = (function () {
                     smartSpeed: 1000,
                     autoplayTimeout: 15000,
                     loop: true,
-                    stagePadding: 30,
+                    stagePadding: 0,
+                    autoHeight: true,
                     items: 1
                 });
 
@@ -295,7 +296,7 @@ var HomeManager = (function () {
                         owlProject.trigger('next.owl.carousel');
                     });
 
-// Go to the previous item
+                    // Go to the previous item
                     $('.owlProjectPrevBtn').off('click').click(function () {
                         // With optional speed parameter
                         // Parameters has to be in square bracket '[]'
