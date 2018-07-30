@@ -10,8 +10,8 @@ Route::middleware(['web'])->group(function () {
             Route::post('join', 'TokenChef\IcoTemplate\Controllers\RegisterController@join');
 
             Route::post('/referral-views', 'TokenChef\IcoTemplate\Controllers\ReferralViewsController@add_view');
-            Route::post('/language', 'TokenChef\IcoTemplate\Controllers\LanguageController@store');
-            Route::post('/language/detect', 'TokenChef\IcoTemplate\Controllers\LanguageController@detect');
+            Route::get('/language', 'TokenChef\IcoTemplate\Controllers\LanguageController@store');
+            Route::get('/language/detect', 'TokenChef\IcoTemplate\Controllers\LanguageController@detect');
             Route::post('/newsletter/join', 'TokenChef\IcoTemplate\Controllers\NewsletterController@join');
 
             Route::middleware(['auth'])->group(function () {
