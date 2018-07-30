@@ -56,7 +56,6 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link href="{{ mix('css/app.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{ mix('css/app.css')}}" rel="stylesheet" type="text/css"/>
     @yield('styles')
 
 </head>
@@ -79,15 +78,17 @@
 @yield('scripts')
 
 @if (env('APP_ENV') !== 'local')
-    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js" integrity="sha384-uJpQSthHz+xMxNKkViI4LAy8DBoNDjeaE06Ga+fIE7GJ0KB2ElxHk5q5ED9Z6+jZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js"
+            integrity="sha384-uJpQSthHz+xMxNKkViI4LAy8DBoNDjeaE06Ga+fIE7GJ0KB2ElxHk5q5ED9Z6+jZ"
+            crossorigin="anonymous"></script>
 @endif
 <div class="hidden" id="fontPath" data-font-path="{{mix('/fonts/fonts.css')}}"></div>
 <div class="hidden" id="appEnv" data-env="{{env('APP_ENV')}}"></div>
 
 <script data-cfasync="false" type="text/javascript" src="{{ mix('js/app.js')}}"></script>
 
-<script data-cfasync="false" src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-        integrity="sha384-pvXSwSU09c+q9mPyY++ygUHWIYRoaxgnJ/JC5wcOzMb/NVVu+IDniiB9qWp3ZNWM"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"
+        integrity="sha384-RC5FQv0qQwIinNafeSbW+modR85TDpQ77GO6Vv8AyzUew0yyyihHHUmTuYc0Leu0"
         crossorigin="anonymous"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
