@@ -12,9 +12,6 @@
 */
 
 Route::middleware(['session_locale'])->group(function () {
-    Route::get('/', 'HomeController@home')->name('home');
-    Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
-    Route::get('/developers', 'HomeController@developers')->name('developers');
     Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
     Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
 });
@@ -30,9 +27,6 @@ Route::middleware(['auth', 'session_locale'])->group(function () {
     Route::get('/my-account', 'ClientController@my_account')->name('my-account');
 });
 
-Route::get('/{lang}', 'HomeController@home_language');
-Route::get('/{lang}/', 'HomeController@home_language');
-
 Route::get('sitemap', function () {
     // create new sitemap object
     $sitemap = App::make('sitemap');
@@ -46,5 +40,14 @@ Route::get('sitemap', function () {
     return $sitemap->render('xml');
 });
 
-//Route::get('/terms-and-conditions', 'DocumentsController@terms_and_conditions')->name('terms-and-conditions');
-//Route::get('/privacy-policy', 'DocumentsController@privacy_policy')->name('privacy-policy');
+Route::middleware(['detect_language', 'cached'])->group(function () {
+    Route::get('/', 'HomeController@home')->name('home');
+    Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
+    Route::get('/developers', 'HomeController@developers')->name('developers');
+});
+
+Route::middleware(['cached'])->group(function () {
+    Route::get('/{lang}', 'HomeController@home_language')->where(['lang' => '[a-zA-Z]+']);
+    Route::get('/{lang}/token-sale', 'HomeController@token_page_language');
+    Route::get('/{lang}/developers', 'HomeController@developers_language');
+});

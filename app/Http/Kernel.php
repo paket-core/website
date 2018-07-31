@@ -38,6 +38,14 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
+        'cached' => [
+            \App\Http\Middleware\CachedView::class,
+        ],
+
+        'detect_language' => [
+            \App\Http\Middleware\DetectLanguage::class,
+        ],
+
         'api' => [
             'throttle:60,1',
             'bindings',

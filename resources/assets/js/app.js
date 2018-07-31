@@ -71,11 +71,6 @@ $(document).ready(function () {
         ToastrManager.init();
         LanguageManager.init();
 
-        if (['en', 'de', 'es', 'fr', 'pt', 'cn', 'ru', 'ko', 'pl'].indexOf(url) >= 0) {
-            HomeManager.init();
-            return false;
-        }
-
         switch (url) {
             case '':
                 HomeManager.init();
@@ -105,11 +100,18 @@ $(document).ready(function () {
                 AuthPageManager.init();
                 break;
             default:
-                if (url.substr(0, 15) === 'reset-password/') {
+                if (/^[a-zA-Z]{2}\/token-sale$/.test(url)) {
+                    TokenPageManager.init();
+                } else if (/^[a-zA-Z]{2}\/developers$/.test(url)) {
+                    DevelopersPageManager.init();
+                } else if (url.substr(0, 15) === 'reset-password/') {
                     AuthPageManager.init();
                 } else if (url.substr(0, 13) === 'verification/') {
                     AuthPageManager.init();
                     VerificationManager.init();
+                } else if (['en', 'cn', 'ko', 'pl', 'ru'].indexOf(url) >= 0) {
+                    HomeManager.init();
+                    return false;
                 }
                 break;
         }

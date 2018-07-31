@@ -58,24 +58,21 @@ var LanguageManager = (function () {
             li.removeClass('active');
             var language = $(this).toggleClass('active').attr('data-lang');
             setTimeout(function () {
-                var reload = sel.attr('data-reload') === 'yes';
-                changeLanguage(language, reload);
+                var url = sel.attr('data-url');
+                changeLanguage(language, url);
             })
         })
     }
 
-    function changeLanguage(language, reload) {
-        FormManager.sendGet('/token-chef/api/language', {
-            lang: language
-        }, function (response) {
-            if (response.status === 'success') {
-                if (reload) {
-                    window.location.href = '/' + language
-                } else {
-                    window.location.reload()
-                }
-            }
-        });
+    function changeLanguage(language, url) {
+        window.location.href = url.replace('{LANG}', language);
+        // FormManager.sendGet('/token-chef/api/language', {
+        //     lang: language
+        // }, function (response) {
+        //     if (response.status === 'success') {
+        //         window.location.href = url.replace('{LANG}', language);
+        //     }
+        // });
     }
 
     function detectLanguage() {
@@ -121,7 +118,7 @@ var LanguageManager = (function () {
             });
             modal.find('.change, .flag').click(function () {
                 closeModal();
-                changeLanguage(cookie, modal.attr('data-reload') === 'yes');
+                changeLanguage(cookie);
             });
         }
     }

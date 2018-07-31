@@ -1,3 +1,4 @@
+<?php $path = App::getLocale() === 'en' ? '/' : '/' . App::getLocale() . '/'; ?>
 <header class="header">
 
     <nav class="navbar">
@@ -58,12 +59,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('token-sale') }}">
+                                <a href="{{$path}}token-sale">
                                     @lang('home.header_token_sale')
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('developers') }}">
+                                <a href="{{$path}}developers">
                                     @lang('home.header_for_developers')
                                 </a>
                             </li>

@@ -1,6 +1,5 @@
-<?php $active = App::getLocale();
-$lang_reload = isset($lang_reload) && $lang_reload ? 'yes' : 'no' ?>
-<div class="language-select-wrapper" data-reload="{{$lang_reload}}">
+<?php $active = App::getLocale(); ?>
+<div class="language-select-wrapper" data-url="{{isset($redirect_language) ? $redirect_language : '/{LANG}'}}">
     <ul class="language-select animated fadeInDown">
         @foreach(array_merge(['en'], \TokenChef\IcoTemplate\Services\StaticArray::SUPPORTED_LANGUAGES) as $language)
             <li class="preload-lang-images {{$active === $language ? 'active' : ''}}" data-lang="{{$language}}">
@@ -11,6 +10,4 @@ $lang_reload = isset($lang_reload) && $lang_reload ? 'yes' : 'no' ?>
     </ul>
     <div class="down-icon"><i class="icon-chevron-down"></i> </div>
 </div>
-@include('partials.language_modal',[
-'lang_reload' =>  $lang_reload
-])
+@include('partials.language_modal')

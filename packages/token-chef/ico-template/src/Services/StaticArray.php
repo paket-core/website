@@ -190,6 +190,11 @@ class StaticArray
 
 //    const SUPPORTED_LANGUAGES = ['de', 'es', 'fr', 'pt', 'cn', 'jp','ru];
     const SUPPORTED_LANGUAGES = ['cn', 'ko', 'pl', 'ru'];
+    const DETECTED_LANGUAGE = ['zh'];
+    const REDIRECTED_LANGUAGE = [
+        'zh' => 'cn'
+    ];
+
     const WP_LANGUAGES = ['en'];
     const FS_LANGUAGES = ['en'];
 

@@ -8,9 +8,7 @@
     <?php $path = '/'?>
     <?php $back = '/'; ?>
     <div class="page-content auth-content">
-        @include('partials.header',[
-            'redirect' => true
-        ])
+        @include('partials.header')
         <div class="auth-page login-page">
             <div class="row">
                 <div class="section section-left animated fadeInLeft">

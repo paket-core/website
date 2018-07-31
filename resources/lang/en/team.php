@@ -16,15 +16,15 @@ return [
 
     'chen_name' => 'Chen Barak',
     'chen_role' => 'VP Business Development',
-    'chen_desc' => '',
+    'chen_desc' => 'Chen possess extensive and varied experience from both startups and leading international corporates. She lead the communities’ relation for AppCoin, the virtual currency platform and the Groupon EMEA editorial team. Chen holds an LLB and a BBA and she specializes in marketing, business development and community management.',
 
     'israel_name' => 'Israel Levin',
     'israel_role' => 'CTO',
-    'israel_desc' => '',
+    'israel_desc' => 'Israel has over 20 years of experience in producing enterprise-grade software in many fields such as 3D image rendering, cryptography, large-scale distributed services and cloud computing. In 2014 Israel was the technical lead on the original Iridis project that enables one of the earliest implementations of token generation technologies over the bitcoin blockchain.',
 
     'oren_name' => 'Oren Gampel',
     'oren_role' => 'CEO',
-    'oren_desc' => '',
+    'oren_desc' => 'Oren is a seasoned entrepreneur who ran several tech companies and pioneered tokenization over the Bitcoin Blockchain. He co-founded Oblicore that was sold to CA (computer associate) and managed Final a world-leading multi-billion Algorithmic Trading company during it\'s fastest growing years.',
 
     'ori_name' => 'Ori Levi',
     'ori_role' => 'Advisor',

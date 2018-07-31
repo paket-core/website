@@ -19,12 +19,17 @@ class HomeController extends Controller
      */
     public function home_language($lang)
     {
-        $lang = strtolower($lang);
-        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES)) {
-            return \Redirect::to('/');
-        }
-        LocaleService::save_language($lang, true);
+        $this->set_language($lang, '/');
         return $this->render_home();
+    }
+
+    /**
+     * @param $lang
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+    public function home_language_redirect($lang)
+    {
+        return \Redirect::to('/' . $lang);
     }
 
     /**
@@ -32,7 +37,7 @@ class HomeController extends Controller
      */
     public function home()
     {
-        \App::setLocale('en');
+        $this->set_language('en', '/');
         return $this->render_home();
     }
 
@@ -135,14 +140,47 @@ class HomeController extends Controller
         ]);
     }
 
+    /**
+     * @param $lang
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+    public function token_page_language($lang)
+    {
+        $this->set_language($lang, '/token-sale');
+        return $this->render_token_sale();
+    }
+
     public function token_page()
+    {
+        $this->set_language('en', '/token-sale');
+        return $this->render_token_sale();
+    }
+
+    protected function render_token_sale()
     {
         return view('tokens.tokens_page', [
             'road_maps' => TokenService::get_road_maps(),
+            'redirect_language' => '/{LANG}/token-sale'
         ]);
     }
 
+    /**
+     * @param $lang
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+    public function developers_language($lang)
+    {
+        $this->set_language($lang, '/developers');
+        return $this->render_developers();
+    }
+
     public function developers()
+    {
+        $this->set_language('en', '/developers');
+        return $this->render_developers();
+    }
+
+    protected function render_developers()
     {
         $list = (object)[
             (object)[
@@ -168,7 +206,8 @@ class HomeController extends Controller
         ];
         return view('developers.developers_page', [
             'road_maps' => TokenService::get_road_maps(),
-            'list' => $list
+            'list' => $list,
+            'redirect_language' => '/{LANG}/token-sale'
         ]);
     }
 
@@ -186,5 +225,15 @@ class HomeController extends Controller
     public function join()
     {
         return view('auth.join');
+    }
+
+    protected function set_language($lang, $url = '/')
+    {
+        $lang = strtolower($lang);
+        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES)) {
+            return \Redirect::to($url);
+        }
+        LocaleService::save_language($lang, true);
+        return $lang;
     }
 }

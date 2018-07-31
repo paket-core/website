@@ -7,9 +7,7 @@
 @section('content')
     <?php $path = '/'?>
     <div class="page-content auth-content">
-        @include('partials.header',[
-            'redirect' => true
-       ])
+        @include('partials.header')
         @include('auth.join_template')
     </div>
 @endsection

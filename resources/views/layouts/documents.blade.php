@@ -3,9 +3,7 @@
 @section('content')
     <?php $path = '/'?>
     <div class="page-content">
-        @include('partials.header',[
-            'redirect' => true
-       ])
+        @include('partials.header')
         <div class="{{$kind}}">
             @yield('page_content')
         </div>

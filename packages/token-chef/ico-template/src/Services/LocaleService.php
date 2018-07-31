@@ -61,7 +61,7 @@ class LocaleService
             }
 
             // Credit: https://gist.github.com/Xeoncross/dc2ebf017676ae946082
-            $websiteLanguages = StaticArray::SUPPORTED_LANGUAGES;
+            $websiteLanguages = array_merge(StaticArray::SUPPORTED_LANGUAGES, StaticArray::DETECTED_LANGUAGE);
             // Parse the Accept-Language according to:
             // http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4
             preg_match_all(
