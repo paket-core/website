@@ -32,5 +32,5 @@ return [
 
     'yura_name' => 'Yura Sherman',
     'yura_role' => 'Community Manager',
-    'yura_desc' => ''
+    'yura_desc' => 'Yura has more than 15 years of experience as a developer and as a digital marketer. He has contributed to several successful technology companies in Europe and Asia. Yura has a computer science degree from the Hebrew University and is passionate about cryptocurrency and building productive communities..'
 ];
