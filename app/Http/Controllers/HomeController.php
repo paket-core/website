@@ -55,7 +55,7 @@ class HomeController extends Controller
             ],
             (object)[
                 'image' => 'israel',
-                'linkedin' => null,
+                'linkedin' => 'https://www.linkedin.com/in/israel-levin-406a28168/',
                 'github' => 'https://github.com/israellevin'
             ],
             (object)[
