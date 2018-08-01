@@ -77,6 +77,16 @@
   }
 }
 
+@media (max-width: $sizeMedium) {
+  .home-section.home-team {
+    .team-carousel-wrapper {
+      .member {
+        min-height: 730px;
+      }
+    }
+  }
+}
+
 @media (max-width: $sizeSmall) {
   .home-section.home-team {
     padding-top: 20px;
@@ -111,7 +121,7 @@
       }
     }
     .member {
-      min-height: inherit;
+      min-height: inherit !important;
       .desc {
         padding: 0 10px;
       }

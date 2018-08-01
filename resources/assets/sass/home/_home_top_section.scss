@@ -228,7 +228,7 @@
       }
     }
   }
-  .home-top-section.ru {
+  .home-top-section.ru, .home-top-section.pl {
     .top-actions a {
       max-width: 90%;
       width: 100%;
@@ -277,6 +277,9 @@
       .top-wrapper {
         display: inline-block;
         margin: auto;
+        .title{
+          word-wrap: break-word;
+        }
       }
       .title {
         margin-top: 8px;

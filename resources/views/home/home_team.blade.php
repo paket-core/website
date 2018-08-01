@@ -6,7 +6,7 @@
         <div class="col-md-12 center">
             <p class="title-desc">@lang('home.team_desc')</p>
         </div>
-        <div class="col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 center team-members-wrapper team-carousel-wrapper">
+        <div class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-12 col-sm-offset-0 center team-members-wrapper team-carousel-wrapper">
 
             <div class="owl-carousel-buttons nice-carousel-buttons">
                 <div class="owlTeamPrevBtn">
@@ -27,7 +27,7 @@
 
             <div class="row team-members owl-carousel team-carousel">
                 @foreach($members as $member)
-                    <div class="member col-xs-6 col-sm-4">
+                    <div class="member col-xs-6 col-sm-6">
                         <div class="img"
                              style="background-image: url('/images/team/{{$member->image}}_m.jpeg')">
                             @if ($member->linkedin)<a class="icon-wrapper" href="{{$member->linkedin}}" target="_blank"><i
