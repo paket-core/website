@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => 'PAKET - global decentralized package deliver',
-    'description' => 'global decentralized package deliver',
+    'title' => 'PAKET - global decentralized package delivery',
+    'description' => 'global decentralized package delivery',
     'og_title' => 'PAKET',
     'og_description' => 'WE ARE PAKET- THE DECENTRALIZED DELIVERY NETWORK',
     'tokens_og_description' => 'The BUL token is a digital token used to pay for deliveries on the PAKET platform,  You can purchase BUL by sending BTC, ETH or XLM to an address we will provide you.',
