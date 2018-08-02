@@ -10,7 +10,7 @@
         <meta content="{{env('APP_DESC')}}" name="description"/>
         <meta property="og:title" content="{{env('APP_NAME')}}"/>
         <meta property="og:description" content="{{env('APP_DESC')}}"/>
-        <meta property="og:url" content="{{URL::to('/')}}"/>
+        <meta property="og:url" content="{{env('APP_URL')}}"/>
     @endif
     <meta property="fb:app_id" content=""/>
     <meta property="og:type" content="website"/>
@@ -23,7 +23,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta content="" name="author"/>
 {{--    <meta name="csrf-token" content="{{ csrf_token() }}">--}}
-    <meta name="_website" content="{{URL::to('/')}}"/>
+    <meta name="_website" content="{{env('APP_URL')}}"/>
     <meta name="msappl\ication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
