@@ -1,7 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'custom_meta' => true
+])
 
 @section('custom_meta')
-
+    <meta property="og:description" content="{{trans('meta.tokens_og_description')}}"/>
 @endsection
 
 @section('content')

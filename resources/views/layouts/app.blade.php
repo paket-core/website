@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <title>{{isset($title) ? $title : trans('meta.title')}}</title>
     <meta charset="utf-8"/>
-    @if (isset($custom_meta) && $custom_meta)
-        @yield('custom_meta')
-    @else
-        <title>{{isset($title) ? $title : env('APP_NAME')}} - {{env('APP_DESC')}}</title>
-        <meta content="{{env('APP_NAME')}}" name="title"/>
-        <meta content="{{env('APP_DESC')}}" name="description"/>
-        <meta property="og:title" content="{{env('APP_NAME')}}"/>
-        <meta property="og:description" content="{{env('APP_DESC')}}"/>
-        <meta property="og:url" content="{{env('APP_URL')}}"/>
-    @endif
+    <meta content="{{trans('meta.title')}}" name="title"/>
+    <meta content="{{trans('meta.description')}}" name="description"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
+    <meta property="og:title" content="{{trans('meta.og_title')}}"/>
+@if (isset($custom_meta) && $custom_meta)
+    @yield('custom_meta')
+@else
+    <meta property="og:description" content="{{trans('meta.og_description')}}"/>
+@endif
     <meta property="fb:app_id" content=""/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:secure_url" content=""/>
-    <meta property="og:image:width" content="869"/>
-    <meta property="og:image:height" content="509"/>
+    <meta property="og:image" content="http://paket.global/images/og/paket.jpg"/>
+    <meta property="og:image:secure_url" content="https://paket.global/images/og/paket.jpg"/>
+    <meta property="og:image:width" content="689"/>
+    <meta property="og:image:height" content="388"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no">
