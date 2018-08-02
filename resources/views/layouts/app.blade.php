@@ -52,8 +52,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
 
     <link href="{{ mix('css/app.css')}}" rel="stylesheet" type="text/css"/>
     @yield('styles')
@@ -64,42 +63,26 @@
     @yield('content')
 </div>
 
-<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-        integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts"
-        crossorigin="anonymous"></script>
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+<script src="/plugins/jquery/js/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
         crossorigin="anonymous"></script>
 
-<script data-cfasync="false" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+<script data-cfasync="false" src="/plugins/bootstrap/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 @yield('scripts')
 
 @if (env('APP_ENV') !== 'local')
-    <script src="https://cdn.ravenjs.com/3.25.2/raven.min.js"
+    <script src="/plugins/raven/js/raven.min.js"
             integrity="sha384-uJpQSthHz+xMxNKkViI4LAy8DBoNDjeaE06Ga+fIE7GJ0KB2ElxHk5q5ED9Z6+jZ"
             crossorigin="anonymous"></script>
 @endif
 <div class="hidden" id="fontPath" data-font-path="{{mix('/fonts/fonts.css')}}"></div>
 <div class="hidden" id="appEnv" data-env="{{env('APP_ENV')}}"></div>
 
+<script src="/plugins/webfontloader.js"></script>
+
 <script data-cfasync="false" type="text/javascript" src="{{ mix('js/app.js')}}"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"
-        integrity="sha384-RC5FQv0qQwIinNafeSbW+modR85TDpQ77GO6Vv8AyzUew0yyyihHHUmTuYc0Leu0"
-        crossorigin="anonymous"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-{{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116534685-1"></script>--}}
-{{--<script>--}}
-{{--window.dataLayer = window.dataLayer || [];--}}
-{{--function gtag(){dataLayer.push(arguments);}--}}
-{{--gtag('js', new Date());--}}
-
-{{--gtag('config', 'UA-116534685-1');--}}
-{{--</script>--}}
 
 </body>
 </html>

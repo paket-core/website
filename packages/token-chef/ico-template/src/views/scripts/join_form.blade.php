@@ -7,9 +7,7 @@
         <script data-cfasync="false" src="/vendor/ico-template/plugins/datepicker/datepicker.min.js"></script>
     @endif
     @if ($config['selectbox'])
-        <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"
-                integrity="sha384-XNUB/UFkuWNhKh/r4dgAc1pHxSDakhZCLINq/GXEwDg0UES32263XRXSCS36IYCp"
-                crossorigin="anonymous"></script>
+        <script data-cfasync="false" src="/vendor/ico-template/plugins/select2/js/select2.min.js"></script>
     @endif
     @if ($config['captcha'])
         {!! NoCaptcha::renderJs() !!}

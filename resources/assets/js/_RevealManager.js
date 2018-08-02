@@ -18,7 +18,7 @@ var RevealManager = (function () {
     }
 
     function reveal(config) {
-        var $window = $(window), isTouch = Modernizr.touch;
+        var $window = $(window);
         var navBar = $('.header');
         var reveal = $(".revealOnScroll");
         var smooth = config.smooth;

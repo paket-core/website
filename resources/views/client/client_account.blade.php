@@ -274,21 +274,17 @@
 @endsection
 
 @section('styles')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/plugins/animate/css/animate.min.css">
+    <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_register_css() !!}
     @if(\App\Services\ICOService::check_referral_link_created())
         {!! \TokenChef\IcoTemplate\Services\WidgetService::get_referrals_dashboard_css() !!}
     @endif
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"
-          integrity="sha384-HIipfSYbpCkh5/1V87AWAeR5SUrNiewznrUrtNz1ux4uneLhsAKzv/0FnMbj3m6g"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="/plugins/select2/css/select2.min.css">
 @endsection
 
 @section('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"
+    <script src="/plugins/select2/js/select2.min.js"
             integrity="sha384-xMX6VHK1HYyCMM8zHAVkLHgg2rIDhN01+z4rI70RV2dwzzVlHP95uaDOc5ds7Pow"
             crossorigin="anonymous"></script>
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_app_js() !!}
@@ -296,7 +292,7 @@
     @if(\App\Services\ICOService::check_deposit_create_enabled())
         {!! \TokenChef\IcoTemplate\Services\WidgetService::get_web3_plugin() !!}
     @endif
-    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"
+    <script data-cfasync="false" src="/plugins/clipboard/js/clipboard.min.js"
             integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3"
             crossorigin="anonymous"></script>
     @if(\App\Services\ICOService::check_referral_link_created())

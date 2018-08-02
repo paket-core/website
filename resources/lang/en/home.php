@@ -13,6 +13,7 @@ return [
     'header_for_developers' => "Developers",
     'header_my_account' => 'My Account',
     'header_login' => 'Login',
+    'header_logout' => 'Logout',
 
     'media_title' => 'IN THE MEDIA',
     'media_view_more' => 'Read more',
