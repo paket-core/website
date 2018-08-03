@@ -3,7 +3,7 @@
 ])
 
 @section('custom_meta')
-<meta property="og:description" content="{{trans('meta.developers_og_description')}}"/>
+    <meta property="og:description" content="{{trans('meta.developers_og_description')}}"/>
 @endsection
 
 @section('content')
@@ -19,11 +19,11 @@
 @endsection
 
 @section('styles')
-    {!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_css() !!}
+    {{--{!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_css() !!}--}}
 @endsection
 
 @section('scripts')
     <script data-cfasync="false" src="/plugins/smooth-scroll.min.js"></script>
     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_app_js() !!}
-    {!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_js() !!}
+    {{--{!! \TokenChef\IcoTemplate\Services\WidgetService::get_join_js() !!}--}}
 @endsection

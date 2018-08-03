@@ -16,16 +16,17 @@ Route::middleware(['session_locale'])->group(function () {
     Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
 });
 
-Route::middleware(['guest', 'session_locale'])->group(function () {
-    Route::get('/login', 'HomeController@login')->name('login');
-    Route::get('/sign-up', 'HomeController@join')->name('sign-up');
-    Route::get('/password', 'ForgotPasswordController@forgotten_password')->name('forgotten_password');
-    Route::get('/reset-password/{tokens}', 'ForgotPasswordController@reset_password_form')->name('reset_password_form');
-});
-
-Route::middleware(['auth', 'session_locale'])->group(function () {
-    Route::get('/my-account', 'ClientController@my_account')->name('my-account');
-});
+//TODO enable routes for login page
+//Route::middleware(['guest', 'session_locale'])->group(function () {
+//    Route::get('/login', 'HomeController@login')->name('login');
+//    Route::get('/sign-up', 'HomeController@join')->name('sign-up');
+//    Route::get('/password', 'ForgotPasswordController@forgotten_password')->name('forgotten_password');
+//    Route::get('/reset-password/{tokens}', 'ForgotPasswordController@reset_password_form')->name('reset_password_form');
+//});
+//
+//Route::middleware(['auth', 'session_locale'])->group(function () {
+//    Route::get('/my-account', 'ClientController@my_account')->name('my-account');
+//});
 
 Route::get('sitemap', function () {
     // create new sitemap object
