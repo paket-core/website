@@ -31,7 +31,7 @@ Route::middleware(['session_locale'])->group(function () {
 Route::get('sitemap', function () {
     // create new sitemap object
     $sitemap = App::make('sitemap');
-    $sitemap->setCache('laravel.sitemap', 60);
+    $sitemap->setCache('laravel.sitemap_cache', 60);
     if (!$sitemap->isCached()) {
         // add item to the sitemap (url, date, priority, freq)
         $sitemap->add(env('APP_URL') . '/home', \Carbon\Carbon::now(), '1.0', 'daily');
