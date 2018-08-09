@@ -34,9 +34,9 @@ Route::get('sitemap', function () {
     $sitemap->setCache('laravel.sitemap', 60);
     if (!$sitemap->isCached()) {
         // add item to the sitemap (url, date, priority, freq)
-        $sitemap->add(URL::to('home'), \Carbon\Carbon::now(), '1.0', 'daily');
-        $sitemap->add(URL::to('token-sale'), \Carbon\Carbon::now(), '1.0', 'daily');
-        $sitemap->add(URL::to('developers'), \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(env('APP_URL') . '/home', \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(env('APP_URL') . '/token-sale', \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(env('APP_URL') . '/developers', \Carbon\Carbon::now(), '1.0', 'daily');
     }
     return $sitemap->render('xml');
 });
