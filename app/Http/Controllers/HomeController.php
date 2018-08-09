@@ -10,7 +10,7 @@ use TokenChef\IcoTemplate\Services\StaticArray;
  * Class HomeController
  * @package App\Http\Controllers
  */
-class HomeController extends Controller
+class HomeController extends RestController
 {
 
     /**
@@ -180,6 +180,29 @@ class HomeController extends Controller
         return $this->render_developers();
     }
 
+    /**
+     * @param $lang
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
+     */
+    public function map_language($lang)
+    {
+        $this->set_language($lang, '/map');
+        return $this->render_map();
+    }
+
+    public function map()
+    {
+        $this->set_language('en', '/map');
+        return $this->render_map();
+    }
+
+    protected function render_map()
+    {
+        return view('map.map_page', [
+            'redirect_language' => '/{LANG}/map'
+        ]);
+    }
+
     protected function render_developers()
     {
         $list = (object)[
@@ -225,15 +248,5 @@ class HomeController extends Controller
     public function join()
     {
         return view('auth.join');
-    }
-
-    protected function set_language($lang, $url = '/')
-    {
-        $lang = strtolower($lang);
-        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES)) {
-            return \Redirect::to($url);
-        }
-        LocaleService::save_language($lang, true);
-        return $lang;
     }
 }

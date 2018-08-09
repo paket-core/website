@@ -9,7 +9,7 @@
                     <h2 class="auth-title">@lang('auth.sign_up_title')</h2>
                 </div>
                 <div class="col-md-3 col-md-offset-2">
-                    <a @if(!$back) href="{{route('home')}}" @endif class="close-link animated-hover">
+                    <a @if(!$back) href="/home" @endif class="close-link animated-hover">
                         <p>@lang('auth.back')</p></a>
                 </div>
             </div>

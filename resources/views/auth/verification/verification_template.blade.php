@@ -17,7 +17,7 @@
                             <h2 class="auth-title">@lang('auth.verification_form_title')</h2>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
-                            <a href="{{route('home')}}" class="close-link animated-hover">
+                            <a href="/home" class="close-link animated-hover">
                                 <p>@lang('auth.back')</p></a>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         <div class="form-wrapper">
                             <div id="successMessage" class="message message-success hidden verification-message">
                                 @lang('auth.verification_form_message')
-                                <a href="{{route('login')}}">
+                                <a href="/login">
                                     <button class="btn btn-dark">
                                         @lang('auth.login_now')
                                     </button>

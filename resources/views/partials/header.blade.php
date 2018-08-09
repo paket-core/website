@@ -32,19 +32,19 @@
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())
                             <li>
-                                <a href="{{route('token-sale')}}">
+                                <a href="/token-sale">
                                     @lang('home.header_token_sale')
                                 </a>
                             </li>
                             <li>
-                                <a data-scroll href="{{route('my-account')}}">
+                                <a data-scroll href="/my-account">
                                     @lang('home.header_my_account')
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('logout') }}"
+                                <a href="/logout"
                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">@lang('home.header_logout')</a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                <form id="logout-form" action="/logout" method="POST"
                                       style="display: none;">{{ csrf_field() }}</form>
                             </li>
                         @else

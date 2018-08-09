@@ -45,10 +45,13 @@ Route::middleware(['detect_language', 'cached'])->group(function () {
     Route::get('/', 'HomeController@home')->name('home');
     Route::get('/token-sale', 'HomeController@token_page')->name('token-sale');
     Route::get('/developers', 'HomeController@developers')->name('developers');
+    Route::get('/map', 'MapController@map')->name('map');
+    Route::get('/map-markers', 'MapController@map_markers')->name('map');
 });
 
 Route::middleware(['cached'])->group(function () {
     Route::get('/{lang}', 'HomeController@home_language')->where(['lang' => '[a-zA-Z]+']);
     Route::get('/{lang}/token-sale', 'HomeController@token_page_language');
     Route::get('/{lang}/developers', 'HomeController@developers_language');
+    Route::get('/{lang}/map', 'MapController@map_language');
 });

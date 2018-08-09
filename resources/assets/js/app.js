@@ -55,6 +55,7 @@ $(document).ready(function () {
         var HomeManager = require('./_HomeManager');
         var TokenPageManager = require('./_TokenPageManager');
         var DevelopersPageManager = require('./_DevelopersPageManager');
+        var MapPageManager = require('./_MapPageManager');
         var MyAccountManager = require('./_MyAccountManager');
         var AuthPageManager = require('./_AuthPageManager');
         var VerificationManager = require('./_VerificationManager');
@@ -81,6 +82,9 @@ $(document).ready(function () {
             case 'developers':
                 DevelopersPageManager.init();
                 break;
+            case 'map':
+                MapPageManager.init();
+                break;
             case 'my-account':
                 MyAccountManager.init();
                 break;
@@ -104,7 +108,10 @@ $(document).ready(function () {
                     TokenPageManager.init();
                 } else if (/^[a-zA-Z]{2}\/developers$/.test(url)) {
                     DevelopersPageManager.init();
-                } else if (url.substr(0, 15) === 'reset-password/') {
+
+                }  else if (/^[a-zA-Z]{2}\/map$/.test(url)) {
+                    MapPageManager.init();
+                }else if (url.substr(0, 15) === 'reset-password/') {
                     AuthPageManager.init();
                 } else if (url.substr(0, 13) === 'verification/') {
                     AuthPageManager.init();

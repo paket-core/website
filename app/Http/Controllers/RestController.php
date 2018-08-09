@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use ErrorException;
+use TokenChef\IcoTemplate\Services\LocaleService;
+use TokenChef\IcoTemplate\Services\StaticArray;
 
 class RestController extends Controller
 {
@@ -54,5 +56,15 @@ class RestController extends Controller
     protected function secure_data($string)
     {
         return preg_replace("/[^A-Za-z0-9]/", '', $string);
+    }
+
+    protected function set_language($lang, $url = '/')
+    {
+        $lang = strtolower($lang);
+        if (!in_array($lang, StaticArray::SUPPORTED_LANGUAGES)) {
+            return \Redirect::to($url);
+        }
+        LocaleService::save_language($lang, true);
+        return $lang;
     }
 }

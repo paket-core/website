@@ -1,0 +1,18 @@
+.developers-top-section.map-top-section {
+  background-image: url('/images/map/new_map.png');
+  $h: 330px;
+  height: $h;
+  .shadow {
+    height: $h;
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .developers-top-section.map-top-section {
+    $h: 160px;
+    height: $h;
+    .shadow {
+      height: $h;
+    }
+  }
+}

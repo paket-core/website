@@ -9,7 +9,7 @@
                     <h2 class="auth-title">@lang('auth.login_title')</h2>
                 </div>
                 <div class="col-md-3 col-md-offset-2">
-                    <a @if(!$back) href="{{route('home')}}" @endif class="close-link animated-hover">
+                    <a @if(!$back) href="/home" @endif class="close-link animated-hover">
                         <p>@lang('auth.back')</p></a>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="col-md-9">
                 <div class="form-wrapper">
                     {!! \TokenChef\IcoTemplate\Services\WidgetService::get_login_form() !!}
-                    <a href="{{route('forgotten_password')}}"><p class="forgot-link">@lang('auth.forgot_link')</p></a>
+                    <a href="/password"><p class="forgot-link">@lang('auth.forgot_link')</p></a>
                     <button class="btn login-button form-button login-form-btn loading-hide">@lang('auth.login_button')</button>
                     @include('partials.loading_button')
                 </div>

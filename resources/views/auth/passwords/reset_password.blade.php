@@ -19,7 +19,7 @@
                             <h2 class="auth-title">@lang('auth.forgotten_password_title')</h2>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
-                            <a href="{{route('home')}}" class="close-link animated-hover">
+                            <a href="/home" class="close-link animated-hover">
                                 <p>@lang('auth.back')</p></a>
                         </div>
                     </div>

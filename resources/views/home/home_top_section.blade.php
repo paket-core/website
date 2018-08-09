@@ -17,7 +17,7 @@
                         <span>@lang('home.top_action_wp')</span>
                     </div>
                 </a>
-                <a href="{{route('token-sale')}}">
+                <a href="/token-sale">
                     <div class="btn-token-sale btn-home">
                         <img src="/images/home/icon-token.png"
                              srcset="/images/home/icon-token@2x.png 2x,
