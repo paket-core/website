@@ -9,8 +9,6 @@
         }
       }
       .item {
-        padding: 1%;
-        float: left;
         img {
           max-width: 100%;
         }
@@ -29,9 +27,6 @@
         }
         @include transition(all 500ms);
       }
-    }
-    #companiesCarousel {
-      display: none;
     }
     .view-more {
       $c: #2cbdff;
@@ -56,14 +51,12 @@
 @media (max-width: $sizeSmall) {
   .home-section {
     &.home-media {
-      #companiesList {
-        display: none;
-      }
-      #companiesCarousel {
-        display: inherit;
-      }
       #viewMoreCompanies {
         display: none;
+      }
+      .item img {
+        margin: auto;
+        margin-bottom: 10px;
       }
     }
   }

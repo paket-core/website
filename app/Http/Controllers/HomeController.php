@@ -120,9 +120,33 @@ class HomeController extends RestController
 
         $companies = [
             [
-                'link' => '',
-                'image' => 'inc_black_new.png'
-            ]
+                'link' => 'https://markets.businessinsider.com/news/stocks/paket-to-launch-a-decentralized-deliveries-platform-1027439214',
+                'image' => 'markets_insider.png'
+            ],
+            [
+                'link' => 'https://finance.yahoo.com/news/paket-launch-decentralized-deliveries-platform-153000290.html?guccounter=1',
+                'image' => 'yahoo_finance.png'
+            ],
+            [
+                'link' => 'https://bitscreener.com/news/solving-the-last-mile-how-blockchain-is-changing-the-face-of-delivery',
+                'image' => 'bit_screener.png'
+            ],
+            [
+                'link' => 'https://www.cryptoninjas.net/2018/08/01/how-the-last-mile-problem-is-being-solved-by-blockchain/',
+                'image' => 'crypto_ninjas.png'
+            ],
+            [
+                'link' => 'https://bitcoingarden.org/take-the-power-back-why-the-global-delivery-market-needs-to-shaken-up/',
+                'image' => 'bitcoin_garden.png'
+            ],
+            [
+                'link' => 'https://bitsonline.com/paket-decentralizing-global-deliveries/',
+                'image' => 'bitsonline.png'
+            ],
+            [
+                'link' => 'https://www.techworm.net/2018/08/company-disrupt-the-2-trillion-parcel-delivery-industry.html',
+                'image' => 'tech_worm.png'
+            ],
         ];
 
         $graph_items = [

@@ -156,7 +156,7 @@ var HomeManager = (function () {
         var widthSmall = 767;
         var widthLarge = 1200;
         var win = $(window);
-        var owlProject, owlTeam, owlEcosystem;
+        var owlProject, owlTeam, owlEcosystem, owlMedia;
         var width = win.width();
 
         RevealManager.init({
@@ -176,6 +176,7 @@ var HomeManager = (function () {
             initProjects(width);
             initEcoSystem(width);
             initTeam(width);
+            initMedia(width);
         }
 
         initRoadMap();
@@ -187,7 +188,7 @@ var HomeManager = (function () {
                 owlTeam = $(".team-carousel").owlCarousel({
                     autoplay: true,
                     smartSpeed: 1000,
-                    autoplayTimeout: 15000,
+                    autoplayTimeout: 10000,
                     loop: true,
                     stagePadding: 0,
                     autoHeight: true,
@@ -208,6 +209,26 @@ var HomeManager = (function () {
                 if (owlTeam) {
                     owlTeam.owlCarousel('destroy');
                     owlTeam = null;
+                }
+            }
+        }
+
+        function initMedia(width) {
+            if (width <= widthSmall) {
+                owlMedia = $(".media-carousel").owlCarousel({
+                    autoplay: true,
+                    smartSpeed: 1000,
+                    autoplayTimeout: 5000,
+                    loop: true,
+                    stagePadding: 0,
+                    autoHeight: true,
+                    items: 1
+                });
+
+            } else {
+                if (owlMedia) {
+                    owlMedia.owlCarousel('destroy');
+                    owlMedia = null;
                 }
             }
         }

@@ -8,6 +8,7 @@
     <div class="page-content token-page">
         @include('partials.header')
         @include('home.home_top_section')
+        @include('home.home_media')
         @include('home.home_about')
         @include('home.home_project')
         @include('home.home_ecosystem')
