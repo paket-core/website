@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\MapService;
+use TokenChef\IcoTemplate\Exceptions\WebException;
+
 /**
  * Class HomeController
  * @package App\Http\Controllers
@@ -26,27 +29,11 @@ class MapController extends RestController
 
     public function map_markers()
     {
-        return $this->json_success(null, [
-            'users' => [
-                "51.508, -0.31",
-                "51.708, -0.35",
-                "51.308, -0.32",
-                "51.108, -0.38",
-            ],
-            'packages' => [
-                "51.508, -0.01",
-                "51.708, -0.05",
-                "51.308, -0.02",
-                "51.108, -0.108",
-            ],
-            'paths' => [
-                [
-                    "51.108, -0.58",
-                    "51.508, -0.71",
-                    "51.708, -0.55",
-                ]
-            ]
-        ]);
+        try {
+            return $this->json_success(null, MapService::get_map_data());
+        } catch (WebException $e) {
+            return $this->json_error($e->getMessage());
+        }
     }
 
 

@@ -14,10 +14,25 @@ var MapPageManager = (function () {
         initMap();
     }
 
+    function groupBy(xs, key) {
+        return xs.reduce(function (rv, x) {
+            (rv[x[key]] = rv[x[key]] || []).push(x);
+            return rv;
+        }, {});
+    }
+
+    function sortBy(array, key) {
+        return array.sort(function (a, b) {
+            var x = a[key];
+            var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    }
+
     function loadMarkers() {
         FormManager.sendGet('/map-markers', {}, function (response) {
             if (response.status === 'success') {
-                data = response.data;
+                data = response.data.events;
                 showData();
             }
         });
@@ -29,30 +44,51 @@ var MapPageManager = (function () {
         users = L.layerGroup();
         packages = L.layerGroup();
 
-        data.users.forEach(function (item, index) {
-            var coordinates = item.split(',');
-            L.marker(coordinates, {icon: userIcons[index % userIcons.length]}).addTo(users);
-        });
-        data.packages.forEach(function (item) {
-            var coordinates = item.split(',');
-            L.marker(coordinates, {icon: packageIcon}).addTo(packages);
-        });
-        data.paths.forEach(function (path) {
-            var coordinates = [];
-            path.forEach(function (pos) {
-                coordinates.push(pos.split(','));
-            });
-            antPolyline = L.polyline.antPath(coordinates, {
-                "delay": 1200,
-                "dashArray": [10, 20],
-                "weight": 5,
-                "color": "#2ac4ff",
-                "pulseColor": "#FFFFFF",
-                "paused": false,
-                "reverse": false
-            });
-            antPolyline.addTo(paths);
-        });
+        var id, item, events, coordinates, index = 0, lastEvent;
+        var userEvents = groupBy(data.user_events, 'user_pubkey');
+
+        for (id in userEvents) {
+            if (userEvents.hasOwnProperty(id)) {
+                item = userEvents[id];
+                events = sortBy(item, 'timestamp');
+
+                //DISPLAY ONLY LAST EVENT
+                lastEvent = events.slice(-1)[0];
+                coordinates = lastEvent.location.split(',');
+                L.marker(coordinates, {icon: userIcons[++index % userIcons.length]}).addTo(users);
+
+            }
+        }
+
+        var packagesEvents = groupBy(data.packages_events, 'escrow_pubkey');
+
+        for (id in packagesEvents) {
+            if (packagesEvents.hasOwnProperty(id)) {
+                item = packagesEvents[id];
+                events = sortBy(item, 'timestamp');
+
+                coordinates = [];
+                events.forEach(function (pos) {
+                    coordinates.push(pos.location.split(','));
+                });
+
+                antPolyline = L.polyline.antPath(coordinates, {
+                    "delay": 1200,
+                    "dashArray": [10, 20],
+                    "weight": 5,
+                    "color": "#2ac4ff",
+                    "pulseColor": "#FFFFFF",
+                    "paused": false,
+                    "reverse": false
+                });
+                antPolyline.addTo(paths);
+
+                //DISPLAY ONLY LAST PACKAGE POSITION
+                lastEvent = events.slice(-1)[0];
+                coordinates = lastEvent.location.split(',');
+                L.marker(coordinates, {icon: packageIcon}).addTo(packages);
+            }
+        }
 
         paths.addTo(map);
         users.addTo(map);
@@ -98,8 +134,6 @@ var MapPageManager = (function () {
         userIcons.push(L.icon({
             iconUrl: '/images/map/user_' + id + '.png',
             iconSize: [39, 54],
-            iconAnchor: [22, 34],
-            popupAnchor: [-3, -76],
             shadowUrl: '/plugins/leaflet/images/marker-shadow.png',
             shadowSize: [38, 35],
             shadowAnchor: [22, 30]
@@ -119,11 +153,11 @@ var MapPageManager = (function () {
         packageIcon = L.icon({
             iconUrl: '/images/map/marker_package.png',
             iconSize: [40, 55],
-            iconAnchor: [30, 24],
-            popupAnchor: [-3, -76],
+            iconAnchor: [20, 55],
+            // popupAnchor: [-3, -76],
             shadowUrl: '/plugins/leaflet/images/marker-shadow.png',
             shadowSize: [38, 35],
-            shadowAnchor: [22, 30]
+            shadowAnchor: [14, 35]
         });
 
         loadUserIcon(1);
