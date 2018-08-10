@@ -50,8 +50,7 @@ return [
     'project_7_title' => 'The Un-Commerced Majority',
     'project_7_desc' => 'Citizens of the so-called first world often complain about the inefficiencies, limitations, and high cost of modern deliveries, but often forget that in most of the world reliable deliveries are not even an option. The PAKET ecosystem changes all that, providing global coverage wherever demand exists, solving a very real problem for a huge number of people, and finally providing a reliable trusted delivery service to an untapped market of staggering proportions.',
 
-    'join_telegram_title' => 'Join Our Telegram',
-    'join_telegram_desc' => 'If you have any question you can reach us on our Telegram Channel. <br/> Please click on the below button to join now.',
+    'join_telegram_title' => 'Join Our Community',
 
     'ecosystem_title' => 'Token ecosystem',
     'ecosystem_desc' => 'The PAKET platform is open and free. Do you have an entirely new market that you want to target with your delivery app? Or maybe just a minor improvement of the Platform? Dive into our Github project to add, clone, and take part in the ecosystem. If your app supplies a needed service you can even charge for it.',

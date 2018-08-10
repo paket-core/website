@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="top-title">@lang('home.join_telegram_title')</h2>
-                <div class="top-desc">@lang('home.join_telegram_desc')</div>
             </div>
 
             <div class="col-md-12 top-actions">
