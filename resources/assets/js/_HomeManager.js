@@ -218,7 +218,7 @@ var HomeManager = (function () {
                 owlMedia = $(".media-carousel").owlCarousel({
                     autoplay: true,
                     smartSpeed: 1000,
-                    autoplayTimeout: 5000,
+                    autoplayTimeout: 3000,
                     loop: true,
                     stagePadding: 0,
                     autoHeight: true,

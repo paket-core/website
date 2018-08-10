@@ -11,6 +11,7 @@
         @include('home.home_media')
         @include('home.home_about')
         @include('home.home_project')
+        @include('home.home_join')
         @include('home.home_ecosystem')
         @include('home.home_team')
         @include('home.home_endorsements')
