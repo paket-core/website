@@ -34,5 +34,10 @@
         padding: 0 30px;
       }
     }
+    &.pl{
+      .btn-home span{
+        font-size: 16px;
+      }
+    }
   }
 }
