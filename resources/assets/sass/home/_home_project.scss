@@ -1,5 +1,6 @@
 .home-section {
   &.home-project {
+    margin-bottom: 0;
     .project-items-carousel {
       display: inherit;
     }
@@ -33,6 +34,7 @@
       &:nth-last-child(1) {
         border-bottom: none;
         padding-bottom: 0;
+        margin-bottom: 0;
       }
       a {
         text-decoration: underline;

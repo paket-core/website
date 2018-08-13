@@ -1,8 +1,8 @@
 .home-join-section.home-top-section {
-  margin-top: 50px;
   position: relative;
   border-top: solid rgba(#c5c5c5, 0.7) 1px;
   padding-bottom: 20px;
+  margin-top: 0;
   .top-title {
     font-size: 40px;
     line-height: 50px;
@@ -20,6 +20,11 @@
 
 @media (max-width: $sizeSmall) {
   .home-top-section.home-join-section {
+    h2.top-title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
     .telegram-btn-wrapper {
       width: 100%;
       max-width: 100%;

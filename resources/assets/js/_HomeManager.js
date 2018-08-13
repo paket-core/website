@@ -244,6 +244,7 @@ var HomeManager = (function () {
                         autoplay: true,
                         smartSpeed: 1000,
                         autoplayTimeout: 15000,
+                        autoHeight: true,
                         loop: true,
                         stagePadding: 30,
                         items: 1
