@@ -123,7 +123,7 @@ class HomeController extends RestController
                 'link' => 'https://markets.businessinsider.com/news/stocks/paket-to-launch-a-decentralized-deliveries-platform-1027439214',
                 'image' => 'markets_insider.png',
                 'quote' => 'The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies.',
-                'company' => 'Market Insider',
+                'company' => 'MarketsInsider',
             ],
             [
                 'link' => 'https://finance.yahoo.com/news/paket-launch-decentralized-deliveries-platform-153000290.html?guccounter=1',
@@ -135,19 +135,19 @@ class HomeController extends RestController
                 'link' => 'https://bitscreener.com/news/solving-the-last-mile-how-blockchain-is-changing-the-face-of-delivery',
                 'image' => 'bit_screener.png',
                 'quote' => 'PAKET has developed a fully decentralized network to connect the standard delivery methods, connecting them through an efficient, highly communicative ecosystem.',
-                'company' => 'Bit Screener'
+                'company' => 'BitScreener'
             ],
             [
                 'link' => 'https://www.cryptoninjas.net/2018/08/01/how-the-last-mile-problem-is-being-solved-by-blockchain/',
                 'image' => 'crypto_ninjas.png',
                 'quote' => 'PAKET enables delivery providers to communicate better by giving them a standardized place to do so',
-                'company' => 'Crypto Ninjas'
+                'company' => 'CryptoNinjas'
             ],
             [
                 'link' => 'https://bitcoingarden.org/take-the-power-back-why-the-global-delivery-market-needs-to-shaken-up/',
                 'image' => 'bitcoin_garden.png',
                 'quote' => 'PAKET is an open-source platform that offers the opportunity for developers to get involved in shaping the ecosystem.',
-                'company' => 'Bitcoin Garden'
+                'company' => 'BitcoinGarden'
             ],
             [
                 'link' => 'https://bitsonline.com/paket-decentralizing-global-deliveries/',
@@ -159,19 +159,19 @@ class HomeController extends RestController
                 'link' => 'https://www.techworm.net/2018/08/company-disrupt-the-2-trillion-parcel-delivery-industry.html',
                 'image' => 'tech_worm.png',
                 'quote' => 'Paket is launching the world’s first decentralized parcel delivery network.<br/>It will bring connectivity to a fragmented market.',
-                'company' => 'Tech Worm'
+                'company' => 'TechWorm'
             ],
             [
                 'link' => 'https://www.zerohedge.com/news/2018-08-14/supply-chains-are-finally-getting-update-blockchain-innovation',
                 'image' => 'zero_hedge.png',
                 'quote' => 'PAKET proposes using blockchain to establish a package delivery ecosystem that will allow supply chain coordination of international transportation giants, delivery companies and last mile casual couriers.',
-                'company' => 'Zero Hedge'
+                'company' => 'ZeroHedge'
             ],
             [
                 'link' => 'https://hackernoon.com/decentralization-will-create-a-better-sharing-economy-1e84e0c36301',
                 'image' => 'hackernoon.png',
                 'quote' => 'Such a decentralized model doesn’t just open up the market. It creates a more cost-effective solution for the entire shipping industry to the benefit of consumers.',
-                'company' => 'Hacker Noon'
+                'company' => 'HackerNoon'
             ]
         ];
 
