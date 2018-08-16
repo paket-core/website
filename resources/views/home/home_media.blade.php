@@ -26,7 +26,7 @@
                                         <div class="item col-md-3 col-sm-3">
                                             <a href="{{$companies[$a]['link']}}"
                                                target="_blank">
-                                                <span class="quote">"{{$companies[$a]['quote']}}"</span>
+                                                <span class="quote">"{!!$companies[$a]['quote']!!}"</span>
                                                 <span class="quote-company">{{$companies[$a]['company']}}</span>
                                                 <img src="/images/logos_media_s/{{$companies[$a]['image']}}?xz13d"
                                                      srcset="/images/logos_media/{{$companies[$a]['image']}}?xz13d 2x"/>
