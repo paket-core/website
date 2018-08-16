@@ -1,9 +1,9 @@
 .join-page {
   .login-up-info {
     color: $colorFont;
-    font-size: 18px;
+    font-size: $fontSizeBig;
     font-weight: 300;
-    line-height: 32px;
+    line-height: $lineHeight2;
     float: right;
   }
   .login-up-link {
@@ -17,7 +17,7 @@
       font-weight: bold;
       min-width: 68px;
       padding: 0 10px;
-      line-height: 30px;
+      line-height: $lineHeight2;
     }
   }
   &.auth-page .section-left {

@@ -1,14 +1,14 @@
 .home-section {
   &.home-endorsements {
-    background-color: #f3f9ff;
+    background-color: $colorPaketBackground;
     h2 {
-      font-size: 40.6px;
+      font-size: $fontSize4;
       font-weight: bold;
-      color: #262626;
+      color: $colorFont3;
     }
     .btn {
       min-width: 270px;
-      line-height: 39px;
+      line-height: $lineHeight3;
       padding: 0 40px;
       border-radius: 24.5px;
       background-color: $colorPaketBlue;
@@ -18,16 +18,16 @@
       }
     }
     .desc {
-      font-size: 17.1px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       font-weight: 300;
       letter-spacing: 0.3px;
       text-align: center;
-      color: #080808;
+      color: $colorBlack;
       max-width: 900px;
       display: inline-block;
       margin: auto;
       margin-top: 20px;
-      line-height: 20px;
     }
     .link {
       margin-top: 30px;
@@ -36,19 +36,19 @@
       text-align: center;
       padding: 20px;
       h3 {
-        font-size: 16.4px;
+        font-size: $fontSize1;
+        line-height: $lineHeight1;
         font-weight: bold;
-        color: #2ac4ff;
+        color: $colorPaketBlue;
         text-transform: uppercase;
-        line-height: 20px;
       }
       .role {
-        font-size: 14px;
+        font-size: $fontSize1;
         font-weight: 300;
-        line-height: 23.3px;
+        line-height: $lineHeight1;
         letter-spacing: 0.3px;
         text-align: center;
-        color: #666666;
+        color: $colorPaketFooterGray;
       }
     }
   }
@@ -57,7 +57,7 @@
 @media (max-width: $sizeSmall) {
   .home-section {
     h2.title {
-      font-size: 32px;
+      font-size: $fontSize3;
     }
   }
 }

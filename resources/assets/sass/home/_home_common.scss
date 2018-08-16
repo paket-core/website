@@ -2,23 +2,23 @@
   padding-top: 70px;
   padding-bottom: 70px;
   &.dark {
-    background-color: #f3f9ff;
+    background-color: $colorPaketBackground;
   }
   .title {
-    font-size: 40.6px;
+    font-size: $fontSize4;
     font-weight: bold;
     text-align: center;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 30px;
     text-transform: uppercase;
   }
   .title-desc {
-    font-size: 17.1px;
-    line-height: 22px;
+    font-size: $fontSize1;
+    line-height: $lineHeight1;
     font-weight: 300;
     letter-spacing: 0.3px;
     text-align: center;
-    color: #080808;
+    color: $colorBlack;
   }
   .nice-carousel-buttons {
     margin-top: 10px;

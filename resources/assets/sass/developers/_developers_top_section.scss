@@ -9,10 +9,11 @@
   z-index: 2;
   height: $h;
   h2 {
-    font-size: 46.5px;
+    font-size: $fontSize4;
+    line-height: $lineHeight4;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: $colorWhite;
     margin-top: 120px;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -20,7 +21,7 @@
   .shadow {
     $c: #2882da;
     opacity: 0.7;
-    @include linear-gradient-b(#2ac8ff 0%, #338bff 100%);
+    @include linear-gradient-b($colorPaketBlue 0%, #338bff 100%);
     position: absolute;
     width: 100%;
     top: 0;
@@ -47,7 +48,8 @@
       max-width: 120px;
     }
     h2 {
-      font-size: 22px;
+      font-size: $fontSize3;
+      line-height: $lineHeight3;
       margin-top: 10px;
     }
     .shadow {

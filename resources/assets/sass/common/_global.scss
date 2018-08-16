@@ -9,6 +9,14 @@
 .page-content {
   max-width: 100%;
   overflow-x: hidden;
+  a {
+    $c: darken($colorPaketBlue, 20);
+    color: $c;
+    @include transition(color 500ms);
+    &:hover, &:active, &:focus {
+      color: darken($c, 10);
+    }
+  }
 }
 
 .page-content {
@@ -71,8 +79,8 @@ button, .btn {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 10px;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: $lineHeight1;
+  line-height: $lineHeight2;
   margin-left: 30px;
 }
 
@@ -113,26 +121,26 @@ button, .btn {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: $fontSize3;
+  line-height: $lineHeight3;
   margin-bottom: $paddingSize1;
   margin-top: $paddingSize1
 }
 
 h2 {
-  font-size: 25px;
-  line-height: 40px;
+  font-size: $fontSize2;
+  line-height: $lineHeight3;
 }
 
 h3 {
-  font-size: 20px;
+  line-height: $lineHeight1;
 }
 
 ul {
   list-style-type: circle;
   text-align: left;
   li {
-    line-height: 30px;
+    line-height: $lineHeight2;
   }
 }
 
@@ -225,7 +233,7 @@ strong {
   opacity: 1;
   &.toast-error, &.toast-success {
     padding: 15px 20px;
-    line-height: 24px;
+    line-height: $lineHeight1;
     background-image: none !important;
   }
   &.toast-error {

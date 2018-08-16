@@ -45,13 +45,13 @@ $logoSize: 614px;
     }
     @include placeholder {
       color: $colorWhite;
-      font-size: 16px;
+      font-size: $fontSize1;
     }
     .label {
       color: $colorWhite;
       margin-bottom: 14px;
       font-weight: bold;
-      line-height: 17px;
+      line-height: $lineHeight1;
     }
   }
 
@@ -62,8 +62,8 @@ $logoSize: 614px;
       color: $colorWhite;
       border: none;
       border-bottom: solid $colorWhite 2px;
-      font-size: 16px;
-      line-height: 40px;
+      font-size: $fontSize1;
+      line-height: $lineHeight3;
     }
   }
 
@@ -71,14 +71,14 @@ $logoSize: 614px;
     margin-top: 148px;
     margin-bottom: 37px;
     color: $colorGreen2;
-    font-size: 40px;
+    font-size: $fontSize4;
     font-weight: bold;
-    line-height: 48px;
+    line-height: $lineHeight4;
   }
   .auth-desc {
-    font-size: 18px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 29px;
+    line-height: $lineHeight2;
   }
   .form-button {
     background-color: $colorFontLight;
@@ -105,7 +105,7 @@ $logoSize: 614px;
   .auth-desc {
     margin-top: 20px;
     display: inline-block;
-    font-size: 16px;
+    font-size: $fontSize1;
   }
 }
 
@@ -131,21 +131,21 @@ $logoSize: 614px;
 
 .close-link {
   color: $colorWhite;
-  font-size: 18px;
+  font-size: $fontSize1;
+  line-height: $lineHeight1;
   font-weight: 300;
-  line-height: 26px;
   padding: 6px 10px;
   display: inline-block;
   cursor: pointer;
   position: relative;
   min-width: 300px;
   img {
-    max-width: 16px;
+    max-width: $fontSize1;
     margin-right: 11px;
     float: left;
   }
   p {
-    line-height: 16px;
+    line-height: $fontSize1;
     float: left;
   }
   &:hover {
@@ -195,7 +195,7 @@ $logoSize: 614px;
         right: inherit;
         left: 50%;
         margin-top: 120px;
-        margin-left: -$logoSize/2;;
+        margin-left: -$logoSize/2;
       }
     }
     .close-link {

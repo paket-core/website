@@ -3,7 +3,7 @@
   position: relative;
   .video-wrapper {
     overflow: hidden;
-    @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, #ffffff 100%);
+    @include linear-gradient-b(#d7eeff 0, #d7eeff 20%, $colorWhite 100%);
     video {
       max-width: 100%;
       margin-top: -50px;
@@ -28,9 +28,9 @@
     display: inline-block;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
     letter-spacing: 0.4px;
-    font-size: 26px;
+    font-size: $fontSize3;
+    line-height: $lineHeight3;
     font-weight: 300;
     text-align: center;
     color: $colorPaketBlue;
@@ -55,16 +55,17 @@
     height: inherit;
     border-radius: 15px;
     border: solid 1px $colorPaketBlue;
+    padding: 5px;
     padding-left: 55px;
     padding-right: 15px;
-    line-height: 32px;
+    line-height: $lineHeight2;
     img {
       position: absolute;
       left: 5px;
       top: -12px;
     }
     span {
-      font-size: 14px;
+      font-size: $fontSize1;
       font-weight: bold;
       text-align: left;
       color: $colorPaketBlue;
@@ -80,7 +81,7 @@
     padding-bottom: 0;
     max-width: 900px;
     margin: auto;
-    margin-top: -120px;
+    margin-top: 30px;
     .icon {
       display: block;
       position: relative;
@@ -101,8 +102,8 @@
       }
     }
     .title {
-      font-size: 20px;
-      line-height: 24px;
+      font-size: $fontSizeBig;
+      line-height: $lineHeight2;
       font-weight: bold;
       text-align: center;
       color: $colorPaketBlue;
@@ -113,8 +114,8 @@
       max-width: 240px;
       display: block;
       margin: auto;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       font-weight: 300;
       text-align: center;
       color: $colorFont3;
@@ -135,10 +136,10 @@
   .home-top-section {
     margin-top: 40px;
     .top-title {
-      font-size: 40px;
+      font-size: $fontSize4;
     }
     .top-desc {
-      font-size: 26px;
+      font-size: $fontSize3;
     }
     .video-wrapper {
       video {
@@ -164,7 +165,6 @@
         .btn-home {
           max-width: 200px;
           text-align: center;
-          padding: 0 30px;
         }
       }
     }
@@ -173,15 +173,17 @@
       width: 100%;
       display: inline-block;
       margin: auto;
-      line-height: 50px;
-      padding: 0 5px 0 30px;
+      padding: 5px 5px 5px 40px;
       text-align: left;
       img {
         max-width: 30px;
       }
+      span {
+        font-size: $fontSizeSmall;
+        line-height: $lineHeight1;
+      }
     }
     .believe-section {
-      margin-top: -30px;
       .believe-item {
         position: relative;
         padding-left: 120px;
@@ -237,12 +239,12 @@
 @media (max-width: $sizeExtraSmall) {
   .home-top-section {
     .top-title {
-      font-size: 30px;
-      line-height: 40px;
+      font-size: $fontSize3;
+      line-height: $lineHeight3;
       margin-top: 50px;
     }
     .top-desc {
-      font-size: 20px;
+      line-height: $lineHeight1;
       margin: 5px auto;
     }
     .top-actions {
@@ -253,7 +255,6 @@
       margin-top: -15px;
     }
     .believe-section {
-      margin-top: -40px;
       padding-bottom: 35px;
       .believe-item {
         padding-left: 20px;
@@ -271,7 +272,7 @@
       .top-wrapper {
         display: inline-block;
         margin: auto;
-        .title{
+        .title {
           word-wrap: break-word;
         }
       }

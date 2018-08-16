@@ -14,7 +14,7 @@
     margin-bottom: 30px;
   }
   .innerText {
-    line-height: 20px;
+    line-height: $lineHeight1;
   }
   .last-edited {
     text-align: right;
@@ -37,8 +37,8 @@
     margin-bottom: 30px;
     margin-top: 10px;
     li {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       margin-bottom: 10px;
     }
   }
@@ -49,8 +49,8 @@
       ol {
         li {
           font-weight: normal;
-          font-size: 16px;
-          line-height: 20px;
+          font-size: $fontSize1;
+          line-height: $lineHeight1;
           margin-bottom: 5px;
         }
         ol {
@@ -65,7 +65,7 @@
       & > li {
         &, &:before {
           font-weight: bold;
-          font-size: 20px;
+          line-height: $lineHeight1;
         }
         h3 {
           display: inline-block;
@@ -99,8 +99,8 @@
 .privacy-page.document-page {
   .info-p {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: $fontSize1;
+    line-height: $lineHeight1;
     margin-bottom: 10px;
   }
   .info-p-top {
@@ -117,7 +117,7 @@
         font-weight: bold;
         margin-top: 10px;
         margin-bottom: 5px;
-        font-size: 18px;
+        font-size: $fontSizeBig;
       }
     }
   }
@@ -127,7 +127,7 @@
 
   ul {
     font-weight: normal;
-    font-size: 16px;
+    font-size: $fontSize1;
     padding-left: 30px;
     li {
       margin-bottom: 0;

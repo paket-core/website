@@ -72,7 +72,7 @@
     z-index: 6;
     opacity: 1;
     cursor: pointer;
-    font-size: 20px;
+    line-height: $lineHeight1;
     &:hover {
       &:before {
         color: $colorBlue;
@@ -123,7 +123,7 @@
       max-width: 98%;
     }
     .black-top-section h1 {
-      font-size: 20px;
+      line-height: $lineHeight1;
     }
   }
 }

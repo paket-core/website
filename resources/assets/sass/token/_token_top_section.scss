@@ -1,7 +1,7 @@
 .token-top-section {
   padding-top: 130px;
   border-bottom: solid #e9e9e9 1px;
-  background-image: linear-gradient(to top, #ffffff, #d7eeff);
+  background-image: linear-gradient(to top, $colorWhite, #d7eeff);
   .back {
     background-image: url('/images/custom/token-sale-new/token_sale_coins.png');
     background-position: center;
@@ -18,21 +18,22 @@
     z-index: 2;
   }
   .title {
-    font-size: 52px;
+    font-size: $fontSize5;
+    line-height: $lineHeight5;
     font-weight: bold;
     text-align: center;
-    color: #262626;
+    color: $colorFont3;
     margin-top: 50px;
   }
   .desc {
     display: block;
     margin: auto;
     max-width: 911px;
-    font-size: 17.1px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 26.3px;
+    line-height: $lineHeight1;
     letter-spacing: 0.3px;
-    color: #000000;
+    color: $colorBlack;
     &.desc-1 {
       margin-top: 42px;
       margin-bottom: 30px;
@@ -41,28 +42,29 @@
   .counter-section {
     margin-top: 50px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: $colorWhite;
     box-shadow: 0 3px 59px 0 rgba(0, 0, 0, 0.1);
     padding: 25px;
     h1 {
-      font-size: 30.9px;
+      font-size: $fontSize3;
       font-weight: bold;
       text-align: center;
-      color: #2bcbff;
+      color: $colorPaketBlue;
       margin-top: 0;
     }
     .countdown {
       .item {
         .counter {
-          font-size: 61px;
+          font-size: $fontSize5;
+          line-height: $lineHeight5;
           font-weight: 100;
-          color: #2bcbff;
+          color: $colorPaketBlue;
         }
         .title {
-          font-size: 11px;
+          font-size: $fontSizeSmall;
           line-height: 14px;
           font-weight: 100;
-          color: #2bcbff;
+          color: $colorPaketBlue;
           margin-top: 15px;
           margin-bottom: 0;
         }
@@ -81,7 +83,6 @@
     }
     .title {
       margin-top: 120px;
-      font-size: 20px;
     }
     .desc-1.desc {
       margin-top: 20px;
@@ -96,7 +97,8 @@
     }
     .title {
       margin-top: 40px;
-      font-size: 20px;
+      font-size: $fontSize3;
+      line-height: $lineHeight3;
     }
     .desc-1.desc {
       margin-top: 20px;

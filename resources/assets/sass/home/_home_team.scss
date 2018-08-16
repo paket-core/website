@@ -8,16 +8,16 @@
       margin-bottom: 40px;
       min-height: 690px;
       .name {
-        font-size: 18.4px;
+        font-size: $fontSizeBig;
         font-weight: bold;
-        color: #2ac4ff;
+        color: $colorPaketBlue;
         text-transform: uppercase;
         margin-bottom: 20px;
       }
       .desc {
         margin-top: 10px;
-        font-size: 17px;
-        line-height: 20px;
+        font-size: $fontSize1;
+        line-height: $lineHeight1;
         color: $colorFont3;
         text-align: justify;
       }
@@ -41,7 +41,7 @@
         background-color: $colorPaketBlue;
         display: inline-block;
         $s: 40px;
-        font-size: 16px;
+        font-size: $fontSize1;
         width: $s;
         height: $s;
         line-height: $s - 4;
@@ -62,7 +62,7 @@
         top: 350px;
         &.icon-github {
           .icon {
-            font-size: 20px;
+            line-height: $lineHeight1;
           }
         }
       }
@@ -130,7 +130,7 @@
         right: 10px;
         .icon {
           $s: 30px;
-          font-size: 12px;
+          font-size: $fontSizeSmall;
           width: $s;
           height: $s;
           line-height: $s - 4;
@@ -138,7 +138,7 @@
         }
         &.icon-github {
           .icon {
-            font-size: 16px;
+            font-size: $fontSize1;
           }
         }
       }

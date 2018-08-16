@@ -8,17 +8,17 @@
   padding: 10px 10px;
   transition: 0.2s;
   &.is-active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba($colorBlack, 0.05);
   }
 }
 
 .fake-btn {
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba($colorBlack, 0.04);
+  border: 1px solid rgba($colorBlack, 0.1);
   border-radius: 3px;
   padding: 8px 15px;
   margin-right: 8px;
-  font-size: 12px;
+  font-size: $fontSize1;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@
   display: inline-block;
   max-width: calc(100% - 130px);
   vertical-align: middle;
-  line-height: 40px;
+  line-height: $lineHeight3;
 }
 
 .file-input {

@@ -15,7 +15,7 @@
         line-height: $s;
         border-radius: $s/2;
         display: inline-block;
-        background-color: #2ac4ff;
+        background-color: $colorPaketBlue;
         position: relative;
         z-index: 3;
         img {
@@ -28,16 +28,16 @@
         }
       }
       .road-map-date {
-        font-size: 21px;
-        color: rgb(42, 196, 255);
+        line-height: $lineHeight1;
+        color: $colorPaketBlue;
         margin-bottom: 20px;
       }
       .road-map-title, .road-map-desc {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: $fontSize1;
+        line-height: $lineHeight1;
       }
       .road-map-title {
-        color: rgb(0, 160, 221);
+        color: $colorPaketBlue;
         margin-bottom: 5px;
       }
     }
@@ -118,7 +118,7 @@
         top: 24px;
         height: 79px;
         left: 40px;
-        background-color: #afafaf;
+        background-color: $colorGreyLight;
         width: 1px;
       }
     }
@@ -137,7 +137,7 @@
           top: 62px;
           height: 1px;
           left: 0;
-          background-color: #afafaf;
+          background-color: $colorGreyLight;
           width: 100%;
         }
       }

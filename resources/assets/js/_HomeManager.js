@@ -5,7 +5,6 @@ var HomeManager = (function () {
     var VideoManager = require('./_VideoManager');
     var LoginPageEmbedded = require('./_LoginPageEmbedded');
 
-    var owlPublications;
     var ecoInterval;
     var ecoAnimation = false;
 
@@ -38,33 +37,6 @@ var HomeManager = (function () {
             // With optional speed parameter
             // Parameters has to be in square bracket '[]'
             owlRoadMap2.trigger('prev.owl.carousel', [300]);
-        });
-    }
-
-    function initCompanies() {
-
-        $('#viewMoreCompanies').off('click').click(function () {
-            $('.company-row.additional').removeClass('additional');
-        });
-
-        if (owlPublications) {
-            owlPublications.owlCarousel('destroy')
-        }
-
-        var width = $(window).width();
-        var items = 3;
-        if (width < 500) {
-            items = 1;
-        } else if (width < 600) {
-            items = 2;
-        }
-
-        $('.owl-carousel-companies-mobile').owlCarousel({
-            items: items,
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 3000,
-            dots: false
         });
     }
 
@@ -180,7 +152,7 @@ var HomeManager = (function () {
         }
 
         initRoadMap();
-        initCompanies();
+        initQuoteSlider();
         reloadItems();
 
         function initTeam(width) {
@@ -230,6 +202,32 @@ var HomeManager = (function () {
                     owlMedia.owlCarousel('destroy');
                     owlMedia = null;
                 }
+            }
+        }
+
+        function initQuoteSlider() {
+            var wrapper = $('#quoteWrapper');
+            var items = $('.media-carousel').find('.item');
+            var actCl = 'active';
+            var index = 0;
+            var timeout = 5000;
+            quoteSlide = setInterval(animate, timeout);
+
+            animate();
+
+            function animate() {
+                wrapper.removeClass('fadeOut').addClass('fadeIn');
+                items.removeClass(actCl);
+                var item = items.eq(index);
+                item.addClass(actCl);
+                wrapper.find('.quote').html(item.find('.quote').html());
+                wrapper.find('.quote-company').html(item.find('.quote-company').html());
+                setTimeout(function () {
+                    if (++index >= items.length) {
+                        index = 0;
+                    }
+                    wrapper.removeClass('fadeIn').addClass('fadeOut');
+                }, timeout - 800);
             }
         }
 

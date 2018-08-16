@@ -11,9 +11,9 @@
   padding: 20px 10px;
   cursor: inherit;
   .info {
-    line-height: 20px;
+    line-height: $lineHeight1;
     text-align: left;
-    font-size: 13px;
+    font-size: $fontSize1;
     float: left;
     padding-left: 10px;
     width: 210px;

@@ -1,9 +1,9 @@
 .token-distribution {
     h2{
-      font-size: 46.5px;
+      font-size: $fontSize4;
       font-weight: bold;
       text-align: center;
-      color: #262626;
+      color: $colorFont3;
       margin-bottom: 59px;
     }
 }
@@ -14,7 +14,7 @@
     padding-top: 20px;
     padding-bottom: 0;
     h2 {
-      font-size: 24px;
+      font-size: $fontSize2;
       text-align: center;
       margin-top: 30px;
     }

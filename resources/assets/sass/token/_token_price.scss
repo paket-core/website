@@ -1,35 +1,35 @@
 .token-price {
   padding-top: 100px;
   h2 {
-    font-size: 46.5px;
+    font-size: $fontSize4;
     font-weight: bold;
     text-align: center;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 80px;
     text-transform: uppercase;
   }
   .sub-title {
-    font-size: 29.6px;
+    font-size: $fontSize3;
     font-weight: 900;
     text-align: left;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 52px;
   }
 
   h3 {
-    font-size: 29.6px;
+    font-size: $fontSize3;
     font-weight: 900;
     text-align: left;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 52px;
   }
   p {
-    font-size: 16.2px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 24.9px;
+    line-height: $lineHeight1;
     letter-spacing: 0.3px;
     text-align: left;
-    color: #000000;
+    color: $colorBlack;
     &.desc-1 {
       margin-bottom: 20px;
     }
@@ -43,15 +43,15 @@
       margin-bottom: 20px;
     }
     .table {
-      background-color: #ffffff;
-      box-shadow: 0px 3px 59px 0 rgba(0, 0, 0, 0.1);
+      background-color: $colorWhite;
+      box-shadow: 0 3px 59px 0 rgba(0, 0, 0, 0.1);
       padding: 10px 20px;
       margin-top: 40px;
       .header {
-        font-size: 16.1px;
+        font-size: $fontSize1;
         font-weight: 900;
         text-align: left;
-        color: #262626;
+        color: $colorFont3;
         text-transform: uppercase;
         border-bottom: solid #efefef 1px;
       }
@@ -77,9 +77,9 @@
         }
       }
       .text {
-        font-size: 12.1px;
+        font-size: $fontSizeSmall;
         text-align: left;
-        color: #262626;
+        color: $colorFont3;
       }
     }
   }
@@ -93,17 +93,17 @@
       padding-top: 0;
     }
     h2 {
-      font-size: 24px;
+      font-size: $fontSize2;
       text-align: center;
     }
     h3, .cost h3 {
       margin-top: 30px;
-      font-size: 17px;
+      font-size: $fontSize1;
       margin-bottom: 20px;
       text-transform: uppercase;
     }
     p {
-      font-size: 15px;
+      font-size: $fontSize1;
     }
     .cost .table {
       padding: 10px;
@@ -122,7 +122,7 @@
         }
       }
       .header {
-        font-size: 11px;
+        font-size: $fontSizeSmall;
       }
       .table-row {
         font-size: 9px;

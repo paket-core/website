@@ -30,9 +30,9 @@
 
   .label {
     color: $colorFontLabel;
-    font-size: 16px;
+    font-size: $fontSize1;
     font-weight: bold;
-    line-height: 21px;
+    line-height: $lineHeight1;
     padding: 0;
     margin-bottom: 5px;
     display: inline-block;
@@ -47,8 +47,8 @@
     width: 100%;
     @include placeholder {
       color: $colorInputPlaceholder;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
     }
     .select2 {
       .select2-selection {
@@ -88,10 +88,10 @@
   .form-button, .btn {
     min-width: 190px;
     width: 100%;
-    line-height: 48px;
+    line-height: $lineHeight4;
     border-radius: 2px;
     padding: 0;
-    font-size: 18px;
+    font-size: $fontSizeBig;
     font-weight: bold;
     float: right;
     margin-top: 30px;

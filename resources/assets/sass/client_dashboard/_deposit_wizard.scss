@@ -12,7 +12,7 @@
     display: inline-block;
     width: 100%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: $fontSizeBig;
   }
   .help {
     display: inline-block;
@@ -50,7 +50,7 @@
         margin: auto;
       }
       &:hover {
-        background-color: #f4f4f4;
+        background-color: $colorGreyLight;
         border-color: $colorBlue;
         cursor: pointer;
       }

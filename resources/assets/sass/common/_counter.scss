@@ -2,14 +2,14 @@
   .item {
     color: $colorWhite;
     .counter {
-      font-size: 79.9px;
+      font-size: 80px;
       font-weight: 100;
-      color: #ffffff;
+      color: $colorWhite;
     }
     .title {
-      font-size: 14.7px;
+      font-size: $fontSize1;
       font-weight: normal;
-      color: #ffffff;
+      color: $colorWhite;
     }
     .dot {
       height: 6px;
@@ -21,8 +21,8 @@
     }
     .title, .counter {
       //TODO change color
-      color: #ffffff;
-      //color: $colorGrayTokenSale;
+      color: $colorWhite;
+      //color: $colorPaketFooterGray;
     }
   }
 }
@@ -31,7 +31,7 @@
   .countdown {
     .item {
       .counter {
-        font-size: 40px !important;
+        font-size: $fontSize4 !important;
       }
     }
   }

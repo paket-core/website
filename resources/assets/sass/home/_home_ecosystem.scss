@@ -101,18 +101,18 @@
       @include box-shadow(rgba($colorGray, 0.2) 0px 0px 10px);
     }
     h2 {
-      font-size: 16px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       font-weight: bold;
       text-transform: uppercase;
-      line-height: 30px;
       border-bottom: solid $colorPaketBlue 2px;
       text-align: left;
       margin-bottom: 10px;
     }
     p {
-      color: rgb(102, 102, 102);
-      font-size: 15px;
-      line-height: 20px;
+      color: $colorGrey;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       text-align: justify;
     }
   }
@@ -235,7 +235,7 @@
           }
         }
         .graph-title {
-          font-size: 17px;
+          font-size: $fontSize1;
           font-weight: bold;
           text-transform: uppercase;
           display: inherit;
@@ -243,9 +243,9 @@
         }
         .graph-desc {
           display: inherit;
-          color: rgb(102, 102, 102);
-          font-size: 16px;
-          line-height: 1.54;
+          color: $colorGrey;
+          font-size: $fontSize1;
+          line-height: $lineHeight1;
           text-align: justify;
           margin-top: 20px;
         }

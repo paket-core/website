@@ -43,10 +43,10 @@
     </div>
     <div class="video-wrapper">
         <div class="video">
-            <video loop muted autoplay poster="/video/paket_header.jpeg">
-                <source src="/video/paket_header_2.mp4" type="video/mp4">
-                <source src="/video/paket_header_2.ogv" type="video/ogg">
-                <source src="/video/paket_header_2.webm" type="video/webm">
+            <video loop muted autoplay poster="/video/map_top.jpg" class="video-bg_video">
+                <source src="/video/map_top.mp4" type="video/mp4">
+                <source src="/video/map_top.ogv" type="video/ogg">
+                <source src="/video/map_top.webm" type="video/webm">
             </video>
         </div>
     </div>

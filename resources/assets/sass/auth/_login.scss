@@ -1,15 +1,15 @@
 .login-page {
   .forgot-link {
     color: $colorWhite;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $fontSize1;
+    line-height: $lineHeight1;
     text-align: right;
   }
   .sign-up-info {
     color: $colorDarkBackground;
-    font-size: 18px;
+    font-size: $fontSizeBig;
     font-weight: 300;
-    line-height: 32px;
+    line-height: $lineHeight2;
     float: right;
   }
   .sign-up-link {
@@ -23,7 +23,7 @@
       font-weight: bold;
       min-width: 68px;
       padding: 0 10px;
-      line-height: 30px;
+      line-height: $lineHeight2;
     }
   }
   .form-group:nth-child(1) {

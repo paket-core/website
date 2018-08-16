@@ -1,16 +1,16 @@
 .home-section {
   &.home-about {
     .desc {
-      line-height: 1.54;
       letter-spacing: 0.3px;
       max-width: 815px;
       display: block;
       margin: auto;
       padding: 20px 30px;
-      font-size: 16px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       font-weight: 300;
       text-align: center;
-      color: #262626;
+      color: $colorFont3;
     }
     .video {
       margin-top: 30px;

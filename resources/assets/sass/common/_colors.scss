@@ -1,4 +1,4 @@
-$colorWhite: #fff;
+$colorWhite: #ffffff;
 $colorRed: #F44336;
 $colorPink: #E91E63;
 $colorBlue: #2190F5;
@@ -10,9 +10,9 @@ $colorYellowBar: #FFB450;
 $colorOrange: #FF9800;
 $colorOrangeBar: #FF7070;
 $colorGray: #bfbfbf;
-$colorBlack: #000;
+$colorBlack: #080808;
 
-$colorFont: #000;
+$colorFont: $colorBlack;
 $colorFontLighter: #333333;
 $colorFont3: #262626;
 $colorFontLight: #222222;
@@ -40,12 +40,12 @@ $colorShadowTeam: rgba($colorFont, 0.3);
 
 $colorPaketBlue: #2ac4ff;
 $colorPaketBlue2: #5ed3f5;
-$colorPaketGradient1: darken(#f3f9ff, 0);
-$colorPaketGradient2: darken(#2ac8ff, 0);
+$colorPaketBackground: #f3f9ff;
+$colorPaketGradient1: darken($colorPaketBackground, 0);
+$colorPaketGradient2: darken($colorPaketBlue, 0);
 $colorPaketGradient3: darken(#338bff, 0);
 $colorPaketFooterGray: #6e6e6e;
 $colorPaketFooterBlue: #27b9ee;
 $colorPaketBlueDark: #031a51;
 
 $colorPaketBlueDarken: darken($colorPaketBlue, 10);
-$colorGrayTokenSale: #828282;

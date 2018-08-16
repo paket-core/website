@@ -29,14 +29,14 @@
     color: $colorWhite;
   }
   .desc {
-    font-size: 18px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 29px;
+    line-height: $lineHeight2;
   }
   .hello {
-    font-size: 24px;
+    font-size: $fontSize2;
     font-weight: 900;
-    line-height: 34px;
+    line-height: $lineHeight2;
     margin-bottom: 10px;
   }
   .tab-pane {
@@ -91,9 +91,9 @@
     padding: 30px 0;
   }
   .title {
-    font-size: 24px;
+    font-size: $fontSize2;
     font-weight: 900;
-    line-height: 34px;
+    line-height: $lineHeight2;
     margin-bottom: 20px;
   }
   .label {
@@ -108,7 +108,7 @@
     margin-bottom: 30px;
   }
   p {
-    line-height: 20px;
+    line-height: $lineHeight1;
   }
   .refresh-deposit-status {
     i {
@@ -120,7 +120,7 @@
     .btn {
       width: 50%;
       float: left;
-      font-size: 16px;
+      font-size: $fontSize1;
       margin-top: 30px;
     }
   }
@@ -137,7 +137,7 @@
       border: solid $colorGreen 2px;
       padding: 10px 25px;
       float: left;
-      font-size: 24px;
+      font-size: $fontSize2;
     }
   }
   .payment-status {
@@ -177,7 +177,7 @@
     text-align: center;
     .payment-header {
       font-weight: bold;
-      background-color: #a2ccc5;
+      background-color: $colorPaketBlue;
       & > div {
         min-height: 74px;
       }
@@ -193,13 +193,13 @@
         border-bottom-width: 2px;
       }
       & > div {
-        padding: 16px;
+        padding: $fontSize1;
         border: solid $colorDarkBackground 2px;
         width: 20%;
         float: left;
         border-right-width: 0;
         border-bottom-width: 0;
-        line-height: 20px;
+        line-height: $lineHeight1;
         min-height: 80px;
         &:nth-last-child(1) {
           border-right-width: 2px;
@@ -208,9 +208,9 @@
     }
   }
   .no-transactions {
-    font-size: 18px;
+    font-size: $fontSizeBig;
     font-weight: 300;
-    line-height: 29px;
+    line-height: $lineHeight2;
     text-align: left;
   }
 }
@@ -248,8 +248,8 @@
     border: solid $colorGreen 1px;
     padding: 10px;
     float: left;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: $fontSize1;
+    line-height: $lineHeight1;
     min-width: 260px;
   }
   .btn-copy {

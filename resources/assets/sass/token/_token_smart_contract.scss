@@ -1,5 +1,5 @@
 .token-smart {
-  background-color: #f3f9ff;
+  background-color: $colorPaketBackground;
   text-align: center;
   $s: 554px;
   height: 296px;
@@ -8,23 +8,23 @@
   h2 {
     font-weight: 900;
     text-align: center;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 30px;
     margin-top: 70px;
     text-transform: uppercase;
   }
   .desc {
-    font-size: 16.2px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 24.9px;
+    line-height: $lineHeight1;
     letter-spacing: 0.3px;
     text-align: center;
-    color: #000000;
+    color: $colorBlack;
     margin-bottom: 34px;
   }
   .btn.btn-blue {
     border-radius: 24.5px;
-    background-color: #2ac4ff;
+    background-color: $colorPaketBlue;
     color: $colorWhite;
   }
   .img {

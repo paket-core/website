@@ -1,10 +1,10 @@
 .token-funds {
-  background-color: #f3f9ff;
+  background-color: $colorPaketBackground;
   h2 {
-    font-size: 46.5px;
+    font-size: $fontSize4;
     font-weight: bold;
     text-align: center;
-    color: #262626;
+    color: $colorFont3;
     text-transform: uppercase;
     margin-bottom: 60px;
   }
@@ -17,28 +17,29 @@
   max-width: 475px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: $colorWhite;
   box-shadow: 0px 3px 59px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 42px;
   .number {
-    font-size: 65.3px;
+    font-size: $fontSize5;
+    line-height: $lineHeight5;
     font-weight: 900;
-    color: #2ac4ff;
+    color: $colorPaketBlue;
     margin-bottom: 16px;
   }
   .title {
-    font-size: 20.8px;
+    line-height: $lineHeight1;
     font-weight: 900;
-    color: #2ac4ff;
+    color: $colorPaketBlue;
   }
   .desc {
-    font-size: 13.7px;
+    font-size: $fontSize1;
     font-weight: 300;
-    line-height: 22.5px;
+    line-height: $lineHeight1;
     letter-spacing: 0.3px;
     text-align: center;
-    color: #000000;
+    color: $colorBlack;
   }
 }
 
@@ -47,7 +48,7 @@
     padding-top: 20px;
     padding-bottom: 0;
     h2 {
-      font-size: 24px;
+      font-size: $fontSize2;
       text-align: center;
       margin-top: 30px;
     }

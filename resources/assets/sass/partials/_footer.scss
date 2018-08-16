@@ -20,9 +20,9 @@ footer {
       color: $colorPaketFooterBlue;
       display: inline-block;
       width: 100%;
-      font-size: 16px;
+      font-size: $fontSize1;
       font-weight: bold;
-      line-height: 26px;
+      line-height: $lineHeight1;
       &:hover {
         color: $colorBlue;
       }
@@ -31,9 +31,9 @@ footer {
   .title {
     text-align: center;
     color: $colorWhite;
-    font-size: 30px;
+    font-size: $fontSize3;
     font-weight: bold;
-    line-height: 40px;
+    line-height: $lineHeight3;
   }
   .social {
     text-align: center;
@@ -53,21 +53,21 @@ footer {
         margin-right: 0;
       }
       span {
-        font-size: 20px;
+        line-height: $lineHeight1;
       }
     }
   }
   .copyright {
     text-align: center;
     color: $colorPaketFooterGray;
-    font-size: 16px;
+    font-size: $fontSize1;
     font-weight: bold;
-    line-height: 26px;
+    line-height: $lineHeight1;
   }
   .documents {
     color: $colorPaketFooterBlue;
-    font-size: 16px;
+    font-size: $fontSize1;
     font-weight: bold;
-    line-height: 26px;
+    line-height: $lineHeight1;
   }
 }

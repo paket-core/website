@@ -1,9 +1,9 @@
 <section class="home-down-section down-section center" id="token-sale">
     <div class="video-bg">
-        <video loop muted autoplay poster="/video/preview.png" class="video-bg_video">
-            <source src="/video/map.mp4" type="video/mp4">
-            <source src="/video/map.ogv" type="video/ogg">
-            <source src="/video/map.webm" type="video/webm">
+        <video loop muted autoplay poster="/video/map_top.jpg" class="video-bg_video">
+            <source src="/video/map_top.mp4" type="video/mp4">
+            <source src="/video/map_top.ogv" type="video/ogg">
+            <source src="/video/map_top.webm" type="video/webm">
         </video>
     </div>
     <div class="video-top">

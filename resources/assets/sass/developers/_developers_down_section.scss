@@ -4,20 +4,20 @@
     padding-bottom: 20px;
   }
   h2 {
-    font-size: 29.6px;
+    font-size: $fontSize3;
     font-weight: 900;
     text-align: left;
-    color: #262626;
+    color: $colorFont3;
     margin-bottom: 46px;
     text-transform: uppercase;
   }
   .desc, ul li {
-    font-size: 16.2px;
+    font-size: $fontSize1;
+    line-height: $lineHeight1;
     font-weight: 300;
-    line-height: 24.9px;
     letter-spacing: 0.3px;
     text-align: justify;
-    color: #666666;
+    color: $colorPaketFooterGray;
   }
   ul {
     list-style: none;
@@ -34,16 +34,15 @@
     .code-item {
       min-height: 470px;
       border-radius: 4px;
-      background-color: #ededed;
-      border: solid #cacaca 2px;
+      background-color: $colorGreyLight;
+      border: solid $colorInputBorder 2px;
       //box-shadow: 0px 3px 59px 0 rgba(0, 0, 0, 0.1);
       padding: 20px 30px;
       h4 {
         text-transform: uppercase;
-        font-size: 20px;
         text-align: left;
         word-wrap: break-word;
-        line-height: 40px;
+        line-height: $lineHeight3;
         font-weight: bold;
       }
       .desc {
@@ -52,12 +51,12 @@
       }
       .btn {
         border-radius: 18px;
-        background-color: #2ac4ff;
-        font-size: 16.2px;
+        background-color: $colorPaketBlue;
+        font-size: $fontSize1;
         font-weight: 500;
         letter-spacing: 0.3px;
         text-align: center;
-        color: #ffffff;
+        color: $colorWhite;
         margin-top: 26px;
       }
       .img-wrapper {

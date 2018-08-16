@@ -9,12 +9,12 @@
   min-height: 528px;
 
   .token-title {
-    font-size: 40.6px;
+    font-size: $fontSize4;
     font-weight: bold;
     margin-top: 70px;
     //TODO change color
-    color: #ffffff;
-    //color: $colorGrayTokenSale;
+    color: $colorWhite;
+    //color: $colorPaketFooterGray;
   }
 
   .token-sale-update {
@@ -22,7 +22,7 @@
     $m: 200px;
     width: $s;
     height: 275px;
-    background-color: #ffffff;
+    background-color: $colorWhite;
     box-shadow: 0px -6px 27px 0 rgba(0, 0, 0, 0.22);
     position: absolute;
     left: 50%;
@@ -43,24 +43,23 @@
       margin-left: #{-$s/2 + $m};
     }
     .title {
-      font-size: 19.4px;
+      line-height: $lineHeight1;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
-      line-height: normal;
       letter-spacing: normal;
-      color: #1e1e1e;
+      color: $colorFont;
       margin-bottom: 20px;
     }
     .desc {
-      font-size: 17.1px;
+      font-size: $fontSize1;
+      line-height: $lineHeight1;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: normal;
       letter-spacing: 0.3px;
       text-align: center;
-      color: #3d3d3d;
+      color: $colorFont;
       margin-bottom: 20px;
     }
     .btn-update-1 {
@@ -85,7 +84,7 @@
       width: $s;
       height: $s;
       min-width: inherit;
-      background-color: #2ac3ff;
+      background-color: $colorPaketBlue;
       padding: 7px 0 0 3px;
       border-radius: $s/2;
       position: absolute;
@@ -155,7 +154,7 @@
     min-height: 754px;
     padding-bottom: 0;
     .token-title {
-      font-size: 34px;
+      font-size: $fontSize3;
     }
     .token-sale-updates {
       margin-top: 40px;

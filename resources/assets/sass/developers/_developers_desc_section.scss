@@ -9,7 +9,7 @@
     }
     .subtitle {
       color: $colorPaketBlue;
-      font-size: 18px;
+      font-size: $fontSize1;
       margin-top: 20px;
     }
     .dotted-list {
@@ -28,7 +28,8 @@
         display: inline-block;
         margin: auto;
         text-align: left;
-        font-size: 20px;
+        font-size: $fontSize2;
+        line-height: $lineHeight2;
         margin-top: 30px;
       }
       .title-wrapper {
@@ -40,6 +41,9 @@
 
 @media (max-width: $sizeSmall) {
   .home-section.developers-desc{
+    h1.title {
+      margin-top: 0;
+    }
     &.home-project {
       .project-items-wrapper {
         display: initial;

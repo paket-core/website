@@ -21,9 +21,9 @@
     float: left;
     li a {
       color: $colorGreen2;
-      font-size: 20px;
+      line-height: $lineHeight1;
       font-weight: bold;
-      line-height: 24px;
+      line-height: $lineHeight1;
       &:hover {
         color: $colorBlue;
       }
@@ -61,9 +61,9 @@
         display: inline-block;
         max-width: $size;
         color: $colorWhite;
-        font-size: 30px;
+        font-size: $fontSize3;
         font-weight: bold;
-        line-height: 36px;
+        line-height: $lineHeight2;
         &:hover {
           color: $colorBlue;
         }
