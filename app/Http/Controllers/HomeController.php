@@ -129,7 +129,7 @@ class HomeController extends RestController
                 'link' => 'https://finance.yahoo.com/news/paket-launch-decentralized-deliveries-platform-153000290.html?guccounter=1',
                 'image' => 'yahoo_finance.png',
                 'quote' => 'PAKET is building a decentralized delivery platform powered by the Stellar platform to bring a significant improvement to the logistics industry.',
-                'company' => 'Yahoo'
+                'company' => 'Yahoo! Finance'
             ],
             [
                 'link' => 'https://bitscreener.com/news/solving-the-last-mile-how-blockchain-is-changing-the-face-of-delivery',
