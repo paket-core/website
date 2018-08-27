@@ -14,7 +14,7 @@
                 <div class="col-md-12 documents">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="/privacy-policy">
                                 @lang('home.footer_privacy_policy')
                             </a>
                         </li>
