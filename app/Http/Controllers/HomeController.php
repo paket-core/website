@@ -172,6 +172,12 @@ class HomeController extends RestController
                 'image' => 'hackernoon.png',
                 'quote' => 'Such a decentralized model doesn’t just open up the market. It creates a more cost-effective solution for the entire shipping industry to the benefit of consumers.',
                 'company' => 'HackerNoon'
+            ],
+            [
+                'link' => 'https://www.nasdaq.com/article/solving-consumer-deliverys-last-mile-problem-with-blockchain-technology-cm1010762',
+                'image' => 'nasdaq.png',
+                'quote' => 'PAKET is one blockchain startup that is working on the potential for distributed ledger technology to disrupt the parcel delivery sector.',
+                'company' => 'Nasdaq'
             ]
         ];
 
