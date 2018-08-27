@@ -8,16 +8,16 @@
   left: 50%;
   margin-left: -250px;
   bottom: 1rem;
-  background: $colorPaketBlue;
-  color: #fff;
+  background: $colorPaketBlueLight;
+  color: $colorFont;
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 300;
   width: 500px;
   max-width: 100%;
   a {
-    color: $colorWhite;
+    color: $colorPaketBlue !important;
     font-weight: 700;
-    border-bottom: solid $colorWhite 2px;
+    border-bottom: solid $colorPaketBlue 2px;
   }
   p {
     float: left;
