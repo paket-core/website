@@ -5,13 +5,8 @@
         </div>
         <div class="col-md-12 center">
             <div class="quote-wrapper animated" id="quoteWrapper">
-                <p class="quote">
-                    the PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally
-                    using the trustless nature afforded by the blockchain and smart contract technologies.
-                </p>
-                <p class="quote-company">
-                    Market Insider
-                </p>
+                <p class="quote"></p>
+                <p class="quote-company"></p>
             </div>
         </div>
         <div class="col-md-12 center">
@@ -21,9 +16,9 @@
                     @for($a = 0; $a<=count($companies); $a++)
                         @if (count($companies) > 18)
                             <div class="row company-row {{$a>18 ? 'additional' : ''}}"> @endif
-                                @for($b = 0; $b<4; $b++)
+                                @for($b = 0; $b<=6; $b++)
                                     @if (isset($companies[$a]))
-                                        <div class="item col-md-3 col-sm-3">
+                                        <div class="item col-md-2 col-sm-3">
                                             <a href="{{$companies[$a]['link']}}"
                                                target="_blank">
                                                 <span class="quote">"{!!$companies[$a]['quote']!!}"</span>
@@ -35,7 +30,7 @@
                                     @endif
                                     <?php $a++; ?>
                                 @endfor
-                                @if (count($companies) > 18) </div> @endif
+                        @if (count($companies) > 18) </div> @endif
                     @endfor
                 </div>
             </section>

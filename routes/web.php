@@ -11,10 +11,7 @@
 |
 */
 
-Route::middleware(['session_locale'])->group(function () {
-    Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
-    Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
-});
+Route::get('privacy-policy', 'DocumentsController@privacy_policy')->name('privacy-policy');
 
 //TODO enable routes for login page
 //Route::middleware(['guest', 'session_locale'])->group(function () {
@@ -27,6 +24,10 @@ Route::middleware(['session_locale'])->group(function () {
 //Route::middleware(['auth', 'session_locale'])->group(function () {
 //    Route::get('/my-account', 'ClientController@my_account')->name('my-account');
 //});
+//Route::middleware(['session_locale'])->group(function () {
+//    Route::get('/verification/{code}', 'VerificationController@show')->name('ico-template::verification');
+//    Route::get('/confirm-account/{code}', 'VerificationController@show_for_referrals')->name('ico-template::verification_referrals');
+//});
 
 Route::get('sitemap', function () {
     // create new sitemap object
@@ -37,6 +38,7 @@ Route::get('sitemap', function () {
         $sitemap->add(env('APP_URL') . '/home', \Carbon\Carbon::now(), '1.0', 'daily');
         $sitemap->add(env('APP_URL') . '/token-sale', \Carbon\Carbon::now(), '1.0', 'daily');
         $sitemap->add(env('APP_URL') . '/developers', \Carbon\Carbon::now(), '1.0', 'daily');
+        $sitemap->add(env('APP_URL') . '/privacy-policy', \Carbon\Carbon::now(), '1.0', 'daily');
     }
     return $sitemap->render('xml');
 });

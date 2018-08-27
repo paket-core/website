@@ -1,141 +1,110 @@
 .document-page {
   text-align: justify;
   padding-bottom: 90px;
-  .black-top-section {
-    padding-top: 180px;
-    padding-bottom: 40px;
-    background-color: $colorDarkBackground;
-    color: $colorWhite;
-  }
   .page-down-section {
     padding-top: 20px;
-  }
-  h2 {
-    margin-bottom: 30px;
-  }
-  .innerText {
-    line-height: $lineHeight1;
-  }
-  .last-edited {
-    text-align: right;
-  }
-  .read {
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 40px;
-  }
-  .read-agree {
-    margin-bottom: 20px;
-  }
-  .read-address {
-    text-align: center;
-    white-space: pre;
-  }
-  ul.preamble {
-    padding-left: 30px;
-    list-style: upper-alpha;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    li {
-      font-size: $fontSize1;
-      line-height: $lineHeight1;
+    ul {
+      padding-left: 30px;
+      list-style: inherit;
+      list-style-type: disc;
+      li {
+        font-size: $fontSize1;
+        line-height: $lineHeight1;
+        margin-bottom: 5px;
+      }
+    }
+    ul ul {
+      padding-left: 30px;
+      list-style: inherit;
+      list-style-type: circle;
+    }
+    h2 {
+      font-size: $fontSize2;
+      line-height: $lineHeight2;
+      margin-top: 20px;
       margin-bottom: 10px;
+      font-weight: 700;
+    }
+    ol {
+      p {
+        margin-bottom: 5px;
+        font-size: $fontSize1;
+        line-height: $lineHeight1;
+      }
+    }
+    table {
+      margin: 20px auto;
+      width: 100%;
+      thead th {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        vertical-align: middle;
+        p {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+        }
+      }
+      td, th {
+        padding: 10px 20px;
+        width: 30%;
+        border: solid $colorInputBorder 1px;
+        &:nth-child(1) {
+          width: 40%;
+        }
+      }
+    }
+    ol ol {
+      padding-left: 20px;
+      li {
+        list-style: inherit;
+        list-style-type: decimal;
+        margin-bottom: 5px;
+        text-align: left;
+      }
     }
   }
-  .terms-document .info {
-    ol {
-      list-style: decimal;
-      margin-bottom: 20px;
-      ol {
-        li {
-          font-weight: normal;
-          font-size: $fontSize1;
-          line-height: $lineHeight1;
-          margin-bottom: 5px;
+  .version {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .document-page {
+    .page-down-section {
+      .table-wrapper {
+        overflow-x: scroll;
+        p {
+          text-align: left;
         }
-        ol {
-          margin-top: 10px;
-          padding-left: 30px;
-          list-style: lower-roman;
+        th, td {
+          &:nth-child(1) {
+            min-width: 150px;
+          }
+          &:nth-child(2) {
+            max-width: 110px;
+          }
+        }
+        th, td {
+          padding: 5px 10px;
+          p, ol li {
+            text-align: left;
+            word-wrap: break-word;
+            font-size: $fontSizeSmall;
+            line-height: $lineHeightSmall;
+          }
         }
       }
-    }
-
-    ol.top {
-      & > li {
-        &, &:before {
-          font-weight: bold;
-          line-height: $lineHeight1;
-        }
-        h3 {
-          display: inline-block;
-          margin-bottom: 10px;
-        }
-        & > ol {
-          padding-left: 20px;
-        }
-      }
-    }
-
-    ol {
-      list-style-type: none;
-      counter-reset: item;
-    }
-
-    ol > li {
-      counter-increment: item;
-    }
-
-    ol > li:before {
-      content: counters(item, ".") ". ";
-    }
-
-    li ol > li:before {
-      content: counters(item, ".") ". ";
     }
   }
 }
 
-.privacy-page.document-page {
-  .info-p {
-    font-weight: normal;
-    font-size: $fontSize1;
-    line-height: $lineHeight1;
-    margin-bottom: 10px;
-  }
-  .info-p-top {
-    margin-bottom: 20px;
-  }
-  ol li {
-    margin-bottom: 20px;
-    ol li {
-      margin-bottom: 40px;
-      &:before {
-        font-weight: bold;
-      }
-      h4 {
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-size: $fontSizeBig;
-      }
+@media (max-width: $sizeExtraSmall) {
+  .document-page {
+    .developers-top-section .top-content {
+      margin-top: 20px;
     }
-  }
-  ol > li {
-    counter-increment: item;
-  }
-
-  ul {
-    font-weight: normal;
-    font-size: $fontSize1;
-    padding-left: 30px;
-    li {
-      margin-bottom: 0;
-    }
-  }
-
-  li:before {
-    float: left;
-    margin-right: 10px;
   }
 }
