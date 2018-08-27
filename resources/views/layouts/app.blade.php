@@ -82,6 +82,7 @@
 
 <script src="/plugins/webfontloader.js"></script>
 
+<script src="/vendor/ico-template/plugins/js-cookie/js/js.cookie.min.js"></script>
 <script data-cfasync="false" type="text/javascript" src="{{ mix('js/app.js')}}"></script>
 
 </body>

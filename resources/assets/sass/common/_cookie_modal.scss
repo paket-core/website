@@ -1,0 +1,53 @@
+.cookie-modal {
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  position: fixed;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  left: 50%;
+  margin-left: -250px;
+  bottom: 1rem;
+  background: $colorPaketBlue;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 600;
+  width: 500px;
+  max-width: 100%;
+  a {
+    color: $colorWhite;
+    font-weight: 700;
+    border-bottom: solid $colorWhite 2px;
+  }
+  p {
+    float: left;
+    line-height: 40px;
+  }
+  .btn-white {
+    background-color: $colorWhite;
+    min-width: 160px;
+    height: inherit;
+    border-radius: 15px;
+    border: solid 1px $colorPaketBlue;
+    padding: 5px 15px;
+    line-height: 28px;
+    color: $colorFont;
+    float: right;
+  }
+}
+
+@media (max-width: $sizeSmall) {
+  .cookie-modal {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    .btn, p {
+      float: none;
+    }
+    .btn {
+      margin-top: 5px;
+    }
+  }
+}

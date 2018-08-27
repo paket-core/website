@@ -61,6 +61,7 @@ $(document).ready(function () {
         var VerificationManager = require('./_VerificationManager');
         var ToastrManager = require('./_ToastrManager');
         var LanguageManager = require('./_LanguageManager');
+        var CookieManager = require('./_CookieManager');
 
         function stripQueryStringAndHashFromPath(url) {
             return url.split("?")[0].split("#")[0];
@@ -71,6 +72,7 @@ $(document).ready(function () {
 
         ToastrManager.init();
         LanguageManager.init();
+        CookieManager.init();
 
         switch (url) {
             case '':

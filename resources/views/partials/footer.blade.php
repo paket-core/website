@@ -24,3 +24,7 @@
         </div>
     </div>
 </footer>
+<div class="cookie-modal hidden">
+    <p>This site uses cookies. <a target="_blank" href="/privacy-policy">Learn more.</a></p>
+    <button class="btn btn-white">Okay</button>
+</div>

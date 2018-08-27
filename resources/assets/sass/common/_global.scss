@@ -22,7 +22,7 @@
 .page-content {
   color: $colorFont;
   * {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Proxima Nova", 'Open Sans:regular:cyrillic', 'Roboto', sans-serif;
   }
   a, .btn {
     &:hover, &:focus, &:active {
