@@ -4,7 +4,7 @@
   .project-item {
     padding-top: 30px;
     margin-bottom: 20px;
-    &.source-code p{
+    &.source-code p {
       text-align: left;
     }
     .subtitle {
@@ -37,10 +37,16 @@
       }
     }
   }
+  .architecture {
+    display: inline-block;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+  }
 }
 
 @media (max-width: $sizeSmall) {
-  .home-section.developers-desc{
+  .home-section.developers-desc {
     h1.title {
       margin-top: 0;
     }
@@ -48,6 +54,10 @@
       .project-items-wrapper {
         display: initial;
       }
+    }
+    .architecture {
+      max-width: inherit;
+      width: 100%;
     }
   }
 }

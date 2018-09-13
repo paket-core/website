@@ -61,11 +61,20 @@ return [
     'section_desc_3_p_4_li_2' => '모바일 앱: 택배의 실질적인 의뢰, 전송 및 수령의 진행',
     'section_desc_3_h_5' => 'Layer 4 - 경제',
     'section_desc_3_p_5' => '본 레이어는 PAKET 에코시스템의 공동체 조직구성을 도와주고 서비스가 질적 성장을할 수 있도록 지원해줍니다. 현재는 구상단계에 있으며 향후 이행될 예정입니다. ',
-    'section_desc_4_p_1' => '당사의 API서버- 본 서버는 :LINK 과 유저의 애플리케이션 간의 브릿지 역할을 수행해줍니다.',
-    'section_desc_4_p_1_link' => 'Stellar Horizon',
-    'section_desc_4_p_2' => '당사의 펀드서버- 본 서버는 토큰사용 희망자에게 토큰을 공급해 줍니다.',
-    'section_desc_4_p_3' => '최초 모바일 애플리케이션 - 심플한 탈중앙화 택배시스템을 구현시킵니다.',
-    'section_desc_4_a_4' => '당사의 스텔라 브런치- 코어 파이썬 패키지 ',
-    'section_desc_4_p_4' => '공식 파이썬 패키지에 기여할 수 있는 기회도 종종있습니다. '
+
+//    'section_desc_4_p_1_link' => 'Our Stellar library',
+//    'section_desc_4_p_1_desc' => 'implementing the Stellar side of the PAKET layer(L1)',
+//    'section_desc_4_p_2_link' => 'Our bridge server',
+//    'section_desc_4_p_2_desc' => 'functioning as a bridge between Stellar Horizon servers and user applications, providing access to the PAKET layer (L1)',
+//    'section_desc_4_p_3_link' => 'Our routing server',
+//    'section_desc_4_p_3_desc' => 'providing a temporary centralized routing layer (L2)',
+//    'section_desc_4_p_4_link' => 'Our funding server',
+//    'section_desc_4_p_4_desc' => 'providing tokens to those who wish to use them',
+//    'section_desc_4_p_5_link' => 'Our manager scaffolding',
+//    'section_desc_4_p_5_desc' => 'providing scripts for deploying, updating, testing, and running our servers',
+//    'section_desc_4_p_6_link' => 'The first mobile app to use PAKET',
+//    'section_desc_4_p_6_desc' => 'enabling simple, decentralized deliveries',
+//    'section_desc_4_p_7_link' => 'Our branch of the stellar-core Python package',
+//    'section_desc_4_p_7_desc' => 'we occasionally get the chance to contribute to the official Python package!',
 ];
 ?>

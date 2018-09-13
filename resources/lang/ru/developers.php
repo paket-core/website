@@ -61,12 +61,21 @@ return [
     'section_desc_3_p_4_li_2' => 'Mобильное приложение для отправления, курьеров и получения посылок.',
     'section_desc_3_h_5' => 'Уровень 4 - Экономика',
     'section_desc_3_p_5' => 'Этот уровень строит организации и сервисы процветающие в экосистеме ПЭКЕТ и обогащающие ее. У нас есть много интересных, пока неимплементированных планов для этого уровня..',
-    'section_desc_4_p_1' => 'Наш API сервер - работает как мост между :LINK серверами и пользовательскими приложениями',
-    'section_desc_4_p_1_link' => 'Stellar horizon',
-    'section_desc_4_p_2' => 'Наш сервер оплаты - предоставляет токены для тех кто желает их использовать',
-    'section_desc_4_p_3' => 'Первое мобильное приложение - делает возможным простые децентрализованные доставки',
-    'section_desc_4_a_4' => 'Наша ветка библиотеки stellar-core на Python',
-    'section_desc_4_p_4' => '`- иногда у нас есть возможность делать вклад в официальную версию этой библиотеки',
+
+//    'section_desc_4_p_1_link' => 'Our Stellar library',
+//    'section_desc_4_p_1_desc' => 'implementing the Stellar side of the PAKET layer(L1)',
+//    'section_desc_4_p_2_link' => 'Our bridge server',
+//    'section_desc_4_p_2_desc' => 'functioning as a bridge between Stellar Horizon servers and user applications, providing access to the PAKET layer (L1)',
+//    'section_desc_4_p_3_link' => 'Our routing server',
+//    'section_desc_4_p_3_desc' => 'providing a temporary centralized routing layer (L2)',
+//    'section_desc_4_p_4_link' => 'Our funding server',
+//    'section_desc_4_p_4_desc' => 'providing tokens to those who wish to use them',
+//    'section_desc_4_p_5_link' => 'Our manager scaffolding',
+//    'section_desc_4_p_5_desc' => 'providing scripts for deploying, updating, testing, and running our servers',
+//    'section_desc_4_p_6_link' => 'The first mobile app to use PAKET',
+//    'section_desc_4_p_6_desc' => 'enabling simple, decentralized deliveries',
+//    'section_desc_4_p_7_link' => 'Our branch of the stellar-core Python package',
+//    'section_desc_4_p_7_desc' => 'we occasionally get the chance to contribute to the official Python package!',
 
 
 ];

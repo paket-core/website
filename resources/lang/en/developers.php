@@ -69,11 +69,20 @@ return [
     'section_desc_3_p_5' => 'This layer builds organizations and services that thrive in the PAKET ecosystem and enrich it. We have some interesting plans regarding it, but no current implementations.',
 
 
-    'section_desc_4_p_1' => 'Our API server - functioning as a bridge between :LINK servers and user applications.',
-    'section_desc_4_p_1_link' => 'Stellar horizon',
-    'section_desc_4_p_2' => 'Our funding server - providing tokens to those who wish to use them.',
-    'section_desc_4_p_3' => 'The first mobile app - enabling simple, decentralized deliveries.',
-    'section_desc_4_a_4' => 'Our branch of the stellar-core Python package',
-    'section_desc_4_p_4' => '- we occasionally get the chance to contribute to the official Python package!',
+    'section_desc_4_p_1_link' => 'Our Stellar library',
+    'section_desc_4_p_1_desc' => 'implementing the Stellar side of the PAKET layer(L1)',
+    'section_desc_4_p_2_link' => 'Our bridge server',
+    'section_desc_4_p_2_desc' => 'functioning as a bridge between Stellar Horizon servers and user applications, providing access to the PAKET layer (L1)',
+    'section_desc_4_p_3_link' => 'Our routing server',
+    'section_desc_4_p_3_desc' => 'providing a temporary centralized routing layer (L2)',
+    'section_desc_4_p_4_link' => 'Our funding server',
+    'section_desc_4_p_4_desc' => 'providing tokens to those who wish to use them',
+    'section_desc_4_p_5_link' => 'Our manager scaffolding',
+    'section_desc_4_p_5_desc' => 'providing scripts for deploying, updating, testing, and running our servers',
+    'section_desc_4_p_6_link' => 'The first mobile app to use PAKET',
+    'section_desc_4_p_6_desc' => 'enabling simple, decentralized deliveries',
+    'section_desc_4_p_7_link' => 'Our branch of the stellar-core Python package',
+    'section_desc_4_p_7_desc' => 'we occasionally get the chance to contribute to the official Python package!',
+
 ];
 ?>

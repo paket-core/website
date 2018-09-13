@@ -61,12 +61,21 @@ return [
     'section_desc_3_p_4_li_2' => '移动APP，以切实发起、运送和接收包裹。',
     'section_desc_3_h_5' => '第4层 - 经济',
     'section_desc_3_p_5' => '该层构建了在PAKET生态系统中蓬勃发展的组织和服务。反过来，这些组织和服务将丰富我们的生态系统。在这方面，我们有一些有趣的计划，但目前尚未实现。',
-    'section_desc_4_p_1' => '我们的API服务器 - 作为:LINK服务器和用户APP间的衔接。',
-    'section_desc_4_p_1_link' => 'Stellar horizon',
-    'section_desc_4_p_2' => '我们的募资服务器 - 为潜在用户提供代币。',
-    'section_desc_4_p_3' => '首款移动APP - 实现简单、去中心化的包裹运输。',
-    'section_desc_4_a_4' => '我们的stellar-core Python包的分支',
-    'section_desc_4_p_4' => '偶尔，我们也有机会为官方Python包做贡献！',
+
+//    'section_desc_4_p_1_link' => 'Our Stellar library',
+//    'section_desc_4_p_1_desc' => 'implementing the Stellar side of the PAKET layer(L1)',
+//    'section_desc_4_p_2_link' => 'Our bridge server',
+//    'section_desc_4_p_2_desc' => 'functioning as a bridge between Stellar Horizon servers and user applications, providing access to the PAKET layer (L1)',
+//    'section_desc_4_p_3_link' => 'Our routing server',
+//    'section_desc_4_p_3_desc' => 'providing a temporary centralized routing layer (L2)',
+//    'section_desc_4_p_4_link' => 'Our funding server',
+//    'section_desc_4_p_4_desc' => 'providing tokens to those who wish to use them',
+//    'section_desc_4_p_5_link' => 'Our manager scaffolding',
+//    'section_desc_4_p_5_desc' => 'providing scripts for deploying, updating, testing, and running our servers',
+//    'section_desc_4_p_6_link' => 'The first mobile app to use PAKET',
+//    'section_desc_4_p_6_desc' => 'enabling simple, decentralized deliveries',
+//    'section_desc_4_p_7_link' => 'Our branch of the stellar-core Python package',
+//    'section_desc_4_p_7_desc' => 'we occasionally get the chance to contribute to the official Python package!',
 
 ];
 ?>

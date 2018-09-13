@@ -80,17 +80,53 @@
             <div class="project-item row source-code" id="source-code">
                 <div class="col-md-6 col-md-push-6">
                     <h1 class="title">@lang('developers.section_title_4')</h1>
-                    <p class="desc">@lang('developers.section_desc_4_p_1',['LINK' => '<a href="https://www.stellar.org/developers/guides/get-started/index.html">'.trans('developers.section_desc_4_p_1_link').'</a>'])</p>
-                    <p class="desc">@lang('developers.section_desc_4_p_2')</p>
-                    <p class="desc">@lang('developers.section_desc_4_p_3')</p>
-                    <p class="desc"><a href="https://github.com/paket-core/py-stellar-base"
-                                       target="_blank">@lang('developers.section_desc_4_a_4')</a> @lang('developers.section_desc_4_p_4')
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/paket-stellar">{{trans('developers.section_desc_4_p_1_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_1_desc')}}
                     </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/bridge">{{trans('developers.section_desc_4_p_2_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_2_desc')}}
+                    </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/router">{{trans('developers.section_desc_4_p_3_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_3_desc')}}
+                    </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/funder">{{trans('developers.section_desc_4_p_4_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_4_desc')}}
+                    </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/manager">{{trans('developers.section_desc_4_p_5_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_5_desc')}}
+                    </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/mobile">{{trans('developers.section_desc_4_p_6_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_6_desc')}}
+                    </p>
+                    <p class="desc">
+                        <a target="_blank" rel="noreferrer noopener"
+                           href="https://github.com/paket-core/py-stellar-base">{{trans('developers.section_desc_4_p_7_link')}}</a>
+                        - {{trans('developers.section_desc_4_p_7_desc')}}
+                    </p>
+
                 </div>
                 <div class="col-md-6 col-md-pull-6">
                     <img src="/images/developers/developers_1_s.png"
                          alt="@lang('developers.section_title_4')"
                          srcset="/images/developers/developers_1_b.png 2x, /images/developers/developers_1.png 3x">
+                </div>
+                <div class="col-md-12 center">
+                    <img src="/images/developers/developers_1_architecture.jpeg"
+                         class="architecture"
+                         alt="@lang('developers.section_title_4')"
+                         srcset="/images/developers/developers_1_architecture_s.jpeg 480w, /images/developers/developers_1_architecture.jpeg 800w, /images/developers/developers_1_architecture_b.jpeg 2x">
                 </div>
             </div>
             <div class="project-item row" id="community">
@@ -107,6 +143,14 @@
                     <img src="/images/developers/developers_2_s.png"
                          alt="@lang('developers.section_title_2')"
                          srcset="/images/developers/developers_2_b.png 2x, /images/developers/developers_2.png 3x">
+                </div>
+                <div class="col-md-12 center">
+                    <a href="https://github.com/paket-core/mobile/projects/1" target="_blank" rel="noreferrer noopener">
+                        <img src="/images/developers/developers_1_architecture.jpeg"
+                             class="architecture"
+                             alt="@lang('developers.section_title_4')"
+                             srcset="/images/developers/developers_2_board_s.jpeg 480w, /images/developers/developers_2_board.jpeg 800w, /images/developers/developers_2_board_b.jpeg 2x">
+                    </a>
                 </div>
             </div>
         </div>
