@@ -1,1 +1,0 @@
-<script data-cfasync="false" src="/vendor/ico-template/js/web3.min.js"></script>

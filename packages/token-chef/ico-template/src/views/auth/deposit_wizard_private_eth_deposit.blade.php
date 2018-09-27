@@ -1,8 +1,0 @@
-<div class="question">@lang('ico-template::home.deposit_wizard_eth_generated_deposit_address_question')</div>
-<div class="form">
-    <p class="help">@lang('ico-template::home.deposit_wizard_eth_generated_deposit_address_help')</p>
-    <div class="buttons">
-        <button class="btn btn-dark form-button eth-deposit-form-btn loading-hide">@lang('ico-template::home.create_eth_generated_deposit_form_button')</button>
-        @include('ico-template::partials.loading_button')
-    </div>
-</div>

@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="/vendor/ico-template/plugins/toastr/css/toastr.min.css">
