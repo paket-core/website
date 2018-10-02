@@ -18,10 +18,7 @@ var HomeManager = (function () {
             owlRoadMap.trigger('next.owl.carousel');
         });
 
-// Go to the previous item
         $('.owlRoadMapPrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
             owlRoadMap.trigger('prev.owl.carousel', [300]);
         });
 
@@ -33,10 +30,7 @@ var HomeManager = (function () {
             owlRoadMap2.trigger('next.owl.carousel');
         });
 
-// Go to the previous item
         $('.owlRoadMap2PrevBtn').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
             owlRoadMap2.trigger('prev.owl.carousel', [300]);
         });
     }
@@ -198,10 +192,7 @@ var HomeManager = (function () {
                     owlTeam.trigger('next.owl.carousel');
                 });
 
-// Go to the previous item
                 $('.owlTeamPrevBtn').off('click').click(function () {
-                    // With optional speed parameter
-                    // Parameters has to be in square bracket '[]'
                     owlTeam.trigger('prev.owl.carousel', [300]);
                 });
             } else {
@@ -232,10 +223,7 @@ var HomeManager = (function () {
                         owlEcosystem.trigger('next.owl.carousel');
                     });
 
-// Go to the previous item
                     $('.owlEcosystemPrevBtn').off('click').click(function () {
-                        // With optional speed parameter
-                        // Parameters has to be in square bracket '[]'
                         owlEcosystem.trigger('prev.owl.carousel', [300]);
                     });
 
@@ -273,10 +261,7 @@ var HomeManager = (function () {
                         owlProject.trigger('next.owl.carousel');
                     });
 
-                    // Go to the previous item
                     $('.owlProjectPrevBtn').off('click').click(function () {
-                        // With optional speed parameter
-                        // Parameters has to be in square bracket '[]'
                         owlProject.trigger('prev.owl.carousel', [300]);
                     });
                 }

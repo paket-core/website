@@ -169,15 +169,35 @@
                 <div class="col-md-12 center">
                     <h2 class="title">IN THE MEDIA</h2>
                 </div>
-                <div class="col-md-12 center">
+                <!--div class="col-md-12 center">
                     <div class="quote-wrapper animated fadeIn" id="quoteWrapper">
                         <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
                         <p class="quote-company">Bitsonline</p>
                     </div>
+                </div-->
+                <div class="col-md-12 center">
+                    <div class="media-carousel owl-carousel">
+                        <div class="quote-wrapper" id="quoteWrapper">
+                            <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
+                            <p class="quote-company">Bitsonline</p>
+                        </div>
+                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
+                            <p class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</p>
+                            <p class="quote-company">MarketsInsider</p>
+                        </div>
+                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
+                            <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
+                            <p class="quote-company">Bitsonline</p>
+                        </div>
+                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
+                            <p class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</p>
+                            <p class="quote-company">MarketsInsider</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-12 center">
                     <section class="media companies-wrapper" id="companiesList">
-                        <div class="media-carousel owl-carousel">
+                        <div class="media-carousel owl-carousel owl-theme">
                             <div class="item col-md-2 col-sm-3">
                                 <a href="https://markets.businessinsider.com/news/stocks/paket-to-launch-a-decentralized-deliveries-platform-1027439214" target="_blank">
                                     <span class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</span>
@@ -711,7 +731,10 @@
 
                 <div class="road-map-wrapper">
                     <div class="owl-carousel road-map-carousel-2 owl-loaded owl-drag">
-                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-570px, 0px, 0px); transition: all 0s ease 0s; width: 1995px;"><div class="owl-item" style="width: 285px;"><div class="road-map-item finished">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(-570px, 0px, 0px); transition: all 0s ease 0s; width: 1995px;">
+                                <div class="owl-item" style="width: 285px;">
+                                    <div class="road-map-item finished">
                                 <div class="ellipsis ellipsis-1"></div>
                                 <div class="ellipsis ellipsis-2"></div>
                                 <div class="ellipsis-line"></div>
@@ -1161,32 +1184,43 @@
     </div>
 </div>
 
+
 <!--script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl1aVfNF/www-widgetapi.js" async=""></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.1.0/countly.min.js"></script-->
 
 <script src="js/jquery-1.12.4.min.js"></script>
+<!--script>
+$(function() {
+    $(".owl-carousel").owlCarousel({
+        animateIn: 'fadeIn',
+        //margin:10,
+        autoplay:true,
+        loop:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        items:1
+    });
+
+});
+
+    </script-->
 
 <script data-cfasync="false" src="js/bootstrap.min.js"></script>
-<!--script data-cfasync="false" src="js/smooth-scroll.min.js"></script>
-<script data-cfasync="false" src="js/jquery.path.js"></script>
-<script data-cfasync="false" src="plugins/owl/owl.carousel.min.js"></script>
-<script data-cfasync="false" src="js/ico-template/js/client_app.js"></script-->
 
-
-<!--script src="js/raven.min.js"></script-->
+<script src="js/raven.min.js"></script>
 <!--div class="hidden" id="fontPath" data-font-path="fonts/fonts.css"></div>
 <div class="hidden" id="appEnv" data-env="production"></div-->
 
 <script src="js/webfontloader.js"></script>
+<script src="js/ico-template/plugins/js-cookie/js/js.cookie.min.js"></script>
+<script data-cfasync="false" type="text/javascript" src="js/app.js"></script>
 
-<!--script src="js/ico-template/plugins/js-cookie/js/js.cookie.min.js"></script>
-
-<script data-cfasync="false" type="text/javascript" src="js/app.js"></script-->
-
-    <!--script data-cfasync="false" src="plugins/smooth-scroll.min.js"></script-->
-    <script data-cfasync="false" src="plugins/jquery.path.js"></script>
+    <script data-cfasync="false" src="js/smooth-scroll.min.js"></script>
+    <script data-cfasync="false" src="js/jquery.path.js"></script>
     <script data-cfasync="false" src="js/owl/owl.carousel.min.js"></script>
+    <script data-cfasync="false" src="js/ico-template/js/client_app.js"></script>
+    <script data-cfasync="false" src="js/main.js"></script>
 
     <!--script type="text/javascript" src="js/HomeManager.js"></script-->
     <script type="text/javascript" src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/js/app.js?id=a53dadd9cdff55e5bc13"></script>
