@@ -2,12 +2,38 @@ var ecoInterval;
 
 $( document ).ready(function() { // Запускает скрипты когда загрузило страницу
     initEcosystemGraph();
-    //initCompanies();
-    init();
-    //initTokenSale();
+    initQuoteSlider();
+    initCompanies();
+    initTokenSale();
     initRoadMap();
+    init();
+    console.log("12")
 });
+function initQuoteSlider() {
+    var wrapper = $('#quoteWrapper');
+    var items = $('.media-carousel').find('.item');
+    var actCl = 'active';
+    var index = 0;
+    var timeout = 5000;
+    quoteSlide = setInterval(animate, timeout);
 
+    animate();
+
+    function animate() {
+        wrapper.removeClass('fadeOut').addClass('fadeIn');
+        items.removeClass(actCl);
+        var item = items.eq(index);
+        item.addClass(actCl);
+        wrapper.find('.quote').html(item.find('.quote').html());
+        wrapper.find('.quote-company').html(item.find('.quote-company').html());
+        setTimeout(function () {
+            if (++index >= items.length) {
+                index = 0;
+            }
+            wrapper.removeClass('fadeIn').addClass('fadeOut');
+        }, timeout - 800);
+    }
+}
 function initEcosystemGraph() {
 
     var ecoGraph = $('#ecoGraph');
@@ -98,9 +124,9 @@ function initCompanies() {
             $('.company-row.additional').removeClass('additional');
         });
 
-        /*if (owlPublications) {
-            owlPublications.owlCarousel('destroy')
-        }*/
+        // if (owlPublications) {
+        //     owlPublications.owlCarousel('destroy')
+        // }
 
         var width = $(window).width();
         var items = 3;
@@ -123,38 +149,41 @@ function init() {
     var widthSmall = 767;
     var widthLarge = 1200;
     var win = $(window);
-    var owlProject, owlTeam, owlEcosystem;
+    var owlProject, owlTeam, owlEcosystem, owlMedia;
     var width = win.width();
 
     RevealManager.init({
         bars: true
     });
 
-   // CountDownManager.init();
-   // VideoManager.init();
-   // LoginPageEmbedded.init();
+    //CountDownManager.init();
+    //VideoManager.init();
+    //LoginPageEmbedded.init();
 
-    win.resize(function () {
+    $(window).resize(function () {
         width = $(this).width();
         reloadItems();
+        console.log("resize")
     });
 
     function reloadItems() {
         initProjects(width);
         initEcoSystem(width);
         initTeam(width);
+        initMedia(width);
     }
 
     initRoadMap();
-    initCompanies();
+    initQuoteSlider();
     reloadItems();
+    initMedia(width);
 
     function initTeam(width) {
         if (width <= widthSmall) {
             owlTeam = $(".team-carousel").owlCarousel({
                 autoplay: true,
                 smartSpeed: 1000,
-                autoplayTimeout: 15000,
+                autoplayTimeout: 10000,
                 loop: true,
                 stagePadding: 0,
                 autoHeight: true,
@@ -176,6 +205,52 @@ function init() {
         }
     }
 
+    function initMedia(width) {
+        if (width <= widthSmall) {
+            owlMedia = $(".media-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                autoplayTimeout: 3000,
+                loop: true,
+                stagePadding: 0,
+                autoHeight: true,
+                items: 1
+            });
+
+        } else {
+            if (owlMedia) {
+                owlMedia.owlCarousel('destroy');
+                owlMedia = null;
+            }
+        }
+    }
+
+    function initQuoteSlider() {
+        var wrapper = $('#quoteWrapper');
+        var items = $('.media-carousel').find('.item');
+        var actCl = 'active';
+        var index = 0;
+        var timeout = 5000;
+        quoteSlide = setInterval(animate, timeout);
+
+        animate();
+
+        function animate() {
+            wrapper.removeClass('fadeOut').addClass('fadeIn');
+            items.removeClass(actCl);
+            var item = items.eq(index);
+            item.addClass(actCl);
+            wrapper.find('.quote').html(item.find('.quote').html());
+            wrapper.find('.quote-company').html(item.find('.quote-company').html());
+            setTimeout(function () {
+                if (++index >= items.length) {
+                    index = 0;
+                }
+                wrapper.removeClass('fadeIn').addClass('fadeOut');
+            }, timeout - 800);
+        }
+    }
+
     function initEcoSystem(width) {
 
         if (width < widthLarge) {
@@ -187,6 +262,7 @@ function init() {
                     autoplay: true,
                     smartSpeed: 1000,
                     autoplayTimeout: 15000,
+                    autoHeight: true,
                     loop: true,
                     stagePadding: 30,
                     items: 1
@@ -234,7 +310,10 @@ function init() {
                     owlProject.trigger('next.owl.carousel');
                 });
 
+                // Go to the previous item
                 $('.owlProjectPrevBtn').off('click').click(function () {
+                    // With optional speed parameter
+                    // Parameters has to be in square bracket '[]'
                     owlProject.trigger('prev.owl.carousel', [300]);
                 });
             }
@@ -245,11 +324,12 @@ function init() {
             }
         }
     }
+
 }
 
 function initTokenSale() {
     initRoadMap();
-    CountDownManager.init();
+    // CountDownManager.init();
 }
 
 function initRoadMap() {
@@ -315,11 +395,11 @@ var RevealManager = (function () {
             margin = margin / 2;
         }
 
-        if (smooth) {
-            new SmoothScroll('a[href*="#"]', {
-                offset: 80
-            });
-        }
+        // if (smooth) {
+        //     new SmoothScroll('a[href*="#"]', {
+        //         offset: 80
+        //     });
+        // }
 
         reveal.css('opacity', 0);
         setTimeout(function () {

@@ -1,73 +1,101 @@
-@font-face{
-	font-family:Proxima Nova;
-	font-style:normal;
-	font-weight:400;
-	src:url("proxima-nova-regular-webfont.woff") 
-	format("woff"),url("proxima-nova-regular-webfont.ttf") 
-	format("truetype"),url("proxima-nova-regular-webfont.eot") 
-	format("eot"),url("proxima-nova-regular-webfont.svg#Samplino") 
-	format("svg")
+@font-face {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    src: url("proxima-nova-regular-webfont.woff") format("woff"), 
+    url("proxima-nova-regular-webfont.ttf") format("truetype"), 
+    url("proxima-nova-regular-webfont.eot?") format("eot"), 
+    url("proxima-nova-regular-webfont.svg#Samplino") format("svg");
 }
-@font-face{
-	font-family:Proxima Nova;
-	font-style:normal;
-	font-weight:900;
-	src:url("proxima-nova-bold-webfont.woff") 
-	format("woff"),url("proxima-nova-bold-webfont.ttf") 
-	format("truetype"),url("proxima-nova-bold-webfont.eot") 
-	format("eot"),url("proxima-nova-bold-webfont.svg#Samplino") 
-	format("svg")
+@font-face {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 900;
+    src: url("proxima-nova-bold-webfont.woff") format("woff"), 
+    url("proxima-nova-bold-webfont.ttf") format("truetype"), 
+    url("proxima-nova-bold-webfont.eot?") format("eot"), 
+    url("proxima-nova-bold-webfont.svg#Samplino") format("svg");
 }
-@font-face{
-	font-family:Proxima Nova;
-	font-style:normal;
-	font-weight:700;
-	src:url("proxima-nova-bold-webfont.woff") 
-	format("woff"),url("proxima-nova-bold-webfont.ttf") 
-	format("truetype"),url("proxima-nova-bold-webfont.eot") 
-	format("eot"),url("proxima-nova-bold-webfont.svg#Samplino") 
-	format("svg")
+@font-face {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 700;
+    src: url("proxima-nova-bold-webfont.woff") format("woff"), 
+    url("proxima-nova-bold-webfont.ttf") format("truetype"), 
+    url("proxima-nova-bold-webfont.eot?") format("eot"), 
+    url("proxima-nova-bold-webfont.svg#Samplino") format("svg");
 }
-@font-face{
-	font-family:Proxima Nova;
-	font-style:italic;
-	font-weight:400;
-	src:url("proxima-nova-thin-webfont.woff") 
-	format("woff"),url("proxima-nova-thin-webfont.ttf") 
-	format("truetype"),url("proxima-nova-thin-webfont.eot") 
-	format("eot"),url("proxima-nova-thin-webfont.svg#Samplino") 
-	format("svg")
+@font-face {
+    font-family: Proxima Nova;
+    font-style: italic;
+    font-weight: 400;
+    src: url("proxima-nova-thin-webfont.woff") format("woff"), 
+    url("proxima-nova-thin-webfont.ttf") format("truetype"), 
+    url("proxima-nova-thin-webfont.eot?") format("eot"), 
+    url("proxima-nova-thin-webfont.svg#Samplino") format("svg");
 }
-@font-face{
-	font-family:icomoon;
-	src:url("icomoon.eot");
-	src:url("icomoon.eot") 
-	format("embedded-opentype"),url("icomoon.ttf") 
-	format("truetype"),url("icomoon.woff") 
-	format("woff"),url("icomoon.svg#icomoon") 
-	format("svg");
-	font-weight:400;
-	font-style:normal
+@font-face {
+    font-family: icomoon;
+    src: url("icomoon.eot?pbus8p");
+    src: url("icomoon.eot?pbus8p#iefix") format("embedded-opentype"), 
+    url("icomoon.ttf?pbus8p") format("truetype"), 
+    url("icomoon.woff?pbus8p") format("woff"), 
+    url("icomoon.svg?pbus8p#icomoon") format("svg");
+    font-weight: 400;
+    font-style: normal;
 }
-[class*=" icon-"],[class^=icon-]{
-	font-family:icomoon!important;
-	speak:none;
-	font-style:normal;
-	font-weight:400;
-	font-variant:normal;
-	text-transform:none;
-	line-height:1;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale
+[class*=" icon-"], [class^=icon-] {
+    font-family: icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.icon-telegram:before{content:"\E907";color:#2ca5e0}
-.icon-chevron-down:before{content:"\E906";color:#2ca5e0}
-.icon-yt:before{content:"\E900";color:#2ca5e0}
-.icon-reddit:before{content:"\E905";color:#2ca5e0}
-.icon-medium:before{content:"\E909";color:#2ca5e0}
-.icon-fb:before{content:"\E90A";color:#2ca5e0}
-.icon-git:before{content:"\E902";color:#2ca5e0}
-.icon-google:before{content:"\E901";color:#2ca5e0}
-.icon-linkedin:before{content:"\E904";color:#2ca5e0}
-.icon-twitter:before{content:"\E90B";color:#2ca5e0}
-.icon-whatsapp:before{content:"\E903";color:#2ca5e0}
+.icon-telegram:before {
+    content: "\E907";
+    color: #2ca5e0;
+}
+.icon-chevron-down:before {
+    content: "\E906";
+    color: #2ca5e0;
+}
+.icon-yt:before {
+    content: "\E900";
+    color: #2ca5e0;
+}
+.icon-reddit:before {
+    content: "\E905";
+    color: #2ca5e0;
+}
+.icon-medium:before {
+    content: "\E909";
+    color: #2ca5e0;
+}
+.icon-fb:before {
+    content: "\E90A";
+    color: #2ca5e0;
+}
+.icon-git:before {
+    content: "\E902";
+    color: #2ca5e0;
+}
+.icon-google:before {
+    content: "\E901";
+    color: #2ca5e0;
+}
+.icon-linkedin:before {
+    content: "\E904";
+    color: #2ca5e0;
+}
+.icon-twitter:before {
+    content: "\E90B";
+    color: #2ca5e0;
+}
+.icon-whatsapp:before {
+    content: "\E903";
+    color: #2ca5e0;
+}

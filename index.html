@@ -10,14 +10,11 @@
     <meta content="PAKET - global decentralized package delivery" name="title">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:regular%7CRoboto&amp;subset=cyrillic">
-    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" media="all" href="plugins/animate/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="plugins/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="css/app.css">
-    <link rel="stylesheet" type="text/css" media="all" href="css/animate.min.css">
-    <link rel="stylesheet" type="text/css" media="all" href="js/owl/css/owl.carousel.min.css">
-
-    <!--link rel="stylesheet" type="text/css" media="all" href="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/css/app.css?id=91d329ad1e50b7a8b479"-->
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -126,9 +123,9 @@
             <div class="video-wrapper">
                 <div class="video">
                     <video loop="loop" muted="muted" autoplay="autoplay" poster="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/video/map_top.jpg" class="video-bg_video">
-                        <source src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/video/map_top.mp4" type="video/mp4">
-                        <source src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/video/map_top.ogv" type="video/ogg">
-                        <source src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/video/map_top.webm" type="video/webm">
+                        <source src="video/map_top.mp4" type="video/mp4">
+                        <source src="video/map_top.ogv" type="video/ogg">
+                        <source src="video/map_top.webm" type="video/webm">
                     </video>
                 </div>
             </div>
@@ -169,35 +166,15 @@
                 <div class="col-md-12 center">
                     <h2 class="title">IN THE MEDIA</h2>
                 </div>
-                <!--div class="col-md-12 center">
-                    <div class="quote-wrapper animated fadeIn" id="quoteWrapper">
-                        <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
-                        <p class="quote-company">Bitsonline</p>
-                    </div>
-                </div-->
                 <div class="col-md-12 center">
-                    <div class="media-carousel owl-carousel">
-                        <div class="quote-wrapper" id="quoteWrapper">
-                            <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
-                            <p class="quote-company">Bitsonline</p>
-                        </div>
-                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
-                            <p class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</p>
-                            <p class="quote-company">MarketsInsider</p>
-                        </div>
-                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
-                            <p class="quote">"Paket is developing a trustless, secure, and global network for parcel deliveries using its native BUL token."</p>
-                            <p class="quote-company">Bitsonline</p>
-                        </div>
-                        <div class="quote-wrapper owl-theme" id="quoteWrapper">
-                            <p class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</p>
-                            <p class="quote-company">MarketsInsider</p>
-                        </div>
+                    <div class="quote-wrapper animated" id="quoteWrapper">
+                        <p class="quote"></p>
+                        <p class="quote-company"></p>
                     </div>
                 </div>
                 <div class="col-md-12 center">
                     <section class="media companies-wrapper" id="companiesList">
-                        <div class="media-carousel owl-carousel owl-theme">
+                        <div class="media-carousel owl-carousel">
                             <div class="item col-md-2 col-sm-3">
                                 <a href="https://markets.businessinsider.com/news/stocks/paket-to-launch-a-decentralized-deliveries-platform-1027439214" target="_blank">
                                     <span class="quote">"The PAKET platform will allow anyone from anywhere in the world to ship items quickly and optimally using the trustless nature afforded by the blockchain and smart contract technologies."</span>
@@ -265,13 +242,17 @@
                     </section>
                 </div>
             </div>
-        </section>        
+        </section> 
+
         <div class="home-section home-about dark center">
             <div class="container">
                 <div class="col-md-12 center">
-                    <div id="playVideoButton" class="video play-button" data-video-src="SQPwNctnoYM">
-                        <img src="images/home/video.jpg" srcset="images/home/video@2x.jpg 2x, images/home/video@3x.jpg 3x" alt="WE ARE PAKET                             ">
-                        <img src="images/home/you-tube.png" srcset="images/home/you-tube@2x.png 2x, images/home/you-tube@3x.png 3x" alt="WE ARE PAKET" class="youtube-img">
+                    <div class="desc desc-2">
+                        <div id="playVideoButton" class="video play-button" data-video-src="SQPwNctnoYM">
+                            <!--img src="images/home/video.jpg" srcset="images/home/video@2x.jpg 2x, images/home/video@3x.jpg 3x" alt="WE ARE PAKET">
+                            <img src="images/home/you-tube.png" srcset="images/home/you-tube@2x.png 2x, images/home/you-tube@3x.png 3x" alt="WE ARE PAKET" class="youtube-img"-->
+                            <iframe width="689" height="388" src="https://www.youtube.com/embed/SQPwNctnoYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -280,7 +261,8 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>   
+
         <section class="home-section home-project center" id="product">
             <div class="container project-items-carousel-wrapper">
                 <div class="owl-carousel project-items-carousel">
@@ -1185,45 +1167,25 @@
 </div>
 
 
-<!--script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl1aVfNF/www-widgetapi.js" async=""></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.1.0/countly.min.js"></script-->
+    <script type="text/javascript" src="plugins/jquery/js/jquery-1.12.4.min.js"></script>
 
-<script src="js/jquery-1.12.4.min.js"></script>
-<!--script>
-$(function() {
-    $(".owl-carousel").owlCarousel({
-        animateIn: 'fadeIn',
-        //margin:10,
-        autoplay:true,
-        loop:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        items:1
-    });
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
 
-});
+    <script type="text/javascript" src="plugins/raven/js/raven.min.js"></script>
 
-    </script-->
+<!--div class="hidden" id="fontPath" data-font-path="fonts/fonts.css"></div-->
+<!--div class="hidden" id="appEnv" data-env="{{env('APP_ENV')}}"></div-->
 
-<script data-cfasync="false" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/webfontloader.js"></script>
+<script type="text/javascript" src="js/LanguageManager.js"></script>
+<!--script src="https://www.youtube.com/iframe_api"></script->
 
-<script src="js/raven.min.js"></script>
-<!--div class="hidden" id="fontPath" data-font-path="fonts/fonts.css"></div>
-<div class="hidden" id="appEnv" data-env="production"></div-->
-
-<script src="js/webfontloader.js"></script>
-<script src="js/ico-template/plugins/js-cookie/js/js.cookie.min.js"></script>
-<script data-cfasync="false" type="text/javascript" src="js/app.js"></script>
-
-    <script data-cfasync="false" src="js/smooth-scroll.min.js"></script>
-    <script data-cfasync="false" src="js/jquery.path.js"></script>
-    <script data-cfasync="false" src="js/owl/owl.carousel.min.js"></script>
-    <script data-cfasync="false" src="js/ico-template/js/client_app.js"></script>
-    <script data-cfasync="false" src="js/main.js"></script>
-
-    <!--script type="text/javascript" src="js/HomeManager.js"></script-->
-    <script type="text/javascript" src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/js/app.js?id=a53dadd9cdff55e5bc13"></script>
+<!--script src="vendor/ico-template/plugins/js-cookie/js/js.cookie.min.js"></script-->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="plugins/jquery.path.js"></script>
+<script type="text/javascript" src="plugins/owl/owl.carousel.min.js"></script>    
+<script type="text/javascript" src="js/main.js"></script>
+<!--script type="text/javascript" src="http://pkt-lb-1258007728.eu-west-1.elb.amazonaws.com/js/app.js?id=a53dadd9cdff55e5bc13"></script-->
     
 
 
