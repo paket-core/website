@@ -2222,6 +2222,7 @@ ul.dotted-list li .dot {
 }
 .home-section .owl-carousel-buttons {
     display: none;
+    cursor: pointer;
 }
 @media (max-width:992px) {
     .home-section.home-team .team-carousel-wrapper .member {

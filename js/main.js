@@ -1,12 +1,21 @@
 var ecoInterval;
 
 $( document ).ready(function() { // Запускает скрипты когда загрузило страницу
+
+ if ($(this).width() < 1200) {
+    init();
+ }
+ else {
     initEcosystemGraph();
+    init();
+ }
+
+    // initEcosystemGraph();
     initQuoteSlider();
     initCompanies();
     initTokenSale();
     initRoadMap();
-    init();
+    // init();
     console.log("12")
 });
 function initQuoteSlider() {
@@ -310,10 +319,7 @@ function init() {
                     owlProject.trigger('next.owl.carousel');
                 });
 
-                // Go to the previous item
                 $('.owlProjectPrevBtn').off('click').click(function () {
-                    // With optional speed parameter
-                    // Parameters has to be in square bracket '[]'
                     owlProject.trigger('prev.owl.carousel', [300]);
                 });
             }
@@ -395,11 +401,11 @@ var RevealManager = (function () {
             margin = margin / 2;
         }
 
-        // if (smooth) {
-        //     new SmoothScroll('a[href*="#"]', {
-        //         offset: 80
-        //     });
-        // }
+        /*if (smooth) {
+            new SmoothScroll('a[href*="#"]', {
+                offset: 80
+            });
+        }*/
 
         reveal.css('opacity', 0);
         setTimeout(function () {
