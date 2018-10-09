@@ -1,0 +1,29 @@
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7AB9FF" offset="0%"></stop>
+            <stop stop-color="#76A2FF" offset="33.2526404%"></stop>
+            <stop stop-color="#6A71FF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="40.5" cy="40.5" r="40.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WINGS_Foundation_LP-Final" transform="translate(-139.000000, -6933.000000)">
+            <g id="Combined-Shape" transform="translate(139.000000, 6933.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M64.9053258,21 L64.9053258,88.517877 C64.9053258,90.1747313 63.56218,91.517877 61.9053258,91.517877 L17.0946742,91.517877 C15.43782,91.517877 14.0946742,90.1747313 14.0946742,88.517877 L14.0946742,21 C14.0946742,19.3431458 15.43782,18 17.0946742,18 L61.9053258,18 C63.56218,18 64.9053258,19.3431458 64.9053258,21 Z" fill="#2A3092" mask="url(#mask-3)"></path>
+                <rect id="Rectangle-12" fill="#FFFFFF" mask="url(#mask-3)" x="23" y="70" width="11" height="12"></rect>
+                <rect id="Rectangle-12-Copy-2" fill="#FFFFFF" mask="url(#mask-3)" x="23" y="51" width="11" height="12"></rect>
+                <rect id="Rectangle-12-Copy-5" fill="#FFFFFF" mask="url(#mask-3)" x="23" y="30" width="11" height="12"></rect>
+                <rect id="Rectangle-12-Copy" fill="#FFFFFF" mask="url(#mask-3)" x="44" y="70" width="11" height="12"></rect>
+                <rect id="Rectangle-12-Copy-3" fill="#FFFFFF" mask="url(#mask-3)" x="44" y="51" width="11" height="12"></rect>
+                <rect id="Rectangle-12-Copy-4" fill="#FFFFFF" mask="url(#mask-3)" x="44" y="30" width="11" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

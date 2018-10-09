@@ -1,0 +1,18 @@
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <!--linearGradient x1="50%" y1="0%" x2="42.5180047%" y2="116.782579%" id="linearGradient-1">
+            <stop stop-color="#DDF9FF" offset="0%"></stop>
+            <stop stop-color="#DDF9FF" offset="100%"></stop>
+        </linearGradient-->
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WINGS_Foundation_LP-Final" transform="translate(-139.000000, -8607.000000)">
+            <g id="Group-23" transform="translate(139.000000, 8607.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="30" cy="30" r="30"></circle>
+                <path d="M40.5239316,20.0756416 L19.4885765,28.2728956 C18.8072379,28.538432 18.8485144,29.5161609 19.5498701,29.7232337 L24.895179,31.3016808 L26.8900496,37.6316211 C27.0984339,38.2928046 27.9363196,38.4932511 28.4213532,37.9980019 L31.1850161,35.1761515 L36.6075632,39.1564363 C37.2711626,39.6435406 38.216243,39.2816464 38.3847313,38.475926 L41.9761334,21.3054472 C42.1520072,20.4643864 41.3245442,19.7636519 40.5239316,20.0756416 Z M37.8866521,23.8861958 L28.1158517,32.5265166 C28.0184585,32.6126589 27.9564747,32.7318638 27.9419796,32.8610773 L27.5657973,36.2051654 C27.5535109,36.3142237 27.4008983,36.3286498 27.3683188,36.223871 L25.8205875,31.23666 C25.7496995,31.0083277 25.842123,30.7609446 26.0452615,30.6349753 L37.5835665,23.4788145 C37.8488958,23.3141226 38.1205754,23.6793991 37.8866521,23.8861958 Z" id="Shape" fill="#DDF9FF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

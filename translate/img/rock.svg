@@ -1,0 +1,45 @@
+
+<svg width="792px" height="500px" viewBox="0 0 792 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="6.4460718%" y1="16.4126039%" x2="165.453743%" y2="163.42339%" id="linearGradient-1">
+            <stop stop-color="#00BFE6" offset="0%"></stop>
+            <stop stop-color="#5600CE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="282.810764%" y1="-168.462242%" x2="9.90681279%" y2="87.5339583%" id="linearGradient-2">
+            <stop stop-color="#191953" offset="0%"></stop>
+            <stop stop-color="#3D40A2" offset="58.2210619%"></stop>
+            <stop stop-color="#882ECE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="9.90681279%" y2="87.5339583%" id="linearGradient-3">
+            <stop stop-color="#191953" offset="0%"></stop>
+            <stop stop-color="#3D40A2" offset="58.2210619%"></stop>
+            <stop stop-color="#882ECE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#CBF2FF" offset="0%"></stop>
+            <stop stop-color="#9CE0FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WINGS_Foundation_LP-Final" transform="translate(-41.000000, -1058.000000)">
+            <g id="illu" transform="translate(41.000000, 1058.000000)">
+                <polygon id="Path-9" fill="url(#linearGradient-1)" points="358 80 358 13 434 13 416.995545 46.5 434 80"></polygon>
+                <rect id="Rectangle-7" fill="url(#linearGradient-2)" x="299" y="5" width="72" height="66"></rect>
+                <rect id="Rectangle-6" fill="#3A3D9D" x="296" y="0" width="7" height="202"></rect>
+                <polygon id="Path-8-Copy-4" fill="url(#linearGradient-1)" points="234 489 138.586614 285 103 489"></polygon>
+                <polygon id="Path-8-Copy-5" fill="url(#linearGradient-3)" points="106.796117 469.183673 139 286 32 490"></polygon>
+                <polygon id="Path-5-Copy-2" fill="url(#linearGradient-4)" points="492 496 659.128028 339 708.955017 375.390728 792 496"></polygon>
+                <polygon id="Path-5" fill="url(#linearGradient-3)" points="97 496 226.358955 172 412 226 530 496"></polygon>
+                <polygon id="Path-5-Copy" fill="url(#linearGradient-3)" points="314 495 478.047847 269 522.69378 302.174312 748 495"></polygon>
+                <polygon id="Path-6" fill="url(#linearGradient-1)" points="226 172 567 495 414 217"></polygon>
+                <polygon id="Path-6-Copy" fill="url(#linearGradient-1)" points="478 269 747 495 552.779923 269"></polygon>
+                <polygon id="Path-8" fill="url(#linearGradient-1)" points="635 494 497.65587 376 378 494"></polygon>
+                <polygon id="Path-8-Copy" fill="url(#linearGradient-3)" points="442.468391 493 495 377 314 493"></polygon>
+                <polygon id="Path-8-Copy-3" fill="url(#linearGradient-3)" points="277.124585 493.76 313 396 0 500"></polygon>
+                <polygon id="Path-8-Copy-2" fill="url(#linearGradient-1)" points="418 493 314.947368 396 240 493"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
