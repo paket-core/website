@@ -1,7 +1,7 @@
 var translations = {
     en: {},
     pl: {
-        pagetitle: 'This is in Polish',
+        pagetitle: 'This is in <strong>Polish</strong>',
         credotitle: 'This is in Polish too'
     },
     he: {
@@ -27,9 +27,9 @@ $(document).ready(function(){
                     return true;
                 }
                 if(!(key in translations.en)){
-                    translations.en[key] = el.text();
+                    translations.en[key] = el.html();
                 }
-                el.text(value);
+                el.html(value);
             });
         });
     });
