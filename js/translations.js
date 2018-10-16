@@ -1,36 +1,38 @@
-var translations = {
-    en: {},
-    pl: {
-        pagetitle: 'This is in <strong>Polish</strong>',
-        credotitle: 'This is in Polish too'
-    },
-    he: {
-        pagetitle: 'אנחנו פאקט',
-        credo: 'ואללה ואללה'
-    }
-};
-
-$(document).ready(function(){
-    $.each(translations, function(langName){
-        optionElement = new Option(langName, langName);
-        $('#langselect').append(optionElement);
-    });
-    $('#langselect').change(function(changeEvent){
-        var langCascade = ['en'];
-        if(changeEvent.target.value !== 'en'){
-            langCascade.push(changeEvent.target.value);
+(function(){'use strict';
+    var translations = {
+        en: {},
+        pl: {
+            pagetitle: 'This is in <strong>Polish</strong>',
+            credotitle: 'This is in Polish too'
+        },
+        he: {
+            pagetitle: 'אנחנו פאקט',
+            credo: 'ואללה ואללה'
         }
-        $.each(langCascade, function(idx, langName){
-            $.each(translations[langName], function(key, value){
-                var el = $('#' + key);
-                if(el.length === 0){
-                    return true;
-                }
-                if(!(key in translations.en)){
-                    translations.en[key] = el.html();
-                }
-                el.html(value);
+    };
+
+    $(document).ready(function(){
+        $.each(translations, function(langName){
+            var optionElement = new Option(langName, langName);
+            $('#langselect').append(optionElement);
+        });
+        $('#langselect').change(function(changeEvent){
+            var langCascade = ['en'];
+            if(changeEvent.target.value !== 'en'){
+                langCascade.push(changeEvent.target.value);
+            }
+            $.each(langCascade, function(idx, langName){
+                $.each(translations[langName], function(key, value){
+                    var el = $('#' + key);
+                    if(el.length === 0){
+                        return true;
+                    }
+                    if(!(key in translations.en)){
+                        translations.en[key] = el.html();
+                    }
+                    el.html(value);
+                });
             });
         });
     });
-});
+}());
