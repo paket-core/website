@@ -177,11 +177,6 @@ strong{font-weight:700}
 #changeLanguageModal{position:fixed;z-index:30;bottom:20px;right:20px;background-color:#3c3c3c;color:#fff;width:300px;min-height:100px;border:1px solid #fff;padding:20px 10px;cursor:inherit}
 #changeLanguageModal .info{line-height:20px;text-align:left;font-size:13px;float:left;padding-left:10px;width:210px}
 #changeLanguageModal .flag{border:2px solid #fff;width:36px;height:36px;display:inline-block;border-radius:100%;background-size:cover;background-position:50%;float:left;margin-top:0}
-#changeLanguageModal .flag.en{background-image:url("./images/flags_s/en.png")}
-#changeLanguageModal .flag.de{background-image:url("./images/flags_s/de.png")}
-#changeLanguageModal .flag.fr{background-image:url("./images/flags_s/fr.png")}
-#changeLanguageModal .flag.es{background-image:url("./images/flags_s/es.png")}
-#changeLanguageModal .flag.pt{background-image:url("./images/flags_s/pt.png")}
 #changeLanguageModal .close-btn{position:absolute;right:10px;top:20px}
 #changeLanguageModal .close-btn:hover:before{color:#2190f5}
 #changeLanguageModal .change{font-weight:800;cursor:pointer}
