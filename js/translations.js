@@ -1,5 +1,6 @@
 (function(){
     'use strict';
+    const DEFAULT_LANGUAGE = 'en';
     const translations = {
         en: {},
         pl: {
@@ -330,27 +331,33 @@
     };
 
     $(document).ready(function(){
-        $.each(translations, function(langName){
-            const optionElement = new Option(langName, langName);
-            $('#langselect').append(optionElement);
+        var languageSelect = $('.language-select-wrapper').click(function(){
+            $(this).toggleClass('open');
         });
-        $('#langselect').change(function(changeEvent){
-            const langCascade = ['en'];
-            if(changeEvent.target.value !== 'en'){
-                langCascade.push(changeEvent.target.value);
+
+        var languageOptions = languageSelect.find('li').click(function(clickEvent){
+            var newLanguage = $(this).attr('data-lang');
+            var languagesCascade = [DEFAULT_LANGUAGE];
+            if(newLanguage !== DEFAULT_LANGUAGE){
+                languagesCascade.push(newLanguage);
             }
-            $.each(langCascade, function(idx, langName){
-                $.each(translations[langName], function(key, value){
-                    let el = $('#' + key);
-                    if(el.length === 0){
+
+            $.each(languagesCascade, function(idx, languageName){
+                $.each(translations[languageName], function(key, value){
+                    var translatedElement = $('#' + key);
+                    if(translatedElement.length === 0){
+                        console.error('No element for translation: ' + key + ' = ' + value);
                         return true;
                     }
-                    if(!(key in translations.en)){
-                        translations.en[key] = el.html();
+                    if(!(key in translations[DEFAULT_LANGUAGE])){
+                        translations[DEFAULT_LANGUAGE][key] = translatedElement.html();
                     }
-                    el.html(value);
+                    translatedElement.html(value);
                 });
             });
+
+            languageOptions.removeClass('active');
+            $(this).addClass('active');
         });
     });
 }());
