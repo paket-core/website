@@ -10,7 +10,7 @@ button.btn{outline:none!important}
 .hidden{display:none!important}
 .hidden-opacity{opacity:0!important}
 .page-content{max-width:100%;overflow-x:hidden;color:#000}
-.page-content *{font-family:Proxima Nova,sans-serif}
+.page-content *{font-family: Roboto,sans-serif}
 .page-content .btn:active,.page-content .btn:focus,.page-content .btn:hover,.page-content a:active,.page-content a:focus,.page-content a:hover{text-decoration:none}
 .page-content .btn{outline:none}
 .page-content input,.page-content input:active,.page-content input:focus{outline:none;-webkit-box-shadow:none;box-shadow:none}
