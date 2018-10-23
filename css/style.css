@@ -989,7 +989,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 #ecoGraph, .graph-item{
     transition: all 1s ease-in-out;
 }
-.social-icons{
+.socia-wrapper .social-icons{
     float: right;
 }
 .social-icons a{
@@ -1000,3 +1000,19 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 }
 .social-icons a span:before{color: black}
 .social-icons a span:hover:before{color: #2ac4ff}
+#quoteWrapper{
+    max-width: 800px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    min-height: 130px;
+    border: 1px solid #2ac4ff;
+    margin-bottom: 40px;
+}
+.quote{
+    font-family: Roboto,sans-serif;
+    font-style: italic;
+    margin-bottom: 1em;
+}
