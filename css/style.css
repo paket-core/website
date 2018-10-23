@@ -985,3 +985,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 .simple-referral .select-code{display:none}
 .simple-referral .copy-address-wrapper{display:inline-block;margin-bottom:30px}
 .simple-referral .copy-address-wrapper input{min-width:280px}
+
+#ecoGraph, .graph-item{
+	transition: all 1s ease-in-out;
+}
