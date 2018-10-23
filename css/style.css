@@ -185,7 +185,7 @@ strong{font-weight:700}
 .header .logo .color{display:none}
 .header.container>div{-webkit-transition:color .5s;transition:color .5s}
 .header .token-sale{display:none}
-.header .navbar-nav{min-width:500px;padding-top:15px;padding-left:70px}
+.header .navbar-nav{min-width:500px;padding-top:15px;padding-left:70px;}
 .header .navbar-nav li{margin-left:35px}
 .header .navbar-nav li a{color:#fff;padding:0;font-size:14px;font-weight:700;line-height:14px}
 .header .navbar-nav li a:active,.header .navbar-nav li a:focus,.header .navbar-nav li a:hover{background-color:transparent;color:#2190f5}
@@ -268,7 +268,7 @@ footer .documents{color:#27b9ee}
 .home-top-section .video-wrapper{overflow:hidden;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#d7eeff),color-stop(20%,#d7eeff),to(#fff));background-image:linear-gradient(#d7eeff,#d7eeff 20%,#fff)}
 .home-top-section .video-wrapper video{max-width:100%;margin-top:-50px}
 .home-top-section .home-top-content{margin-top:120px;padding-bottom:70px}
-.home-top-section .top-title{font-size:78px;line-height:80px;letter-spacing:.4px;color:#333;font-weight:700;text-align:center;float:left;margin-top:60px;width:100%}
+.home-top-section .top-title{font-size:78px;line-height:80px;letter-spacing:.4px;color:#333;font-weight:700;text-align:center;float:left;width:100%}
 .home-top-section .top-desc{display:inline-block;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:.4px;font-size:26px;font-weight:300;text-align:center;color:#2ac4ff;width:100%;text-transform:uppercase;margin-top:10px}
 .home-top-section .top-actions{margin-top:50px;margin-bottom:50px}
 .home-top-section .top-actions a{display:inline-block;margin-right:30px}
@@ -1015,4 +1015,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
     font-family: Roboto,sans-serif;
     font-style: italic;
     margin-bottom: 1em;
+}
+nav.navbar{
+    padding-bottom: 12px;
 }
