@@ -536,7 +536,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 .open .language-select .active{position:absolute;top:-38px;right:0}
 .language-select li.active{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;pointer-events:none}
 
-#ecoGraph, .graph-item{
+#ecoGraph, .graph-item, #eco-logo{
     transition: all 1s ease-in-out;
 }
 .socia-wrapper .social-icons{
