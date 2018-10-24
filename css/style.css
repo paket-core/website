@@ -278,7 +278,7 @@ footer .documents{color:#27b9ee}
     .home-top-section .believe-section .title{margin-top:8px;min-height:60px;max-width:160px;width:auto;margin-left:20px;float:left;text-align:center}
     .home-top-section .believe-section .desc{padding:0 20px;text-align:center}
 }
-.home-section{padding-top:70px;padding-bottom:70px}
+.home-section{padding-top:40px;padding-bottom:60px}
 .home-section.dark{background-color:#f3f9ff}
 .home-section .title{font-size:40.6px;font-weight:700;text-align:center;color:#262626;margin-bottom:30px;text-transform:uppercase}
 .home-section .title-desc{font-size:17.1px;line-height:22px;font-weight:300;letter-spacing:.3px;text-align:center;color:#080808}
@@ -380,7 +380,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
     .home-section.token-ecosystem .owl-carousel-buttons{display:inherit}
     .home-section.token-ecosystem .graph-part{display:none}
     .home-section.token-ecosystem .title-desc{margin-bottom:10px}
-    .home-section.token-ecosystem .eco-graph-wrapper{padding:0}
+    .home-section.token-ecosystem .eco-graph-wrapper{padding:0;transform:scale(0.9)}
     .home-section.token-ecosystem .eco-graph{width:100%;height:inherit}
     .home-section.token-ecosystem .eco-graph .graph-items{position:inherit;width:inherit;height:inherit;left:inherit;top:inherit;padding-top:20px}
     .home-section.token-ecosystem .eco-carousel .graph-item{position:inherit;right:inherit;left:inherit;top:inherit}
@@ -562,9 +562,12 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
     margin-bottom: 40px;
 }
 .quote{
-    font-family: Roboto,sans-serif;
     font-style: italic;
 }
 nav.navbar{
     padding-bottom: 12px;
+}
+
+body{
+    font-family: Roboto,sans-serif;
 }
