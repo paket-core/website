@@ -380,7 +380,7 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
     .home-section.token-ecosystem .owl-carousel-buttons{display:inherit}
     .home-section.token-ecosystem .graph-part{display:none}
     .home-section.token-ecosystem .title-desc{margin-bottom:10px}
-    .home-section.token-ecosystem .eco-graph-wrapper{padding:0;transform:scale(0.9)}
+    .home-section.token-ecosystem .eco-graph-wrapper{padding:0;transform:scale(0.9);}
     .home-section.token-ecosystem .eco-graph{width:100%;height:inherit}
     .home-section.token-ecosystem .eco-graph .graph-items{position:inherit;width:inherit;height:inherit;left:inherit;top:inherit;padding-top:20px}
     .home-section.token-ecosystem .eco-carousel .graph-item{position:inherit;right:inherit;left:inherit;top:inherit}
