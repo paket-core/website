@@ -26,7 +26,7 @@
             });
             ecosystem.rotate(degrees);
             items.rotate(-degrees);
-            $('#eco-logo').rotate(-degrees); //fixme
+            $('#eco-logo').rotate(-3*degrees);
 
         });
         items.last().click();
