@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAKET Developers Unite</title>
+    <meta name="description" content="PAKET's developers page">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <h1 id="top_title">PAKET Developers</h1>
+    <div class="page-content">
+        <header class="header">
+            <nav class="navbar">
+                <div class="container header">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <div class="inner">
+                                <a class="logo" href="index.html">
+                                    <img src="images/logo/paket-logo.png"
+                                         srcset="images/logo/paket-logo@2x.png 2x,images/logo/paket-logo@3x.png 3x"
+                                         alt="PAKET" class="paket-logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="topNav">
+                            <div class="socia-wrapper">
+                                <div class="social-icons">
+                                    <a href="https://twitter.com/PaketProtocol" target="_blank"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.reddit.com/r/PAKET/" target="_blank"><span class="icon-reddit"></span></a>
+                                    <a href="https://medium.com/paket-global" target="_blank"><span class="icon-medium"></span></a>
+                                    <a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw" target="_blank"><span class="icon-telegram"></span></a>
+                                    <a href="https://www.youtube.com/channel/UCeyTJH3uKlXsEyD-vPRQ7uw" target="_blank"><span class="icon-yt"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section class="developers-down-section home-section center">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Introduction</h2>
+                <p class="desc">As a project that revolves around decentralization, PAKET uses and produces free, libre and open-source software. The PAKET protocol is open and the PAKET network if fully transparent. We believe that everyone stands to profit from more and more players joining the ecosystem and enriching it, so we wish to make it as easy and simple as possible to hop on the wagon and join in on the ride.</p>
+                <ul class="dotted-list">
+                                        <li><span class="dot"></span><span><a data-scroll href="#quick-start">Quickstart</a> – </span><span>Wanna get your hands dirty? Just dive in and write some code? Follow our quickstart guide and set up the basic environment to participate in the PAKET network.</span></li>
+                                        <li><span class="dot"></span><span><a data-scroll href="#api">Experiment</a> – </span><span>Wanna play around with a sandbox environment? Check out our API page, full of deliciously documented API calls you can try right off your browser.</span></li>
+                                        <li><span class="dot"></span><span><a data-scroll href="#architecture">Architecture</a> – </span><span>Wanna understand how things work? Read about our architecture.</span></li>
+                                        <li><span class="dot"></span><span><a data-scroll href="#source-code">Code</a> – </span><span>Wanna see how things work for yourself? View our different projects (contracts, bridge servers, and mobile apps) on our github page, as well as other projects that connect to the PAKET network, and maybe even contribute some code and add your own project to the list.</span></li>
+                                        <li><span class="dot"></span><span><a data-scroll href="#community">Community</a> – </span><span>Wanna talk to other developers? Get help? Seek advice? Join our dev community on Telegram, IRC, or on GalacticTalk.</span></li>
+                                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-project developers-desc" id="product">
+        <div class="container">
+            <div class="project-items-wrapper col-md-10 col-md-offset-1">
+                <div class="project-item row" id="quick-start">
+                    <div class="col-md-6 col-md-push-6">
+                        <h1 class="title">Get Your Hands Dirty (Quickstart)</h1>
+                        <p class="desc">The PAKET protocol is fully decentralized and open, and you can use it directly over the <a href="https://www.stellar.org/" target="_blank">Stellar</a> public network. If you are familiar with Stellar and wish to take that route, simply head over to the Working with Stellar <a href="https://github.com/paket-core/paket-stellar/blob/master/README.md" target="_blank">documentation</a>. Most developers, however, prefer to develop on a higher level. That's where the PAKET API server comes in.</p>
+                    </div>
+                    <div class="col-md-6 col-md-pull-6">
+                        <img src="images/developers/developers_4_s.png"
+                            alt="Get Your Hands Dirty (Quickstart)"
+                            srcset="images/developers/developers_4_b.png 2x, images/developers/developers_4.png 3x">
+                    </div>
+                    <div class="col-md-12 center-section">
+                        <div class="title-wrapper">
+                            <h2 class="subtitle">Using the API</h2>
+                        </div>
+                        <p class="desc"><a href="https://github.com/paket-core/api/" target="_blank">The PAKET API server</a> is a bridge, constructed from HTTP and JSON, between applications and the underlying PAKET protocol. To run your own instance of the PAKET API server just follow the instructions on the README page. To use the API you will need to meet the following requirements:</p>
+                        <ul class="dotted-list">
+                            <li><span class="dot"></span><span>A funded Stellar account. Test network accounts can be created and funded with the Stellar <a href="https://www.stellar.org/laboratory/#account-creator" target="_blank">account creator.</a></span></li>
+                            <li><span class="dot"></span><span>A way to create a Stellar compatible <a href="https://ed25519.cr.yp.to/" target="_blank">ed25519</a> keypairs (we use <a href="https://github.com/StellarCN/py-stellar-base" target="_blank">the stellar-base</a> Python package).</span></li>
+                            <li><span class="dot"></span><span>A way to sign transactions and string data with such keypairs (we use the stellar-base Python package).</span></li>
+                        </ul>
+                        <p class="desc">Once you meet these three requirements, you can experiment with our endpoints from our live <a href="http://api.paket.global/" target="_blank">API page</a>. To get right down to business and launch a package, just follow the walkthrough (pay close attention to the authentication process).</p>
+                    </div>
+                </div>
+                <div class="project-item row" id="architecture">
+                    <div class="col-md-6">
+                        <h1 class="title">Architecture</h1>
+                        <p class="desc">The PAKET Protocol establishes trust and enables the cooperation between multiple parties on the safe and timely delivery of goods. For modularity and robustness, the protocol is divided into the following layers:</p>
+                    </div>
+                    <div class="col-md-6 center">
+                        <img src="images/developers/developers_03_s.png"
+                            alt="Architecture"
+                            srcset="images/developers/developers_03_b.png 2x, images/developers/developers_03.png 3x">
+                    </div>
+                    <div class="col-md-12 center-section">
+                        <div class="title-wrapper" id="api">
+                            <h2 class="subtitle">Layer 0 - Trust</h2>
+                        </div>
+                        <p class="desc">This layer establishes a decentralized consensus regarding the conditional transfer of value, as well as an inspectable, immutable history of that consensus. Our current L0 is Stellar, so it is advised that you familiarize yourself with its basic workings. Especially Assets and the different Signer Types.</p>
+                        <div class="title-wrapper">
+                            <h2 class="subtitle">Layer 1 - Token</h2>
+                        </div>
+                        <p class="desc">This layer defines the cryptographic tokens and the smart contracts which govern its behaviour.</p>
+                        <p class="desc">On the logical level, what we do is quite simple. For every package that a user wants to send (we call such a user a Launcher), we create an escrow into which the Launcher deposits his promised Payment. The escrow has a predefined Recipient and a predefined Courier, and once the Recipient confirms the receipt of the package, the Payment is released to the Courier. The escrow also had a predefined Deadline, and if the Courier fails to deliver the package to the Recipient by the time the Deadline passes, the escrow will release the Payment back to the Launcher as refund.</p>
+                        <p class="desc">In addition, the Launcher can demand that the Courier deposits a Collateral into the escrow, as a form of insurance for the package. Once the Recipient confirms the receipt of the package, the escrow will release the Collateral to the Courier along with the Payment, but if the Deadline passes before that, the escrow will pay the Collateral to the Launcher along with his refunded Payment.</p>
+                        <p class="desc">The only remaining bit is the relay. A Courier who is given a package to transport can relay the package to another Courier, promising him a part of the Payment, to be paid only when the Recipient confirms the receipt of the package. The relaying Courier can also demand that the new Courier cover his Collateral, in which case the new Courier deposits the Collateral into the escrow (to be returned only upon successful delivery) and the relaying Courier is given his Collateral back.</p>
+                        <div class="title-wrapper">
+                            <h2 class="subtitle">Layer 2 - Route</h2>
+                        </div>
+                        <p class="desc">This layer matches requirements of senders with capacity and cost of couriers, while providing a detailed and highly contextualized view into the supply and demand of the market. Our current implementation is very rough, but the fundamental idea is a p2p communication network that handles publication and matching of launcher requirements with courier capacities.</p>
+                        <p class="desc">Communication on the network is authenticated using the same keypairs from the two lower layers, which enables secure, robust, and simple pinning of identities through the layers.</p>
+                        <div class="title-wrapper">
+                            <h2 class="subtitle">Layer 3 - Application</h2>
+                        </div>
+                        <p class="desc">This layer consolidates tools and applications that allow simple and intuitive usage of the network. It is in very early stages of development, and currently consists of only two projects:</p>
+                        <ul class="dotted-list">
+                            <li><span class="dot"></span><span>Bridge API server, to simplify programmatic usage of L1.</span></li>
+                            <li><span class="dot"></span><span>Mobile app, to actually launch, courier, and receive packages.</span></li>
+                        </ul>
+                        <div class="title-wrapper">
+                            <h2 class="subtitle">Layer 4 - Economy</h2>
+                        </div>
+                        <p class="desc">This layer builds organizations and services that thrive in the PAKET ecosystem and enrich it. We have some interesting plans regarding it, but no current implementations.</p>
+                    </div>
+                </div>
+
+                <div class="project-item row source-code" id="source-code">
+                    <div class="col-md-6 col-md-push-6">
+                        <h1 class="title">Source code</h1>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/paket-stellar">Our Stellar library</a>
+                            - implementing the Stellar side of the PAKET layer(L1)
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/bridge">Our bridge server</a>
+                            - functioning as a bridge between Stellar Horizon servers and user applications, providing access to the PAKET layer (L1)
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/router">Our routing server</a>
+                            - providing a temporary centralized routing layer (L2)
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/funder">Our funding server</a>
+                            - providing tokens to those who wish to use them
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/manager">Our manager scaffolding</a>
+                            - providing scripts for deploying, updating, testing, and running our servers
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/mobile">The first mobile app to use PAKET</a>
+                            - enabling simple, decentralized deliveries
+                        </p>
+                        <p class="desc">
+                            <a target="_blank" rel="noreferrer noopener"
+                            href="https://github.com/paket-core/py-stellar-base">Our branch of the stellar-core Python package</a>
+                            - we occasionally get the chance to contribute to the official Python package!
+                        </p>
+
+                    </div>
+                    <div class="col-md-6 col-md-pull-6">
+                        <img src="images/developers/developers_1_s.png"
+                            alt="Source code"
+                            srcset="images/developers/developers_1_b.png 2x, images/developers/developers_1.png 3x">
+                    </div>
+                    <div class="col-md-12 center">
+                        <img src="images/developers/developers_1_architecture.jpeg"
+                            class="architecture"
+                            alt="Source code"
+                            srcset="images/developers/developers_1_architecture_s.jpeg 480w, images/developers/developers_1_architecture.jpeg 800w, images/developers/developers_1_architecture_b.jpeg 2x">
+                    </div>
+                </div>
+                <div class="project-item row" id="community">
+                    <div class="col-md-6">
+                        <h1 class="title">Developers Community</h1>
+                        <p class="desc"><a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw"
+                                        target="_blank">Telegram</a></p>
+                        <p class="desc"><a href="https://www.github.com/paket-core"
+                                        target="_blank">Github</a></p>
+                        <p class="desc"><a href="https://galactictalk.org"
+                                        target="_blank">Galactic Talk</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/developers/developers_2_s.png"
+                            alt="Developers Community"
+                            srcset="images/developers/developers_2_b.png 2x, images/developers/developers_2.png 3x">
+                    </div>
+                    <div class="col-md-12 center">
+                        <a href="https://github.com/paket-core/mobile/projects/1" target="_blank" rel="noreferrer noopener">
+                            <img src="images/developers/developers_1_architecture.jpeg"
+                                class="architecture"
+                                alt="Source code"
+                                srcset="images/developers/developers_2_board_s.jpeg 480w, images/developers/developers_2_board.jpeg 800w, images/developers/developers_2_board_b.jpeg 2x">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-12 title" id="footer_follow_title">
+                        FOLLOW US
+                    </div>
+                    <div class="col-md-12 social">
+                        <div class="social-icons">
+                            <a href="https://twitter.com/PaketProtocol" target="_blank"><span
+                                    class="icon-twitter"></span></a>
+                            <a href="https://www.reddit.com/r/PAKET/" target="_blank"><span
+                                    class="icon-reddit"></span></a>
+                            <a href="https://medium.com/paket-global" target="_blank"><span
+                                    class="icon-medium"></span></a>
+                            <a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw" target="_blank"><span
+                                    class="icon-telegram"></span></a>
+                            <a href="https://www.youtube.com/channel/UCeyTJH3uKlXsEyD-vPRQ7uw"
+                                target="_blank"><span class="icon-yt"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 copyright" id="footer_copyright">
+                        2017-2018 Paket Project LTD
+                    </div>
+                    <div class="col-md-12 documents">
+                        <ul>
+                            <li>
+                                <a href="#privacy-policy">
+                                    Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="cookie-modal hidden">
+        <p>This site uses cookies. <a target="_blank" href="privacy-policy.html">Learn more.</a></p>
+        <button class="btn btn-white">Okay</button>
+    </div>
+</div>
+</body>
+</html>
