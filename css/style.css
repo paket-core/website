@@ -536,6 +536,142 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 .open .language-select .active{position:absolute;top:-38px;right:0}
 .language-select li.active{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;pointer-events:none}
 
+.developers-top-section{
+    margin-top:75px;
+    background-image:url("../images/custom/token-sale-new/img@3x-min.png");
+    background-size:cover;
+    padding:0;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+    height:300px
+}
+.developers-top-section h1{
+    font-size:42px;
+    line-height:48px;
+    font-weight:700;
+    text-align:center;
+    color:#fff;
+    margin-top:120px;
+    margin-bottom:40px;
+    text-transform:uppercase
+}
+.developers-top-section .shadow{
+    opacity:.7;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#2ac4ff),to(#338bff));
+    background-image:linear-gradient(#2ac4ff,#338bff);
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:300px;
+    z-index:1
+}
+.developers-top-section .top-content{
+    position:relative;
+    z-index:2
+}
+@media (max-width:767px){
+    .developers-top-section{
+        margin-top:70px;
+        height:160px
+    }
+    .developers-top-section .top-content{
+        margin-top:50px
+    }
+    .developers-top-section img{
+        margin-top:90px;
+        max-width:120px
+    }
+    .developers-top-section h2{
+        font-size:26px;
+        line-height:32px;
+        margin-top:10px
+    }
+    .developers-top-section .shadow{
+        height:160px
+    }
+}
+.developers-down-section.home-section{
+    margin-bottom:0;
+    padding-bottom:20px
+}
+.developers-down-section h2{
+    font-size:26px;
+    font-weight:900;
+    text-align:left;
+    color:#262626;
+    margin-bottom:46px;
+    text-transform:uppercase
+}
+.developers-down-section .desc,.developers-down-section ul li{
+    font-size:16px;
+    line-height:22px;
+    font-weight:300;
+    letter-spacing:.3px;
+    text-align:justify;
+    color:#6e6e6e
+}
+.developers-down-section ul{
+    list-style:none;
+    margin-top:10px
+}
+.developers-down-section ul li{
+    margin-bottom:10px
+}
+.developers-down-section .codes{
+    margin-top:50px
+}
+.developers-down-section .codes .code-item-wrapper{
+    padding:15px
+}
+.developers-down-section .codes .code-item{
+    min-height:470px;
+    border-radius:4px;
+    background-color:#d1d1d1;
+    border:2px solid #bfbfbf;
+    padding:20px 30px
+}
+.developers-down-section .codes .code-item h4{
+    text-transform:uppercase;
+    text-align:left;
+    word-wrap:break-word;
+    line-height:32px;
+    font-weight:700
+}
+.developers-down-section .codes .code-item .desc{
+    min-height:140px;
+    margin-top:20px
+}
+.developers-down-section .codes .code-item .btn{
+    border-radius:18px;
+    background-color:#2ac4ff;
+    font-size:16px;
+    font-weight:500;
+    letter-spacing:.3px;
+    text-align:center;
+    color:#fff;
+    margin-top:26px
+}
+.developers-down-section .codes .code-item .img-wrapper{
+    display:inline-block;
+    width:80%;
+    margin:auto;
+    background-color:#fff;
+    border:2px solid #cacaca;
+    cursor:pointer;
+    -webkit-transition:all .5s;
+    transition:all .5s
+}
+.developers-down-section .codes .code-item .img-wrapper:hover{
+    background-color:#ccc
+}
+.developers-down-section .codes .code-item img{
+    display:inline-block;
+    max-width:100%;
+    margin:auto
+}
+
 #ecoGraph, .graph-item, #eco-logo{
     transition: all 1s ease-in-out;
 }
