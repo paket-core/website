@@ -86,46 +86,60 @@
                         <h2 class="top-title" id="top_title2">Model Mobile Application</h2>
                         <div class="top-desc" id="top_desc">The first app of the first Decentralized Delivery Network</div>
                     </div>
-                    <p>We are happy to present a rudimentary mobile application that exposes the core functionality of the PAKET protocol. Feel free to use the code available at https://github.com/paket-core/mobile to explore, investigate, and create your own applications.</p>
                 </div>
             </div>
         </section>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3" style="position: relative; top: 2em;">
+            <p>We are happy to present a rudimentary mobile application that exposes the core functionality of the PAKET protocol. Feel free to use the code available at https://github.com/paket-core/mobile to explore, investigate, and create your own applications.</p>
+        </div>
+
+        <div class="container col-md-6 col-md-offset-3">
             <h2>What can I do with it?</h2>
             <p>The mobile application makes full use of L1 of the PAKET protocol. This means it allows users to launch packages, promising payment and demanding collateral; to courier packages, depositing collateral and earning payment; and, of course, to receive packages.</p>
             <p>The app features a fully functional BUL wallet, supporting the generation and registration of accounts and sending and receiving BUL tokens.</p>
             <p>Finally, it also interacts with the PAKET funding server, allowing users to generate and fund Stellar accounts and to purchase BUL tokens using either bitcoin or ether.</p>
         </div>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3">
             <h2>What can’t I do with it (yet)?</h2>
             <p>Currently, the mobile application uses a PAKET operated central routing server as L2 of the protocol. Future versions will support a decentralized routing layer built on a distributed hash table.</p>
             <p>The current version does not directly support relaying packages. It is still possible to relay packages by launching a new package which encapsulates an older package. Coming versions will support native relays using a single PAKET smart contract.</p>
         </div>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3">
             <h2>How to use the app</h2>
             <h3>First Launch</h3>
+            <p>When you run the app for the first time, it will ask you to enter a mnemonic or a secret seed for an existing Stellar account, or to generate a new one.</p>
+            <p>If you generate a new key, you will need to enter some identifying details and choose a payment currency (BTC or ETH), to fund the Stellar account we will open for you. Your account will only be activated once you send at least 10 EUR worth of BTC or ETH to the generated address.</p>
+            <p>It is highly recommended that you backup your mnemonic or your secret seed so that you can restore the account later. Keep this information safe and private. No one else, including PAKET and Stellar servers, has access at any point to your mnemonic, seed, or private key.</p>
             <h3>Packages Tab</h3>
+            <p>This is the main tab of the app, used for launching, tracking, and accepting packages.</p>
+            <p>The default view is a list of packages relating to you. Each item in the list can be clicked to show more details, including the package's QR code, which is used when passing the package to another participant (courier or recipient).</p>
             <h4>Launching a Package</h4>
+            <p>Start by clicking the (image of the plus button) button. Fill in the addresses or user names of the intended recipient and courier. Choose a deadline for the delivery. Fill in promised payment and required collateral. Note: once you launch the package, the payment will be removed from your wallet and placed in escrow, pending the success or failure of the delivery.</p>
             <h4>Reserving a Package</h4>
             <h4>Accepting a Package</h4>
+            <p>Accepting a package, either as a courier or as the final recipient, requires that the person currently in possession of the package display the QR code provided in the package details screen. The user accepting the package can then click the (image of QR code button) button to launch the camera and scan the code.</p>
+            <p>If the user accepting the package is a courier, the app will display the package details for confirmation. Once confirmation is given, the collateral will be removed from the courier's wallet and placed in escrow, pending the failure or success of the current leg of the route.<p>
+            <p>If the user accepting the package is the recipient, the package is considered delivered and payment will be released from the escrow.<p>
             <h3>Wallet Tab</h3>
+            <p>The wallet tab lets you track your BUL and XLM balance, purchase BUL and XLM, and send BUL to other accounts. The wallet can be side-swiped between BUL and XLM functions. In the BUL section you can send BUL to another Stellar address or a user-name on our system, and you can purchase BUL - which will generate a BTC or ETH address for you to send funds to. In the XLM section there is a similar option for purchasing XLM.</p>
             <h3>Profile Tab</h3>
+            <p>In the profile tab you can edit your personal details, your notification preferences, and display/copy your secret data for backup.</p>
         </div>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3">
             <h2>Open Issues</h2>
             <a href="https://github.com/paket-core/mobile/issues">Follow open issues on GitHub</a>
         </div>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3">
             <h2>How to bulid the app</h2>
             <a href="https://github.com/paket-core/mobile/blob/master/BUILD">Follow the guide</a>
         </div>
 
-        <div class="container">
+        <div class="container col-md-6 col-md-offset-3">
             <h2>How to help</h2>
             <ul>
                 <li>Fork the github repository at https://github.com/paket-core/mobile</li>
@@ -135,6 +149,8 @@
                 <li>Issue a pull request</li>
             </ul>
             <p>If you are unclear about anything, please go to the developers page for ways to contact us and other developers.</p>
+        </div>
+        <div class="container">
         </div>
 
         <footer>
