@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAKET - Mobile Application</title>
+    <meta name="description" content="PAKET's mobile application">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <div class="page-content token-page">
+        <header class="header">
+            <nav class="navbar">
+                <div class="container header">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <div class="inner">
+                                <a class="logo" href="index.html">
+                                    <img src="images/logo/paket-logo.png"
+                                         srcset="images/logo/paket-logo@2x.png 2x,images/logo/paket-logo@3x.png 3x"
+                                         alt="PAKET" class="paket-logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="language-wrapper">
+                            <div class="language-select-wrapper">
+                                <ul class="language-select animated fadeInDown">
+                                    <li class="preload-lang-images active" data-lang="en">
+                                        <div title="English" class="img lang-tooltip en"></div>
+                                    </li>
+                                    <li class="preload-lang-images" data-lang="cn">
+                                        <div title="Chinese" class="img lang-tooltip cn"></div>
+                                    </li>
+                                    <li class="preload-lang-images" data-lang="ko">
+                                        <div title="Korean" class="img lang-tooltip ko"></div>
+                                    </li>
+                                    <li class="preload-lang-images" data-lang="pl">
+                                        <div title="Polish" class="img lang-tooltip pl"></div>
+                                    </li>
+                                    <li class="preload-lang-images" data-lang="ru">
+                                        <div title="Russian" class="img lang-tooltip ru"></div>
+                                    </li>
+                                </ul>
+                                <div class="down-icon">⌄</div>
+                            </div>
+                        </div>
+                        <div id="topNav">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#platformInfo">Platform Info </a></li>
+                                <li class="sub-li"><a href="#team">Our Team </a></li>
+                                <li><a href="https://explorer.paket.global">Live Explorer</a></li>
+                                <li><a href="application.html">Mobile App</a></li>
+                                <li><a href="developers.html" id="header_for_developers">Developers</a></li>
+                            </ul>
+                            <div class="socia-wrapper">
+                                <div class="social-icons">
+                                    <a href="https://twitter.com/PaketProtocol" target="_blank"><span class="icon-twitter"></span></a>
+                                    <a href="https://www.reddit.com/r/PAKET/" target="_blank"><span class="icon-reddit"></span></a>
+                                    <a href="https://medium.com/paket-global" target="_blank"><span class="icon-medium"></span></a>
+                                    <a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw" target="_blank"><span class="icon-telegram"></span></a>
+                                    <a href="https://www.youtube.com/channel/UCeyTJH3uKlXsEyD-vPRQ7uw" target="_blank"><span class="icon-yt"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home-top-section top-section center en">
+            <div class="container center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="top-title" id="top_title2">Model Mobile Application</h2>
+                        <div class="top-desc" id="top_desc">The first app of the first Decentralized Delivery Network</div>
+                    </div>
+                    <p>We are happy to present a rudimentary mobile application that exposes the core functionality of the PAKET protocol. Feel free to use the code available at https://github.com/paket-core/mobile to explore, investigate, and create your own applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2>What can I do with it?</h2>
+            <p>The mobile application makes full use of L1 of the PAKET protocol. This means it allows users to launch packages, promising payment and demanding collateral; to courier packages, depositing collateral and earning payment; and, of course, to receive packages.</p>
+            <p>The app features a fully functional BUL wallet, supporting the generation and registration of accounts and sending and receiving BUL tokens.</p>
+            <p>Finally, it also interacts with the PAKET funding server, allowing users to generate and fund Stellar accounts and to purchase BUL tokens using either bitcoin or ether.</p>
+        </div>
+
+        <div class="container">
+            <h2>What can’t I do with it (yet)?</h2>
+            <p>Currently, the mobile application uses a PAKET operated central routing server as L2 of the protocol. Future versions will support a decentralized routing layer built on a distributed hash table.</p>
+            <p>The current version does not directly support relaying packages. It is still possible to relay packages by launching a new package which encapsulates an older package. Coming versions will support native relays using a single PAKET smart contract.</p>
+        </div>
+
+        <div class="container">
+            <h2>How to use the app</h2>
+            <h3>First Launch</h3>
+            <h3>Packages Tab</h3>
+            <h4>Launching a Package</h4>
+            <h4>Reserving a Package</h4>
+            <h4>Accepting a Package</h4>
+            <h3>Wallet Tab</h3>
+            <h3>Profile Tab</h3>
+        </div>
+
+        <div class="container">
+            <h2>Open Issues</h2>
+            <a href="https://github.com/paket-core/mobile/issues">Follow open issues on GitHub</a>
+        </div>
+
+        <div class="container">
+            <h2>How to bulid the app</h2>
+            <a href="https://github.com/paket-core/mobile/blob/master/BUILD">Follow the guide</a>
+        </div>
+
+        <div class="container">
+            <h2>How to help</h2>
+            <ul>
+                <li>Fork the github repository at https://github.com/paket-core/mobile</li>
+                <li>Create a new branch for your fix / feature</li>
+                <li>Improve the app</li>
+                <li>Commit and push your changes</li>
+                <li>Issue a pull request</li>
+            </ul>
+            <p>If you are unclear about anything, please go to the developers page for ways to contact us and other developers.</p>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="col-md-12 title" id="footer_follow_title">
+                            FOLLOW US
+                        </div>
+                        <div class="col-md-12 social">
+                            <div class="social-icons">
+                                <a href="https://twitter.com/PaketProtocol" target="_blank"><span
+                                        class="icon-twitter"></span></a>
+                                <a href="https://www.reddit.com/r/PAKET/" target="_blank"><span
+                                        class="icon-reddit"></span></a>
+                                <a href="https://medium.com/paket-global" target="_blank"><span
+                                        class="icon-medium"></span></a>
+                                <a href="https://t.me/joinchat/G9T-tkXBHHNnpQ8oYFGSvw" target="_blank"><span
+                                        class="icon-telegram"></span></a>
+                                <a href="https://www.youtube.com/channel/UCeyTJH3uKlXsEyD-vPRQ7uw"
+                                   target="_blank"><span class="icon-yt"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 copyright" id="footer_copyright">
+                            2017-2018 Paket Project LTD
+                        </div>
+                        <div class="col-md-12 documents">
+                            <ul>
+                                <li>
+                                    <a href="privacy-policy.html">
+                                        Privacy Policy </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="cookie-modal hidden">
+            <p>This site uses cookies. <a target="_blank" href="privacy-policy.html">Learn more.</a></p>
+            <button class="btn btn-white">Okay</button>
+        </div>
+    </div>
+
+</div>
+<script src="js/translations.js"></script>
+</body>
+</html>
