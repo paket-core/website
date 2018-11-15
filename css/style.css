@@ -298,7 +298,6 @@ footer .documents{color:#27b9ee}
 .home-section.home-media .view-more{display:inline-block;font-size:17.6px;line-height:20px;font-weight:500;color:#2cbdff;margin-top:40px;padding-bottom:4px;border-bottom:1px solid #2cbdff;cursor:pointer}
 .home-section.home-media .view-more:hover{color:#0087c5;border-bottom-color:#0087c5}
 @media (max-width:767px){
-    .home-section.home-media #companiesList{display:none}
     .home-section.home-media #companiesCarousel{display:inherit}
     .home-section.home-media #viewMoreCompanies{display:none}
 }
