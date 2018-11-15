@@ -736,4 +736,8 @@ h1, h2, h3, h4, h5, h6{
     .home-top-section .top-title{
         margin-top: 100px;
     }
+    .developers-top-section h1{
+        margin-top: 0px;
+        font-size: 2em;
+    }
 }
