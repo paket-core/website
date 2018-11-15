@@ -517,8 +517,8 @@ ul.dotted-list li .dot{float:left;width:8px;height:8px;border-radius:4px;backgro
 .video-modal .modal-body .close{z-index:3;font-size:30px;opacity:1;color:#fff;text-shadow:none;border:2px solid #fff;width:40px;height:40px;line-height:40px;border-radius:100%;position:relative}
 .video-modal .modal-body .close:hover{color:#2ac4ff;border-color:#2ac4ff}
 .video-modal iframe{margin-top:-20px;z-index:2;position:relative}
-.language-select-wrapper{margin-left:0;height:32px;width:62px;position:relative}
-.language-select-wrapper .language-select{position:absolute;right:0;top:0;padding:0;max-width:32px}
+.language-select-wrapper{margin-left:0;height:32px;right:62px;position:relative}
+.language-select-wrapper .language-select{position:absolute;right:100;top:0;padding:0;max-width:32px}
 .language-select-wrapper.open .language-select{max-width:inherit}
 .language-select{list-style:none;overflow:hidden;cursor:pointer;-webkit-transition:all .15s ease-in-out;transition:all .15s ease-in-out}
 .language-select li{float:right;margin-left:0;display:none}
@@ -729,8 +729,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media (max-width: 767px){
-    header.header{
-        position: relative;
-        top: auto;
+    .home-section.home-team .owl-carousel-buttons{
+        display: none;
     }
+
 }
