@@ -733,4 +733,7 @@ h1, h2, h3, h4, h5, h6{
         display: none;
     }
     .language-select-wrapper{margin-left:0;height:32px;right:62px;width:0px;position:relative}
+    .home-top-section .top-title{
+        margin-top: 100px;
+    }
 }
