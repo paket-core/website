@@ -741,3 +741,8 @@ h1, h2, h3, h4, h5, h6{
         font-size: 2em;
     }
 }
+section.container {
+    padding-bottom: 24px;
+}
+
+/*TODO add style for td th with padding right of 8px. it requires using some "incentives-page" instead of "home-page" indication*/
